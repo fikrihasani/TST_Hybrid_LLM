@@ -1,0 +1,403 @@
+2026-09-25 21:38:23,080 - INFO - No device provided, using cuda:0
+2026-09-25 21:38:23,383 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:38:23,395 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/modules.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:23,661 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:38:23,669 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:23,671 - INFO - Loading SentenceTransformer model from LazarusNLP/simcse-indobert-base.
+2026-09-25 21:38:23,952 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:38:23,964 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:24,230 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:38:24,241 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/README.md "HTTP/1.1 200 OK"
+2026-09-25 21:38:24,512 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:38:24,521 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/modules.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:24,784 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:38:24,793 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:25,060 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:38:25,330 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:38:25,338 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 10467.22it/s]
+2026-09-25 21:38:25,804 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:38:26,072 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:38:26,338 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:38:26,605 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:38:26,877 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:38:26,887 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:27,172 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:38:27,182 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:27,451 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:38:27,462 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:27,727 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:38:27,737 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:28,024 - INFO - HTTP Request: GET https://huggingface.co/api/models/LazarusNLP/simcse-indobert-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-25 21:38:28,294 - INFO - HTTP Request: GET https://huggingface.co/api/models/LazarusNLP/simcse-indobert-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-25 21:38:28,584 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:38:28,593 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:28,854 - INFO - HTTP Request: GET https://huggingface.co/api/models/LazarusNLP/simcse-indobert-base "HTTP/1.1 200 OK"
+2026-09-25 21:38:29,133 - INFO - Loading Hugging Face model: google/gemma-3-4b-it
+2026-09-25 21:38:29,408 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:29,691 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:29,981 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-3-4b-it/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-25 21:38:30,257 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-3-4b-it/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-25 21:38:31,345 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-3-4b-it "HTTP/1.1 200 OK"
+2026-09-25 21:38:31,618 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+W0925 21:38:31.816000 3700 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:00<04:52,  3.02it/s]C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   2%|▏         | 17/883 [00:00<00:17, 49.51it/s]Loading weights:   5%|▍         | 43/883 [00:00<00:07, 108.98it/s]Loading weights:   8%|▊         | 69/883 [00:00<00:05, 149.81it/s]Loading weights:  11%|█         | 95/883 [00:00<00:04, 178.20it/s]Loading weights:  14%|█▎        | 121/883 [00:00<00:03, 197.12it/s]Loading weights:  17%|█▋        | 147/883 [00:00<00:03, 210.97it/s]Loading weights:  20%|█▉        | 173/883 [00:01<00:03, 219.94it/s]Loading weights:  23%|██▎       | 199/883 [00:01<00:03, 226.36it/s]Loading weights:  25%|██▌       | 225/883 [00:01<00:02, 232.86it/s]Loading weights:  28%|██▊       | 251/883 [00:01<00:02, 237.77it/s]Loading weights:  31%|███▏      | 277/883 [00:01<00:02, 239.67it/s]Loading weights:  34%|███▍      | 303/883 [00:01<00:02, 237.53it/s]Loading weights:  37%|███▋      | 328/883 [00:01<00:02, 238.89it/s]Loading weights:  40%|███▉      | 353/883 [00:01<00:02, 241.90it/s]Loading weights:  43%|████▎     | 378/883 [00:01<00:02, 233.11it/s]Loading weights:  46%|████▌     | 402/883 [00:02<00:02, 229.01it/s]Loading weights:  48%|████▊     | 426/883 [00:02<00:02, 223.73it/s]Loading weights:  54%|█████▍    | 481/883 [00:02<00:01, 314.69it/s]Loading weights:  69%|██████▊   | 607/883 [00:02<00:00, 584.05it/s]Loading weights:  84%|████████▍ | 743/883 [00:02<00:00, 803.10it/s]Loading weights:  99%|█████████▉| 873/883 [00:02<00:00, 943.28it/s]Loading weights: 100%|██████████| 883/883 [00:02<00:00, 343.20it/s]
+2026-09-25 21:38:36,288 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:38:36,298 - INFO - Berhasil memuat dataset yang sudah dipecah dari klasifikasi.
+2026-09-25 21:38:36,298 - INFO - Style Pool / Retrieval Index (30%): 1500 kalimat.
+2026-09-25 21:38:36,298 - INFO - Test Set (10%): 500 kalimat.
+2026-09-25 21:38:36,314 - INFO - Mengeksekusi 5 data menuju target formal.
+Target: formal | dense | seed=42:   0%|                                       | 0/5 [00:00<?, ?it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 10.34it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: formal | dense | seed=42:  20%|██████▏                        | 1/5 [00:03<00:15,  3.90s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 182.76it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: formal | dense | seed=42:  40%|████████████▍                  | 2/5 [00:07<00:11,  3.68s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 172.43it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: formal | dense | seed=42:  60%|██████████████████▌            | 3/5 [00:08<00:05,  2.50s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 166.27it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: formal | dense | seed=42:  80%|████████████████████████▊      | 4/5 [00:10<00:02,  2.39s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 173.81it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: formal | dense | seed=42: 100%|███████████████████████████████| 5/5 [00:14<00:00,  2.97s/it]Target: formal | dense | seed=42: 100%|███████████████████████████████| 5/5 [00:14<00:00,  2.95s/it]
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | DENSE
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+min , tolong di menu favorite , agar barang bisa di filter seperti pada menu pencarian barang lainnya , bisa disortir harga , jasa pengiriman dll
+------------------------------
+TRANSFERRED (formal):
+"admin, bisa tolong di-favorite barangnya, biar bisa di-filter kayak di pencarian barang lain, bisa disortir harga, jasa pengiriman, gitu lho."
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+enak ae . iku subscription ku yo . bayar bulanan . masalahnya yg gaada nasi . gimana cara makannya we . kalo sayur asem yg ada gpp ikhlas -_-
+------------------------------
+TRANSFERRED (formal):
+“enak sih . langganan gue gitu . bayar tiap bulan . eh, tapi nggak ada nasi . gimana mau makan sih . kalau sayur asemnya ya udah, gapapa lah, iilan -_-”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+pembelian paket internet malam kok ga bisa ya min ?
+------------------------------
+TRANSFERRED (formal):
+“Kenapa paket internet malam nggak bisa ya min?”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+halo selamat malam mau konfirmasi bisa gak kita melakukan pembatalan pesanan tanpa power merchantnya harus dicabut . karena ini kebetulan saya ( konsumen ) yang mau membatalkan
+------------------------------
+TRANSFERRED (formal):
+“Halo, selamat malam. Mau tanya, bisa gak sih batalin pesanan tanpa izin merchantnya dicabut? Soalnya, ini kebetulan saya yang mau batal.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+transaksi xxxnumberxxx . pembeli meminta kami untuk membatalkan transaksi ini . mohon bantuannya
+------------------------------
+TRANSFERRED (formal):
+“transaksi xxxnumberxxx, pembeli ngasih permintaan pembatalan. mohon bantuannya, ya.”
+
+############################################################
+
+Target: formal | centroid | seed=42:   0%|                                    | 0/5 [00:00<?, ?it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 146.71it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: formal | centroid | seed=42:  20%|█████▌                      | 1/5 [00:04<00:16,  4.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 185.76it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: formal | centroid | seed=42:  40%|███████████▏                | 2/5 [00:07<00:11,  3.82s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 156.84it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: formal | centroid | seed=42:  60%|████████████████▊           | 3/5 [00:09<00:05,  2.78s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 176.34it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: formal | centroid | seed=42:  80%|██████████████████████▍     | 4/5 [00:11<00:02,  2.51s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 174.28it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: formal | centroid | seed=42: 100%|████████████████████████████| 5/5 [00:15<00:00,  3.03s/it]Target: formal | centroid | seed=42: 100%|████████████████████████████| 5/5 [00:15<00:00,  3.06s/it]
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | CENTROID
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+enak ae . iku subscription ku yo . bayar bulanan . masalahnya yg gaada nasi . gimana cara makannya we . kalo sayur asem yg ada gpp ikhlas -_-
+------------------------------
+TRANSFERRED (formal):
+“wah, langganan ku tuh enak. bayar bulanan. cuma masalahnya nggak ada nasi. gimana cara makannya ya? kalau sayur asem yang ada, sih, ya sudah ikhlas-_-”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+transaksi xxxnumberxxx . pembeli meminta kami untuk membatalkan transaksi ini . mohon bantuannya
+------------------------------
+TRANSFERRED (formal):
+“Pak, transaksi nomor xxxnumberxxx ini, pembeli minta pembatalan. Tolong bantu ya.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+halo selamat malam mau konfirmasi bisa gak kita melakukan pembatalan pesanan tanpa power merchantnya harus dicabut . karena ini kebetulan saya ( konsumen ) yang mau membatalkan
+------------------------------
+TRANSFERRED (formal):
+“Halo, selamat malam. Saya ingin menanyakan mengenai pembatalan pesanan. Apakah pembatalan bisa dilakukan tanpa mencabut power merchant? Karena ini kebetulan saya, sebagai konsumen, yang ingin membatalkan.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+pembelian paket internet malam kok ga bisa ya min ?
+------------------------------
+TRANSFERRED (formal):
+“Halo, kok pembelian paket internet malam saya tidak bisa ya, bung?”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+min , tolong di menu favorite , agar barang bisa di filter seperti pada menu pencarian barang lainnya , bisa disortir harga , jasa pengiriman dll
+------------------------------
+TRANSFERRED (formal):
+“Halo, bisa tolong diatur di favorit, biar barangnya bisa difilter kayak di menu pencarian barang lain, bisa disortir harga, jasa pengiriman, gitu lho.”
+
+############################################################
+
+Target: formal | zero_shot | seed=42:   0%|                                   | 0/5 [00:00<?, ?it/s]C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: formal | zero_shot | seed=42:  20%|█████▍                     | 1/5 [00:04<00:18,  4.57s/it]Target: formal | zero_shot | seed=42:  40%|██████████▊                | 2/5 [00:08<00:12,  4.17s/it]Target: formal | zero_shot | seed=42:  60%|████████████████▏          | 3/5 [00:10<00:06,  3.33s/it]Target: formal | zero_shot | seed=42:  80%|█████████████████████▌     | 4/5 [00:15<00:03,  3.77s/it]Target: formal | zero_shot | seed=42: 100%|███████████████████████████| 5/5 [00:19<00:00,  4.05s/it]Target: formal | zero_shot | seed=42: 100%|███████████████████████████| 5/5 [00:19<00:00,  3.96s/it]
+2026-09-25 21:39:26,746 - INFO - Mengeksekusi 5 data menuju target informal.
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | ZERO_SHOT
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+min , tolong di menu favorite , agar barang bisa di filter seperti pada menu pencarian barang lainnya , bisa disortir harga , jasa pengiriman dll
+------------------------------
+TRANSFERRED (formal):
+Mohon agar item yang dipilih dapat ditandai sebagai favorit, sehingga dapat difilter seperti pada menu pencarian barang lainnya, dan dapat diurutkan berdasarkan harga, jasa pengiriman, dan kriteria lainnya.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+enak ae . iku subscription ku yo . bayar bulanan . masalahnya yg gaada nasi . gimana cara makannya we . kalo sayur asem yg ada gpp ikhlas -_-
+------------------------------
+TRANSFERRED (formal):
+Contoh Referensi:
+"Saya merasa sedikit kecewa. Langganan saya sudah aktif, tetapi sayangnya belum ada dana. Pertanyaan saya adalah, bagaimana cara menikmati fasilitasnya? Walaupun demikian, saya tetap bersyukur atas apa yang tersedia."
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+pembelian paket internet malam kok ga bisa ya min ?
+------------------------------
+TRANSFERRED (formal):
+Contoh Referensi:
+"Mohon informasikan, mengapa terdapat kendala dalam proses pembelian paket internet malam, Sir?"
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+halo selamat malam mau konfirmasi bisa gak kita melakukan pembatalan pesanan tanpa power merchantnya harus dicabut . karena ini kebetulan saya ( konsumen ) yang mau membatalkan
+------------------------------
+TRANSFERRED (formal):
+Dengan hormat, saya ingin mengajukan permohonan pembatalan pesanan.  Sebagai konsumen, saya mohon agar proses pembatalan dapat dilakukan tanpa memerlukan pencabutan status *power merchant*. Terima kasih atas perhatian dan kerjasamanya.
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+transaksi xxxnumberxxx . pembeli meminta kami untuk membatalkan transaksi ini . mohon bantuannya
+------------------------------
+TRANSFERRED (formal):
+Contoh Referensi:
+"Dengan hormat, kami ingin menyampaikan permohonan agar dapat membatalkan transaksi bernomor xxxnumberxxx yang telah diinisiasi. Mohon dapatkan perhatian dan bantuan Bapak/Ibu dalam proses ini."
+
+############################################################
+
+Target: informal | dense | seed=42:   0%|                                     | 0/5 [00:00<?, ?it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 178.98it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: informal | dense | seed=42:  20%|█████▊                       | 1/5 [00:03<00:14,  3.52s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 185.13it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: informal | dense | seed=42:  40%|███████████▌                 | 2/5 [00:07<00:11,  3.68s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 179.71it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: informal | dense | seed=42:  60%|█████████████████▍           | 3/5 [00:08<00:04,  2.45s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 177.54it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: informal | dense | seed=42:  80%|███████████████████████▏     | 4/5 [00:09<00:02,  2.11s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 175.38it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: informal | dense | seed=42: 100%|█████████████████████████████| 5/5 [00:12<00:00,  2.33s/it]Target: informal | dense | seed=42: 100%|█████████████████████████████| 5/5 [00:12<00:00,  2.52s/it]
+
+############################################################
+# DEBUG SAMPLES: TARGET INFORMAL | DENSE
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (formal):
+admin , tolong agar di menu favorite barang bisa difilter seperti pada menu pencarian barang lainnya , bisa diurutkan berdasarkan harga , jasa pengiriman , dan lain - lain .
+------------------------------
+TRANSFERRED (informal):
+min , tolong dong , di menu favorite barang bisa di-filter kayak di pencarian barang gitu , bisa diurutin juga gak tuh , berdasarkan harga , jasa kirim , trus lain-lain gitu .
+
+Sample 2/5
+ORIGINAL TEXT (formal):
+enak saja , itu subscription aku . bayar bulanan , masalahnya yang tidak ada nasi . bagaimana cara makannya ? kalau sayur asem yang ada tidak apa - apa ikhlas
+------------------------------
+TRANSFERRED (informal):
+min , aku mau tanya dong , subscription aku kok gak ada nasi ya ? bisa makan apa ya? sayur asem aja deh , ihlas.
+
+Sample 3/5
+ORIGINAL TEXT (formal):
+mengapa pembelian paket internet malam tidak bisa ya , admin ?
+------------------------------
+TRANSFERRED (informal):
+admin, paket internet malem gak bisa ya?
+
+Sample 4/5
+ORIGINAL TEXT (formal):
+halo , selamat malam . mau konfirmasi bisa tidak kita melakukan pembatalan pesanan tanpa power merchant - nya harus dicabut . karena ini kebetulan saya ( konsumen ) yang membatalkan .
+------------------------------
+TRANSFERRED (informal):
+“halo , selamat malam , mau nanya nih . bisa batalin pesanan gak ya tanpa power merchant dicabut , soalnya ini kebetulan aku ( konsumen ) yang batalin.”
+
+Sample 5/5
+ORIGINAL TEXT (formal):
+transaksi xxxnumberxxx . pembeli meminta kami untuk membatalkan transaksi ini . mohon bantuannya .
+------------------------------
+TRANSFERRED (informal):
+min, trx xxxnumberxxx pembeli cancel nih. tolong bantu ya 🙏
+
+############################################################
+
+Target: informal | centroid | seed=42:   0%|                                  | 0/5 [00:00<?, ?it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 150.89it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: informal | centroid | seed=42:  20%|█████▏                    | 1/5 [00:03<00:12,  3.19s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 176.06it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: informal | centroid | seed=42:  40%|██████████▍               | 2/5 [00:07<00:10,  3.57s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 151.45it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: informal | centroid | seed=42:  60%|███████████████▌          | 3/5 [00:08<00:04,  2.49s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 166.13it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: informal | centroid | seed=42:  80%|████████████████████▊     | 4/5 [00:10<00:02,  2.25s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 180.18it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: informal | centroid | seed=42: 100%|██████████████████████████| 5/5 [00:13<00:00,  2.63s/it]Target: informal | centroid | seed=42: 100%|██████████████████████████| 5/5 [00:13<00:00,  2.68s/it]
+
+############################################################
+# DEBUG SAMPLES: TARGET INFORMAL | CENTROID
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (formal):
+enak saja , itu subscription aku . bayar bulanan , masalahnya yang tidak ada nasi . bagaimana cara makannya ? kalau sayur asem yang ada tidak apa - apa ikhlas
+------------------------------
+TRANSFERRED (informal):
+hai , subscription aku enak kok , bayar bulanan aja , tapi gak ada nasi . gimana ya cara makannya ? kalau sayur asem yang ada sih yaudah ikhlas aja
+
+Sample 2/5
+ORIGINAL TEXT (formal):
+transaksi xxxnumberxxx . pembeli meminta kami untuk membatalkan transaksi ini . mohon bantuannya .
+------------------------------
+TRANSFERRED (informal):
+hai , trx xxxnumberxxx , pembeli minta batalin transaksi ini , tolong bantu ya
+
+Sample 3/5
+ORIGINAL TEXT (formal):
+halo , selamat malam . mau konfirmasi bisa tidak kita melakukan pembatalan pesanan tanpa power merchant - nya harus dicabut . karena ini kebetulan saya ( konsumen ) yang membatalkan .
+------------------------------
+TRANSFERRED (informal):
+hai , malam , mau tanya bisa gak batalin pesanan tanpa power merchant - nya dicabut . soalnya kebetulan saya ( konsumen ) yang batalin nih .
+
+Sample 4/5
+ORIGINAL TEXT (formal):
+mengapa pembelian paket internet malam tidak bisa ya , admin ?
+------------------------------
+TRANSFERRED (informal):
+min, kok pembelian paket internet malam gak bisa ya?
+
+Sample 5/5
+ORIGINAL TEXT (formal):
+admin , tolong agar di menu favorite barang bisa difilter seperti pada menu pencarian barang lainnya , bisa diurutkan berdasarkan harga , jasa pengiriman , dan lain - lain .
+------------------------------
+TRANSFERRED (informal):
+hai admin , minta tolong dong menu favorite barangnya bisa di-filter kayak menu pencarian barang lain , bisa diurutin juga berdasarkan harga , jasa kirim , trus lain-lain gitu deh 🙏
+
+############################################################
+
+Target: informal | zero_shot | seed=42:   0%|                                 | 0/5 [00:00<?, ?it/s]C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: informal | zero_shot | seed=42:  20%|█████                    | 1/5 [00:06<00:24,  6.04s/it]Target: informal | zero_shot | seed=42:  40%|██████████               | 2/5 [00:09<00:13,  4.58s/it]Target: informal | zero_shot | seed=42:  60%|███████████████          | 3/5 [00:12<00:07,  3.94s/it]Target: informal | zero_shot | seed=42:  80%|████████████████████     | 4/5 [00:17<00:04,  4.15s/it]Target: informal | zero_shot | seed=42: 100%|█████████████████████████| 5/5 [00:20<00:00,  3.95s/it]Target: informal | zero_shot | seed=42: 100%|█████████████████████████| 5/5 [00:20<00:00,  4.17s/it]
+2026-09-25 21:40:14,209 - INFO - ALL FEW-SHOT EXPERIMENTS COMPLETED.
+
+############################################################
+# DEBUG SAMPLES: TARGET INFORMAL | ZERO_SHOT
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (formal):
+admin , tolong agar di menu favorite barang bisa difilter seperti pada menu pencarian barang lainnya , bisa diurutkan berdasarkan harga , jasa pengiriman , dan lain - lain .
+------------------------------
+TRANSFERRED (informal):
+Mohon agar fitur filter pada menu favorit dapat diimplementasikan serupa dengan fitur pencarian barang.  Tambahkan pula opsi pengurutan berdasarkan harga, biaya pengiriman, dan kriteria lainnya.
+
+Sample 2/5
+ORIGINAL TEXT (formal):
+enak saja , itu subscription aku . bayar bulanan , masalahnya yang tidak ada nasi . bagaimana cara makannya ? kalau sayur asem yang ada tidak apa - apa ikhlas
+------------------------------
+TRANSFERRED (informal):
+“Tidak masalah, itu hanya langganan saya. Pembayarannya bulanan, tinggal soal kurangnya nasi. Bagaimana cara menikmatinya? Sayur asem yang tersedia sudah cukup memuaskan.”
+
+Sample 3/5
+ORIGINAL TEXT (formal):
+mengapa pembelian paket internet malam tidak bisa ya , admin ?
+------------------------------
+TRANSFERRED (informal):
+Contoh Referensi:
+"Mohon informasikan, mengapa layanan paket internet malam tidak dapat diakses saat ini. Saya memerlukan klarifikasi dari pihak administrator mengenai hal ini."
+
+Sample 4/5
+ORIGINAL TEXT (formal):
+halo , selamat malam . mau konfirmasi bisa tidak kita melakukan pembatalan pesanan tanpa power merchant - nya harus dicabut . karena ini kebetulan saya ( konsumen ) yang membatalkan .
+------------------------------
+TRANSFERRED (informal):
+Contoh Referensi:
+"Dengan hormat,
+
+Sehubungan dengan hal tersebut, kami ingin mengajukan permohonan pembatalan pesanan. Pembatalan ini didasarkan pada keputusan yang diambil oleh pihak kami, konsumen. Mohon agar fasilitas akses merchant yang bersangkutan dapat dicabut sebagai akibat dari pembatalan ini."
+
+Sample 5/5
+ORIGINAL TEXT (formal):
+transaksi xxxnumberxxx . pembeli meminta kami untuk membatalkan transaksi ini . mohon bantuannya .
+------------------------------
+TRANSFERRED (informal):
+Contoh Referensi:
+"Dengan hormat, kami ingin menyampaikan permohonan agar dapat membatalkan transaksi bernomor xxxnumberxxx yang telah diajukan oleh pembeli. Mohon perhatian dan bantuan Bapak/Ibu dalam proses ini."
+
+############################################################
+

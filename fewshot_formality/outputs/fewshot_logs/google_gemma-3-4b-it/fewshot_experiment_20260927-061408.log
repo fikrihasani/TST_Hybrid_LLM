@@ -1,0 +1,48 @@
+2026-09-27 06:14:08,998 - INFO - No device provided, using cuda:0
+2026-09-27 06:14:09,328 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 06:14:09,620 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/modules.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:09,887 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 06:14:09,911 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:09,918 - INFO - Loading SentenceTransformer model from LazarusNLP/simcse-indobert-base.
+2026-09-27 06:14:10,184 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 06:14:10,192 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:10,458 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 06:14:10,484 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/README.md "HTTP/1.1 200 OK"
+2026-09-27 06:14:10,768 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 06:14:10,775 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/modules.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:11,050 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 06:14:11,074 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:11,341 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 06:14:11,609 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 06:14:11,632 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:12,036 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 06:14:12,307 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 06:14:12,575 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 06:14:12,839 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-27 06:14:13,110 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 06:14:13,133 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:13,415 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 06:14:13,422 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:13,691 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 06:14:13,698 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:13,970 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 06:14:13,979 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:14,244 - INFO - HTTP Request: GET https://huggingface.co/api/models/LazarusNLP/simcse-indobert-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-27 06:14:14,525 - INFO - HTTP Request: GET https://huggingface.co/api/models/LazarusNLP/simcse-indobert-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-27 06:14:14,825 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-27 06:14:15,074 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:15,334 - INFO - HTTP Request: GET https://huggingface.co/api/models/LazarusNLP/simcse-indobert-base "HTTP/1.1 200 OK"
+2026-09-27 06:14:15,623 - INFO - Loading Hugging Face model: google/gemma-3-4b-it
+2026-09-27 06:14:15,899 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:16,177 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:16,472 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-3-4b-it/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-27 06:14:16,739 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-3-4b-it/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-27 06:14:17,813 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-3-4b-it "HTTP/1.1 200 OK"
+2026-09-27 06:14:18,080 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:23,343 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-09-27 06:14:23,366 - INFO - Berhasil memuat dataset yang sudah dipecah dari klasifikasi.
+2026-09-27 06:14:23,366 - INFO - Style Pool / Retrieval Index (30%): 1500 kalimat.
+2026-09-27 06:14:23,366 - INFO - Test Set (10%): 500 kalimat.
+2026-09-27 06:14:23,390 - INFO - Mengeksekusi seluruh Test Set: 250 data menuju target formal.
+2026-09-27 06:14:23,405 - INFO - Mengeksekusi seluruh Test Set: 250 data menuju target informal.
+2026-09-27 09:06:55,472 - INFO - ALL FEW-SHOT EXPERIMENTS COMPLETED.

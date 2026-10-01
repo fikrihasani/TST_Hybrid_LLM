@@ -1,0 +1,99 @@
+========== TABEL 9: informal, empat sampel dengan pemertahanan isi terendah ==========
+
+[sample_index 270] rerata LaBSE 0.417 (cen 0.537 hyb 0.261 den 0.453)
+  ASLI : sudah mulai goyah sama indosat hahaha .
+  CEN  : hai , udah agak susah nih sama indosat hahaha
+  HYB  : wahhh, indosatnya kok kayaknya gak stabil tuh ya?
+  DEN  : “udh agak goyah sama indosat nih hahaha.”
+
+[sample_index 360] rerata LaBSE 0.439 (cen 0.546 hyb 0.255 den 0.516)
+  ASLI : periksa apa , sok tahu kamu .
+  CEN  : hai , kok kamu sok tau gitu?
+  HYB  : "cekit-cekit amat lu."
+  DEN  : "cewek, apaan sih, sok ngerti amat lu."
+
+[sample_index 136] rerata LaBSE 0.444 (cen 0.567 hyb 0.186 den 0.580)
+  ASLI : yang dihina pun ulama . otaknya tidak ada isi yang begitu bang .
+  CEN  : hai , ulama yang dihinanya itu gak jelas , otaknya kosong banget dah.
+  HYB  : ada apa sama lu . xxxnumberxxx g loh itu
+  DEN  : "yang dihinain juga ulama, gak guna dah tuh orang 🙄"
+
+[sample_index 488] rerata LaBSE 0.510 (cen 0.473 hyb 0.692 den 0.365)
+  ASLI : saya penumpang terpilih daerah semarang ? hehehe .
+  CEN  : “Hai, saya mau tanya soal penjemputan di Semarang ya?”
+  HYB  : min, saya penumpang semarang gak ya? hehehe.
+  DEN  : min, semarang ya? hehe
+
+
+========== COMPETENCE: kandidat Template Hallucination (isi terendah) ==========
+
+[idx 3240] LaBSE -0.090 gaya 0.962 rep8 0.00 ppl 33
+  ASLI   : Gaskeun
+  CENTROID: Hai Sobat BRI. Mohon maaf atas kendala yang Anda alami. Terkait pesan yang disampaikan melalui DM, kami sudah menindaklanjuti. Silakan lakukan pengecekan ya. Tks~Helma
+
+[idx 3361] LaBSE -0.048 gaya 0.962 rep8 0.18 ppl 26
+  ASLI   : Menggoda kannn
+  CENTROID: Hai Sobat BRI. Mohon maaf atas kendala yang Anda alami. Guna menindaklanjuti, kami sudah mengirimkan pesan melalui DM. Silakan lakukan pengecekan ya. Tks~Helma
+
+[idx 5751] LaBSE -0.028 gaya 0.962 rep8 0.87 ppl 34
+  ASLI   : ada dong stand consina
+  CENTROID: Hai Sobat BRI, mohon maaf atas ketidaknyamanannya. Guna tindak lanjut kami sudah mengirimkan pesan melalui DM. Silakan lakukan pengecekan ya. Tks~Amel
+
+[idx 4724] LaBSE -0.016 gaya 0.963 rep8 0.24 ppl 20
+  ASLI   : Tranquillity in truffle shade complemented with the signature Penara and Ikat patterns
+  CENTROID: Hai Sobat BRI, mohon maaf atas kendala yang dialami. Terkait masalah setor tunai yang Anda sampaikan melalui DM, kami sudah merespons ya. Silakan lakukan pengecekan. Info
+
+========== COMPETENCE: kandidat Structural Drift (replikasi template tertinggi) ==========
+
+[idx 2054] rep8 1.00 LaBSE 0.094 gaya 0.962 ppl 64
+  ASLI   : See yaaa.
+  CENTROID: Hai Sobat BRI. Mohon maaf atas kendala transaksi setor tunai yang dialami. Terkait pesan yang disampaikan melalui DM sudah kami respons. Silakan lakukan pengecekan ya. Tk
+
+[idx 5751] rep8 0.87 LaBSE -0.028 gaya 0.962 ppl 34
+  ASLI   : ada dong stand consina
+  CENTROID: Hai Sobat BRI, mohon maaf atas ketidaknyamanannya. Guna tindak lanjut kami sudah mengirimkan pesan melalui DM. Silakan lakukan pengecekan ya. Tks~Amel
+
+[idx 3366] rep8 0.78 LaBSE 0.160 gaya 0.962 ppl 22
+  ASLI   : Baru banget hidup yaaa
+  CENTROID: Hai Sobat BRI, mohon maaf atas ketidaknyamanannya. Terkait kendala yang dialami, kami sudah merespons pesan melalui DM ya. Silakan melakukan pengecekan. Informasi lainnya
+
+[idx 5503] rep8 0.78 LaBSE 0.284 gaya 0.962 ppl 22
+  ASLI   : Dialam yang tenang ini kita bisa sejenak melarikan diri dari hiruk-pikuk kehidupan kota dan menemukan kedamaian dalam keheningan alam.
+  CENTROID: Hai Sobat BRI, mohon maaf atas ketidaknyamanannya. Terkait kendala yang dialami, kami sudah merespons pesan melalui DM ya. Silakan melakukan pengecekan. Informasi lainnya
+
+
+========== EXCITEMENT: kandidat Template Hallucination (isi terendah) ==========
+
+[idx 2162] LaBSE 0.123 gaya 0.945 rep8 0.00 ppl 28
+  ASLI   : GEMESSS
+  CENTROID: “Wih, gemes banget nih buat kamu yang lagi galau! Yuk, ganti mood pake diskon gede di Shopee lho, mulai jam 7 malem! Jangan lewatkan ya!”
+
+[idx 5846] LaBSE 0.130 gaya 0.943 rep8 0.00 ppl 92
+  ASLI   : There were a couple of young guys who came to our workshop weeks before we joined the event. They told
+  CENTROID: "Eh, Kak, maaf banget udah bikin kalian nggak nyaman ya? Bisa dibantu infoin nomer dan email terdaftar Gojek, plus detail top up GoPay via DM buat kami cek? Makasih banya
+
+[idx 671] LaBSE 0.137 gaya 0.131 rep8 0.00 ppl 232
+  ASLI   : Ampun suhu .
+  CENTROID: "Wih, brooo..."
+
+[idx 2157] LaBSE 0.173 gaya 0.033 rep8 0.00 ppl 79
+  ASLI   : LUCUWWW
+  CENTROID: "Wih, seru banget dah!"
+
+========== EXCITEMENT: kandidat Structural Drift (replikasi template tertinggi) ==========
+
+[idx 4275] rep8 0.63 LaBSE 0.504 gaya 0.958 ppl 76
+  ASLI   : Happy Friday! Wishing you a lovely day
+  CENTROID: "Selamat Hari Jumat buat semua!!! Biar makin semangat buat weekend yuk minum di jilid terdekatmu! Ada [Tambahkan minuman menarik] dengan design yang keren banget loh. Bua
+
+[idx 694] rep8 0.10 LaBSE 0.786 gaya 0.013 ppl 75
+  ASLI   : Selamat siang Kak. Mohon maaf atas ketidaknyamanannya. Terkait kendala tersebut Railmin bantu pengecekan. Silakan diinformasikan kode booking dan bukti pembayaran via DM.
+  CENTROID: "Hai Kak, maaf banget ya udah bikin kamu nggak nyaman. Railmin bantu cek donk, bisa diinfo kode booking sama bukti pembayaran lewat DM? Jangan lupa hati-hati juga ya soal
+
+[idx 594] rep8 0.03 LaBSE 0.681 gaya 0.012 ppl 73
+  ASLI   : Selamat sore Kak. Maaf ya Kak. Mohon lakukan clear cache pada aplikasi dan login kembali. Pastikan jaringan internet dalam kondisi baik dan non wifi ya. Railmin imbau unt
+  CENTROID: "Hai Kak maaf banget ya udah bikin kamu bingung. Bisa dibantu infoin detail login ulang aplikasi dan cek koneksi internetnya dong? Railmin juga diingetin buat waspada ya 
+
+[idx 600] rep8 0.02 LaBSE 0.843 gaya 0.012 ppl 39
+  ASLI   : Selamat malam Kak. Mohon maaf atas ketidaknyamanannya. Saldo akan muncul di Access by KAI dalam waktu 15 menit setelah Top Up. Kakak dapat melakukan refresh pada halaman 
+  CENTROID: “Hai Kak, maaf banget ya udah bikin kamu ngerasa kurang nyaman. Saldo bakal muncul di Access by KAI dalam 15 menit setelah Top Up, lho! Bisa refresh halaman beranda Acces

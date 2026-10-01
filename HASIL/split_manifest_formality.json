@@ -1,0 +1,37 @@
+{
+  "corpus": "STIF (formality)",
+  "protocol": "split pada pasangan paralel, pair_id = nomor baris berkas sumber",
+  "seed": 42,
+  "ratios": {
+    "train": 0.5,
+    "val": 0.1,
+    "retrieval_pool": 0.3,
+    "test": 0.1
+  },
+  "sizes": {
+    "train_set": 2498,
+    "val_set": 500,
+    "retrieval_pool": 1500,
+    "test_set": 500
+  },
+  "pairs": 2499,
+  "duplikat_lintas_split_per_kelas": {
+    "formal": 0,
+    "informal": 1
+  },
+  "teks_identik_antar_blok_formal_informal": 34,
+  "source_files": {
+    "stif_formal.txt": {
+      "rows": 2499,
+      "sha256": "2b1ea14d786e6b84c940bd7115079e4709c7f06d1da2e01a37b62416f3475548"
+    },
+    "stif_informal.txt": {
+      "rows": 2499,
+      "sha256": "402d43e823d23d651c68fda5d91a6c24ee65efe36b4d25ddbea8ecde2e4b4921"
+    }
+  },
+  "python": "3.11.15",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "sklearn": "1.9.0",
+  "pandas": "3.0.3"
+}

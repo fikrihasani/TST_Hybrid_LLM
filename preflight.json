@@ -1,0 +1,287 @@
+{
+  "bundle": "D:\\FILEMAHASISWA\\Fikri Hasani Folder\\JCCE-First Revision",
+  "checks": [
+    {
+      "kategori": "lingkungan",
+      "item": "Python >= 3.10",
+      "lulus": true,
+      "keterangan": "terdeteksi 3.14.4"
+    },
+    {
+      "kategori": "lingkungan",
+      "item": "sistem operasi",
+      "lulus": true,
+      "keterangan": "Windows-11-10.0.26200-SP0"
+    },
+    {
+      "kategori": "paket",
+      "item": "numpy >= 1.24",
+      "lulus": true,
+      "keterangan": "terdeteksi 2.4.4"
+    },
+    {
+      "kategori": "paket",
+      "item": "pandas >= 1.5",
+      "lulus": true,
+      "keterangan": "terdeteksi 3.0.2"
+    },
+    {
+      "kategori": "paket",
+      "item": "sklearn >= 0.24",
+      "lulus": true,
+      "keterangan": "terdeteksi 1.8.0"
+    },
+    {
+      "kategori": "paket",
+      "item": "torch >= 2.0",
+      "lulus": true,
+      "keterangan": "terdeteksi 2.11.0+cu126"
+    },
+    {
+      "kategori": "paket",
+      "item": "transformers >= 4.40",
+      "lulus": true,
+      "keterangan": "terdeteksi 5.8.0"
+    },
+    {
+      "kategori": "paket",
+      "item": "sentence_transformers >= 2.2",
+      "lulus": true,
+      "keterangan": "terdeteksi 5.4.1"
+    },
+    {
+      "kategori": "paket",
+      "item": "rank_bm25 >= 0.2",
+      "lulus": true,
+      "keterangan": "terdeteksi 0.2.2"
+    },
+    {
+      "kategori": "paket",
+      "item": "tqdm >= 4.60",
+      "lulus": true,
+      "keterangan": "terdeteksi 4.67.3"
+    },
+    {
+      "kategori": "paket opsional",
+      "item": "scipy >= 1.7",
+      "lulus": true,
+      "keterangan": "terdeteksi 1.17.1, uji Wilcoxon tersedia"
+    },
+    {
+      "kategori": "paket",
+      "item": "StratifiedGroupKFold tersedia",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "perangkat",
+      "item": "GPU CUDA",
+      "lulus": false,
+      "keterangan": "NVIDIA GeForce RTX 4070 Ti, 12.0 GB VRAM (syarat minimal 16 GB, toleransi 15)"
+    },
+    {
+      "kategori": "token",
+      "item": "variabel lingkungan HF_TOKEN",
+      "lulus": true,
+      "keterangan": "terpasang"
+    },
+    {
+      "kategori": "berkas",
+      "item": "PROTOKOL_RERUN.md",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "README.md",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "scripts/make_splits_formality.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "scripts/make_splits_brand.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "scripts/verify_splits.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "scripts/evaluate_results.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "scripts/report_metrics.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "scripts/bootstrap_significance.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "scripts/replication_metric.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "scripts/select_alpha_dev.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "scripts/calibrate_classifier.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "classifier_formality/main.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "classifier_formality/data/combined_stif.csv",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "classifier_formality/data/stif_formal.txt",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "classifier_formality/data/stif_informal.txt",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "classifier_brand/main.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "classifier_brand/data/Combined Aaker Brand Personality - Cleaned v0.csv",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "fewshot_formality/fewshot_formality.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "fewshot_formality/eval.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "fewshot_formality/retrieval_utils.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "fewshot_formality/prompts/fewshot_generation_prompt.txt",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "fewshot_aaker/main.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "fewshot_aaker/eval.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "fewshot_aaker/retrieval_utils.py",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "fewshot_aaker/prompts/fewshot_generation_prompt.txt",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "fewshot_formality/fewshot_config.json",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "fewshot_aaker/fewshot_config.json",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "fewshot_formality/style_classifier/config.json",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "berkas",
+      "item": "fewshot_aaker/style_classifier/config.json",
+      "lulus": true,
+      "keterangan": ""
+    },
+    {
+      "kategori": "split",
+      "item": "Aaker, split lama (diharapkan GAGAL)",
+      "lulus": true,
+      "keterangan": "duplikat lintas split maks 503 (toleransi 0), ada percakapan bersama; sesuai harapan"
+    },
+    {
+      "kategori": "split",
+      "item": "Aaker, split baru (diharapkan LOLOS)",
+      "lulus": true,
+      "keterangan": "duplikat lintas split maks 0 (toleransi 0), tidak ada percakapan bersama; sesuai harapan"
+    },
+    {
+      "kategori": "split",
+      "item": "STIF, split lama (diharapkan GAGAL)",
+      "lulus": true,
+      "keterangan": "duplikat lintas split maks 1 (toleransi 0); sesuai harapan"
+    },
+    {
+      "kategori": "split",
+      "item": "STIF, split baru (diharapkan LOLOS)",
+      "lulus": true,
+      "keterangan": "duplikat lintas split maks 1 (toleransi 5); sesuai harapan"
+    }
+  ]
+}

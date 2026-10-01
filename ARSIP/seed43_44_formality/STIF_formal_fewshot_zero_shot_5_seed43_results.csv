@@ -1,0 +1,488 @@
+model_id,original_style,style_target,retrieval_method,alpha,original_message,paraphrased_message,is_human_eval,sample_index,sample_seed,run_seed,retrieved_exemplars,retrieval_fallback,n_exemplars,prompt_chars,output_tokens,eos_reached,output_chars
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,halo selamat malam mau konfirmasi bisa gak kita melakukan pembatalan pesanan tanpa power merchantnya harus dicabut . karena ini kebetulan saya ( konsumen ) yang mau membatalkan,"Dengan hormat, saya ingin mengajukan permohonan pembatalan pesanan. Mohon konfirmasi mengenai kemungkinan pembatalan tersebut dapat diproses tanpa perlu pencabutan status merchant. Hal ini menjadi kepentingan pribadi saya sebagai konsumen yang mengajukan permohonan pembatalan.",False,1,4300000,43,[],False,0,884,60,False,277
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min , tolong di menu favorite , agar barang bisa di filter seperti pada menu pencarian barang lainnya , bisa disortir harga , jasa pengiriman dll","""Mohon, dapatkah Anda menandai item sebagai favorit agar dapat difilter seperti pada opsi pencarian barang? Selain itu, opsi pengurutan berdasarkan harga, jasa pengiriman, dan parameter lainnya juga akan sangat membantu.""",False,3,4300001,43,[],False,0,853,48,False,221
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,pembelian paket internet malam kok ga bisa ya min ?,"Contoh Referensi:
+""Mohon informasikan, mengapa terdapat kendala dalam proses pembelian paket internet malam, Sir?""",False,5,4300002,43,[],False,0,759,27,False,114
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,transaksi xxxnumberxxx . pembeli meminta kami untuk membatalkan transaksi ini . mohon bantuannya,"Contoh Referensi:
+""Dengan hormat, kami ingin menyampaikan permohonan untuk membatalkan transaksi dengan nomor [nomor transaksi]. Mohon kiranya Bapak/Ibu dapat membantu kami dalam proses ini.""",False,7,4300003,43,[],False,0,804,47,False,191
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,enak ae . iku subscription ku yo . bayar bulanan . masalahnya yg gaada nasi . gimana cara makannya we . kalo sayur asem yg ada gpp ikhlas -_-,"Contoh Referensi:
+""Saya merasa sedikit kecewa. Langganan saya memang lumayan mahal, biaya bulanan. Sayangnya, tidak ada makanan yang tersedia. Jadi, saya harus mencari cara untuk makan. Meskipun demikian, saya tetap bersyukur.""",False,9,4300004,43,[],False,0,849,54,False,227
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"receiver tidak di rumah saat paket tiba , sprinter tsb ga ada konfirmasi ke receiver sama sekali . ga ada telepon . padahal sopnya begitu kan ? ( xxxnumberxxx )","Contoh Referensi:
+""Pengiriman paket tidak dapat dilakukan karena penerima tidak berada di alamat saat kurir tiba. Kurir tidak melakukan koordinasi dengan penerima melalui telepon. Hal ini menimbulkan pertanyaan mengenai prosedur yang seharusnya diikuti.""
+ 
+""Penerima tidak berada di rumah saat paket sampai. Kurir tidak memberikan konfirmasi apapun kepada penerima, bahkan tidak ada upaya menghubungi melalui telepon. Ini menimbulkan pertanyaan terkait dengan protokol yang seharusnya diterapkan.""",False,11,4300005,43,[],False,0,868,93,False,497
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"halo indosat lagi gangguan kah didaerah cileungsi , dari kemaren susah sinyal","“Assalamualaikum, Bapak/Ibu Indosat, mohon meninjau kembali pemadaman sinyal yang terjadi di wilayah Cileungsi sejak kemarin. Sinyal menjadi sangat sulit didapatkan.”",True,13,4300006,43,[],False,0,785,44,False,166
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"haloo , min mau tanya dong kenapa yaa setiap jam segini internet xxxnumberxxx g aku gabisa internetan padahal jaringanya bagus . boleh tolong bantuanya ?","Contoh Referensi:
+""Dengan hormat, saya ingin menyampaikan keluhan mengenai kendala koneksi internet yang saya alami setiap jam tertentu. Meskipun sinyal jaringan yang saya terima baik, saya tetap tidak dapat mengakses internet. Mohon bantuan untuk mengatasi masalah ini.""",True,15,4300007,43,[],False,0,861,55,False,271
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,aku udah jelaskan panjang lebar di dmnya doi,“Saya telah menjelaskan secara rinci melalui pesan langsung kepada dirinya.”,True,17,4300008,43,[],False,0,752,15,False,76
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,percuma ! itu² saja jawabannya . tidak membantu sama sekali !,Sungguh sia-sia! Hanya itu yang bisa diberikan? Tidak ada gunanya sama sekali!,False,19,4300009,43,[],False,0,769,21,False,78
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,udah tak dm ya boleh di cek aja,"""Mohon di-DM saya, jika berkenan silakan untuk dicek.""",False,21,4300010,43,[],False,0,739,19,False,54
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,ketika ema nyuru beli belanjaan ke warung,"Contoh Referensi:
+""Pada hari itu, ibuku pergi ke pasar untuk membeli kebutuhan sehari-hari.""",False,23,4300011,43,[],False,0,749,25,False,92
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,kok tau ! kamu mata - matai aku ya !,“Bagaimana bisa kau tahu?”,False,25,4300012,43,[],False,0,744,9,False,26
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,hai indosat kenapa pulsa saya kesedot,"Dengan hormat, Bapak/Ibu Indosat, permohonan saya terkait dengan pemakaian pulsa yang tidak seimbang.",False,27,4300013,43,[],False,0,745,30,False,101
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,tfr ke rek rdn dari jum ' at siang sampe sekarang belum masuk juga help,"Mohon informasinya, belum ada perkembangan terkait permintaan ini sejak pukul 10.00 tadi siang.",False,29,4300014,43,[],False,0,779,23,False,95
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"oh iyaa . pak eko , kalo xxxuserxxx gue pake modem andromax nya , lumayan kenceng internetan dan jaringan uda xxxnumberxxx g lte pula","Contoh Referensi:
+""Dengan demikian, kami menyimpulkan bahwa implementasi strategi ini akan memberikan dampak positif yang signifikan terhadap peningkatan efisiensi operasional perusahaan.""
+""Sebagai kesimpulan, data yang telah kami analisis menunjukkan adanya tren pertumbuhan yang menjanjikan dalam sektor tersebut.""
+""Mengingat hal tersebut, kami merekomendasikan agar segera dilakukan langkah-langkah strategis untuk memaksimalkan potensi yang ada.""
+
+Hasil:
+""jadi, pak eko, kalau xxxuserxxx gue tuh, modem andromaxnya, lumayan kenceng internetnya, sama jaringan udah xxxnumberxxx LTE pula.""",False,31,4300015,43,[],False,0,841,128,False,591
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"gojek sepersepuluh hidupku , makasih gojek telah membawaku keluar dari zona nyaman","Terimakasih Gojek, telah membawaku dari rutinitas yang membosankan.",False,33,4300016,43,[],False,0,790,21,False,67
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,tolong dong udah xxxnumberxxx xxxnumberxxx x kayagini . kenapa ya ?,"Mohon, sudah xxxnumberxxx xxxnumberxxx x kayagini. Mengapa demikian?",False,35,4300017,43,[],False,0,775,20,False,68
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,ada di nomor xxxnumberxxx yuk kawan ikutan : xxxuserxxx xxxuserxxx xxxuserxxx done follow sosial media xxxuserxxx semoga beruntung,"Dengan senang hati, mari berpartisipasi bersama di nomor tersebut. Jangan lupa, teman-teman, segera ikuti akun media sosial kami. Semoga sukses selalu!",False,37,4300018,43,[],False,0,838,35,False,151
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min xxxuserxxx ini kenapa sinyalku daritadi g terus ya ? tolong min cuman bisa bergantung sm wifi nih heu,"Saya mohon maaf, Bapak/Ibu. Saya mengalami kendala jaringan WiFi. Sejak tadi, saya tidak menerima sinyal sama sekali. Mohon bersabar, saya hanya bisa aktif jika terhubung ke WiFi. Terima kasih atas pengertiannya.",False,39,4300019,43,[],False,0,813,52,False,212
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"dicoba nugget nya sosisnya , sapatau mau endorse","""Merupakan suatu pengalaman yang menarik untuk mencicipi kelezatan nugget sosis yang menggoda. Apakah Bapak/Ibu tertarik untuk menjajakan produk serupa?""",False,41,4300020,43,[],False,0,756,36,False,153
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"kalo mau request insta cash , telepon ke halo bca yak ? ada requirement kah ?","Halo, jika Bapak/Ibu membutuhkan layanan Insta Cash, silakan menghubungi Halo BCA. Apakah ada persyaratan khusus yang perlu dipenuhi?",False,43,4300021,43,[],False,0,785,29,False,133
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,bakaar terooss sampe abis tu duit,"Contoh Referensi:
+""Ya ampun, habis panik total, pikirnya.""
+""Astaga, semua berantakan, sungguh mengerikan.""
+""Demi apa, ini sungguh memalukan, aku merasa malu sekali.""
+""Ya Tuhan, kenapa bisa begini, sungguh tak terduga.""
+""Sial, ini benar-benar membuatku frustrasi.""",True,45,4300022,43,[],False,0,741,84,False,263
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,iyah sudah tolong cek dm saya min,"Mohon berikan ""Contoh Referensi"" yang akan digunakan sebagai panduan. Saya memerlukan teks contoh untuk dapat memodifikasi gaya bahasa ""Teks Sumber"" sesuai dengan instruksi Anda.",True,47,4300023,43,[],False,0,741,41,False,178
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,miinn paketan aku gabisa mulu mau sampe kapan ini mau ngerjain tugas jadi gabisaa,"""Paket-paketku belum bisa dipakai sampai kapan tugas ini bisa diselesaikan, sungguh berat sekali.""",False,49,4300024,43,[],False,0,789,24,False,98
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"bukan saya mba , saya pengguna setia telkomsel . coba mba cek tweet temen saya","“Saya, sebagai pelanggan Telkomsel yang telah lama, mohon bantuan untuk memeriksa unggahan terbaru teman saya.”",False,51,4300025,43,[],False,0,786,25,False,111
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"chat aja ul , pilih di menu pusat bantuan","Mohon untuk menghubungi Uli, dan silakan pilih opsi dari menu pusat bantuan.",True,53,4300026,43,[],False,0,749,19,False,76
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,lagi eror bukan ? kok mau cari barang ga bisa mulu,"Contoh Referensi:
+""Astaga, ini lagi salah lagi ya? Kok bisa-bisa orderan nggak kelar-kelar?""",False,55,4300027,43,[],False,0,758,32,False,92
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,fitur asuransi link aja ada di nomor xxxnumberxxx . kuy ramaikan .,"Contoh Referensi:
+""Dengan senang hati kami informasikan bahwa layanan terhubung sekarang dapat diakses melalui nomor berikut: [nomor telepon]. Jangan ragu untuk memanfaatkan fasilitas ini.""",True,57,4300028,43,[],False,0,774,40,False,189
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"kontak aja ke adminnya xxxuserxxx oom , mungkin bisa dibantu","Silakan berikan ""Contoh Referensi"" yang ingin digunakan sebagai panduan gaya bahasa. Saya membutuhkan teks referensi untuk dapat memodifikasi gaya bahasa ""Teks Sumber"" sesuai dengan instruksi Anda.",False,59,4300029,43,[],False,0,768,44,False,197
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,yang terhormat indosat ini kenapa cek paketan isi voucher pakatan tidak bisa . tolong jawab . jangan jawab cuma hai hai hai kak terus,"Contoh Referensi:
+""Kepada Yth. Bapak/Ibu,
+
+Dengan hormat, saya ingin menyampaikan keluhan terkait dengan paket data yang saya miliki. Saat ini, saya tidak dapat melakukan pengecekan saldo voucher paket. Mohon bantuannya untuk segera memberikan klarifikasi. Terima kasih atas perhatian dan kerjasamanya.""
+
+Hasil:
+""Yang terhormat Indosat,
+
+Perihal: Pertanyaan mengenai cek paket isi voucher paket. Saya mengalami kendala dalam melakukan pengecekan saldo voucher paket. Mohon dapat memberikan jawaban yang jelas dan detail. Terima kasih.""",False,61,4300030,43,[],False,0,841,122,False,535
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"baik kak dewa , silakan cek dm kembali","Dengan senang hati, silakan hubungi saya melalui pesan langsung untuk klarifikasi lebih lanjut.",False,63,4300031,43,[],False,0,746,20,False,95
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,cobain aja pake xxxuserxxx di mbd wan,"Saya memerlukan ""Contoh Referensi"" untuk menyelesaikan tugas ini. Mohon berikan teks contoh referensi yang ingin Anda gunakan. Saya akan menulis ulang ""Teks Sumber"" sesuai dengan gaya bahasa dari contoh tersebut.",False,65,4300032,43,[],False,0,745,45,False,212
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"mohon maaf atas kesalahan penyebutan nama ibu novi . untuk email ibu akan kami tindaklanjuti , mohon kesediaanya menunggu . tks ~ toby","Contoh Referensi:
+""Dengan hormat,
+
+Terjadi kesalahan penamaan pada surat sebelumnya. Kami akan segera menindaklanjuti email Ibu. Mohon kesediaan Ibu untuk menunggu. Atas perhatian dan kerjasamanya, kami ucapkan terima kasih.
+
+Hormat kami,
+[Nama]""
+
+Teks yang ditulis ulang:
+""Mohon maaf atas kesalahan penamaan pada surat sebelumnya. Kami akan segera menindaklanjuti email Bapak/Ibu. Mohon kesediaan Bapak/Ibu untuk menunggu. Atas perhatian dan kerjasamanya, kami ucapkan terima kasih.
+
+Hormat kami,
+Toby""",False,67,4300033,43,[],False,0,842,135,False,503
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,opini yang mana ? memang rokok itu mengerikan dan membunuh . titik .,"Contoh Referensi:
+""Dengan segala hormat, saya harus menyatakan bahwa praktik merokok adalah tindakan yang sangat merusak dan berpotensi mematikan. Hal ini tidak dapat diterima dan harus dihentikan.""",False,69,4300034,43,[],False,0,776,46,False,198
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,same power mau pesen go - clean kok ga ada ya ?,"""Ada masalah dengan layanan, kok? Tidak bisa dipesan fitur 'power up'?""",True,71,4300035,43,[],False,0,755,20,False,71
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"dari tadi susah nggak dapat driver , kenapa sih ? nyusahin ya nggak ada respon pula ditanya .","“Sungguh menyusahkan, belum juga menemukan supir. Responnya juga kurang memadai ketika ditanyakan.”",False,73,4300036,43,[],False,0,801,26,False,99
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"malam , mohon infonya , apakah sedang ada gangguan di aplikasi mbanking bni ?","Dengan hormat, mohon dapatkah Bapak/Ibu memberikan informasi mengenai adanya kendala pada aplikasi mBanking BNI saat ini?",False,75,4300037,43,[],False,0,785,29,False,121
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min , mohon bantuannya . tolong cek dm saya , terima kasih","Dengan hormat, saya mohon kesediaan Bapak/Ibu untuk meninjau pesan pribadi saya. Atas perhatian dan bantuannya, saya mengucapkan terima kasih.",False,77,4300038,43,[],False,0,766,35,False,142
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"berkat dana xxxuserxxx dong , beli pulsa total xxxnumberxxx bayarnya cukup xxxnumberxxx . pulsa xxxnumberxxx langsung aku pake buat beli paket data tsel xxxnumberxxx gb .","Dengan dukungan penuh dari Bapak/Ibu xxxuserxxx, telah disetujui pembelian pulsa sebesar xxxnumberxxx yang akan segera dibayarkan. Pulsa tersebut akan segera digunakan untuk mengakselarasi penambahan paket data Tsel sebesar xxxnumberxxx GB.",False,79,4300039,43,[],False,0,878,55,False,240
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,apakah paketan bhyplastic saya akan di lanjut otomatis apabila telah isi pulsa,"Contoh Referensi:
+""Dengan mempertimbangkan saldo yang tersedia, sistem secara otomatis akan melanjutkan layanan setelah pengisian ulang.""",False,81,4300040,43,[],False,0,786,27,False,137
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,kalo chips ny rusak emang masih bisa di isi saldo ? masih bisa ke detect pas cek sisa saldo ?,"Contoh Referensi:
+""Apakah saldo dapat diisi ulang apabila chip mengalami kerusakan? Apakah proses deteksi sisa saldo masih dapat dilakukan ketika saldo tersebut diperiksa?""",False,83,4300041,43,[],False,0,801,36,False,172
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"hi , mohon maaf atas ketidaknyamananya . kamu bisa message nomor dan pertanyaan terkait melalui twitter xxxuserxxx agar dapat dibantu ditindaklanjuti . semoga cukup membantu , terima kasih",(Tidak ada contoh referensi yang diberikan. Harap berikan contoh referensi agar saya dapat menyelesaikan tugas ini.),False,85,4300042,43,[],False,0,896,25,False,116
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,bagaimana cara menghapus akun gojek ? trims,"Contoh Referensi:
+""Dengan hormat, saya ingin menanyakan prosedur untuk membatalkan registrasi akun Gojek. Terima kasih atas bantuannya.""",False,87,4300043,43,[],False,0,751,34,False,136
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,jaringan di kota malang gari ini melambat,"Teks Sumber: ""jaringan di kota malang gari ini melambat""
+
+Contoh Referensi:
+""Pada masa kini, arus perdagangan di jantung kota ini mengalami penurunan yang signifikan.""",False,89,4300044,43,[],False,0,749,42,False,167
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min koneksi internet indosat disetiap malam akhir2 ini jeleknya kelewatan , mohon untuk segera tindaklanjuti permasalahan ini krn sangat merugikan kami sbg pengguna .","Berikut adalah teks yang telah dimodifikasi agar sesuai dengan gaya bahasa dari contoh referensi:
+
+""Mohon untuk segera menindaklanjuti keluhan mengenai kualitas koneksi internet Indosat yang dalam beberapa waktu terakhir mengalami penurunan signifikan. Hal ini sangat merugikan kami selaku pengguna dan kami berharap dapat segera mendapatkan solusi atas permasalahan ini.""",False,91,4300045,43,[],False,0,874,70,False,372
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min boleh tau detail dan harha paket yg xxxnumberxxx bulan ?,Mohon informasikan detail dan harga paket selama xxx bulan.,False,93,4300046,43,[],False,0,768,13,False,59
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,balikin pulsa gw ! kesedot mulu arkhh,"“Mohon aktifkan kembali saldo saya. Terlanjut dipotong, sungguh menyusahkan.”",False,95,4300047,43,[],False,0,745,23,False,77
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,ga sampai kok min aku tau mbaknya nipu,"""Tidak, tidak ada, saya tahu itu hanya tipuan beliaunya.""",False,97,4300048,43,[],False,0,746,18,False,57
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,slamat malam admin . saya masang paket malam dan paket nya aktif pas saya menghidup kan data knpa pulsa saya hilang ?,"Dengan hormat, Bapak Admin. Saya telah mengunggah paket malam dan paket tersebut aktif setelah saya menghidupkan data. Namun, mengapa saldo pulsa saya berkurang?",False,99,4300049,43,[],False,0,825,38,False,161
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,kok malah tambah lemot jaringan saya,"Contoh Referensi:
+""Sungguh mengejutkan, koneksi internet saya justru semakin lambat.""
+""Kelihatannya, sinyal yang tadinya stabil kini justru berfluktuasi tak karuan.""
+""Seolah-olah, performa jaringan saya mengalami penurunan drastis.""
+""Bahkan, internet yang sebelumnya responsif kini terasa begitu lambat.""
+""Sangat disayangkan, kecepatan akses internet saya menurun drastis.""",False,101,4300050,43,[],False,0,744,96,False,373
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min pembelian token pln apa ada kendala , ini blm masuk udah xxxnumberxxx jam lebih ?","“Mohon informasikan apakah terdapat kendala dalam proses pembelian token PLN ini. Belum juga terpasang, sudah lebih dari xxxnumberxxx jam.”",False,103,4300051,43,[],False,0,793,33,False,139
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,udah udah sampe mana ya ? masa ke bintara aja ga sampe ? ( tolong follow up,"“Apakah Bapak/Ibu sudah sampai mana? Sejauh ini, apakah sudah sampai ke daerah Bintara? Mohon untuk dilakukan tindak lanjut.”",False,105,4300052,43,[],False,0,783,34,False,125
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,jaringan xxxuserxxx tertutup kabut gak bisa konek,"Contoh Referensi:
+""Kondisi jaringan utama mengalami gangguan signifikan. Konektivitas terhenti sepenuhnya, menyebabkan akses tidak dapat diakses.""",False,107,4300053,43,[],False,0,757,32,False,146
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,tuh min xxxuserxxx perlu dicontoh nih anak baik yang bekelnya selalu habis !,"“Sungguh patut dicatat, Bapak/Ibu, bahwa Bapak/Ibu perlu mengamati seorang anak yang memiliki perilaku terpuji, seperti yang selalu rajin dalam mengerjakan tugas sekolah.”",False,109,4300054,43,[],False,0,784,41,False,171
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,tolong cek dm dari saya . thankyou,Mohon periksa pesan langsung dari saya. Terima kasih.,True,111,4300055,43,[],False,0,742,14,False,53
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min tolong dong kenapaa paket xxxnumberxxx xxxnumberxxx gb yang xxxnumberxxx xxxnumberxxx k nya kok hilaang,"Maaf, bisa tolong jelaskan mengapa paket nomor xxxnumberxxx dengan kapasitas xxxnumberxxx GB mengalami masalah dan tidak berfungsi dengan baik?",False,113,4300056,43,[],False,0,815,29,False,143
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,lama sekali ini ! barang belum sampai ! resi : xxxnumberxxx,(Tidak ada contoh referensi yang diberikan. Mohon berikan contoh referensi agar saya dapat memodifikasi gaya bahasa teks sumber.),True,115,4300057,43,[],False,0,767,29,False,129
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min resi xxxnumberxxx posisi udh dmna ?,"""Mohon informasikan nomor resi xxxnumberxxx dan lokasi barang yang bersangkutan.""",False,117,4300058,43,[],False,0,747,20,False,81
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,pastinya masih dong ditunggu nih kejutannya selalu on pokoknya patengin timeline nya,"Contoh Referensi:
+""Saya sangat bersemangat menantikan perkembangan terbaru. Tim terus berupaya untuk menjaga momentum dan tetap setia pada jadwal yang telah ditetapkan.""",True,119,4300059,43,[],False,0,792,36,False,169
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"no saya kok gak bisa di dftarin paket data , no + xxxnumberxxx","Maaf, saya mengalami kendala dalam proses pendaftaran paket data. Nomor telepon yang digunakan adalah + xxxnumberxxx.",False,121,4300060,43,[],False,0,770,26,False,117
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"sudah saya dm min , tolong respon",Mohon balasan melalui Direct Message.,False,123,4300061,43,[],False,0,741,10,False,37
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min , ini ordran saya kenap ga sampe2 yaa ? resinya gabisa cek juga lagi . gimana nihh . dibantu cek dong","Mohon, ini adalah keluhan saya mengenai keterlambatan pengiriman pesanan. Resi belum dapat dicek juga saat ini. Mohon bantu untuk mengeceknya.",True,125,4300062,43,[],False,0,813,37,False,142
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"tanggal berapa ini , mas xxxuserxxx pakai kartu apa , kartu halo juga ?","""Pada hari ini, Bapak/Ibu xxxuserxxx menggunakan kartu pembayaran jenis apa?""",False,127,4300063,43,[],False,0,779,20,False,77
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,aamiin . semoga juga sinyal internet indosat nggak ilang - iangan terus ya . aku belum berniat ganti provider soalnya .,"Semoga saja sinyal Indosat tidak putus-putus. Belum ada rencana untuk mengganti operator, kok.",False,129,4300064,43,[],False,0,827,27,False,94
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"coba cek dmnya yaya , kaya sepupu gua lu namanya yaya","Yaya, sepupuku itu, coba hubungi dia lewat Direct Message ya.",False,131,4300065,43,[],False,0,761,19,False,61
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,haloo xxxuserxxx kok grabfoodmu gbs dari kmrn knp - _ -,"Aduh, kok Grabfood-ku kemarin lama banget dateng -_-",False,133,4300066,43,[],False,0,763,17,False,52
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,halo xxxuserxxx temen saya transfer via gopay kok blm masuk ya,"“Kepada Bapak/Ibu, saya ingin menanyakan mengenai transfer dana yang telah saya lakukan melalui GoPay. Statusnya masih tertunda, mohon bantuannya untuk menindaklanjutinya.”",False,135,4300067,43,[],False,0,770,42,False,172
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"yg dihina pun ulama , otak nya ngak ada isi ya gitu bng","Contoh Referensi:
+""Sungguh ironis, seorang ulama yang justru menerima hinaan, seolah-olah pikirannya kosong belaka, hanya sekadar begitu saja.""",False,137,4300068,43,[],False,0,763,39,False,143
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,halo selamat malam . saya mau tanya kalo program kkb bisa dipergunakan untuk mobil bekas atau tidak ? terima kasih .,"Dengan hormat, saya ingin menanyakan apakah program KKB dapat diterapkan untuk kendaraan bermotor bekas. Atas perhatian dan jawaban Bapak/Ibu, saya mengucapkan terima kasih.",False,139,4300069,43,[],False,0,824,37,False,173
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,haloo gimana ini dengan paket saya yang ngga di kirim2 . status nya masih di simpan,"“Permasalahan terkait pengiriman paket saya yang belum diterima. Saat ini, statusnya masih dalam proses penyimpanan.”",True,141,4300070,43,[],False,0,791,25,False,117
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,tolong di perluas lagi ya min jangkauan jaringannya . aku tunggu kabar baiknya min .,"Mohon perluas cakupan jaringannya, Bapak. Saya menantikan kabar baik dari Bapak.",False,143,4300071,43,[],False,0,792,23,False,80
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,admin tolong ini ada apa dengan toko saya ?,"Contoh Referensi:
+""Mohon, dapatkah Bapak/Ibu memberikan penjelasan mengenai kendala yang dihadapi oleh toko saya saat ini?""",False,145,4300072,43,[],False,0,751,32,False,123
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"hallo min , saya kok beli fore cofee tidak dapat cashback yaa ? kenapa minn ? bisa di refund tidakk","Dengan hormat, saya ingin menanyakan mengenai kebijakan *cashback* untuk pembelian *coffee* yang saya lakukan. Mohon informasinya, mengapa saya tidak menerima *cashback*? Apakah ada kemungkinan untuk melakukan pengembalian dana (*refund*)?",False,147,4300073,43,[],False,0,807,52,False,239
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,gimana mau terbantu . dm aja ngga slow respon . sudah xxxnumberxxx hari dm saya tidak direspon,"""Dengan senang hati akan membantu. Silakan berinbox, respon yang lambat tidak akan saya toleransi. Sudah xxxnumberxxx hari sejak saya berinbox, namun belum ada balasan.""",False,149,4300074,43,[],False,0,802,42,False,169
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"frustasi dgn atm mandiri , hampir tiap hari bermasalah di seputar tang sel , knp bank lain spt b * * jarang sekali masalah , segera berbenah , menyebalkan","Contoh Referensi:
+""Saya merasa sangat kecewa dengan pengalaman menggunakan ATM mandiri. Hampir setiap hari saya menghadapi berbagai kendala terkait kartu dan saldo. Hal ini sangat membebani dan mengurangi kenyamanan dalam melakukan transaksi perbankan. Saya akan segera mencari alternatif solusi dan berharap dapat menemukan layanan perbankan yang lebih handal dan responsif terhadap kebutuhan nasabahnya.""",False,151,4300075,43,[],False,0,862,79,False,406
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"akun grabnya buat ngorder kimcil po , makanya ditangguhkan","""Akun Grabnya telah diblokir akibat melakukan pemesanan barang secara langsung, sehingga menjadi tidak aktif.""",False,153,4300076,43,[],False,0,766,25,False,110
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,jika saya tutup akun tanpa ke kantor cabang dengan cara mengosongkan saldo rekening apakah bisa ?,"Contoh Referensi:
+""Dengan hormat, saya ingin menanyakan mengenai kemungkinan penutupan akun tanpa kehadiran fisik di kantor cabang melalui proses transfer saldo ke rekening lain. Mohon penjelasannya.""",False,155,4300077,43,[],False,0,805,44,False,200
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,maksudnya sales counter / agen yg online bagaimana kak ?,"“Dengan senang hati, mohon informasinya dari staf penjualan atau perwakilan yang sedang online, ya, Bu/Pak?”",False,157,4300078,43,[],False,0,764,27,False,108
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,hallo bisa balas twitt saya dan dm ?,Mohon kirim balasan terhadap tweet dan pesan langsung saya.,False,159,4300079,43,[],False,0,744,14,False,59
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"hallo kak , untuk kendala pada nomor prabayar telkomsel - nya dapat langsung menghubungi rekan kami di xxxuserxxx . terima kasih - mina","Dengan hormat, untuk permasalahan terkait nomor prabayar Telkomsel, silakan hubungi rekan kami di xxxuserxxx. Atas perhatiannya, kami ucapkan terima kasih – Mina.",False,161,4300080,43,[],False,0,843,41,False,162
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"hmm bentar , aku bakal bikin videonya","Tentu, berikan saya ""Contoh Referensi"" yang Anda maksud. Saya akan menunggu dan kemudian menulis ulang ""Teks Sumber"" sesuai dengan gaya yang Anda tentukan.",False,163,4300081,43,[],False,0,745,38,False,155
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"selamat siang . mau tanya , saya kok sulit untuk menerima dan melakukan panggilan setelah penggantian kartu . mohon bantuannya . terima kasih","Berikut adalah teks yang telah diubah sesuai dengan instruksi Anda:
+
+""Assalamualaikum, Bapak/Ibu. Dengan hormat, saya ingin menyampaikan kesulitan yang saya alami setelah penggantian kartu. Saya mengalami kendala dalam menerima maupun melakukan panggilan. Mohon mohon bantuan dan arahan yang dapat diberikan. Atas perhatian dan bimbingan Bapak/Ibu saya ucapkan terima kasih.""",False,165,4300082,43,[],False,0,849,79,False,375
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,halo apa ini emg lagi gangguan top up via m banking ? kok saldo saya ga nambah ya ?,"“Permisi, maksud saya, apakah ini merupakan gangguan untuk topping up melalui mobile banking? Mengapa saldo saya tidak bertambah?”",False,167,4300083,43,[],False,0,791,28,False,130
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,ya om . rawan banget bagi driver maupun konsumen .,"""Sungguh berbahaya bagi para pengemudi maupun pelanggan, sekali lagi.""",False,169,4300084,43,[],False,0,758,17,False,70
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,barang dengan nomor id1913953782285 sudah lebih satu minggu tidak datang .,"Berikut adalah contoh referensi yang akan digunakan untuk transfer gaya:
+
+**Contoh Referensi:**
+
+""Kepada Bapak/Ibu, kami ingin menyampaikan bahwa permohonan Bapak/Ibu dengan nomor referensi [nomor referensi] masih dalam proses kami tangani. Mohon bersabar, karena kami sedang melakukan pengecekan mendalam terkait hal tersebut. Kami akan segera memberikan informasi terbaru kepada Bapak/Ibu.""",False,171,4300085,43,[],False,0,782,89,False,392
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"saya juga curiga karena uang yg diambil dalam jumlah yg sama besar , saya sangaat kecewa , mohon kejelasannya","Dengan berat hati, saya menyatakan kekecewaan mendalam atas kejadian ini. Perlu adanya penjelasan yang rinci mengenai perihal dana yang dikerjakan dalam jumlah yang sebanding. Saya berharap dapat menerima klarifikasi yang komprehensif terkait hal ini.",False,173,4300086,43,[],False,0,817,53,False,251
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"orderan g sampe , duit ilang . bener2 de driver xxxuserxxx kecewa makin banyak aja org jahat y","“Pesanan tidak terpenuhi, kerugian finansial terjadi. Sangat mengecewakan, semakin banyak saja individu yang tidak bermoral.”",False,175,4300087,43,[],False,0,802,31,False,125
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"baik , di tunggu progress nya ya . terimakasih","Dengan senang hati, saya akan menantikan perkembangan selanjutnya. Terima kasih atas perhatiannya.",False,177,4300088,43,[],False,0,754,19,False,98
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,saya gabisa mengirim dm ke akun ini .,"Maaf, saya tidak dapat mengirimkan pesan langsung ke akun ini.",False,179,4300089,43,[],False,0,745,15,False,62
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"udah aku dm lho kak dari tadi pagi , fyi aja","Dengan senang hati, saya akan menulis ulang teks sumber sesuai instruksi Anda. Mohon berikan ""Contoh Referensi"" yang dimaksud. Saya memerlukan teks referensi untuk dapat memodifikasi gaya bahasa teks sumber.",False,181,4300090,43,[],False,0,752,45,False,207
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,dari tadi mention terus gak dibalas . tolong dong dibalas . dm saya juga tolong dibalas,"Dengan hormat, mohon untuk memberikan balasan atas pemberitahuan yang telah disampaikan sebelumnya. Saya akan sangat menghargai jika Anda dapat mengirimkan pesan langsung (DM) sebagai bentuk tanggapan. Terima kasih atas perhatian dan kerjasamanya.",False,183,4300091,43,[],False,0,795,52,False,247
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,kalo saya setuju dan kemudian saya menolak tidak bisa di setujui ya ? jadi gimana solusinya buat saya ?,"Contoh Referensi:
+""Dengan mempertimbangkan hal tersebut, saya mengajukan pertanyaan mengenai kemungkinan adanya inkonsistensi dalam proses pengambilan keputusan. Mohon sampaikan penjelasan mendetail mengenai mekanisme yang berlaku dan langkah-langkah yang dapat diambil untuk mengatasi situasi ini.""",False,185,4300092,43,[],False,0,811,55,False,299
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,maaf saya kok gk bisa dm ya ? no saya xxxnumberxxx mau daftar paket freedom yg xxxnumberxxx xxxnumberxxx k dapat xxxnumberxxx giga kak,"Contoh Referensi:
+""Dengan hormat, saya ingin menyampaikan permohonan untuk dapat mendaftarkan diri pada paket Freedom dengan nomor telepon xxxnumberxxx. Saya membutuhkan sebesar xxxnumberxxx giga untuk keperluan ini.""",False,187,4300093,43,[],False,0,842,48,False,217
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min jne trucking dr medan ke pinang ranti berat sekitar xxxnumberxxx - xxxnumberxxx kilo brp y min ? sya cek kok malah tambah mahal min ?,"Contoh Referensi:
+```
+Yth. Bapak/Ibu,
+
+Terima kasih atas pertanyaan mengenai tarif pengiriman JNE Trucking dari Medan ke Pinang Ranti.
+
+Kami memahami bahwa perhitungan berat yang Anda berikan (sekitar xxxnumberxxx - xxxnumberxxx kg) dapat menyebabkan perubahan tarif yang signifikan.  Untuk memberikan penawaran yang akurat, mohon informasikan berat yang tepat dan dimensi barang Anda.  Setelah kami menerima informasi tersebut, kami akan segera menyusun estimasi biaya pengiriman yang sesuai.
+
+Atas perhatian dan kerjasamanya, kami ucapkan terima kasih.
+
+Hormat kami,
+Tim JNE
+```
+
+Yth. Bapak/Ibu,
+
+Terima kasih atas pertanyaan mengenai tarif JNE Trucking dari Medan ke Pinang Ranti.  Sya cek kok malah tambah mahal min? Mohon informasikan berat yang tepat dan dimensi barang Anda agar kami bisa memberikan estimasi biaya pengiriman yang akurat.",False,189,4300094,43,[],False,0,845,201,False,845
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min m - banking saya keblokir gara gara lupa password , boleh dibantu cara aktivasi kembali m - banking saya ?","Dengan hormat, saya mengalami kendala terkait blokir pada aplikasi m-banking saya karena lupa password. Mohon bantu saya untuk mengaktifkan kembali aplikasi m-banking saya. Terima kasih atas perhatian dan bantuannya.",False,191,4300095,43,[],False,0,818,46,False,216
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,udah dua hari stuck gitu dari tanggal xxxnumberxxx gak dianterin padahal udah di kota saya ini kurirnya kenapa ya tolong follow up jp xxxphonexxx,"Contoh Referensi:
+
+""Kepada Yth. Bapak Kurir,
+
+Dengan hormat, saya ingin menyampaikan keluhan terkait keterlambatan pengiriman paket dengan nomor resi xxxnumberxxx. Paket tersebut seharusnya sudah berada di wilayah saya sejak tanggal xxxnumberxxx, namun hingga saat ini belum juga saya terima.
+
+Saya mohon dengan sungguh-sungguh untuk segera melakukan *follow up* terhadap paket ini. Informasi kontak saya adalah xxxphonexxx. Atas perhatian dan kerjasamanya, saya mengucapkan terima kasih.""",False,193,4300096,43,[],False,0,853,109,False,489
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"jaringn internet xxxnumberxxx g saya error , hanya bisa h + itupun lemot sekali .","Contoh Referensi:
+""Saya mengalami kendala teknis pada koneksi internet saya. Saat ini, saya hanya dapat mengakses halaman sederhana dengan sangat lambat.""",False,195,4300097,43,[],False,0,789,35,False,154
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"gimana nih , j & t udah xxxnumberxxx hari paket saya gak ada perkembangan !",Saya sangat kecewa karena kurir J&T belum memberikan kabar mengenai paket saya selama xxxnumberxxx hari. Saya mengharapkan pembaruan segera.,False,197,4300098,43,[],False,0,783,33,False,140
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,main ps sama sinb ga ada ?,Tidak ada.,False,199,4300099,43,[],False,0,734,5,False,10
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,mantap xxxuserxxx segini + soup cream cuman xxxnumberxxx,"Contoh Referensi:
+""Wah, ini sungguh luar biasa, Bapak/Ibu. Biaya sebesar itu, ditambah sup krim, hanya Rp. xxx.""",False,201,4300100,43,[],False,0,764,36,False,112
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"mas , mbak , seventeen mau upload teaser nanti malem jam xxxnumberxxx , tolong aplikasinya jangan error mulu saya mau beli paket . makasih . jangan lupa stan seventeen .","Dengan hormat, saya akan mengunggah teaser nanti malam pukul xxxnumberxxx. Mohon agar aplikasi tidak mengalami kendala teknis, karena saya berencana untuk membeli paket data. Terima kasih atas perhatiannya. Jangan lupa untuk mendukung Seventeen!",False,203,4300101,43,[],False,0,877,51,False,245
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,lagi pada beli motor gan masih inden xxxnumberxxx taun,"“Masih nunggu motor, kira-kira sekitar tiga tahun lagi nih.”",False,205,4300102,43,[],False,0,762,18,False,60
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"kak ko saya gabisa beli paket ya ? saya mau beli yg xxxnumberxxx , pulsa saya juga pas xxxnumberxxx . tapi disini malah tulisannya pulsa tidak cukup ?","Contoh Referensi:
+""Maaf, Bapak/Ibu, saya mengalami kendala dalam memproses pembelian paket yang Bapak/Ibu inginkan. Saat ini, saldo pulsa saya tidak mencukupi untuk memenuhi permintaan tersebut. Mohon maaf atas ketidaknyamanan ini.""",False,207,4300103,43,[],False,0,858,60,False,232
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"kak xxxuserxxx check dm ya , terimakasih","Mohon periksa pesan langsung, terima kasih.",False,209,4300104,43,[],False,0,748,12,False,43
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,halo xxxuserxxx apa three lagi gangguan ? kenapa lemot bgt internet sy,"Mohon berikan ""Contoh Referensi"" yang ingin digunakan sebagai panduan gaya. Saya membutuhkan teks contoh untuk dapat melakukan transfer gaya bahasa dengan efektif.",False,211,4300105,43,[],False,0,778,33,False,163
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,sudah saya kirim min mohon di cek,"Dengan hormat, mohon dapat diperiksa kembali.",False,213,4300106,43,[],False,0,741,13,False,45
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,owhh haha typo bikin salah paham,"Ya, sungguh sebuah kesalahan yang menggelikan, sebuah kesalahan ketik yang menyebabkan kebingungan.",False,215,4300107,43,[],False,0,740,21,False,99
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"sinyal xxxnumberxxx g full tapi ga bisa dipake , daerah jogja ini kenapa udh hampir seminggu","Contoh Referensi:
+""Saya mengalami kesulitan dengan sinyal xxxnumberxxx yang tidak berfungsi penuh di wilayah Yogyakarta. Kondisi ini sudah berlangsung hampir seminggu dan menimbulkan ketidaknyamanan.""",True,217,4300108,43,[],False,0,800,42,False,200
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"halo admin , saya mau melaporkan sebuah toko . jadi penjualnya itu bersikap tidak sopan ke saya ( selaku pembeli ) dan saya merasa tersinggung dengan perkataan penjualnya .","Dengan hormat Bapak Admin,
+
+Saya ingin menyampaikan sebuah laporan terkait sebuah toko. Pelayanan dari penjual di toko tersebut kurang ramah dan membuat saya merasa tidak nyaman dengan ucapan yang disampaikan.",False,219,4300109,43,[],False,0,880,41,False,209
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,harus punya pulsa banyak klo hub . nomer itu ya min ? emang gak ada twitter brilink ya,“Perlu memastikan memiliki kapasitas jaringan yang memadai untuk komunikasi. Apakah Brilink memiliki akun Twitter resmi?”,False,221,4300110,43,[],False,0,794,24,False,121
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"xxxnumberxxx hari ini jaringan xxxnumberxxx g ngadat , xxxnumberxxx g pun ngos - ngosan . sekedar buka web saja luaamaa . tolong dong di tindak lanjuti","Contoh Referensi:
+""Dengan berat hati, saya ingin menyampaikan keluhan mengenai kendala yang sedang saya alami. Sehubungan dengan hal tersebut, saya mohon agar segera dilakukan penanganan dan perbaikan yang diperlukan.""",False,223,4300111,43,[],False,0,859,46,False,218
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,sy sudah menyelesaikan mission jugglenaut pas masih ada xxxnumberxxx + rewards left nya smoe skrg blm dikirim rewardsnya,"""Saya telah menyelesaikan misi Juggernaut. Masih ada xxxnumberxxx poin reward yang tersisa. Belum juga dikirimkan rewardnya saat ini.""",False,225,4300112,43,[],False,0,828,35,False,134
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,tolong xxxuserxxx di tindak lanjuti yang beginian,“Kami akan menindaklanjuti hal ini dengan segera.”,False,227,4300113,43,[],False,0,757,15,False,50
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"klo paketan cod gagal dikirim , gimana kelanjutannya ? pembeli susah dihubungi","""Apabila paket kode belum terkirim, mohon informasikan mengenai kelanjutan prosesnya. Pembeli terbukti sulit untuk dihubungi.""",False,229,4300114,43,[],False,0,786,32,False,126
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"bingung sama xxxuserxxx sinyal ga pernah stabil , sebanyak apapun isi kuota kayanya ga ngaruh . udh ubah xxxnumberxxx g pun ttp aja .","Contoh Referensi:
+""Saya merasa sangat frustrasi dengan masalah koneksi yang terus-menerus terputus. Meskipun saya telah mengalokasikan kuota data yang cukup besar, sinyal tetap tidak stabil. Saya telah mencoba beberapa solusi teknis, termasuk mengubah nomor telepon, namun masalah ini tetap berlanjut.""
+
+Hasil:
+""Saya sangat kecewa dengan ketidakstabilan sinyal yang terus-menerus. Terlepas dari penggunaan kuota yang memadai, sinyal tetap tidak konsisten. Setelah melakukan perubahan nomor telepon, masalah ini masih tetap ada.""",False,231,4300115,43,[],False,0,841,121,False,528
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,kenapa ya internet jadi lemot ? padahal udah di pengaturan terus pilih jaringan manual tapi tetap saja lemot,"""Sungguh membingungkan mengapa koneksi internet terasa lambat. Meskipun telah melakukan penyesuaian pengaturan dan memilih opsi jaringan secara manual, kecepatan tetap tidak memuaskan.""",False,233,4300116,43,[],False,0,816,38,False,185
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"iye di kasih kopi , kopi sudah mendarah daging","“Baik, telah disajikan secangkir kopi, kopi tersebut kini dalam keadaan meresap.”",False,235,4300117,43,[],False,0,754,22,False,81
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"masih error , saya beralih aja ke kartu yang lain","""Belum sempurna, saya akan mencoba kartu yang berbeda.""",False,237,4300118,43,[],False,0,757,14,False,55
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"malam admin xxxuserxxx saya baru isi pulsa xxxnumberxxx xxxnumberxxx k , tiba2 pulsa ilang entah kenapa . padahal belum saya apa2in . sebel saya","Contoh Referensi:
+""Kepada Yth. Bapak/Ibu Admin,
+
+Dengan hormat, saya ingin menyampaikan keluhan terkait dengan saldo pulsa yang tiba-tiba habis tanpa saya melakukan tindakan apapun. Saya merasa sangat kecewa dengan kejadian ini.""",False,239,4300119,43,[],False,0,852,55,False,229
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"kencan bahagia itu dinner bareng kekasih di kfc bayarnya , kenyangnya dapet , romantisnya dapet , plus dapat cashback xxxpercentxxx dari xxxuserxxx . mantul mantul mantul .","“Pertemuan yang menyenangkan adalah menikmati hidangan lezat bersama pasangan di KFC, dengan penyesalan yang menyenangkan karena akhirnya mendapatkan pembayaran, kesan romantis yang memuaskan, dan bonus cashback xxx persen dari xxxuserxxx. Sungguh luar biasa!”",False,241,4300120,43,[],False,0,880,52,False,260
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min transaksi xxxnumberxxx belum dipick up kurir terus sudah xxxnumberxxx hari . bisa bantu percepat ?,"Contoh Referensi:
+""Dengan hormat, saya ingin menyampaikan keluhan terkait dengan nomor transaksi [nomor transaksi] yang masih belum dijemput oleh kurir. Sudah [jumlah hari] hari berlalu. Mohon bantuannya untuk mempercepat proses pengiriman.""",False,243,4300121,43,[],False,0,810,57,False,241
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,saya tarik saldo dari aplikasi linkaja ke rekening bank bri saya kenapa sampe sekarang masih pending ya ?,"Mohon informasikan, mengapa saldo yang saya tarik dari aplikasi LinkAja masih dalam status *pending* hingga saat ini?",False,245,4300122,43,[],False,0,813,27,False,117
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,jawaban nya a . asuransi ikutan yuk xxxuserxxx xxxuserxxx xxxuserxxx done follow semua sosmed,(Tidak ada Contoh Referensi yang diberikan. Mohon berikan contoh referensi agar saya dapat melakukan tugas tersebut.),False,247,4300123,43,[],False,0,801,25,False,117
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,berarti kalo ga di on / off kan dulu airplane mode nya tetep pake kuota reguler gitu ?,"Contoh Referensi:
+""Dengan demikian, jika fitur tersebut tidak diaktifkan atau dinonaktifkan terlebih dahulu, penggunaan data reguler tetap akan berlangsung, bukan?""",False,249,4300124,43,[],False,0,794,37,False,164
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"sy tunggu responnya disini , segera ! sblm dpt jwban sy retweet simultan biar inget !","“Saya menantikan jawaban Anda di sini, dengan segera! Setelah menerima jawaban, saya akan segera mem-retweet agar tetap mengingatnya!”",False,251,4300125,43,[],False,0,793,30,False,134
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,maaf memang lg gangguan ya ? mulai td gak bisa cek & beli kuota .,"Contoh Referensi:
+""Mohon maaf atas ketidaknyamanan yang Anda alami. Saat ini, kami sedang mengalami kendala teknis sehingga beberapa fitur tidak dapat diakses. Kami menghargai kesabaran Anda dan akan segera memperbaikinya.""",False,253,4300126,43,[],False,0,773,54,False,223
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"beli token listrik min , udah mau abis soalnya","""Mohon segera lakukan pembelian token listrik, karena stok saat ini hampir habis.""",False,255,4300127,43,[],False,0,754,18,False,82
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,saldo grab dan ovo kan udah nyatu sekarang .,Saldo Grab dan Ovo kini telah berhasil terintegrasi.,False,257,4300128,43,[],False,0,752,13,False,52
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,tolong min dikasih bonus buat masnya,"Dengan hormat, mohon kesediaan untuk memberikan imbalan tambahan atas kerjasamanya.",True,259,4300129,43,[],False,0,744,21,False,83
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"halo xl , saya mau lapor untuk tujuan pemblokiran nomor handphone yang dipakai untuk menipu , bagaimana caranya ? surat polisi sudah siap","Kepada XL,
+
+Dengan hormat, saya mengajukan permohonan untuk pemblokiran nomor telepon yang telah digunakan untuk melakukan penipuan. Mohon informasikan langkah-langkah yang perlu saya lakukan. Surat polisi telah siap untuk diproses.",False,261,4300130,43,[],False,0,845,54,False,232
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min proses pengembalian pulsanya berapa lama ?,"Contoh Referensi:
+""Dengan senang hati, saya akan menginformasikan mengenai prosedur untuk mendapatkan pengembalian dana pulsanya. Untuk memproses permohonan Anda, mohon berikan detail lengkap mengenai transaksi yang bersangkutan, termasuk tanggal, jumlah, dan metode pembayaran yang digunakan. Setelah data tersebut diverifikasi, kami akan segera memproses pengembalian dana sesuai dengan ketentuan yang berlaku.""",False,263,4300131,43,[],False,0,754,82,False,413
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,untuk grapari jogja diman ya min,"Contoh Referensi:
+""Saudara, sungguh suatu hal yang membanggakan.""",False,265,4300132,43,[],False,0,740,21,False,65
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,biar bisa mabar di sela nyusun laporan magang dan skripsian,“semoga dapat berkolaborasi dalam proyek bersama di antara jadwal penyelesaian laporan praktik kerja lapangan dan penulisan skripsi.”,False,267,4300133,43,[],False,0,767,28,False,133
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,nilai pelanggraran rp . xxxnumberxxx ribu dikurangi biaya ojek ( standard harga xxxuserxxx : rp . xxxnumberxxx ribu . total bayar : rp . xxxnumberxxx rebu ),"Contoh Referensi:
+""Dengan senang hati kami informasikan bahwa total biaya yang harus Anda bayar adalah Rp. xxxnumberxxx ribu. Biaya ini telah disesuaikan dengan nilai pelanggraran sebesar Rp. xxxnumberxxx ribu, dikurangi biaya jasa pengiriman standar sebesar Rp. xxxnumberxxx ribu.""",False,269,4300134,43,[],False,0,864,66,False,282
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,sudah mulai goyah sm indosat wkaka,"(Tidak ada contoh referensi yang diberikan. Karena itu, saya tidak dapat melakukan transfer gaya teks.)",False,271,4300135,43,[],False,0,742,22,False,103
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"yeayy shopee terbaik , bisa pake dua voucher dalam sekali checkoutt yuhuu ~","Contoh Referensi:
+""Dengan senang hati kami menginformasikan bahwa produk yang Anda cari kini tersedia dengan penawaran spesial. Jangan lewatkan kesempatan ini untuk mendapatkan harga terbaik dan pengalaman berbelanja yang tak terlupakan.""",False,273,4300136,43,[],False,0,783,48,False,238
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,hay min saya suda pesen barang sudah transfer juga tp kenapa habis banyar tulisannya pemesanan tidak sah ya ?,"Dengan hormat, Ibu/Bapak, saya telah melakukan pemesanan dan dana telah ditransfer. Namun, saya menemukan keterangan ""pemesanan tidak sah"" pada detail pembayaran. Mohon penjelasannya.",False,275,4300137,43,[],False,0,817,46,False,183
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min ini knp yahh saya topup ovo dr alfamart kata mbanya udh kekirim dan udh ada bukti transaksinya , knp saldo saya blm bertambah ?","Contoh Referensi:
+""Dengan hormat, saya ingin menyampaikan keluhan terkait dengan transaksi Ovo yang saya lakukan melalui Alfamart. Berdasarkan informasi yang saya terima dari pihak bank, transaksi tersebut telah berhasil diproses dan terdapat bukti transaksinya. Namun, hingga saat ini saldo Ovo saya belum bertambah. Mohon bantuannya untuk segera menyelesaikan masalah ini.""",False,277,4300138,43,[],False,0,839,75,False,375
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,sini sini . tapi jauh dr tempatmu dek .,"“Mari mendekat, namun tetaplah di kejauhan dari hadapanku, wahai anakku.”",True,279,4300139,43,[],False,0,747,24,False,73
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min , hari ini kok loadingnya super slow ya buka apapun sloow banget","Saya mohon maaf, namun saya memerlukan ""Contoh Referensi"" untuk dapat menyelesaikan tugas ini. Mohon berikan contoh referensi yang ingin Anda gunakan untuk memodifikasi gaya bahasa teks sumber.",False,281,4300140,43,[],False,0,776,42,False,193
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"sudah bisa min , saya coba di atm lokasi lain . trimakasih","Baik, saya siap. Silakan berikan ""Contoh Referensi"" yang akan digunakan untuk transfer gaya bahasa. Setelah saya menerima contoh tersebut, saya akan menulis ulang ""Teks Sumber"" sesuai dengan instruksi Anda.",False,283,4300141,43,[],False,0,766,46,False,206
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"halo , mohon dibantu dipercepat dan info perkiraan barang tiba ke alamat penerima : jp xxxphonexxx tujuan ntb . saya pengirim . trimakasih bantuannya !","Dengan hormat,
+
+Saya mohon bantuan untuk mempercepat proses pengiriman dan informasi perkiraan tanggal barang akan tiba di alamat penerima: JP xxxphonexxx, tujuan NTB. Saya adalah pihak pengirim. Atas perhatian dan bantuannya, saya mengucapkan terima kasih.",False,285,4300142,43,[],False,0,859,58,False,257
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min . mo tanya , kalo driver performa bintang ngaruhnya gimana ya ? apa berpengaruh ke pendapatan orderan juga ?","Contoh Referensi:
+""Dengan hormat, saya ingin menanyakan mengenai dampak penggunaan Driver Performa Bintang terhadap pendapatan pesanan. Apakah ada pengaruh yang signifikan terhadap angka pendapatan yang dihasilkan?""",False,287,4300143,43,[],False,0,820,41,False,215
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,ini kenapa dari tadi pagi server penuh terus,"Saya memerlukan ""Contoh Referensi"" untuk dapat melaksanakan tugas ini. Mohon berikan teks contoh referensi yang ingin Anda gunakan.",False,289,4300144,43,[],False,0,752,29,False,131
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,ini min . biasanya combo terbaik untukmu ada yg xxxnumberxxx xxxnumberxxx gb xxxnumberxxx xxxnumberxxx rb dan xxxnumberxxx xxxnumberxxx gb xxxnumberxxx xxxnumberxxx rb . ini dia hilang gk ad lg 🤔,"Berikut adalah contoh referensi yang akan digunakan untuk gaya bahasa:
+
+""Saya telah menemukan beberapa opsi yang sangat direkomendasikan untuk Anda. Ada yang terdiri dari 300 GB dan 500 GB, serta opsi dengan 1 TB. Saya yakin tidak ada lagi pilihan yang bisa saya berikan.""",False,291,4300145,43,[],False,0,903,65,False,272
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"hai tolong bantuannya saya baru top up ovo tp tulisannya di ovo gagal terus gak bisa nampilin saldo , gimana ya ?","“Mohon bantuan, saya sedang mencoba melakukan top-up Ovo, namun tulisan ‘OVO GAGAL’ terus muncul dan saldo tidak dapat ditampilkan. Bagaimana cara mengatasi masalah ini?”",False,293,4300146,43,[],False,0,821,40,False,170
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"ini chattingan sama triva , cepet banget responnya jadi gak lama nunggu kaya chat dari dia","“Percakapan ini sungguh cepat, balasan dari beliau datangnya sangat instan, sehingga tidak perlu menunggu lama seperti saat berkomunikasi melalui pesan.”",False,295,4300147,43,[],False,0,798,33,False,153
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,ini kok muncul ginian terus sih min ? bisa xxxnumberxxx - xxxnumberxxx x semenit . gmn cara ilanginnya ?,"""Kenapa begini terus ya, Bu? Bisa memakan waktu sekitar -xxxnumberxxx sampai -xxxnumberxxx semenit. Ada cara untuk mengatasinya?""",False,297,4300148,43,[],False,0,812,36,False,129
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"halo jenius , untuk pengiriman kartu ke domisili biasanya dibutuhkan waktu brp lama ya ? ty","Dengan hormat Bapak/Ibu, mohon informasinya mengenai perkiraan waktu yang dibutuhkan untuk pengiriman kartu ke alamat tujuan. Terima kasih atas bantuannya.",False,299,4300149,43,[],False,0,799,34,False,155
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min , kok pulsa saya selalu tersedot terus ya ? padahal data selalu saya matiin ?","Contoh Referensi:
+""Maaf, mengapa saldo saya terus berkurang? Meskipun saya sudah mematikan paket data.""",False,301,4300150,43,[],False,0,789,28,False,103
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"halo , mau tanya . untuk transaksi ini kok resinya gak update ya ? padahal status di jne nya sudah diproses . xxxnumberxxx thanks","Contoh Referensi:
+
+""Dengan hormat,
+
+Saya ingin menanyakan perihal ketidaksesuaian antara resi transaksi ini dengan status pengiriman yang tercatat di JNE. Status pengiriman telah diproses, namun resi belum mengalami pembaruan. Mohon penjelasannya terkait hal ini. Terima kasih atas perhatian dan kerjasamanya.""",True,303,4300151,43,[],False,0,837,76,False,310
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,yah . lupa . dulu waktu aktivasi di ceklis apa enggak .,(Tidak ada Contoh Referensi yang diberikan. Mohon berikan contoh referensi agar saya dapat menyelesaikan tugas ini.),False,305,4300152,43,[],False,0,763,25,False,116
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"halo kak , tolong di cek jp xxxphonexxx saya belum menerima barangnya .","Yth. Bapak/Ibu, mohon bantuannya untuk mengecek status pesanan saya di JP xxxphonexxx. Saya belum menerima barang yang dipesan.",False,307,4300153,43,[],False,0,779,36,False,127
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"milenial bang , sibuk di kantor . banyak online shop juga , ada ojol juga . gak ada manfaatnya dong nih online shop sama ojol","Contoh Referensi:
+""Dalam lanskap ekonomi modern yang dinamis, munculnya platform e-commerce dan layanan transportasi online telah memicu perdebatan mengenai dampak transformatifnya terhadap aktivitas konsumen dan struktur pasar tradisional. Meskipun menawarkan kemudahan dan aksesibilitas yang belum pernah terjadi sebelumnya, terdapat indikasi bahwa beberapa model bisnis digital ini mungkin gagal memberikan nilai tambah yang signifikan bagi konsumen, terutama dalam hal peningkatan efisiensi atau pengurangan biaya.""
+ 
+
+""Milenial yang tengah bergelut dengan tuntutan pekerjaan yang padat, kini memiliki akses yang sangat mudah ke berbagai toko online dan layanan ojek online. Namun, ironisnya, keberadaan platform-platform ini seakan tak memberikan manfaat nyata bagi konsumen.""",True,309,4300154,43,[],False,0,833,148,False,781
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,ke asyikan ya kaya operator punya bapak kamu sendiri wkwkwkwk,"Contoh Referensi:
+""Wah, sungguh sebuah kejutan yang tak terduga, ya? Kaget juga, mendengar kabar itu.""",False,311,4300155,43,[],False,0,769,32,False,102
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"jam xxxnumberxxx tadi di telpon kurir , gw ketiduran min . bisa diambil sendiri ke gudang tidak ? sampai jam berapa ya ? thanks","Contoh Referensi:
+""Yth. Bapak/Ibu,
+
+Terima kasih atas telepon dari kurir tadi. Saya tertidur saat itu. Apakah Bapak/Ibu dapat mengambil paket tersebut sendiri di gudang? Mohon informasinya, perkiraan waktu pengambilan selesai hingga jam berapa?""
+ 
+""Yth. Kurir, terima kasih atas teleponnya. Saya tertidur tadi malam. Bisakah paket ini diambil sendiri di gudang? Mohon informasinya, perkiraan waktu selesai pengambilan hingga jam berapa, terima kasih.""",False,313,4300156,43,[],False,0,835,111,False,451
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,knapa sekarang foto driver gak bisa di klik utk memperbesar / memperjelas ? bagaimana penukpang mau merasa aman kalau foto driver terlalu kecil untuk dilihat ?,"Contoh Referensi:
+""Permohonan ini diajukan dengan harapan dapat memperoleh perhatian dan respons secepatnya. Kami menyadari urgensi permasalahan yang dihadapi dan menanti jawaban yang konstruktif dalam waktu dekat.""
+
+Hasil Teks Target:
+""Mengapa foto pengemudi kini tidak dapat diklik untuk memperbesar/memperjelas? Bagaimana penumpang dapat merasa aman jika foto pengemudi terlalu kecil untuk dilihat?""",False,315,4300157,43,[],False,0,867,91,False,402
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,ni toko online tp ga mau ngerespon chat nya ? kalo emang ga mau dagang ga usah dagang mendingan .,"Contoh Referensi:
+""Mohon maaf atas ketidaknyamanan yang Anda alami. Kami menghargai waktu dan usaha Anda untuk menghubungi kami. Namun, jika kami tidak dapat memberikan respons segera, kami mohon maaf atas ketidaknyamanan yang ditimbulkan. Kami berkomitmen untuk memberikan pelayanan terbaik kepada pelanggan kami.""
+
+Hasil Teks Target:
+""Maaf atas ketidaknyamanan yang Anda rasakan. Kami menghargai usaha Anda untuk menghubungi kami. Akan tetapi, jika kami belum dapat memberikan respons secepatnya, kami mohon maaf atas ketidaknyamanan yang timbul. Kami berkomitmen untuk memberikan pelayanan terbaik.""",False,317,4300158,43,[],False,0,805,131,False,602
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,no barcode rv417785365gb hampir xxxnumberxxx hari tidak ada pergerakan mengenai barang saya,"Berikut adalah contoh referensi yang akan digunakan untuk modifikasi gaya bahasa:
+
+**Contoh Referensi:**
+
+""Terhormat Bapak/Ibu,
+
+Dengan hormat, kami ingin menyampaikan bahwa barang dengan nomor seri RV417785365GB belum menunjukkan aktivitas selama kurang lebih 90 hari. Kami mohon kesediaan Bapak/Ibu untuk memberikan konfirmasi mengenai hal ini.""",False,319,4300159,43,[],False,0,799,84,False,347
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"coba juga di jam tengah malam , biasanya jam² im3 lancar","""Usahakan juga untuk mencoba pada pukul 12 malam, seringkali pada saat itu layanan im3 berjalan optimal.""",False,321,4300160,43,[],False,0,764,27,False,105
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,baik intinya kuota trf gratis ke rekening bank itu xxxnumberxxx kali ya,"“Jadi, secara ringkas, saya mohon agar kuota TRF gratis ditambahkan sebanyak 333 kali pada rekening bank ini, ya.”",False,323,4300161,43,[],False,0,779,33,False,114
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"selamat pagi min xxxuserxxx , tolong trouble ticket id ttb000003452245 di follow up . terima kasih","Contoh Referensi:
+""Kepada Bapak/Ibu [Nama Penerima],
+
+Dengan hormat, mohon tindak lanjut terkait tiket permasalahan nomor TTB000003452245. Atas perhatian dan kerjasamanya, kami ucapkan terima kasih.""",False,325,4300162,43,[],False,0,806,63,False,199
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"jaringan bermasalah ga ada ? kemarin baru ngisi , sore ini sudah lemot parah , blm fup ya ! sinyal perbaiki daerah neglasari , tangerang .","Teks Sumber: ""Jaringan mengalami gangguan, belum diisi kemarin baru, sore ini sudah sangat lambat, belum ada FUP ya! Sinyal diperbaiki di daerah Neglasari, Tangerang.""
+
+Hasil Teks Target: ""Terjadi gangguan pada jaringan. Pemeliharaan belum selesai hingga kemarin, dan saat ini kinerja jaringan mengalami penurunan signifikan. Belum ada pemberitahuan FUP. Perbaikan sinyal telah dilakukan di wilayah Neglasari, Tangerang.""",True,327,4300163,43,[],False,0,846,99,False,421
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,pesta kuota apa ya min ?,"Contoh Referensi:
+""Apakah ada kendala dalam alokasi persediaan yang perlu kita diskusikan?""
+""Bagaimana dengan status penetapan batas penggunaan?""
+""Mari kita evaluasi proses penugasan sumber daya.""
+""Apakah ada masalah terkait dengan pembagian aset?""
+""Bisakah kita meninjau kebijakan mengenai pembentukan anggaran?""",False,329,4300164,43,[],False,0,732,75,False,313
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,gak gitu min disini pada demo2 gakjls kasian para driver yang uangnya di gopay kaya saya min,"""Mohon maaf, Bapak/Ibu, di sesi demonstrasi ini terdapat beberapa kendala teknis yang menyebabkan ketidakjelasan. Saya turut prihatin bagi para pengemudi yang mengalami dampak finansial akibat penggunaan Gopay, seperti saya.""",False,331,4300165,43,[],False,0,800,52,False,225
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,gua ga pernah begini soalnya wkwkwk,"Contoh Referensi:
+""Astaga, ini bener-bener nggak nyangka. Ya ampun, parah banget.""",False,333,4300166,43,[],False,0,743,30,False,82
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min tolong cek riwayat pulsa transfer yg masuk ke nomor xxxnumberxxx pada tanggal xxxnumberxxx agustus xxxnumberxxx,"Berikut adalah contoh referensi yang akan digunakan untuk transfer gaya:
+
+**Contoh Referensi:**
+
+""Dengan hormat,
+
+Saya ingin mengajukan permohonan untuk meninjau kembali detail transaksi transfer dana yang masuk ke nomor telepon [Nomor Telepon] pada tanggal [Tanggal] bulan [Bulan] tahun [Tahun]. Mohon berikan informasi lengkap mengenai transaksi tersebut.""",False,335,4300167,43,[],False,0,823,81,False,358
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,sudah . masih tetep ngga bisa dari tadi,"Contoh Referensi:
+""Astaga, masih saja tidak berhasil seperti yang diharapkan.""
+""Aduh, masih belum berhasil juga, seperti yang diinginkan.""
+""Ya ampun, masih belum bisa, seperti yang saya harapkan.""
+""Sial, masih belum berhasil, seperti yang saya inginkan.""
+""Dasar, masih belum berhasil, seperti yang saya harapkan.""
+
+Hasil Teks Target:
+“Aduh, masih belum berhasil, seperti yang diinginkan.”",False,337,4300168,43,[],False,0,747,101,False,388
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,nah bener nih dipesen itu grabfoodnya dan jangan lupa apapun makanannya minumannya teh botol sosro ( endorse dong xxxuserxxx ),"Dengan senang hati saya telah menerima pesanan GrabFood tersebut. Mohon jangan lupa untuk menyertakan teh botol Sosro sebagai pelengkap hidangan dan minuman. (Sesuai permintaan xxxuserxxx, mohon dukungan promosi.)",False,339,4300169,43,[],False,0,834,50,False,213
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,tidak . krn banyak mitra berkerumun didepan saya,"“Tidak, karena sejumlah besar rekan-rekan berkumpul di hadapanku.”",False,341,4300170,43,[],False,0,756,19,False,66
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min . saya coba buat transfer ke bank lain pakai m - banking pagi ini gagal terus ya ? tp buat transfer ke virtual account lancar . ada solusikah ?,"Contoh Referensi:
+""Mohon maaf atas ketidaknyamanan yang Anda alami. Kami memahami bahwa proses transfer ke bank lain melalui *mobile banking* mengalami kendala. Namun, untuk transfer ke *virtual account*, transaksi berhasil dilakukan. Kami akan segera menelusuri penyebab masalah ini dan mencari solusi yang tepat.""",False,343,4300171,43,[],False,0,855,67,False,315
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,pengen liatt min tpi gimana yaa,"Contoh Referensi:
+""Maaf, saya ingin melihatnya, tapi bagaimana caranya?""
+""Bisakah kamu memberitahuku bagaimana caranya?""
+""Saya ingin melihatnya, tapi saya tidak tahu bagaimana melakukannya.""
+""Saya penasaran, bagaimana caranya?""
+""Saya ingin melihatnya, tapi saya bingung.""
+
+Hasil teks target:
+“Maaf, pengen lihat, tapi gimana caranya ya?”",False,345,4300172,43,[],False,0,739,87,False,337
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,halo min xxxuserxxx tolong cek dm ya .,"Dengan hormat, Bapak/Ibu xxxuserxxx, mohon dapat meninjau pesan pribadi saya.",True,347,4300173,43,[],False,0,746,24,False,77
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"pakdok ga usah ikutan , traktir saya ngopi aja deh .","""Saya mohon, tidak perlu ikut serta, sekadar ajak minum kopi saja.""",False,349,4300174,43,[],False,0,760,20,False,67
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"kencan bahagia versi gue itu yang gak pake ribet , sederhana , saling ngerti , gak harus nuntut dan paling penting dia seneng ketika ketemu gue","“Dalam pandangan saya, kencan yang ideal adalah yang santai, mudah, saling memahami, tanpa ada paksaan, dan yang terpenting, dia merasa senang berada di samping saya.”",False,351,4300175,43,[],False,0,851,41,False,167
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,kalau lokasi bank terdekat dimana ya ?,"“Di mana letak kantor cabang terdekat, tolong?”",False,353,4300176,43,[],False,0,746,15,False,47
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,bisa tolong cek dm dr saya,Mohon periksa pesan langsung dari saya.,False,355,4300177,43,[],False,0,734,11,False,39
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,itu seler kurang aja . iklan palsu dan aku sudah tertipu .,"""Sungguh sebuah kekecewaan yang mendalam. Strategi pemasaran yang menyesatkan, dan sayangnya, saya menjadi korban dari penipuan tersebut.""",False,357,4300178,43,[],False,0,766,33,False,138
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"besok "" pas udh ketemu tanya , kemarin kamu isiin gopay sapa aja","""Besok, setelah kita berunding, kamu sudah mengisi Gopay untuk siapa saja?""",False,359,4300179,43,[],False,0,772,20,False,75
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"cek saha ma , so tau kamu mah","Contoh Referensi:
+""Adik sayang, aku cuma mau mastiin, kamu baik-baik saja.""
+""Ma, aku cuma mau mastiin, kamu mah?""
+""Aku cuma mau mastiin, kamu baik-baik saja.""
+""Ma, aku cuma mau mastiin, kamu mah?""
+""Aku cuma mau mastiin, kamu baik-baik saja.""",False,361,4300180,43,[],False,0,737,79,False,241
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,sampe jam segini masih belum bisa daftarin paket loh,"Contoh Referensi:
+""Belum juga berhasil melakukan pendaftaran paket hingga saat ini, sungguh mengecewakan.""",False,363,4300181,43,[],False,0,760,28,False,106
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"kota malang min , biasanya cepet dapet driver . hari ini yg parah .","“Kota Malang, Bapak, biasanya dengan mudah menemukan jasa ojek. Namun, hari ini sungguh mengecewakan.”",False,365,4300182,43,[],False,0,775,27,False,102
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"menu pembaharuan password itu kaya gini , kenapa sih susah amat ambil dana yang ada di akun sendiri ke rekening sendiri","Contoh Referensi:
+""Prosedur perubahan kata sandi cukup sederhana. Mengapa proses penarikan dana dari saldo pribadi ke rekening pribadi terasa begitu rumit?""",False,367,4300183,43,[],False,0,827,37,False,156
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,ini sudah terkirim tp pesanan belum selesai d sistem karna saya menggunakan kurir berbeda,"“Barang telah sampai, namun terdapat kendala pada sistem karena saya menggunakan jasa kurir pihak ketiga.”",False,369,4300184,43,[],False,0,797,23,False,106
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,dr kmaren kok xl no service . ada penjelasan ?,Saya mohon penjelasan mengenai mengapa layanan XL tidak berfungsi sejak kemarin.,False,371,4300185,43,[],False,0,754,15,False,80
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"apakah tanpa buku tabungan bisa , untuk upgrade nya , sama mau setor tunai soalnya pecahan xxxnumberxxx ribu , trimakasih","“Apakah mungkin, tanpa buku tabungan, untuk melakukan peningkatan, dan juga ingin melakukan setor tunai, karena ada pecahan sebesar Rp. xxx.xxx ribu, terima kasih.”",False,373,4300186,43,[],False,0,829,37,False,164
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,mau tanya udh beli paket kok ga masuk2 gimana nii ?,"Mohon informasikan, apakah paket yang telah dibeli belum tertera pada sistem?",False,375,4300187,43,[],False,0,759,18,False,77
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,hhahaha yg trakhir pas kiss eresiinya lutcuu bangett njirr 🤣 🤣 🤣 🤣 🤣 ada xxxnumberxxx wink kayanya,"Contoh Referensi:
+""Aduh, gemes banget sumpah! Wajahnya kayak gitu, bikin deg-degan tuh. Pengen langsung nyamperin.""",True,377,4300188,43,[],False,0,806,38,False,115
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,selamat siang . dua hari ini orderan grabfood di denpasar kok drivernya jauh - jauh dari resto ya ? kebetulan atau memang ada error ? terima kasih,"Contoh Referensi:
+""Kepada Yth. Bapak/Ibu,
+
+Dengan hormat, kami ingin menyampaikan keluhan terkait dengan layanan pengiriman GrabFood di Denpasar. Pada dua hari terakhir, kami menemukan anomali dalam rute pengiriman. Jarak tempuh dari restoran ke driver GrabFood terlihat sangat jauh. 
+
+Kami berharap dapat memperoleh penjelasan mengenai hal ini, apakah ini merupakan kejadian kebetulan atau adanya kesalahan sistem yang perlu segera diperbaiki. Atas perhatian dan tindak lanjut Bapak/Ibu, kami mengucapkan terima kasih.""",True,379,4300189,43,[],False,0,854,115,False,520
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"halo , ini saya login gabisa2 dari tadi , kodenya ga ke send2 di nomor saya . soalnya mau ganti nomor tolong dong","Dengan berat hati, saya ingin menyampaikan bahwa saya mengalami kendala teknis sejak tadi. Saya tidak dapat mengirimkan kode melalui nomor telepon saya. Mohon bantuannya untuk segera melakukan penggantian nomor tersebut.",False,381,4300190,43,[],False,0,821,41,False,220
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,bandwidth xxxnumberxxx xxxnumberxxx xxxnumberxxx kbps buat youtubean menggunakan indosat buffering terus tidak ?,"""Kapasitas internet xxxmbxxx xxxmbxxx xxxmbps tersedia untuk streaming YouTube dengan Indosat? Terus mengalami masalah buffering?""",False,383,4300191,43,[],False,0,820,31,False,130
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,cek dm min disana ada nomer nomer kartu yg baru dibeli dan tidak bisa dipake internet . monggo solusinya,"Mohon informasikan kepada saya ""Contoh Referensi"" yang akan digunakan untuk transfer gaya. Saya membutuhkan contoh referensi untuk dapat menulis ulang ""Teks Sumber"" sesuai dengan gaya yang diinginkan.",False,385,4300192,43,[],False,0,812,42,False,200
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,driver online yg ngocol pasti kesel terus nyinyir liat beginian . ngoceh bla . bla bukannya istighfar sambil bilang gw juga mau kaya gini ahh,"“Pengemudi *online* tentu saja merasa sangat jengkel dan melontarkan celaan melihat situasi seperti ini. Berapi-api, ia hanya mengomel tanpa sempat berdzikir, bahkan menyatakan keinginannya untuk menjadi seperti diri saya.”",False,387,4300193,43,[],False,0,849,53,False,223
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,kurang adil ya kayanya di tokped aja penjual bisa ngasih reputasi ke akun pembeli 🤭,"Contoh Referensi:
+""Sungguh sebuah ketidakadilan yang mencolok, terutama di platform Tokopedia, di mana penjual memiliki kuasa untuk memberikan reputasi kepada pembeli. Sungguh ironis dan menimbulkan pertanyaan serius mengenai keadilan dalam sistem transaksi daring.""",False,389,4300194,43,[],False,0,791,55,False,266
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,kak kenapa ga bisa bales sms ke xxxnumberxxx ?,"“Mohon beritahu saya, mengapa pesan teks yang dikirimkan ke nomor xxxnumberxxx tidak dapat dibalas?”",False,391,4300195,43,[],False,0,754,27,False,100
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"iya , paham . yg saya protes kan kenapa smsnya bilang bakal diantar hari ini ? kalo","Baik, saya mengerti. Saya sedang mempertanyakan ketidaksesuaian antara pernyataan bahwa pengiriman akan dilakukan hari ini, mengingat kondisi yang ada.",False,393,4300196,43,[],False,0,791,31,False,151
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min saya mau hapus akun gojek cust , gmn cranya ? soal nya kna bajak orang",Mohon bantu untuk menghapus akun Gojek milik pelanggan. Saya ingin menanyakan prosedur mengenai hal ini. Karena ada upaya penyelewengan oleh pihak lain.,False,395,4300197,43,[],False,0,782,34,False,152
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,mksdnya gimana min ? buka dimana itu ?,"""Jadi, bagaimana, Pak? Tempatnya di mana ya?""",False,397,4300198,43,[],False,0,746,15,False,45
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,cc xxxuserxxx kayak ginian dulu udah digiles sama xxxuserxxx . kemkominfo xxxuserxxx sekarang mana berani .,"""Saya telah menyampaikan hal ini kepada xxxuserxxx sebelumnya, yang telah melakukan tindakan serupa pada masa lalu. Kini, Kominfo xxxuserxxx tidak berani mengambil tindakan.""",False,399,4300199,43,[],False,0,815,36,False,174
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,udah mana lagi jagain jodoh orang digangguin pula sama sinyal,(Tidak ada contoh referensi yang diberikan. Mohon berikan contoh referensi agar saya dapat menyelesaikan tugas ini.),False,401,4300200,43,[],False,0,769,25,False,116
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"halo , min saya ga bisa registrasi nomer kenapa ya ?","Dengan hormat, saya mengalami kendala dalam proses registrasi nomor telepon. Mohon dapat dijelaskan penyebabnya?",False,403,4300201,43,[],False,0,760,25,False,112
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"halo . sistem lazada sedang error kah ? saya tidak bisa checkout dan bayar . sudah dicoba via app , browser hp & pc , sudah restart hp juga","Mohon maaf atas ketidaknyamanan yang Anda alami. Terjadi gangguan pada sistem Lazada, sehingga proses *checkout* dan pembayaran mengalami kendala. Kami telah mencoba melakukan *restart* perangkat dan menguji melalui aplikasi, *browser* HP, dan PC, namun permasalahan tetap berlanjut. Kami menghargai kesabaran Anda.",False,405,4300202,43,[],False,0,847,70,False,315
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min , saya sudah isi pulsa xxxnumberxxx xxxnumberxxx rb tapi kok gak masuk ya ? padahal nomor sudah benar min","Dengan hormat, saya ingin melaporkan bahwa saldo pulsa nomor XXXnumberXXX XXXnumberXXX telah saya isi sebesar Rp. XXX ribu, namun saldo yang tertera belum bertambah. Mohon bantuannya untuk memeriksa permasalahan ini. Terima kasih.",False,407,4300203,43,[],False,0,817,51,False,230
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"inv / xxxnumberxxx / xix / ix / xxxnumberxxx , tlg perpanjang masa ired order sampai xxxdatexxx , tq mod","Contoh Referensi:
+""Terima kasih atas perhatiannya. Mohon perpanjangkan periode pengajuan hingga tanggal yang ditentukan. Atas perhatian Anda, saya ucapkan terima kasih.""
+
+Hasil:
+""Terima kasih atas perhatiannya. Mohon perpanjang masa ired order sampai tanggal yang ditentukan, tq mod.""",False,409,4300204,43,[],False,0,812,71,False,284
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min tolong respon komplain no transaksi xxxnumberxxx secepatnya . trimakasih banyak,"Dengan hormat, mohon segera tanggapi keluhan nomor transaksi tersebut secepat mungkin. Atas perhatian dan kerjasamanya, kami ucapkan terima kasih.",False,411,4300205,43,[],False,0,791,35,False,146
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,minn kuota ini berlaku sampai kapan ya ? trims,"Contoh Referensi:
+""Dengan ini, saya ingin menanyakan mengenai jangka waktu berlaku kuota yang telah diberikan. Terima kasih atas perhatiannya.""",False,413,4300206,43,[],False,0,754,32,False,143
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,mohon dibantu saya sdh lakukan pembayaran tagihan xxxdatexxx bulanan tapi knpa no hp masih belum bisa aktiv no hp matrik xxxnumberxxx,"Contoh Referensi:
+""Dengan hormat, saya ingin menyampaikan kendala terkait pembayaran tagihan bulanan pada tanggal xxxdatexxx. Meskipun telah melakukan pembayaran, nomor telepon xxxnumberxxx masih belum aktif. Mohon bantuannya untuk segera mengatasi masalah ini.""",False,415,4300207,43,[],False,0,841,54,False,262
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"eh ada yg punya setori , misi ya mbaa","Dengan senang hati, apakah ada yang ingin berbagi pengalaman atau pencarian yang sedang dilakukan?",False,417,4300208,43,[],False,0,745,19,False,98
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,alasannya tdk masuk akal kadang perintah operator telkomsel bila lelet matikan tombol pesawat atau sebut data diri tp tetap lelet,"“Penjelasan tersebut, terkadang, tidak logis. Perintah dari operator Telkomsel mengenai pemutusan sambungan data ketika terjadi kendala, seperti tombol pesawat yang tidak berfungsi atau data yang masih lelet, tetap tidak efektif.”",False,419,4300209,43,[],False,0,837,49,False,230
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"tolong cek dm , saya kirim screenshot history topup tapi gak masuk yah saldonya",Mohon kirimkan pesan langsung (DM) untuk menanyakan perihal screenshot riwayat top-up yang telah saya kirim. Saldo yang seharusnya tertera tidak muncul.,False,421,4300210,43,[],False,0,787,38,False,152
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,colek xxxuserxxx dan xxxuserxxx mohon diperhitungkan biaya parkir,"Dengan hormat, kami mengajukan permohonan agar biaya parkir untuk xxxuserxxx dan xxxuserxxx diperhitungkan.",False,423,4300211,43,[],False,0,773,29,False,107
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,sudah saya dm infonya . mohon dicek . terima kasih .,"Dengan hormat, saya telah mengirimkan informasi melalui pesan langsung. Mohon untuk dapat memeriksanya. Atas perhatian dan kerjasamanya, saya mengucapkan terima kasih.",False,425,4300212,43,[],False,0,760,36,False,167
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"iya jadi kurang tingkat kepercayaan nya , gak kebayang flexi cash nya","“Sepertinya tingkat keyakinannya menurun, dan saya tidak yakin dengan fleksibilitas dana tunai tersebut.”",False,427,4300213,43,[],False,0,777,25,False,105
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"selamat siang , saya dapet sms dari xxxnumberxxx xxxnumberxxx . mengatas namakan telsel . memberikan penawaran cc bankmega . apakah ini benar ?","Contoh Referensi:
+""Dengan hormat, saya telah menerima pesan singkat dari nomor [nomor telepon]. Pemberitahuan tersebut atas nama penyedia layanan telekomunikasi, menawarkan kerjasama dengan Bank Mega. Mohon konfirmasi apakah hal ini merupakan informasi yang valid.""",False,429,4300214,43,[],False,0,851,56,False,265
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min ini kenapa lagi min udah dari tadi pagi ini sy gak bisa dm situ btw,"“Maaf, kenapa lagi ya? Sejak tadi pagi saya sudah tidak bisa mengirimkan pesan ke dia, btw.”",False,431,4300215,43,[],False,0,779,26,False,92
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,jaringan lagi jelek kah ? dah xxxnumberxxx hari lemot,"Contoh Referensi:
+""Astaga, ini kok masih aja nggak beres? Sudah berapa hari ya, bikin kesel banget.""",False,433,4300216,43,[],False,0,761,29,False,100
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min kalo pada key bca saat baru dinyalakan muncul tulisan batt xxxnumberxxx artinya apa,"Contoh Referensi:
+""Saya menemukan bahwa ketika tombol daya perangkat dihidupkan, muncul pesan 'Baterai xxx'. Apa arti dari pesan ini?""
+
+Hasil:
+""Jika tombol baca muncul tulisan 'Baterai xxxnumberxxx' saat baru dinyalakan, mohon jelaskan artinya.""",False,435,4300217,43,[],False,0,795,66,False,245
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,ini member seventeen baru ya xxxuserxxx ? wkwk,"Teks Sumber: ""ini member seventeen baru ya xxxuserxxx ? wkwk""
+
+Contoh Referensi:
+""Baik, mari kita mulai petualangan ini bersama-sama. Semoga berhasil, ya!""",False,437,4300218,43,[],False,0,754,46,False,155
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"hari minggu , di kcp buka untuk pembelian kartu flazz ngak ?","Contoh Referensi:
+""Dengan senang hati kami informasikan bahwa Kantor Pos tetap buka pada hari Minggu untuk layanan pembelian kartu pos.""",False,439,4300219,43,[],False,0,768,29,False,136
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"lupa saya resinya , tolong cek by nama saya aja","Mohon berikan saya ""Contoh Referensi"" yang akan digunakan untuk memodifikasi gaya bahasa teks. Saya membutuhkan teks referensi untuk dapat menyelesaikan tugas ini.",False,441,4300220,43,[],False,0,755,35,False,163
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"oke , sudah saya kirim via dm","Tentu, berikan saya ""Contoh Referensi"" yang ingin Anda gunakan sebagai panduan. Saya akan memodifikasi gaya bahasa ""Teks Sumber"" sesuai dengan instruksi Anda.",False,443,4300221,43,[],False,0,737,40,False,158
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,dapat xxxnumberxxx gb cuman rp xxxnumberxxx dari,"Contoh Referensi:
+""Dengan demikian, investasi sebesar itu, bernilai kurang lebih seratus juta rupiah, menjadi sebuah keputusan yang sangat bijaksana.""",False,445,4300222,43,[],False,0,756,33,False,150
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,daftarin paket yellow lemot bgt sampe xxxnumberxxx kali daftarin . biasanya bisa . tapi ini kedaftar double . gemana sih ah .,"Contoh Referensi:
+""Saya sangat kecewa dengan proses pendaftaran yang berulang-ulang ini. Seharusnya bisa dilakukan dengan lancar, namun saya terus-menerus mengalami masalah saat mendaftar, bahkan hingga beberapa kali. Sungguh menyebalkan.""
+
+Hasil:
+""Sangat mengecewakan daftar paket kuningnya, sudah di-daftarkan sebanyak xxxnumberxxx kali, biasanya bisa, tapi malah double. Membingungkan sekali, sungguh.""",False,447,4300223,43,[],False,0,833,100,False,405
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,ini speed nya segini doang di jaringan full xxxnumberxxx g wahai provider terbesar di indonesia ? mohon penjelasan logisnya,"Contoh Referensi:
+""Dengan segala hormat, kami ingin menyampaikan kekecewaan mendalam atas penurunan kualitas layanan yang kami alami. Terutama pada saat-saat puncak penggunaan, seperti yang terjadi saat ini, kami mendapati kecepatan internet yang sangat jauh dari ekspektasi. Kami berharap dapat menerima penjelasan yang komprehensif dan solusi yang efektif untuk mengatasi permasalahan ini.""",False,449,4300224,43,[],False,0,831,78,False,392
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,: seberapa kamu ? : besok gw mau nembak loe : terus ? : gw nangisnya sekarang,“Bagaimana kabarmu? : Besok aku akan melamarmu : lagi? : Aku sampai menangis sekarang.”,False,451,4300225,43,[],False,0,785,28,False,87
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"bener banget promonya kerasa bgt lah , top grab !","Sungguh efektifnya promosi yang ditawarkan, luar biasa sekali! Sangat direkomendasikan.",False,453,4300226,43,[],False,0,757,23,False,87
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,udah habis voucher nya gmna donkk,Mohon informasikan bagaimana cara melanjutkan karena kuponnya telah habis.,False,455,4300227,43,[],False,0,741,15,False,74
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,saya lupa id klik bca saya bagaimana cara mengetahuinya ? untuk pin saya masih ingat .,"Saya tidak dapat mengingat ID klik BCA saya, bagaimana cara menemukannya? Namun, nomor PIN saya masih terlintas di benak.",True,457,4300228,43,[],False,0,794,29,False,121
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,jangan berikan kode ini kepada siapapun,"Mohon, jangan serahkan instruksi tersebut kepada pihak manapun.",False,459,4300229,43,[],False,0,747,16,False,63
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"sm20 . xxxnumberxxx sukses . sn / ref : xxxnumberxxx . saldo xxxnumberxxx , xxxnumberxxx - xxxnumberxxx = xxxnumberxxx , xxxnumberxxx xxxuserxxx / xxxnumberxxx xxxtimexxx bantu cek bos , blm masuk menerut customer","Berikut adalah teks yang ditulis ulang dengan gaya yang sesuai dengan contoh referensi (yang tidak diberikan dalam prompt, tetapi saya akan berasumsi gaya formal dan profesional dengan fokus pada detail dan akurasi):
+
+""Data sm20 menunjukkan angka yang berhasil. Referensi: [xxxnumberxxx]. Saldo [xxxnumberxxx] - [xxxnumberxxx] = [xxxnumberxxx] [xxxnumberxxx].  Pengguna [xxxuserxxx] meminta bantuan untuk menelusuri masalah ini, berdasarkan laporan pelanggan.""",False,461,4300230,43,[],False,0,921,106,False,460
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,udah brapa bulan ini masi aja xxxuserxxx blom bisa aktivasi imessage,"""Saya telah mencatat bahwa xxxuserxxx masih belum berhasil melakukan aktivasi iMessage selama beberapa bulan terakhir.""",False,463,4300231,43,[],False,0,776,24,False,119
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"sama - sama bpk rudi , semoga berkenan dengan informasi yang kami sampaikan . tks ~ toby","Dengan hormat Bapak Rudi, semoga Bapak menerima dengan baik surat ini. Atas perhatian dan kesempatannya, kami mengucapkan terima kasih. –Toby",False,465,4300232,43,[],False,0,796,32,False,141
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"hi min , mau tanya ini paketku statusnya sedang di kiri cuma anehnya pas di resi namanya penerima gak sesuai dg yg aku tulis .","Contoh Referensi:
+""Kepada Yth. Bapak/Ibu,
+
+Dengan hormat, saya ingin menyampaikan permohonan untuk meninjau status pengiriman paket dengan nomor resi [Nomor Resi].  Saat ini, sistem menunjukkan status 'sedang dalam proses', namun terdapat ketidaksesuaian antara nama penerima yang tercantum dalam resi dengan nama yang saya daftarkan saat pemesanan.""
+Teks Hasil:
+
+""Yth. Bapak/Ibu, mohon bantuannya untuk memeriksa status paket saya. Resi menunjukkan 'sedang diproses', tapi ada ketidakcocokan nama penerima di resi dengan nama yang saya cantumkan.""",False,467,4300233,43,[],False,0,834,145,False,548
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min kok saya nggak bisa daftar paket ya ?,"Saya mohon maaf, saya mengalami kendala teknis dalam proses pendaftaran paket.",False,469,4300234,43,[],False,0,749,18,False,78
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,oh iya masukan dari saya kalau bisa untuk perusahaan kurir di beri rating juga di apps . jadi bisa kelihatan performa perusahaan kurirnya .,"""Sebagai informasi tambahan, saya sarankan agar terdapat penilaian khusus untuk perusahaan jasa pengiriman di dalam aplikasi. Hal ini akan memungkinkan visualisasi kinerja dari masing-masing perusahaan kurir secara jelas.""",False,471,4300235,43,[],False,0,847,40,False,222
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,itu kelamaan gak diantar . gak diupdate jg udah datang . disimpan dlm gudang jne hingga dimakan tikus xxxnumberxxx bungkus . gmn tuh ?,"Contoh Referensi:
+""Mohon beritahu, paket tersebut masih belum dikirim. Statusnya juga belum diperbarui, meskipun sudah tiba. Paket tersebut saat ini tersimpan di gudang JNE dan sayangnya telah dimakan tikus sebanyak xxxnumberxxx bungkus. Bagaimana solusinya?""",False,473,4300236,43,[],False,0,842,64,False,259
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,mohon respon dm dari saya . terimakasih .,Silakan kirim pesan langsung kepada saya. Terima kasih.,False,475,4300237,43,[],False,0,749,14,False,55
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,mangkannya kalo kartu nya telkomsel jangan beli pulsa xl jadi ga masuk kak,"""Jadi, kalau kartunya Telkomsel, sebaiknya hindari membeli pulsa dari XL, karena tidak akan terhitung, lho.""",False,477,4300238,43,[],False,0,782,31,False,108
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,mana nih dana reply email dan dm nya ?,“Di mana letak tanggapan untuk email dan pesan langsung?”,False,479,4300239,43,[],False,0,746,16,False,57
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,sekelas jenius bisa kena begini juga ya,"“Bahkan, orang-orang yang memiliki potensi luar biasa pun, sewaktu-waktu, dapat mengalami kesulitan serupa.”",False,481,4300240,43,[],False,0,747,27,False,108
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"min , kalo sy punya xxxnumberxxx akun ovo karena ada xxxnumberxxx no smartphone , bisa nggak cek saldo ovo cukup di xxxnumberxxx smartphone aja .","Contoh Referensi:
+""Dengan senang hati, saya akan membantu Anda memeriksa saldo OVO yang terhubung dengan nomor smartphone Anda. Mohon berikan detail nomor smartphone yang bersangkutan agar saya dapat memverifikasi saldo yang tersedia.""",False,483,4300241,43,[],False,0,853,49,False,235
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min tolong dm sy di folow up,Mohon kirimkan pesan langsung kepada saya melalui akun media sosial yang telah saya ikuti.,False,485,4300242,43,[],False,0,736,21,False,90
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,saya juga gitu udah di dm di tweet juga tapi gak fi gubris taik,"Contoh Referensi:
+""Maaf, saya tidak bisa membalas DM Anda. Saya sedang sibuk.""
+""Saya mohon maaf, saya tidak dapat membalas pesan Anda. Saya sedang fokus pada pekerjaan lain.""
+""Terima kasih atas DM Anda, namun saya tidak dapat membalasnya saat ini.""
+""Mohon maaf, saya tidak sempat membalas DM Anda. Terima kasih atas pengertiannya.""
+
+Hasil:
+""Maaf, saya tidak membalas DM atau tweet karena sedang sibuk.""",False,487,4300243,43,[],False,0,771,111,False,402
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,sy penumpang terpilih daerah semarang ? hehehe,"Contoh Referensi:
+""Dengan penuh semangat, kami mengumumkan bahwa Bapak/Ibu [Nama Lengkap] telah terpilih sebagai perwakilan dari wilayah Semarang untuk mengikuti program penghargaan bergengsi ini. Keberhasilan Bapak/Ibu adalah bukti dedikasi dan kerja keras yang telah dilakukan.""",False,489,4300244,43,[],False,0,754,63,False,280
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,mana jawaban dari dm pict bukti yg sudah saya kirim ?,"""Di mana penjelasannya terkait dengan gambar bukti yang telah saya unggah?""",False,491,4300245,43,[],False,0,761,19,False,75
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,wooy gak ada tanggepan apa nih !,(Tidak ada contoh referensi yang diberikan. Mohon berikan contoh referensi agar saya dapat memodifikasi gaya bahasa teks sumber sesuai instruksi.),True,493,4300246,43,[],False,0,740,32,False,146
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,saya lg pesen grabfood trus app nya lemot bgt dan saya gabisa hubungin driver nya . gimana nih ?,"“Saya baru saja memesan melalui layanan pesan antar makanan, namun aplikasi tersebut mengalami kendala teknis yang sangat signifikan, sehingga saya tidak dapat menghubungi pengemudi. Mohon bantuan dalam menyelesaikan masalah ini.”",True,495,4300247,43,[],False,0,804,43,False,230
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,min ni pas mau bayar kok gak bisa ya ? tulisannya web temporary down . di back juga gak bisa . musti restart hape .,"""Terjadi kendala pembayaran karena situs web sedang dalam masa pemeliharaan sementara.  Juga, akses melalui *back-end* sistem tidak tersedia.  Mohon lakukan restart perangkat seluler.""",False,497,4300248,43,[],False,0,823,43,False,184
+google/gemma-3-4b-it,informal,formal,zero_shot,N/A,"terima kasih sudah followup , saya sudah sering chat tidak ada balasan","Dengan hormat, sungguh saya mengucapkan terima kasih atas perhatian Bapak/Ibu. Saya telah beberapa kali menghubungi melalui obrolan, namun belum mendapatkan tanggapan.",False,499,4300249,43,[],False,0,778,35,False,167

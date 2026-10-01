@@ -1,0 +1,17 @@
+model_id,original_style,style_target,retrieval_method,alpha,original_message,paraphrased_message,is_human_eval,sample_index,sample_seed,run_seed,retrieved_exemplars,retrieval_fallback,n_exemplars,prompt_chars,output_tokens,eos_reached,output_chars
+google/gemma-3-4b-it,excitement,competence,zero_shot,N/A,Tidur pake backpack juga kali ya dia,"Contoh Referensi:
+""Ya, memang begitu rupanya.""
+""Benar sekali, keadaan seperti itu.""
+""Sungguh, demikianlah kenyataannya.""
+""Tidak bisa dipungkiri, hal itu terjadi.""
+""Memang demikianlah adanya.""",True,2523,4200000,42,[],False,0,744,57,False,191
+google/gemma-3-4b-it,sincerity,competence,zero_shot,N/A,Tersedia juga melalui Drive Thru McDelivery GrabFood GoFood dan ShopeeFood.,"Tentu, berikan saya ""Contoh Referensi"" yang akan Anda gunakan untuk memodifikasi gaya bahasa ""Teks Sumber"". Saya akan menunggu teks tersebut untuk melanjutkan tugas ini.",True,1815,4200001,42,[],False,0,783,38,False,169
+google/gemma-3-4b-it,sophistication,competence,zero_shot,N/A,Feel the premium experience in beautiful Bali with the exciting feeling of the advanced mobility from Piaggio () the timeless lifestyle icon of Vespa () the intense racing performance of Aprilia (),"Contoh Referensi:
+""Merangkul keanggunan Paris, nikmati kehalusan aroma kopi yang memikat, dan rasakan keajaiban perjalanan dengan Citroën – simbol klasik kebebasan, Citroën – inovasi otomotif yang tak tertandingi, dan pengalaman berkendara yang memacu adrenalin dengan Peugeot.""",True,3864,4200002,42,[],False,0,905,72,False,278
+google/gemma-3-4b-it,sophistication,competence,zero_shot,N/A,Pamerskincare kesayangan kalian sekarang!!,"Contoh Referensi:
+""Penawaran Spesial Terbatas! Jangan lewatkan kesempatan emas ini!""
+""Diskon Gila-Gilaan Hanya untuk Anda!""
+""Produk Terlaris! Stok Terbatas, Segera Order!""
+""Raih Kulit Impianmu Sekarang!""
+""Hadiah Menanti Kamu!""",True,3617,4200003,42,[],False,0,750,73,False,226
+google/gemma-3-4b-it,excitement,competence,zero_shot,N/A,Ditunggu yaa kakk,"(Tidak ada contoh referensi diberikan. Karena itu, saya tidak dapat melakukan tugas ini.)",True,3439,4200004,42,[],False,0,725,20,False,89

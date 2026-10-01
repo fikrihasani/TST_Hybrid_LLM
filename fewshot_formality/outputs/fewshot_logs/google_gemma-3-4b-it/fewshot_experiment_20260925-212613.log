@@ -1,0 +1,78 @@
+2026-09-25 21:26:13,114 - INFO - No device provided, using cuda:0
+2026-09-25 21:26:13,426 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:26:13,692 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/modules.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:13,964 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:26:14,267 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:14,274 - INFO - Loading SentenceTransformer model from LazarusNLP/simcse-indobert-base.
+2026-09-25 21:26:14,544 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:26:14,571 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:14,838 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:26:15,097 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/README.md "HTTP/1.1 200 OK"
+2026-09-25 21:26:15,366 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:26:15,394 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/modules.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:15,680 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:26:15,943 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:16,210 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:26:16,484 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:26:16,746 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:17,170 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:26:17,439 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:26:17,705 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:26:17,979 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:26:18,255 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:26:18,526 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:18,802 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:26:18,827 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:19,099 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:26:19,111 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:19,373 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:26:19,401 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:19,681 - INFO - HTTP Request: GET https://huggingface.co/api/models/LazarusNLP/simcse-indobert-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-25 21:26:19,969 - INFO - HTTP Request: GET https://huggingface.co/api/models/LazarusNLP/simcse-indobert-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-25 21:26:20,271 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:26:20,575 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:20,858 - INFO - HTTP Request: GET https://huggingface.co/api/models/LazarusNLP/simcse-indobert-base "HTTP/1.1 200 OK"
+2026-09-25 21:26:21,690 - INFO - Loading Hugging Face model: google/gemma-3-4b-it
+2026-09-25 21:26:21,964 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:22,247 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:22,537 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-3-4b-it/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-25 21:26:22,805 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-3-4b-it/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-25 21:26:23,948 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-3-4b-it "HTTP/1.1 200 OK"
+2026-09-25 21:26:24,227 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:34,542 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:26:34,558 - INFO - Berhasil memuat dataset yang sudah dipecah dari klasifikasi.
+2026-09-25 21:26:34,558 - INFO - Style Pool / Retrieval Index (30%): 1500 kalimat.
+2026-09-25 21:26:34,558 - INFO - Test Set (10%): 500 kalimat.
+2026-09-25 21:26:34,575 - INFO - Mengeksekusi 5 data menuju target formal.
+2026-09-25 21:26:34,721 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:34,758 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:34,812 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:34,844 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:34,879 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,099 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,130 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,163 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,255 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,345 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,539 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,541 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,543 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,544 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,546 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,753 - INFO - Mengeksekusi 5 data menuju target informal.
+2026-09-25 21:26:35,768 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,783 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,797 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,811 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:35,826 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:36,031 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:36,046 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:36,060 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:36,075 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:36,089 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:36,282 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:36,285 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:36,287 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:36,288 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:36,290 - ERROR - Hugging Face generation failed: The following `model_kwargs` are not used by the model: ['generator'] (note: typos in the generate arguments will also show up in this list)
+2026-09-25 21:26:36,490 - INFO - ALL FEW-SHOT EXPERIMENTS COMPLETED.

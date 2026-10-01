@@ -1,0 +1,21 @@
+file,style_target,retrieval_method,alpha,n,sumber_eksemplar,overlap8_mean,pct_output_dengan_overlap,pct_output_overlap_tinggi
+evaluated_v2_AAKER_competence_fewshot_bm25_5_seed42_results.csv,competence,bm25,nan,500,kolom retrieved_exemplars,0.0365,9.3,6.7
+evaluated_v2_AAKER_competence_fewshot_centroid_5_seed42_results.csv,competence,centroid,nan,500,kolom retrieved_exemplars,0.1884,64.1,39.1
+evaluated_v2_AAKER_competence_fewshot_dense_5_seed42_results.csv,competence,dense,nan,500,kolom retrieved_exemplars,0.012,3.4,1.8
+evaluated_v2_AAKER_competence_fewshot_hybrid_early_alpha0.1_5_seed42_results.csv,competence,hybrid_early,0.1,500,kolom retrieved_exemplars,0.3393,66.9,50.1
+evaluated_v2_AAKER_competence_fewshot_hybrid_early_alpha0.3_5_seed42_results.csv,competence,hybrid_early,0.3,500,kolom retrieved_exemplars,0.2245,50.2,36.3
+evaluated_v2_AAKER_competence_fewshot_hybrid_early_alpha0.5_5_seed42_results.csv,competence,hybrid_early,0.5,500,kolom retrieved_exemplars,0.0647,17.8,10.7
+evaluated_v2_AAKER_competence_fewshot_hybrid_early_alpha0.7_5_seed42_results.csv,competence,hybrid_early,0.7,500,kolom retrieved_exemplars,0.0233,6.3,3.8
+evaluated_v2_AAKER_competence_fewshot_hybrid_early_alpha0.9_5_seed42_results.csv,competence,hybrid_early,0.9,500,kolom retrieved_exemplars,0.0112,2.9,1.8
+evaluated_v2_AAKER_competence_fewshot_random_5_seed42_results.csv,competence,random,nan,500,kolom retrieved_exemplars,0.0108,3.5,1.4
+evaluated_v2_AAKER_competence_fewshot_zero_shot_5_seed42_results.csv,competence,zero_shot,nan,500,kolom retrieved_exemplars,0.0,0.0,0.0
+evaluated_v2_AAKER_excitement_fewshot_bm25_5_seed42_results.csv,excitement,bm25,nan,500,kolom retrieved_exemplars,0.0268,8.5,5.2
+evaluated_v2_AAKER_excitement_fewshot_centroid_5_seed42_results.csv,excitement,centroid,nan,500,kolom retrieved_exemplars,0.0017,0.9,0.2
+evaluated_v2_AAKER_excitement_fewshot_dense_5_seed42_results.csv,excitement,dense,nan,500,kolom retrieved_exemplars,0.0292,8.7,4.5
+evaluated_v2_AAKER_excitement_fewshot_hybrid_early_alpha0.1_5_seed42_results.csv,excitement,hybrid_early,0.1,500,kolom retrieved_exemplars,0.0299,11.0,4.9
+evaluated_v2_AAKER_excitement_fewshot_hybrid_early_alpha0.3_5_seed42_results.csv,excitement,hybrid_early,0.3,500,kolom retrieved_exemplars,0.0383,11.2,5.8
+evaluated_v2_AAKER_excitement_fewshot_hybrid_early_alpha0.5_5_seed42_results.csv,excitement,hybrid_early,0.5,500,kolom retrieved_exemplars,0.0326,10.0,5.8
+evaluated_v2_AAKER_excitement_fewshot_hybrid_early_alpha0.7_5_seed42_results.csv,excitement,hybrid_early,0.7,500,kolom retrieved_exemplars,0.0426,11.2,6.5
+evaluated_v2_AAKER_excitement_fewshot_hybrid_early_alpha0.9_5_seed42_results.csv,excitement,hybrid_early,0.9,500,kolom retrieved_exemplars,0.0322,10.0,5.1
+evaluated_v2_AAKER_excitement_fewshot_random_5_seed42_results.csv,excitement,random,nan,500,kolom retrieved_exemplars,0.0013,0.2,0.2
+evaluated_v2_AAKER_excitement_fewshot_zero_shot_5_seed42_results.csv,excitement,zero_shot,nan,500,kolom retrieved_exemplars,0.0,0.0,0.0

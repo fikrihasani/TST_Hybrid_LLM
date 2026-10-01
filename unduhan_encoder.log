@@ -1,0 +1,73 @@
+unduh sentence-transformers/LaBSE
+Fetching 16 files:   0%|          | 0/16 [00:00<?, ?it/s]C:\Ana3\envs\fikri_hasani\Lib\site-packages\huggingface_hub\file_download.py:138: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\coe\.cache\huggingface\hub\models--sentence-transformers--LaBSE. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Fetching 16 files:   6%|6         | 1/16 [00:00<00:12,  1.19it/s]Fetching 16 files:  25%|##5       | 4/16 [00:10<00:34,  2.86s/it]Fetching 16 files:  56%|#####6    | 9/16 [13:55<12:47, 109.60s/it]Fetching 16 files:  69%|######8   | 11/16 [16:34<08:26, 101.37s/it]Fetching 16 files: 100%|##########| 16/16 [16:34<00:00, 62.15s/it] 
+selesai sentence-transformers/LaBSE C:\Users\coe\.cache\huggingface\hub\models--sentence-transformers--LaBSE\snapshots\836121a0533e5664b21c7aacc5d22951f2b8b25b
+unduh intfloat/multilingual-e5-base
+Fetching 18 files:   0%|          | 0/18 [00:00<?, ?it/s]C:\Ana3\envs\fikri_hasani\Lib\site-packages\huggingface_hub\file_download.py:138: UserWarning: `huggingface_hub` cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\coe\.cache\huggingface\hub\models--intfloat--multilingual-e5-base. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the `HF_HUB_DISABLE_SYMLINKS_WARNING` environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+Fetching 18 files:   6%|5         | 1/18 [00:00<00:14,  1.19it/s]Fetching 18 files:  11%|#1        | 2/18 [00:00<00:06,  2.37it/s]
+Traceback (most recent call last):
+  File "<string>", line 9, in <module>
+    p = snapshot_download(repo_id=repo, ignore_patterns=ignore)
+  File "C:\Ana3\envs\fikri_hasani\Lib\site-packages\huggingface_hub\utils\_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Ana3\envs\fikri_hasani\Lib\site-packages\huggingface_hub\_snapshot_download.py", line 455, in snapshot_download
+    thread_map(
+    ~~~~~~~~~~^
+        _inner_hf_hub_download,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Ana3\envs\fikri_hasani\Lib\site-packages\tqdm\contrib\concurrent.py", line 69, in thread_map
+    return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+  File "C:\Ana3\envs\fikri_hasani\Lib\site-packages\tqdm\contrib\concurrent.py", line 51, in _executor_map
+    return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+  File "C:\Ana3\envs\fikri_hasani\Lib\site-packages\tqdm\std.py", line 1181, in __iter__
+    for obj in iterable:
+               ^^^^^^^^
+  File "C:\Ana3\envs\fikri_hasani\Lib\concurrent\futures\_base.py", line 639, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Ana3\envs\fikri_hasani\Lib\concurrent\futures\_base.py", line 311, in _result_or_cancel
+    return fut.result(timeout)
+           ~~~~~~~~~~^^^^^^^^^
+  File "C:\Ana3\envs\fikri_hasani\Lib\concurrent\futures\_base.py", line 443, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "C:\Ana3\envs\fikri_hasani\Lib\concurrent\futures\_base.py", line 395, in __get_result
+    raise self._exception
+  File "C:\Ana3\envs\fikri_hasani\Lib\concurrent\futures\thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "C:\Ana3\envs\fikri_hasani\Lib\concurrent\futures\thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "C:\Ana3\envs\fikri_hasani\Lib\site-packages\huggingface_hub\_snapshot_download.py", line 435, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+        repo_id,
+        ^^^^^^^^
+    ...<14 lines>...
+        dry_run=dry_run,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Ana3\envs\fikri_hasani\Lib\site-packages\huggingface_hub\utils\_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Ana3\envs\fikri_hasani\Lib\site-packages\huggingface_hub\file_download.py", line 997, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Ana3\envs\fikri_hasani\Lib\site-packages\huggingface_hub\file_download.py", line 1229, in _hf_hub_download_to_cache_dir
+    _create_symlink(blob_path, pointer_path, new_blob=True)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Ana3\envs\fikri_hasani\Lib\site-packages\huggingface_hub\file_download.py", line 664, in _create_symlink
+    os.symlink(src_rel_or_abs, abs_dst)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 1314] A required privilege is not held by the client: '..\\..\\..\\blobs\\2a824fa43c359360ecddb16808b539c6be892fef' -> 'C:\\Users\\coe\\.cache\\huggingface\\hub\\models--intfloat--multilingual-e5-base\\snapshots\\d128750597153bb5987e10b1c3493a34e5a4502a\\1_Pooling\\config.json'

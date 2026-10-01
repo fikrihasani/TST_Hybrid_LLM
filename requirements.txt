@@ -1,0 +1,29 @@
+# Persyaratan dependensi untuk JCCE-First Revision.
+# Versi di bawah adalah batas minimum. Setelah terpasang, catat versi yang benar-benar
+# terpakai di RUN_LOG.md, karena versi pustaka masuk ke bagian setup komputasi manuscript.
+#
+# Pasang dengan:  pip install -r requirements.txt
+# Untuk GPU CUDA, pasang torch sesuai versi CUDA mesin lebih dulu dari
+# https://pytorch.org/get-started/locally/ lalu jalankan perintah di atas.
+
+# --- inti ---
+numpy>=1.24
+pandas>=1.5
+scikit-learn>=0.24          # StratifiedGroupKFold dibutuhkan make_splits_brand.py
+tqdm>=4.60
+
+# --- model dan tokenizer ---
+torch>=2.0
+transformers>=4.40
+sentence-transformers>=2.2
+accelerate>=0.26            # device_map="auto" pada pemuatan 4-bit
+bitsandbytes>=0.41          # kuantisasi 4-bit nf4 untuk model generasi dan model fluency
+
+# --- retrieval ---
+rank-bm25>=0.2
+
+# --- statistik ---
+scipy>=1.7                  # opsional. Tanpa scipy, uji permutasi tanda dipakai otomatis
+
+# --- pemeriksaan lingkungan ---
+# Tidak ada dependensi tambahan. scripts/preflight.py hanya memakai pustaka di atas.

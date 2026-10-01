@@ -1,0 +1,1028 @@
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | DENSE
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (sincerity):
+Mimin setuju sih Kak apalagi kalau minum Iced Coffee. Bisa ademin mood dan kembaliin semangat kamu lagi! Yuk cobain
+------------------------------
+TRANSFERRED (competence):
+"Jadi, Mimin juga setuju nih, apalagi kalau minum Iced Coffee! Bikin mood langsung naik lagi, semangat berlipat ganda! Yuk, dicoba!"
+
+Sample 2/5
+ORIGINAL TEXT (sincerity):
+Hi kami mohon maaf atas ketidaknyamanannya. Agar dapat kami bantu teruskan kepada tim kami bolehkah kami meminta nomor telepon yang dapat dihubungi melalui DM? :)
+------------------------------
+TRANSFERRED (competence):
+Mohon maaf atas ketidaknyamanannya. Guna membantu, boleh kami minta nomor telepon yang bisa dihubungi lewat DM? :D
+
+Sample 3/5
+ORIGINAL TEXT (excitement):
+Congratulation and happy graduation . Love and best wishes for a wonderful future! Much love
+------------------------------
+TRANSFERRED (competence):
+"Congrats kamu yang udah lulus! Love & best wishes buat masa depan yang indah! ❤️"
+
+Sample 4/5
+ORIGINAL TEXT (sophistication):
+The 2023 2024 pairs of the Arts Initiative have been revealed. Five young talents will each have a unique mentorship with acclaimed artists El Anatsui Anne Lacaton Jia Zhang-Ke Dianne Reeves and . More on
+------------------------------
+TRANSFERRED (competence):
+“Siap-siap, 2023-2024 Arts Initiative telah terungkap! Lima talenta muda akan mendapatkan bimbingan unik dari seniman-seniman ternama seperti El Anatsui, Anne Lacaton, Jia Zhang-Ke, dan DiAnne Reeves. Lebih lanjut…”
+
+Sample 5/5
+ORIGINAL TEXT (ruggedness):
+What is your happiness? What is your goal in life? Let us share ours. Will be waiting you guys at
+------------------------------
+TRANSFERRED (competence):
+We're sure it'll be perfect for you! :)
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | CENTROID
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (excitement):
+Tumben
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI. Mohon maaf atas kendala yang terjadi. Terkait pesan melalui DM, kami sudah merespons. Silakan lakukan pengecekan ya. Tks~Amel
+
+Sample 2/5
+ORIGINAL TEXT (sophistication):
+mantap makasih ya udah ikutan :)
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI. Terima kasih atas partisipasinya ya.
+
+Sample 3/5
+ORIGINAL TEXT (sophistication):
+yes it looks great. Thank you
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI. Terimakasih atas konfirmasi, ya.
+
+Sample 4/5
+ORIGINAL TEXT (ruggedness):
+Share Meme kocak yang Eigerian punya dong......
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI, mohon maaf atas kendala yang Anda alami. Terkait pesan yang disampaikan melalui DM, kami sudah merespons. Silakan lakukan pengecekan ya. Tks~Helma
+
+Sample 5/5
+ORIGINAL TEXT (sophistication):
+Pure Vespa style turning heads wherever it goes. how you want to be the center of attention you can do it with Vespa! Click the link to get more info!
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI. Mohon maaf atas kendala transaksi yang dialami. Guna menindaklanjuti hal tersebut kami sudah mengirimkan pesan melalui DM. Mohon lakukan pengecekan ya. Tks~Helma
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | BM25
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (excitement):
+BARU! Dreamy Choco Series Terbuat dari cokelat asli Belanda berkualitas yang tersedia dalam 3 varian yaitu: Dreamy Salted Caramel Aren Latte Dreamy Choco Salted Caramel Dreamy Choco Orange! Harganya mulai dari 19ribuan loh! Yuk beli sekarang juga di outlet Kopi Kenangan
+------------------------------
+TRANSFERRED (competence):
+“Wah, Dreamy Choco Series dari Kopi Kenangan, cokelat asli Belanda mulai Rp19 ribuan! Ada varian Salted Caramel Aren Latte, Choco Salted Caramel, dan Choco Orange! Beli sekarang juga, praktis banget!”
+
+Sample 2/5
+ORIGINAL TEXT (ruggedness):
+untuk 120 ga ada gan bisa diliat disini : om kalo cerrier consina 120 liter ada ?? kalo di garut aga
+------------------------------
+TRANSFERRED (competence):
+"Buat 120 nih, bisa diliat di sini ya, om. Cerrier Consina 120 liter ada gak sih? Kalo di Garut agak-agak..."
+
+Sample 3/5
+ORIGINAL TEXT (ruggedness):
+Selamat istirahat untuk yang baru pulang bekerja makasih sudah berjuang hari ini!
+------------------------------
+TRANSFERRED (competence):
+Makasih ya buat yang udah berjuang hari ini! Selamat istirahat!
+
+Sample 4/5
+ORIGINAL TEXT (sophistication):
+In 2022 with our partner we launched the Perpetual Planet Amazon Expedition. Since then National Geographic Explorers Thiago Silva and Julia Tavares have been working on mapping the area s unique seasonal wetlands. More on
+------------------------------
+TRANSFERRED (competence):
+"Pada tahun 2022 bersama mitra kami, kami meluncurkan Expedisi Amazon Planet Abadi. Sejak saat itu, National Geographic Explorers Thiago Silva dan Julia Tavares telah bekerja untuk memetakan area dengan lahan basah musiman yang unik. Lebih lanjut..."
+
+Sample 5/5
+ORIGINAL TEXT (sophistication):
+Haiii siapa aja nih pengguna Vespa S yang ada disini? Absen dulu dong. Buat yang ingin mencoba performa Vespa bisa langsung klik sekarang juga ya.
+------------------------------
+TRANSFERRED (competence):
+“Siapa nih yang punya Vespa S? Absen dong! Buat yang penasaran pengen nyobain performa Vespa, langsung klik aja sekarang!”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | HYBRID_EARLY | ALPHA: 0.1
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (excitement):
+Hai kak jangan khawatir ya bisa infokan no ordernya dan detail barang yg tertinggal melalui DM supaya bisa aku bantu cek ya. Tks^feb
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI. Mohon maaf atas kendala terkait barang yang tertinggal. Guna menindaklanjuti kami sudah kirimkan pesan melalui DM. Mohon lakukan pengecekan. Silakan infokan no order dan detail barang ya. Tks~Feb
+
+Sample 2/5
+ORIGINAL TEXT (sincerity):
+Mengajarkan anak menjalani gaya hidup sehat dapat dimulai dari kebiasaan sehari-hari. Di Hari Pendidikan Nasional ini yuk ajak anak untuk memulai hidup sehat dengan cara yang menyenangkan!
+------------------------------
+TRANSFERRED (competence):
+Hai Anak BRI, mohon maaf atas ketidaknyamanannya. Guna tindak lanjut kami sudah mengirimkan pesan melalui DM. Silakan lakukan pengecekan ya. Mari mulai hidup sehat bersama-sama! Dapatkan informasi terbaru seputar gaya hidup sehat di Sabrina WhatsApp 0812 1214 017. Tks~Celine
+
+Sample 3/5
+ORIGINAL TEXT (sophistication):
+RT : Sarapan bareng & sblm ride ke kaki gng salak :D
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI, mohon maaf atas kendala terkait sarapan bersama dan sebelum perjalanan ke kaki Gunung Salak. :D Kami sudah mengirimkan pesan melalui DM. Silakan lakukan pengecekan. Tks~[Nama Agen]
+
+Sample 4/5
+ORIGINAL TEXT (excitement):
+Di Tokyo gak? Temu-temu kak
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI, mohon maaf atas ketidaknyamanannya. Guna tindak lanjut kami sudah mengirimkan pesan melalui DM. Silakan lakukan pengecekan ya. Dapatkan informasi terbaru seputar layanan dan promo BRI di Sabrina WhatsApp 0812 1214 017. Tks~Amel
+
+Sample 5/5
+ORIGINAL TEXT (sincerity):
+2Bliss Top Notes Floral Citrus Wangi elegant ala mba-mba SCBD cocok untuk kamu yang tiap hari work from office
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI, mohon maaf atas kendala terkait aroma 2Bliss Top Notes Floral Citrus yang mungkin Anda rasakan. Kami sudah merespons pesan melalui DM. Silakan lakukan pengecekan ya. Informasi terbaru seputar produk BRI dapat hubungi Sabrina WhatsApp 0812 1214 017. Tks~Celine
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | HYBRID_EARLY | ALPHA: 0.3
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (sincerity):
+ahhh ini juga enakeunnn
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI, mohon maaf atas kendala transfer yang dialami. Benar ya. Saat ini fitur BI-FAST sedang dilakukan peningkatan pelayanan oleh pihak terkait. Sebagai alternatif untuk transaksi transfer online ke bank lain tetap bisa dilakukan melalui aplikasi BRImo.
+
+Sample 2/5
+ORIGINAL TEXT (excitement):
+Tidaaakkk biasaaa
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat! Mohon maaf atas kendala yang Bapak/Ibu alami. Mohon diinformasikan transaksi apa yang dilakukan dan apakah saldo rekening masih sesuai? Tks~Hela
+
+Sample 3/5
+ORIGINAL TEXT (sophistication):
+The 2023 2024 pairs of the Arts Initiative have been revealed. Five young talents will each have a unique mentorship with acclaimed artists El Anatsui Anne Lacaton Jia Zhang-Ke Dianne Reeves and . More on
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI. Info terbaru seputar program BRI 2023-2024 yang telah diungkapkan. Lima talenta muda akan mendapatkan mentoring unik bersama para seniman terkemuka: El Anatsui, Anne Lacaton, Jia Zhang-Ke, dan Dianne Reeves. Tks~Winni
+
+Sample 4/5
+ORIGINAL TEXT (sincerity):
+Hi Mohon info no telp ke sahabat.nestle.nestle.com atau hubungi Nestl Consumer Services 08001821028. Tim kami akan membantu.
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI, mohon info no telp ke sahabat.nestle.nestle.com atau hubungi Nestl Consumer Services 08001821028. Tim kami akan membantu. Tks~Yuka
+
+Sample 5/5
+ORIGINAL TEXT (sophistication):
+Menuju 9th Anniversary Sociolla punya bestie deals buat kamu!
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat Sociolla, kami sudah merespons mention sebelumnya. Silakan lakukan pengecekan ya. Informasi lainnya seputar Sociolla dapat hubungi Sabrina WhatsApp 0812 1214 017 atau akun resmi media sosial Sociolla yang terverifikasi. Tks~Arin
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | HYBRID_EARLY | ALPHA: 0.5
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (excitement):
+BAGI-BAGI HP GRATIS LAGI Tungguin malem ini jam 7 spesial Tokopedia Happy Hour ya Pastiin kamu langsung komen saat itu juga!!
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI, jangan lupa tungguin spesial Tokopedia Happy Hour malem ini jam 7 ya! Pastiin kamu langsung komen saat itu juga!!
+
+Sample 2/5
+ORIGINAL TEXT (sophistication):
+Bro dealer Vespa udah makin banyak sekarang. Nah kota kamu termasuk ngga? ?
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI. Tidak perlu khawatir. Guna tindak lanjut kami sudah kirimkan pesan melalui DM. Silakan melakukan pengecekan ya.
+
+Sample 3/5
+ORIGINAL TEXT (sophistication):
+Hii Bestie untuk promo online dan offline store sama kecuali Flash Sale Bundle/Paket dan free gift ya. For more info bisa menghubungi via DM
+------------------------------
+TRANSFERRED (competence):
+Hai Bestie, mohon maaf atas ketidaknyamanannya. Untuk promo online dan offline store sama kecuali Flash Sale Bundle/Paket dan free gift ya. Silakan lakukan pengecekan melalui DM untuk info lebih lanjut. Tks~Aril
+
+Sample 4/5
+ORIGINAL TEXT (sophistication):
+Imelda Therinne wore black sleeveless dress to Belenggu movie premiere last nite.
+------------------------------
+TRANSFERRED (competence):
+Hai Kak Imelda, selamat malam. Mengenakan gaun tanpa lengan hitam, Kak Imelda tampil memukau di pemutaran film Belenggu last night. Kami akan segera merespons pesan melalui DM. Silakan melakukan pengecekan. Dapatkan informasi terbaru seputar layanan dan promo BRI di Sabrina WhatsApp 0812 1214 017. Tks~Bowo
+
+Sample 5/5
+ORIGINAL TEXT (excitement):
+Karungin buruan
+------------------------------
+TRANSFERRED (competence):
+Langsung buruan PO nih!
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | HYBRID_EARLY | ALPHA: 0.7
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (excitement):
+Menggoda kannn
+------------------------------
+TRANSFERRED (competence):
+“Uuh, bikin penasaran deh, kan?”
+
+Sample 2/5
+ORIGINAL TEXT (ruggedness):
+BESOK!!! Kita dukung Veddriq Leonardo buat bawa pulang medali
+------------------------------
+TRANSFERRED (competence):
+"Yuk dukung Veddriq Leonardo buat menang! Langsung semangat!"
+
+Sample 3/5
+ORIGINAL TEXT (sincerity):
+Oleh karena itu Nestl telah menerapkan Prinsip Pemberdayaan Perempuan dari PBB sejak 2013. Selamat perempuan Indonesia!
+------------------------------
+TRANSFERRED (competence):
+Dengan demikian, Nestl telah mengadopsi Prinsip Pemberdayaan Perempuan dari PBB sejak 2013. Selamat bagi para perempuan Indonesia!
+
+Sample 4/5
+ORIGINAL TEXT (excitement):
+Hai kak kami dari Findaya partner Gojek yang menangani GoPayLater. Maaf atas kendalanya. Pertanyaan kakak kami bantu jawab via DM ya silakan melampirkan nomor telepon serta alamat email kakak ya. Tks^Slm
+------------------------------
+TRANSFERRED (competence):
+Hai kak, dari Findaya partner Gojek nih. Maaf atas kendalanya. Pertanyaan kakak, mimin bantu jawab lewat DM ya, silakan lampirin nomor telepon dan alamat email kakak supaya bisa dibantu. Tks~Slm
+
+Sample 5/5
+ORIGINAL TEXT (sincerity):
+mimin bantu sampaikan saran kamu ke tim terkait ya kak terima kasih loh
+------------------------------
+TRANSFERRED (competence):
+Kak, mimin bantu sampaikan saran kakak ke tim terkait ya. Terima kasih banyak!
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | HYBRID_EARLY | ALPHA: 0.9
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (sophistication):
+Vespa LXV150ie 3V tersedia dalam laburan warna eksklusif Red Chianti
+------------------------------
+TRANSFERRED (competence):
+“Vespa LXV150ie 3V hadir dalam pilihan warna spesial Red Chianti! Segera DM kami!”
+
+Sample 2/5
+ORIGINAL TEXT (excitement):
+Soalnya ngeliat WIB Promo Hoki Dijamin diskon s.d 88% jadi semangat kakkk
+------------------------------
+TRANSFERRED (competence):
+Wih, jangan kelewatan promo WIB Hoki yang diskon sampe 88% yaa! Pasti seru banget!
+
+Sample 3/5
+ORIGINAL TEXT (sophistication):
+Hii Bestie untuk kendalanya mohon konfirmasi via DM ya agar dapat dibantu pengecekan lebih lanjut
+------------------------------
+TRANSFERRED (competence):
+Hii Bestie, untuk kendala tersebut mohon konfirmasi via DM ya agar dapat dibantu pengecekan lebih lanjut.
+
+Sample 4/5
+ORIGINAL TEXT (sincerity):
+See yaaa.
+------------------------------
+TRANSFERRED (competence):
+Eitsss see yaaa!
+
+Sample 5/5
+ORIGINAL TEXT (excitement):
+Udah belanja apa nih 12.12?
+------------------------------
+TRANSFERRED (competence):
+"Rekening Simpanan Pelajar tutup rekening otomatis setelah 12 bulan tidak ada transaksi."
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | RANDOM
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (ruggedness):
+Wih! Mantap!
+------------------------------
+TRANSFERRED (competence):
+Selamat bertepatan bagi seluruh pelanggan setia Telkomsel. Semoga hari ini membawa kebahagiaan dan keberkahan dalam setiap langkah yang kita ambil, serta senantiasa menjunjung tinggi integritas dan kepercayaan dalam berinteraksi dengan sesama.
+
+Sample 2/5
+ORIGINAL TEXT (sincerity):
+hai ada sesuatu dari nih
+------------------------------
+TRANSFERRED (competence):
+Hai! Ada yang bisa kami bantu, Sobat?
+
+Sample 3/5
+ORIGINAL TEXT (excitement):
+Soalnya ngeliat WIB Promo Hoki Dijamin diskon s.d 88% jadi semangat kakkk
+------------------------------
+TRANSFERRED (competence):
+“Wah, gila banget nih WIB Promo Hoki! Dijamin diskon sampe 88%, pasti seru banget, kak!”
+
+Sample 4/5
+ORIGINAL TEXT (sophistication):
+The graphic Tirto Tedjo leitmotif is softened with the use of sheer tulle and subdued palette discover the sleeveless top in-store and online now at
+------------------------------
+TRANSFERRED (competence):
+“Pola Tirto Tedjo yang halus disempurnakan dengan penggunaan tulle tipis dan palet yang kalem. Temukan atasan tanpa lengan tersedia di toko dan secara online sekarang.”
+
+Sample 5/5
+ORIGINAL TEXT (sincerity):
+Berkontribusi dalam kegiatan relawan memiliki banyak manfaat untuk masyarakat sekitar dan juga bumi. Selain berperan dalam menjaga lingkungan kamu juga belajar bersosialisasi kerja sama meningkatkan empati serta melatih kepemimpinan.
+------------------------------
+TRANSFERRED (competence):
+Bergabunglah dalam aksi sukarelawan, sungguh berharga bagi lingkungan dan masyarakat. Kamu akan belajar berinteraksi, bekerja sama, menumbuhkan empati, dan melatih kemampuan kepemimpinan.
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | ZERO_SHOT
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (sincerity):
+Okay beauties! Selama 2 hari ini Wardah bakal bagi-bagi 10 hampers lebaran Wardah untuk kamu di ! Simak cara ikutannya di tweet setelah ini ya!
+------------------------------
+TRANSFERRED (competence):
+Contoh Referensi:
+"Halo para penggemar kecantikan! Dalam rangka menyambut Hari Raya Idul Fitri, kami akan memberikan kesempatan berharga kepada 10 pemenang untuk memenangkan hampers Wardah eksklusif! Jangan lewatkan detail lengkap mengenai cara mengikuti undian menarik ini di unggahan terbaru kami!"
+
+Sample 2/5
+ORIGINAL TEXT (ruggedness):
+wadooohh
+------------------------------
+TRANSFERRED (competence):
+Ugh.
+
+Sample 3/5
+ORIGINAL TEXT (sincerity):
+Terima kasih atas kesediaannya memberikan data pribadi kepada kami. Mohon maaf atas ketidaknyamanannya. Laporanmu akan kami tindaklanjuti agar dapat memberikan pelayanan yang lebih baik lagi
+------------------------------
+TRANSFERRED (competence):
+Contoh Referensi:
+"Dengan hormat, kami mengucapkan terima kasih atas kerjasamanya dalam memberikan informasi yang relevan. Kami menyadari bahwa proses ini mungkin menimbulkan sedikit gangguan, dan kami mohon maaf atas segala ketidaknyamanan yang mungkin timbul. Data yang Anda berikan akan kami analisis secara seksama untuk meningkatkan kualitas layanan yang kami tawarkan."
+
+Sample 4/5
+ORIGINAL TEXT (sophistication):
+Courageous and iconic. Vespa Primavera in Red Coraggioso is impossible to resist.
+------------------------------
+TRANSFERRED (competence):
+Contoh Referensi:
+"The Aston Martin DB5, a symbol of unparalleled luxury and daring, remains a timeless masterpiece."
+
+Sample 5/5
+ORIGINAL TEXT (ruggedness):
+Fix jadikan wishlist bulan ini Eigerian
+------------------------------
+TRANSFERRED (competence):
+Contoh Referensi:
+"Penting untuk memperbarui daftar keinginan Anda untuk bulan ini."
+"Pastikan daftar keinginan bulanan Anda telah disesuaikan."
+"Mari kita perbaiki daftar impian Anda untuk bulan ini."
+"Rencanakan daftar keinginan Anda untuk bulan yang akan datang."
+"Lakukan penyesuaian pada daftar harapan Anda untuk bulan ini."
+"Sempurnakan daftar keinginan Anda untuk periode waktu ini."
+"Ubah daftar keinginan Anda sesuai dengan kebutuhan Anda."
+"Perbarui daftar keinginan Anda untuk bulan ini."
+"Jadwalkan penyesuaian pada daftar keinginan Anda."
+"Perhatikan daftar keinginan Anda untuk bulan ini."
+"Renovasi daftar keinginan Anda."
+"Susun ulang daftar keinginan Anda."
+"Tinjau daftar keinginan Anda."
+"Perbarui daftar keinginan Anda."
+"Beradaptasi dengan daftar keinginan Anda."
+"Sesuaikan daftar keinginan Anda."
+"Ubah daftar keinginan Anda."
+"Optimalkan daftar keinginan Anda."
+"Kembangkan daftar keinginan Anda."
+"Perluas daftar keinginan Anda."
+"Tingkatkan daftar keinginan Anda."
+"Perbaiki daftar keinginan Anda."
+"Transformasi daftar keinginan Anda."
+"Restorasi daftar keinginan Anda."
+"Poles daftar keinginan Anda."
+"Perbarui daftar keinginan Anda."
+"Jadikan daftar keinginan Anda lebih baik."
+"Ubah daftar keinginan Anda."
+"Rasionalisasi daftar keinginan Anda."
+"Refleksikan daftar keinginan Anda."
+"Tinjau daftar keinginan Anda."
+"Ubah daftar keinginan Anda."
+"Perbaiki daftar keinginan Anda."
+"Sempurnakan daftar keinginan Anda."
+"Optimalkan daftar keinginan Anda."
+"Tingkatkan daftar keinginan Anda."
+"Kembangkan daftar keinginan Anda."
+"Perluas daftar keinginan Anda."
+"Sesuaikan daftar keinginan Anda."
+"Transformasi daftar keinginan Anda."
+"Restorasi daftar keinginan Anda."
+"Poles daftar keinginan Anda."
+"Perbarui daftar keinginan Anda."
+"Jadikan daftar keinginan Anda lebih baik."
+"Ubah daftar keinginan Anda."
+"Rasionalisasi daftar keinginan Anda."
+"Refleksikan daftar keinginan Anda."
+"Tinjau daftar keinginan Anda."
+"Ubah daftar keinginan Anda."
+"Perbaiki daftar keinginan Anda."
+"Sempurnakan daftar keinginan Anda."
+"Optimalkan daftar keinginan Anda."
+"Tingkatkan daftar keinginan Anda."
+"Kembangkan daftar keinginan Anda."
+"Perluas daftar keinginan Anda."
+"Sesuaikan daftar keinginan Anda."
+"Transformasi daftar keinginan Anda."
+"Restorasi daftar keinginan Anda."
+"Poles daftar keinginan Anda."
+"Perbarui daftar keinginan Anda."
+"Jadikan daftar keinginan Anda lebih baik."
+"Ubah daftar keinginan Anda."
+"Rasionalisasi daftar keinginan Anda."
+"Refleksikan daftar keinginan Anda."
+"Tinjau daftar keinginan Anda."
+"Ubah daftar keinginan Anda."
+"Perbaiki daftar keinginan Anda."
+"Sempurnakan daftar keinginan Anda."
+"Optimalkan daftar keinginan Anda."
+"Tingkatkan daftar keinginan Anda."
+"Kembangkan daftar keinginan Anda."
+"Perluas daftar keinginan Anda."
+"Sesuaikan daftar keinginan Anda."
+"Transformasi daftar keinginan Anda."
+"Restorasi daftar keinginan Anda."
+"Poles daftar keinginan Anda."
+"Perbarui daftar keinginan Anda."
+"Jadikan daftar keinginan Anda lebih baik."
+"Ubah daftar keinginan Anda."
+"Rasionalisasi daftar keinginan Anda."
+"Refleksikan daftar keinginan Anda."
+"Tinjau daftar keinginan Anda."
+"Ubah daftar keinginan Anda."
+"Perbaiki daftar keinginan Anda."
+"Sempurnakan daftar keinginan Anda."
+"Optimalkan daftar keinginan Anda."
+"Tingkatkan daftar keinginan Anda."
+"Kembangkan daftar keinginan Anda."
+"Perluas daftar keinginan Anda."
+"Sesuaikan daftar keinginan Anda."
+"Transformasi daftar keinginan Anda."
+"Restorasi daftar keinginan Anda."
+"Poles daftar keinginan Anda."
+"Perbarui daftar keinginan Anda."
+"Jadikan daftar keinginan Anda lebih baik."
+"Ubah daftar keinginan Anda."
+"Rasionalisasi daftar keinginan Anda."
+"Refleksikan daftar keinginan Anda."
+"Tinjau daftar keinginan Anda."
+"Ubah daftar keinginan Anda."
+"Perbaiki daftar keinginan Anda."
+"Sempurnakan daftar keinginan Anda."
+"Optimalkan daftar keinginan Anda."
+"Tingkatkan daftar keinginan Anda."
+"Kembangkan daftar keinginan Anda."
+"Perluas daftar keinginan Anda."
+"Sesuaikan daftar keinginan Anda."
+"Transformasi daftar keinginan Anda."
+"Restorasi daftar keinginan Anda."
+"Poles daftar keinginan Anda."
+"Perbarui daftar keinginan Anda."
+"Jadikan daftar keinginan Anda lebih baik."
+"Ubah daftar keinginan Anda."
+"Rasionalisasi daftar keinginan Anda."
+"Refleksikan daftar keinginan Anda."
+"Tinjau daftar keinginan Anda."
+"Ubah daftar keinginan Anda."
+"Perbaiki daftar keinginan Anda."
+"Sempurnakan daftar keinginan Anda."
+"Optimalkan daftar keinginan Anda."
+"Tingkatkan daftar keinginan Anda."
+"Kembangkan daftar keinginan Anda."
+"Perluas daftar keinginan Anda."
+"Sesuaikan daftar keinginan Anda."
+"Transformasi daftar keinginan Anda."
+"Restorasi daftar keinginan Anda."
+"Poles daftar keinginan Anda."
+"Perbarui daftar keinginan Anda."
+"Jadikan daftar keinginan Anda lebih baik."
+"Ubah daftar keinginan Anda."
+"Rasionalisasi daftar keinginan Anda."
+"Refleksikan daftar keinginan Anda."
+"Tinjau daftar keinginan Anda."
+"Ubah daftar keinginan Anda."
+"Perbaiki daftar keinginan Anda."
+"Sempurnakan daftar keinginan Anda."
+"Optimalkan daftar keinginan Anda."
+"Tingkatkan daftar keinginan Anda."
+"Kembangkan daftar keinginan Anda."
+"Perluas daftar keinginan Anda."
+"Sesuaikan daftar keinginan Anda."
+"Transformasi daftar keinginan Anda."
+"Restorasi daftar keinginan Anda."
+"Poles daftar keinginan Anda."
+"Perbarui daftar keinginan Anda."
+"Jadikan daftar keinginan Anda lebih baik."
+"Ubah daftar keinginan Anda."
+"Rasionalisasi daftar keinginan Anda."
+"Refleksikan daftar keinginan Anda."
+"Tinjau daftar keinginan Anda."
+"Ubah daftar keinginan Anda."
+"Perbaiki daftar keinginan Anda."
+"Sempurnakan daftar keinginan Anda."
+"Optimalkan daftar keinginan Anda."
+"Tingkatkan daftar keinginan Anda."
+"Kembangkan daftar keinginan Anda."
+"Perluas daftar keinginan Anda."
+"Sesuaikan daftar keinginan Anda."
+"Transformasi daftar keinginan Anda."
+"Restorasi daftar keinginan Anda."
+"Poles daftar keinginan Anda."
+"Perbarui daftar keinginan Anda."
+"Jadikan daftar keinginan Anda lebih baik."
+"Ubah daftar keinginan Anda."
+"Rasionalisasi daftar keinginan Anda."
+"Refleksikan daftar keinginan Anda."
+"Tinjau daftar keinginan Anda."
+"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | DENSE
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (sophistication):
+to this elaborate Penara embroidered long-sleeved dress from our Holiday 2017 collection
+------------------------------
+TRANSFERRED (excitement):
+Wah, dressnya keren banget, long-sleeved embroidery dari koleksi Holiday 2017!
+
+Sample 2/5
+ORIGINAL TEXT (sophistication):
+Back side of Vespa Sprint looks sexy isn t it? Share dong foto kamu bareng Vespa di Instagram dengan hashtag !
+------------------------------
+TRANSFERRED (excitement):
+"Belakang Vespa Sprint itu kelihatan seksi ya kan? Share foto kamu bareng Vespa di Instagram pakai hashtag dong!"
+
+Sample 3/5
+ORIGINAL TEXT (sincerity):
+Beauties mimin tu lagi suka banget deh pakai ombre lips semenjak pake Hydrabalm gaada lagi tuh khawatir bibir kering dan warna ga merata Siapa yang disini juga udah pake Hydrabalm? Spill dong kalian pake yg varian apaa
+------------------------------
+TRANSFERRED (excitement):
+Wih, gemes banget pake ombre lips! Mimin juga suka bgt sekarang pake Hydrabalm, bibir gak kering lagi, warnanya juga merata. Siapa yg udah nyobain? Spill dong varian yg kalian pake!
+
+Sample 4/5
+ORIGINAL TEXT (sincerity):
+GIVEAWAY TIME Buat yang belum nyobain moisturizing cream emina Mina mau bagi2 gratis ahh!~ Caranya: 1. Follow twitter 2. RT & tweet ini 3. REPLY dengan alesan kamu pengen coba moisturizing cream emina Periode: 8-12 Agustus 2023 Good luck bestie!
+------------------------------
+TRANSFERRED (excitement):
+"GIVEAWAY GRATIS CREAM EMINA! Kuy yg blum pernah coba, buruan follow twitter, RT & tweet ini, reply alasan kamu pengen cobain! Periode 8-12 Agustus 2023, good luck, bestie!"
+
+Sample 5/5
+ORIGINAL TEXT (sincerity):
+Day 1: Exfoliating Day Beauties pori-pori yang tersumbat kotoran atau komedo menjadi salah satu faktor yang sering menyebabkan jerawat lho! Makanya tahap eksfoliasi menjadi salah satu tahapan yang penting karena membantu membersihkan kulit dari kotoran dan sel kulit mati.
+------------------------------
+TRANSFERRED (excitement):
+“Hari pertama, boleh nih coba eksfoliasi buat beauties! Pori-pori yang penuh kotoran atau komedo itu sering jadi penyebab jerawat lho. Jadi, eksfoliasi itu penting banget buat nyucuin kulit dari kotoran sama sel kulit mati.”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | CENTROID
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (competence):
+Sub-tema di banyak pilihannya dan gampang dieksekusi Check this out! Detail sub-tema dari tiap kategori yang bikin ide kamu mengalir dengan derasnnya Gimana? Sudah tentukan pilihanmu? Yuk langsung aja submit karyamu di sekarang!
+------------------------------
+TRANSFERRED (excitement):
+"Wah, banyak banget pilihan menarik dan gampang banget buat dikerjain! Cekidot detail sub-temanya, ide kamu pasti langsung berasa deresnya! Gimana nih, udah fix pilihannya? Yuk langsung kirim karyamu sekarang juga!"
+
+Sample 2/5
+ORIGINAL TEXT (competence):
+Kalo lagi hujan emang banyak nyamuk ya! Hahaha kira-kira apa ya yang ada di pikiran Agung saat ini? RT like share & reply sebanyak-banyaknya jawaban ter-kreatif kamu! Tonton kelanjutannya eksklusif hanya di Vidio!
+------------------------------
+TRANSFERRED (excitement):
+“Hujan gini banyak nyamuk ya nder?! Hahaha, kira-kira Agung mikirin apaaaa nih? RT like share & reply sebanyak-banyaknya jawaban ter-kreatif kamu! Kelanjutannya eksklusif di Vidio!”
+
+Sample 3/5
+ORIGINAL TEXT (sophistication):
+Buat kamu yang punya rencana belanja ke Sociolla Store siap-siap dapetin WONDER GIFTS dengan belanja minimal 350K Tinggal scan barcode yang ada di receipt kamu langsung play & spin the wheel
+------------------------------
+TRANSFERRED (excitement):
+“Guys, buat yang mau belanja di Sociolla Store, siap-siap dapet WONDER GIFTS ya kalau belanjanya minimal 350K! Tinggal scan barcode di receipt, langsung play & spin the wheel aja!”
+
+Sample 4/5
+ORIGINAL TEXT (competence):
+Mohon maaf tidak berlaku tarif khusus relasi Bandung-Tegal pada KA Harina ya. Tarif perjalanannya berlaku normal Kak. Trims.
+------------------------------
+TRANSFERRED (excitement):
+"Maaf ya Kak, gak ada promo khusus buat rute Bandung-Tegal di KA Harina. Harga normal aja, trims ya!"
+
+Sample 5/5
+ORIGINAL TEXT (competence):
+Karena dalam menjalani kehidupan tidak ada yang tidak mungkin. Tetap semangat Sobat! Jangan lupa retweet semua postingan karena ada pulsa senilai Rp50.000 untuk 2 orang beruntung setiap harinya.
+------------------------------
+TRANSFERRED (excitement):
+"Semangat ya Sobat, apapun yang terjadi! Jangan lupa retweet postingan ini, siapa tau ada pulsa 50ribu buat 2 orang beruntung tiap hari! 🎉"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | BM25
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (sophistication):
+Complete your weekend with a delightful dinner at ! What are your taste buds craving tonight?
+------------------------------
+TRANSFERRED (excitement):
+Hi, we’re sorry for any trouble you might have experienced with our service. Could you share your number and email registered with Gojek, and a screenshot of the issue via DM for us to investigate? Thank you^yb
+
+Sample 2/5
+ORIGINAL TEXT (sophistication):
+SAPTO DJOJOKARTIKO hand-embellished Lincing Sangkar kebaya worn by Natalie Prabha Photographer: Sootket Jiwpanit Style Director: Jirat Subpisankul Producer: Kullawit Laosuksri
+------------------------------
+TRANSFERRED (excitement):
+"Lincing Sangkar kebaya hand-embellished SAPTO DJOJOKARTIKO! Gaya Natalie Prabha, dirangkum oleh Sootket Jiwpanit, Style Director Jirat Subpisankul, Producer Kullawit Laosuksri! Bikin mata melotot!"
+
+Sample 3/5
+ORIGINAL TEXT (sophistication):
+RT : NEWS: Marhaban Yaa Ramadan at Four Seasons Hotel Jakarta.:
+------------------------------
+TRANSFERRED (excitement):
+Gomawo chingu yaa RT NEWS: Marhaban Yaa Ramadan at Four Seasons Hotel Jakarta!
+
+Sample 4/5
+ORIGINAL TEXT (competence):
+Hai Sobat BRI tidak perlu khawatir. Guna informasi yang sesuai dapat disampaikan penyebab ingin melakukan penutupan akun BRImo. Informasi lainnya seputar BRI dapat hubungi Sabrina WhatsApp 0812 1214 017 atau akun resmi media sosial BRI yang terverifikasi. Tks~Ciska
+------------------------------
+TRANSFERRED (excitement):
+Hai Sobat BRI, untuk informasi mengenai penutupan akun BRImo, silakan hubungi Sabrina WhatsApp 0812 1214 017 atau akun resmi media sosial BRI yang terverifikasi. Terima kasih -Ciska
+
+Sample 5/5
+ORIGINAL TEXT (sincerity):
+heyyy pilih satuuu
+------------------------------
+TRANSFERRED (excitement):
+Pilih satuuuu, jangan yang gede-gede kenapa? 😉
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | HYBRID_EARLY | ALPHA: 0.1
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (ruggedness):
+Halo ada dong
+------------------------------
+TRANSFERRED (excitement):
+"Hai Kak, ada nih!"
+
+Sample 2/5
+ORIGINAL TEXT (sophistication):
+SAPTO DJOJOKARTIKO hand-embellished Lincing Sangkar kebaya worn by Natalie Prabha Photographer: Sootket Jiwpanit Style Director: Jirat Subpisankul Producer: Kullawit Laosuksri
+------------------------------
+TRANSFERRED (excitement):
+"Hai Kak, infoin dong detail Saptu Djo jokartiko buat Lincing Sangkar kebaya yang dipake Natalie Prabha, fotonya dari Sootket Jiwpanit, styling Jirat Subpisankul, produksi Kullawit Laosuksri. DM ke mimin ya!"
+
+Sample 3/5
+ORIGINAL TEXT (sincerity):
+AAA GEMESSS!!! sehat sehat kamu dan ibuuu
+------------------------------
+TRANSFERRED (excitement):
+"Hai guyss! Jaga kesehatan ya kamu dan Mamaaa! 🥰"
+
+Sample 4/5
+ORIGINAL TEXT (sophistication):
+Let the magnified bow details be the center of attention. Contact our Client Advisor for more details on the Flamb-colored embroidered Sitta heels
+------------------------------
+TRANSFERRED (excitement):
+"Hai Kak, yuk intip detail sepatu Sitta bermotif warna flamboyant yang cantik banget! Chat Client Advisor kita buat tau lebih lengkap ya, nanti di-DM info detailnya. Makasih!"
+
+Sample 5/5
+ORIGINAL TEXT (sophistication):
+Kamu mau voucher MAP senilai @ Rp200.000? Caranya klik sekarang juga. Ayo ikutan kuis ini hanya sampai 11 Oktober 2019. .
+------------------------------
+TRANSFERRED (excitement):
+"Voucher MAP @ Rp200.000? Buruan ikutan kuisnya nih, cuma sampai 11 Oktober! Klik sekarang sebelum keabisan!"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | HYBRID_EARLY | ALPHA: 0.3
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (competence):
+Kami sampaikan pembuatan laporan dapat dilakukan dengan cara: 1. Mengirimkan detail kendala ke email callbri.co.id. 2. Mengirimkan pesan Sabrina WhatsApp 0812 1214 017. 3. Menghubungi Contact BRI 1500017 atau +62211500017 jika berada di luar negeri. Dengan senang hati rekan
+------------------------------
+TRANSFERRED (excitement):
+Hai rekan, maaf banget ya. Yuk infokan detail kendala ke email callbri.co.id atau WA Sabrina 0812 1214 017. Kalau di luar negeri, hubungi Contact BRI 1500017 atau +62211500017 ya. Terima kasih^ast
+
+Sample 2/5
+ORIGINAL TEXT (competence):
+Hai Sobat BRI. Kami turut prihatin atas kejadian yang dialami. Bank BRI senantiasa menindaklanjuti laporan nasabah. Guna informasi lebih lanjut sudah kami kirimkan pesan melalui DM. Mohon kesediaan melakukan pengecekan ya. Tks~Dendi
+------------------------------
+TRANSFERRED (excitement):
+Hai Sobat BRI, maaf banget ya udah bikin khawatir. Kami akan bantu tindaklanjuti laporan ini. Mohon cek pesan DM kami ya untuk info lebih lanjut. Terima kasih -Dendi
+
+Sample 3/5
+ORIGINAL TEXT (competence):
+Yuk dukung upaya Telkom Indonesia dalam konsistensi untuk menghadirkan kebahagiaan dan inspirasi bagi masyarakat!
+------------------------------
+TRANSFERRED (excitement):
+“Ayo bantu semangat Telkom Indonesia terus bawa senyum dan ide kreatif buat semua orang yaa! ✨”
+
+Sample 4/5
+ORIGINAL TEXT (sincerity):
+Berinteraksi dengan bisa membantu kurangi stres. Apa sih hewan kesayangan yang Anda pelihara di rumah?
+------------------------------
+TRANSFERRED (excitement):
+“Ngobrol sama hewan kesayangan bisa bantu ilang stres nih! Kamu pelihara hewan apa di rumah, guys? Share dong di reply tweet ini!”
+
+Sample 5/5
+ORIGINAL TEXT (sincerity):
+Hai kak untuk Promo happy hour mengikuti waktu WiB ya kak
+------------------------------
+TRANSFERRED (excitement):
+"Urusan happy hour WiB nih, pasti diskon ya kak!"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | HYBRID_EARLY | ALPHA: 0.5
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (sophistication):
+We meet again Monday! Jangan lupa saling sapa kalau bertemu teman-teman di jalan ya! (IG: )
+------------------------------
+TRANSFERRED (excitement):
+"Hayo! ketemu monday beb! Jangan lupa sapa temen2 yg ketemu di jalan ya! (IG: )"
+
+Sample 2/5
+ORIGINAL TEXT (sophistication):
+Add substantial refinery with larger than life geometric collar decorated with intricate signature embroideries of Yayi and Renda Lincing. Discover the look at SAPTO DJOJOKARTIKO Plaza Senayan
+------------------------------
+TRANSFERRED (excitement):
+"Hai Kak! Yuk lihat tampilan baru SAPTO DJOJOKARTIKO di Plaza Senayan! Ada koleksi refineri mewah dengan kerah geometris super besar yang dihiasi bordir signature Yayi dan Renda Lincing yang rumit. Dijamin bikin makin semangat!"
+
+Sample 3/5
+ORIGINAL TEXT (ruggedness):
+3. Siapkan Uang Cash Terkadang pembayaran menggunakan metode transfer ataupun QRIS menjadi salahsatu kendala ketika jaringan tidak mendukung. Maka siapkan uang cash untuk menghindari kesulitan pembayaran.
+------------------------------
+TRANSFERRED (excitement):
+“Hai Kak, maaf ya kalau kamu mengalami ini. Yuk, siapkan uang cash, terkadang pembayaran lewat transfer atau QRIS jadi susah kalau jaringan bermasalah. Nanti kalau ada kendala, jadi nggak perlu khawatir ya! Terima kasih^yni”
+
+Sample 4/5
+ORIGINAL TEXT (competence):
+melakukan registrasi m-BCA melalui ATM maka Bapak/Ibu dapat langsung menggunakannya kembali. Sebagai informasi untuk reset
+------------------------------
+TRANSFERRED (excitement):
+Hai Kak, kalau sudah mendaftar m-BCA via ATM, Bapak/Ibu bisa langsung pakai lagi ya. Sebagai info tambahan untuk reset, silakan cek ya. Terima kasih^ast
+
+Sample 5/5
+ORIGINAL TEXT (competence):
+Apapun perannya mari kita bersyukur dan selalu berkontribusi untuk hasil terbaik. Semangat menjalani hari Senin !
+------------------------------
+TRANSFERRED (excitement):
+“Mari kita bersinar bersama, berikan yang terbaik dalam setiap langkah! Tetap semangat dan berikan kontribusi positif ya, untuk hasil yang memuaskan!”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | HYBRID_EARLY | ALPHA: 0.7
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (competence):
+melalui DM resmi Twitter yang bercentang emas agar dapat kami bantu cek. Tks ^Dares
+------------------------------
+TRANSFERRED (excitement):
+Hai Kak Dares, silakan infokan lewat DM Twitter yang bercentang emas ya supaya bisa kami bantu cek. Tks^Dares
+
+Sample 2/5
+ORIGINAL TEXT (ruggedness):
+Posisi booth Consina di Jakarta Fair Kemayoran. Hall D No76. Visit us and get great deal discount
+------------------------------
+TRANSFERRED (excitement):
+“Yuk, buruan ke booth Consina di Jakarta Fair Kemayoran, Hall D No76! Dijamin dapat penawaran spesial dan diskon keren!”
+
+Sample 3/5
+ORIGINAL TEXT (sophistication):
+CITY RETREAT. Valid for weekend (Friday to Sunday). For more info +6221 2277 1888.
+------------------------------
+TRANSFERRED (excitement):
+“Weekend nih, CITY RETREAT lagi diskon! Valid cuma Jumat-Minggu aja ya! Mau tau detailnya? Hubungi langsung +6221 2277 1888!”
+
+Sample 4/5
+ORIGINAL TEXT (sincerity):
+Office Look Inspo Beauties bosen ke kantor gitu-gitu aja? Yuk cobain look terbaru Wardah Feeling Brownish Highlightnya ada di lip dan eye make up bernuansa brownish yang bikin look kamu elegan dan strong!
+------------------------------
+TRANSFERRED (excitement):
+"Office look yang cakep bangeeet! Kalo bosen ke kantor, coba deh Wardah Feeling Brownish, lip & eye make upnya bikin elegan dan strong!"
+
+Sample 5/5
+ORIGINAL TEXT (ruggedness):
+Tjakeppp!
+------------------------------
+TRANSFERRED (excitement):
+Tjakep!
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | HYBRID_EARLY | ALPHA: 0.9
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (competence):
+Kami turut prihatin atas kendala yang Bapak/Ibu Pelanggan alami. Untuk kendala tersebut kami sarankan dapat mencoba berkala dengan pastikan jaringan stabil ya. :) Tks ^Heybi
+------------------------------
+TRANSFERRED (excitement):
+Hallo Bapak/Ibu, mohon maaf atas kendala yang Bapak/Ibu alami. Semoga koneksi Bapak/Ibu stabil ya. :) Tks ^Heybi
+
+Sample 2/5
+ORIGINAL TEXT (sincerity):
+Yuk ajak bestie dan keluarga ke Mekdi terdekat sekarang atau pesan di McDelivery GrabFood GoFood dan ShopeeFood. Promo berlaku juga untuk pembelian PaNas atau PaMer Ayam McD Krispy ya.
+------------------------------
+TRANSFERRED (excitement):
+"Ajak gebetan atau keluarga ke Mekdi terdekat sekarang atau pesen di McDelivery GrabFood GoFood & ShopeeFood! Ada PROMO buat PaNas atau PaMer Ayam McD Krispy juga lho!"
+
+Sample 3/5
+ORIGINAL TEXT (sincerity):
+Yeaayy
+------------------------------
+TRANSFERRED (excitement):
+Heyyy
+
+Sample 4/5
+ORIGINAL TEXT (sophistication):
+Plans for today? Join us at and try Chef Sam Chong's new premium set menu!
+------------------------------
+TRANSFERRED (excitement):
+"Hari ini ada rencana? Yuk cobain menu premium baru Chef Sam Chong!"
+
+Sample 5/5
+ORIGINAL TEXT (ruggedness):
+Eigerian ayo jadi pendaki pintar dengan terus memperbanyak ilmu pendakian dasar dan patuhi peraturan di setiap gunung yang didaki. Salam lestari!
+------------------------------
+TRANSFERRED (excitement):
+"Eigerian, yuk jadi pendaki hebat dengan terus belajar teknik pendakian dasar dan selalu ikuti aturan di gunung yang kita daki! Salam lestari untuk semua!"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | RANDOM
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (ruggedness):
+Made like a gun goes like a bullet . . .
+------------------------------
+TRANSFERRED (excitement):
+This Jungkook... gun goes bullet...
+
+Sample 2/5
+ORIGINAL TEXT (competence):
+- Dinomarket - Tokopedia - Shopee Jika ke cabang dapat membawa e-KTP asli dan bukti kepemilikan rekening (jika sebagai Nasabah BCA). Biaya administrasi kartu Flazz adalah sebesar Rp30.000 - untuk Flazz reguler dan Rp50.000 - untuk Flazz edisi khusus.
+------------------------------
+TRANSFERRED (excitement):
+“Nah, buat yang mau ke cabang, bawa e-KTP asli sama bukti rekening (kalau BCA ya). Biaya kartu Flazz, reguler Rp30.000, edisi khusus Rp50.000, lho! Gomawo kak!”
+
+Sample 3/5
+ORIGINAL TEXT (competence):
+Hai Sobat BRI mohon maaf atas ketidaknyamanannya. Terkait kendala yang disampaikan kami sudah mengirimkan pesan melalui DM. Silakan melakukan pengecekan. Tks~Arum
+------------------------------
+TRANSFERRED (excitement):
+"Hai Kak Arum, maaf ya kalau ada kendala. Udah kita kirim DM buat dicek, silakan cek ya. Thanks~"
+
+Sample 4/5
+ORIGINAL TEXT (sophistication):
+Ready to roll this weekend
+------------------------------
+TRANSFERRED (excitement):
+"Siap-siap weekend nih!"
+
+Sample 5/5
+ORIGINAL TEXT (competence):
+Hai Sobat BRI. Pesan yang dikirimkan belum kami terima. Guna tindak lanjut kami sudah mengirimkan pesan melalui DM. Silakan dilakukan pengecekan ya. Tks~Erza
+------------------------------
+TRANSFERRED (excitement):
+“Hai Sobat BRI, pesennya belum nemu nih. Udah kita lanjutin via DM ya. Coba dicek dong, makasih~Erza”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | ZERO_SHOT
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (sophistication):
+Mau memboyong si cantik dgn desain klasik berteknologi modern LXV150ie 3V ini ke rumah?
+------------------------------
+TRANSFERRED (excitement):
+Contoh Referensi:
+"Dengan kehadiran yang elegan dan performa yang tak tertandingi, Honda ADV160 menawarkan pengalaman berkendara yang tak terlupakan. Rasakan sentuhan futuristik dalam setiap perjalanan."
+
+Hasil Teks Target:
+"Mengusung estetika memikat dan inovasi terkini, Honda PCX160 ini akan menjadi pelengkap sempurna di setiap rumah Anda."
+
+Sample 2/5
+ORIGINAL TEXT (sophistication):
+Happy Friday! Wishing you a lovely day
+------------------------------
+TRANSFERRED (excitement):
+Contoh Referensi:
+"Selamat siang, semoga harimu bergelimang kemuliaan."
+"Salam sejahtera, nikmatilah setiap detik yang indah."
+"Semoga hari ini membawa kebahagiaan tak terhingga."
+"Mari menyambut hari ini dengan senyuman dan harapan."
+
+Hasil Teks Target:
+"Selamat pagi, semoga harimu penuh berkah."
+
+Sample 3/5
+ORIGINAL TEXT (ruggedness):
+Hari terakhir! Brand Festival dari yang kasih kamu discount hingga 50%+5%! Pake kode voucher : EIGEFEST4 Hanya berlaku hingga 4-7 November 2023! Masih ada waktu dapetin diskonnya langsung ceki-ceki!
+------------------------------
+TRANSFERRED (excitement):
+**Contoh Referensi:**
+
+"Jangan lewatkan! Penawaran eksklusif dari [Nama Brand] dengan diskon hingga 50% + bonus spesial! Gunakan kode promo [Kode Voucher] sebelum tanggal [Tanggal Berakhir]. Buruan, kesempatan ini tidak akan datang dua kali!"
+
+Sample 4/5
+ORIGINAL TEXT (sincerity):
+AAA LUCUKKK! makasih mama udah ngenalin wardah
+------------------------------
+TRANSFERRED (excitement):
+“Ya ampun, gemes banget! Terima kasih banyak, Mama, sudah membelikan aku Wardah.”
+
+Sample 5/5
+ORIGINAL TEXT (ruggedness):
+Setujuuu!! Mudik aman dan nyaman solusinya
+------------------------------
+TRANSFERRED (excitement):
+Contoh Referensi:
+"Selamat datang kembali di rumah, semoga perjalanan pulangmu membawa kedamaian dan kebahagiaan."
+"Kembali ke pelukan keluarga adalah anugerah yang tak ternilai harganya."
+"Semoga setiap langkahmu diisi dengan cinta dan kehangatan."
+"Pulang adalah tempat yang selalu menjadi rumah."
+
+############################################################
+

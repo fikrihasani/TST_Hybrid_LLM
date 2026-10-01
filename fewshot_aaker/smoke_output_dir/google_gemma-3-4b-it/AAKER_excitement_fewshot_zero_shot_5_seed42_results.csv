@@ -1,0 +1,16 @@
+model_id,original_style,style_target,retrieval_method,alpha,original_message,paraphrased_message,is_human_eval,sample_index,sample_seed,run_seed,retrieved_exemplars,retrieval_fallback,n_exemplars,prompt_chars,output_tokens,eos_reached,output_chars
+google/gemma-3-4b-it,competence,excitement,zero_shot,N/A,saatnya nih! Jelang Ramadan Digimin punya hadiah saldo LinkAja senilai total Rp500.000 untuk 5 orang pemenang loh! Caranya: 1. Ikuti akun resmi di Instagram Facebook X Threads dan TikTok 2. Tulis hal yang paling kamu,"Contoh Referensi:
+""Jangan lewatkan kesempatan emas! Kami kembali menghadirkan program undian berhadiah menarik sepeserpun untuk 5 orang beruntung. Syarat kemenangannya pun sangat mudah: 1. Segarkan pengikut Anda di Instagram, Facebook, X, Threads, dan TikTok. 2. Ungkapkan sebuah ungkapan yang paling berkesan dalam kolom komentar.""",True,912,4200000,42,[],False,0,924,87,False,332
+google/gemma-3-4b-it,competence,excitement,zero_shot,N/A,Kami turut prihatin atas kejadian yang dialami. Untuk mempercepat proses tindak lanjut atas laporan indikasi penipuan yang disampaikan silakan melakukan pembuatan laporan ke SeaBank atas sumber rekening yang digunakan bertransaksi. Kemudian diproses oleh SeaBank ke BRI serta,"Berikut adalah teks yang telah diubah sesuai dengan instruksi:
+
+""Dengan berat hati kami menerima informasi terkait permasalahan yang dihadapi. Demi kelancaran investigasi atas dugaan praktik penipuan yang dilaporkan, kami sarankan untuk segera mengajukan laporan resmi kepada SeaBank, dengan mencantumkan sumber rekening yang tertera pada transaksi. Proses selanjutnya akan ditangani oleh SeaBank dan BRI secara bersama.""",True,204,4200001,42,[],False,0,983,83,False,421
+google/gemma-3-4b-it,sincerity,excitement,zero_shot,N/A,Udah mulai bebersih rumah menyambut lebaran belom Beauties? Udah disuruh ngapain aja sama ortu di rumah?,"Teks Referensi:
+""Persiapan akhir menjelang Idulfitri telah dimulai. Apakah Anda sudah mulai merapikan rumah? Apakah Ibu dan Bapak sudah memberikan tugas-tugas tertentu?""
+
+Hasil Teks Target:
+""Sudah mulai merapikan rumah menyambut Hari Raya Aidilfitri belum? Sudah disuruh mengerjakan apa saja oleh orang tua di rumah?""",True,2253,4200002,42,[],False,0,812,77,False,317
+google/gemma-3-4b-it,sincerity,excitement,zero_shot,N/A,Dry tired-looking skin? Not anymore! Just one layer of this moisturizer is all it takes to transform your skin from dry spell to glow-up girlie!,"Contoh Referensi:
+""Apakah Anda merasa lelah dan kulit Anda tampak kusam? Jangan khawatir! Dengan serum mewah ini, Anda akan segera mendapatkan kulit yang bercahaya dan tampak muda.""",True,2006,4200003,42,[],False,0,852,42,False,181
+google/gemma-3-4b-it,sincerity,excitement,zero_shot,N/A,Mari baris & merapat! Promo Merdeka bisa kamu pakai buat dapat 1 Ayam Krispy McD + 1 Ayam Spicy McD + 2 Nasi + 2 Fruit Tea Lemon hanya Rp40.909 Gunakan kode McDMerdeka buat nikmati diskonnya! Download & registrasi di Aplikasi McDonald s,"**Contoh Referensi:**
+
+""Jangan lewatkan kesempatan emas! Dapatkan penawaran istimewa dengan beli 1, gratis 1 untuk berbagai produk pilihan kami. Tersedia diskon khusus untuk pelanggan setia. Segera kunjungi toko terdekat atau pesan melalui aplikasi kami untuk pengalaman bersantap yang tak terlupakan.""",True,1828,4200004,42,[],False,0,944,69,False,302

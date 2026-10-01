@@ -1,0 +1,11 @@
+                precision    recall  f1-score   support
+
+    competence       0.98      0.98      0.98      1989
+    excitement       0.91      0.93      0.92      1527
+    ruggedness       0.89      0.84      0.86      1122
+     sincerity       0.91      0.93      0.92      1191
+sophistication       0.95      0.95      0.95      1747
+
+      accuracy                           0.93      7576
+     macro avg       0.93      0.93      0.93      7576
+  weighted avg       0.93      0.93      0.93      7576

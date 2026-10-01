@@ -1,0 +1,19 @@
+{
+  "temperature": 2.6779370307922363,
+  "val_file": "D:\\FILEMAHASISWA\\Fikri Hasani Folder\\JCCE-First Revision\\fewshot_aaker\\data\\brand_splits_v2\\val_set.csv",
+  "n_val": 6205,
+  "accuracy": 0.9168412570507655,
+  "nll_before": 0.6086972951889038,
+  "nll_after": 0.3012680411338806,
+  "ece_before": 0.07394001349914858,
+  "ece_after": 0.04365535550882124,
+  "mean_confidence_before": 0.9905269742012024,
+  "mean_confidence_after": 0.9304145574569702,
+  "label2id": {
+    "competence": 0,
+    "excitement": 1,
+    "ruggedness": 2,
+    "sincerity": 3,
+    "sophistication": 4
+  }
+}

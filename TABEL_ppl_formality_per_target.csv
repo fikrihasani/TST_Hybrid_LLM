@@ -1,0 +1,15 @@
+kelompok,n,n_degenerate,pct_degenerate,mean,median,trimmed10,sd,min,max
+target=formal,4750,608,12.8,1436.45,191.45,287.38,36680.95,1.23,2399765.85
+target=informal,4750,700,14.74,1081.08,226.18,342.27,11974.31,1.14,755942.67
+target=formal|metode=bm25,500,85,17.0,1710.31,228.84,390.61,10758.17,19.83,167310.23
+target=formal|metode=centroid,500,38,7.6,367.3,145.57,189.65,904.16,14.5,13806.12
+target=formal|metode=dense,500,82,16.4,785.1,216.58,356.37,2170.15,15.65,32120.53
+target=formal|metode=hybrid_early,2500,332,13.28,1996.22,200.91,304.83,50306.22,10.8,2399765.85
+target=formal|metode=random,500,64,12.8,650.79,237.23,327.42,1761.53,23.75,21626.86
+target=formal|metode=zero_shot,250,7,2.8,303.32,39.82,53.66,2187.09,1.23,30957.4
+target=informal|metode=bm25,500,85,17.0,2252.64,228.23,368.07,33823.02,23.63,755942.67
+target=informal|metode=centroid,500,43,8.6,539.38,202.49,279.49,1604.43,19.24,27494.59
+target=informal|metode=dense,500,77,15.4,869.84,246.64,380.22,2809.43,20.74,36267.53
+target=informal|metode=hybrid_early,2500,414,16.56,1033.51,251.16,377.03,4975.87,1.14,170050.69
+target=informal|metode=random,500,78,15.6,1356.82,271.33,389.93,9122.08,1.24,165014.59
+target=informal|metode=zero_shot,250,3,1.2,168.03,36.85,47.88,1184.84,5.79,17932.65

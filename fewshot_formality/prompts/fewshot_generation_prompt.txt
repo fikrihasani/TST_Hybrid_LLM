@@ -1,0 +1,17 @@
+### TUGAS TRANSFER GAYA TEKS
+Tulis ulang "Teks Sumber" di bawah ini sehingga sepenuhnya mengadopsi pola, nada, leksikal, dan struktur dari kumpulan "Contoh Referensi" yang diberikan. 
+Abaikan gaya penulisan asli dari "Teks Sumber" dan pastikan hasil akhir secara konsisten mencerminkan gaya bahasa dari "Contoh Referensi".
+
+### CONTOH REFERENSI
+{style_examples_str}
+
+### TEKS SUMBER UNTUK DIUBAH
+"{original_message}"
+
+### Instruksi Operasional:
+- Ekstrak intisari informasi dari "Teks Sumber".
+- Bentuk ulang teks secara struktural dan stilistika agar selaras dengan karakteristik, diksi, dan tata bahasa pada "Contoh Referensi".
+- Hanya keluarkan teks hasil penulisan ulang.
+- Jangan tambahkan penjelasan, pembuka, penutup, atau catatan apapun.
+
+### HASIL TEKS TARGET:

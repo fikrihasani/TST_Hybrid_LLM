@@ -1,0 +1,41 @@
+model_id,original_style,style_target,retrieval_method,alpha,original_message,paraphrased_message,is_human_eval
+google/gemma-3-4b-it,informal,formal,bm25,N/A,"saya belom dapet nomor prlanggan xlhomenya , gimana ?","“gue belum dapet nomor pelanggan XL-nya, gimana nih?”",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,"ngga berani , takut drivernya kena masalah","“kok nggak mau, takut drivernya ada masalah.”",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,"hai xxxuserxxx kenapa paketan flash xxxnumberxxx xxxnumberxxx gb xxxnumberxxx xxxnumberxxx rb kaga bisa diakses lagi padahal kemaren saya beli masih bisa , tolong penjelasannya","halo xxxuserxxx kenapa paket flash xxxnumberxxx xxxnumberxxx gb xxxnumberxxx xxxnumberxxx rb gak bisa diakses lagi padahal kemarin saya beli masih bisa , tolong penjelasannya",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,sobatpd kalian tim mana nih ? tim xxxuserxxx atau tim xxxuserxxx 🤔,( xxxnumberxxx ) bukti buruknya pelayanan kalian xxxuserxxx yang lainnya.,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,"ini lg bercanda ya , sampe hr ini masih kaya gini status pesanannya , jangan kaya gini ya","“ini lg becanda ya, sampe hr ini masih kayak gini status pesenannya, jangan kayak gini ya”",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,jawabannya : gambar a ikutan ya kawan,jawaban : gambar a . ayo teman ikutan ! xxxnumberxxx . xxxuserxxx . selesai mengikuti media sosial xxxuserxxx .,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,"ini xxxuserxxx kok butut banget jaringan nya di kasomalang kulon , kecamatan kasomalang , kabupaten subang , jawa barat .","jaringan di kasomalang kulon , kecamatan kasomalang , kabupaten subang , jawa barat ini kok parah banget , kenapa nggak diperbaiki sih?",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,haalloo xxxuserxxx tolong dong komplain saya ditanggapi . sudah xxxnumberxxx hari nih .,"admin, tolong balas komplain gue. udah xxxnumberxxx hari nih.",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,aku mau min biar bisa beli bacotan netijen : xxxnumberxxx,"""keuntungannya tuh, kenapa gak bisa min?""",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,grafood error gimana nih xxxuserxxx butuh kirim makanan ke rumah tapi connection lost terus,"grafood error ya nih , xxxuserxxx butuh kirim makanan ke rumah , koneksi lost terus .",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,min cek dm dong . saya mau pesen grabfood ini urgent bgt . tg di percepat prosesnya,"admin , cek dm dong . mau pesen grabfood ini urgent banget , tolong percepat tgnya .",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,hati - hati yang suka culak colok atm .,hati - hati nih buat yang suka curi coleng atm.,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,sering sering ya min promo kaya gini,terima kasih banyak ya min promo kayak gini - nya .,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,alamatnyabsudah jelas min tapi kok aneh aja udah xxxnumberxxx hr ga gerak,"admin, alamatnya udah jelas sih, tapi kok aneh aja udah xxxnumberxxx hr ga gerak.",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,"ke grapari niat mau tuker sim ke xxxnumberxxx g . eh antriannya abis , pas pulang ditawarin nomor sama kang parkir . kumaha eta","“mau tuker sim ke xxxnumberxxx g di grapari nih, antriannya lama banget. pas pulang, ditawarin nomor sama kang parkir, kumaha eta?”",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,min kenapa ini gagal kirim xxxnumberxxx ? beberapa minggu lalu juga saya beli parfume mobil gagal juga,"“min, kenapa ini gagal kirim xxxnumberxxx? udah beberapa minggu lalu juga aku beli parfum mobil gagal juga.”",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,dapat xxxnumberxxx gb cuman rp xxxnumberxxx dari,lumayan sekali dapat xxxnumberxxx gb hanya bayar rp xxxnumberxxx,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,gw cuma dpt xxxnumberxxx tp alhamdulillah,"alhamdulillah, rezeki anak baik kok . * siap - siap diajak ngopi .",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,kak kemaren saya beli pulsa xxxnumberxxx xxxnumberxxx k tiba tiba hari ini kok tinggal xxxnumberxxx xxxnumberxxx k padahal mau saya paketin internet . solusinya gimana ?,"admin, kemarin aku beli pulsa xxxnumberxxx xxxnumberxxx k, tiba-tiba hari ini tinggal xxxnumberxxx xxxnumberxxx k padahal mau paket internet. solusinya gimana?",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,seudihh xxxuserxxx gada voucher lagi apaa ?,"""voucher gak ada lagi nih, gimana yaaa?""",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,tolong ini barang sdh sampai dari tadi pagi belum di antar2 juga,"“tolong, ini barangnya udah sampai, dari tadi pagi belum diantar juga.”",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,hal yg lebih cepat dari gundala = diare . belom sempet mikir dan ngedip udh ee di celana aja,hal yang lebih cepat dari gundala? pipi basah. belum sempat nyadar udh kebesaran aja.,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,nerobos macetnya ibu kota lebih cepat pake grab bike,lebih cepat dari detak jantungku pas jaket kesayanganku dicuri!,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,waduh jadi gimana nih xxxuserxxx tolong di tindak lanjuti ya !,"waduh jadi gimana nih xxxuserxxx, harus ditindaklanjuti banget dong!",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,malam . untuk transaksi top up pulsa di go mobile dengan kode promo bday ada minimalnya kah ?,"malam admin , top up pulsa go mobile pakai kode promo bday ada minimalnya nggak ya?",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,"oke , sudah saya kirim via dm",terima kasih atas informasinya. sudah saya kirim via dm.,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,untuk grapari jogja diman ya min,“untuk grapari jogja di mana min?”,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,"pernah dulu nganter papa mau kontrol ke rs , sama driver nya mau digratisin buat kita nya karna udah ngurus bapaknya yg sakit","“dulu pernah nganter papah ke rumah sakit, supirnya mau gratisin buat kita karena udah urus papah yang sakit tuh.”",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,ini kenapa ya dari kemarin saya daftar paket yellow gak bisa kedaftar ya ? mohon dibantu,“kok gini sih dari kemarin aku daftar paket yellow gak bisa ya? tolong bantu dong.”,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,paket saya resi xxxnumberxxx dilaporkan oleh pihak jtr bandung klo barangnya hilang krn kapal terbakar . ini gimana ?,"paket saya resi xxxnumberxxx, JNT bilang hilang krna kapal terbakar, kok bisa sih?",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,dari tadi pagi sinyal ilang ilangan data selulernya ga muncul padahal udh di aktifin tolong lah min gimana ini,"“dari tadi pagi sinyalnya putus, data selulernya nggak muncul padahal udah diaktifin. tolong, admin, gimana ya?”",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,"sabar atuh kem , kirakira ganteng ga ya daniel sama bani","sabar w , kem , kira kira ganteng atau enggak daniel sama bani , nih?",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,balon sampe juga nih jnt lamaa banget jb xxxphonexxx,"balon sampai juga nih jnt lamaa banget jb xxxphonexxx, sungguh parah!",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,udah di inbox ya kak . thanks .,"“udah di inbox nih, kak. makasih.”",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,tdi barusan abs pke app sblh tuh,“kemaren baru coba pakai aplikasi itu tuh.”,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,ada apa denganmu . xxxnumberxxx g loh itu,"apa ini , xxxnumberxxx g tuh kenapa sih?",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,kasih aku tiket konser day6 aja,tolong kasih aku tiket konser day6 dong ya.,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,terimakasih shopee atas diskon nya dan membuat diri ini sangat kalap !,terima kasih shoppe atas diskonnya dan bikin aku jadi pengen banget!,True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,ni toko online tp ga mau ngerespon chat nya ? kalo emang ga mau dagang ga usah dagang mendingan .,"""kok toko ini nggak bales chat sih? kalo nggak mau jualan, ya udah nggak usah jualan aja deh.""",True
+google/gemma-3-4b-it,informal,formal,bm25,N/A,sudah saya dm tolong di bales,"sudah saya dm, tolong balas segera.",True

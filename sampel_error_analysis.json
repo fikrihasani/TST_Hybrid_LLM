@@ -1,0 +1,150 @@
+{
+ "t9_270": {
+  "asli": "sudah mulai goyah sama indosat hahaha .",
+  "dense": "“udh agak goyah sama indosat nih hahaha.”",
+  "centroid": "hai , udah agak susah nih sama indosat hahaha",
+  "hybrid_early_alpha0.5": "wahhh, indosatnya kok kayaknya gak stabil tuh ya?",
+  "cp": {
+   "dense": 0.453,
+   "centroid": 0.537,
+   "hybrid_early_alpha0.5": 0.261
+  }
+ },
+ "t9_360": {
+  "asli": "periksa apa , sok tahu kamu .",
+  "dense": "\"cewek, apaan sih, sok ngerti amat lu.\"",
+  "centroid": "hai , kok kamu sok tau gitu?",
+  "hybrid_early_alpha0.5": "\"cekit-cekit amat lu.\"",
+  "cp": {
+   "dense": 0.516,
+   "centroid": 0.546,
+   "hybrid_early_alpha0.5": 0.255
+  }
+ },
+ "t9_136": {
+  "asli": "yang dihina pun ulama . otaknya tidak ada isi yang begitu bang .",
+  "dense": "\"yang dihinain juga ulama, gak guna dah tuh orang 🙄\"",
+  "centroid": "hai , ulama yang dihinanya itu gak jelas , otaknya kosong banget dah.",
+  "hybrid_early_alpha0.5": "ada apa sama lu . xxxnumberxxx g loh itu",
+  "cp": {
+   "dense": 0.58,
+   "centroid": 0.567,
+   "hybrid_early_alpha0.5": 0.186
+  }
+ },
+ "t9_488": {
+  "asli": "saya penumpang terpilih daerah semarang ? hehehe .",
+  "dense": "min, semarang ya? hehe",
+  "centroid": "“Hai, saya mau tanya soal penjemputan di Semarang ya?”",
+  "hybrid_early_alpha0.5": "min, saya penumpang semarang gak ya? hehehe.",
+  "cp": {
+   "dense": 0.365,
+   "centroid": 0.473,
+   "hybrid_early_alpha0.5": 0.692
+  }
+ },
+ "competence_TH": {
+  "asli": "Gaskeun",
+  "dense": "Gaskeun Kak!",
+  "centroid": "Hai Sobat BRI. Mohon maaf atas kendala yang Anda alami. Terkait pesan yang disampaikan melalui DM, kami sudah menindaklanjuti. Silakan lakukan pengecekan ya. Tks~Helma",
+  "hybrid_early_alpha0.5": "Gaskeun dah, Kak!",
+  "cp": {
+   "dense": 0.369,
+   "centroid": -0.09,
+   "hybrid_early_alpha0.5": 0.283
+  },
+  "gaya": {
+   "dense": 0.024,
+   "centroid": 0.962,
+   "hybrid_early_alpha0.5": 0.924
+  },
+  "ppl": {
+   "dense": 9770.5,
+   "centroid": 33.1,
+   "hybrid_early_alpha0.5": 2056.2
+  },
+  "rep8": {
+   "dense": 0.0,
+   "centroid": 0.0,
+   "hybrid_early_alpha0.5": 0.0
+  }
+ },
+ "competence_SD": {
+  "asli": "See yaaa.",
+  "dense": "Eitsss see yaaa!",
+  "centroid": "Hai Sobat BRI. Mohon maaf atas kendala transaksi setor tunai yang dialami. Terkait pesan yang disampaikan melalui DM sudah kami respons. Silakan lakukan pengecekan ya. Tks~Helma",
+  "hybrid_early_alpha0.5": "See ya Kak. Trims.",
+  "cp": {
+   "dense": 0.557,
+   "centroid": 0.094,
+   "hybrid_early_alpha0.5": 0.5
+  },
+  "gaya": {
+   "dense": 0.012,
+   "centroid": 0.962,
+   "hybrid_early_alpha0.5": 0.96
+  },
+  "ppl": {
+   "dense": 670.6,
+   "centroid": 63.8,
+   "hybrid_early_alpha0.5": 2345.7
+  },
+  "rep8": {
+   "dense": 0.0,
+   "centroid": 1.0,
+   "hybrid_early_alpha0.5": 0.0
+  }
+ },
+ "excitement_TH": {
+  "asli": "GEMESSS",
+  "dense": "Gemesss bangettt.",
+  "centroid": "“Wih, gemes banget nih buat kamu yang lagi galau! Yuk, ganti mood pake diskon gede di Shopee lho, mulai jam 7 malem! Jangan lewatkan ya!”",
+  "hybrid_early_alpha0.5": "Gemesss bangettt dahhh",
+  "cp": {
+   "dense": 0.245,
+   "centroid": 0.123,
+   "hybrid_early_alpha0.5": 0.334
+  },
+  "gaya": {
+   "dense": 0.039,
+   "centroid": 0.945,
+   "hybrid_early_alpha0.5": 0.949
+  },
+  "ppl": {
+   "dense": 16382.5,
+   "centroid": 28.0,
+   "hybrid_early_alpha0.5": 6212.4
+  },
+  "rep8": {
+   "dense": 0.0,
+   "centroid": 0.0,
+   "hybrid_early_alpha0.5": 0.0
+  }
+ },
+ "excitement_SD": {
+  "asli": "Happy Friday! Wishing you a lovely day",
+  "dense": "You really make me HAPPY!!! Happy Friday!",
+  "centroid": "\"Selamat Hari Jumat buat semua!!! Biar makin semangat buat weekend yuk minum di jilid terdekatmu! Ada [Tambahkan minuman menarik] dengan design yang keren banget loh. Buat yang belum cobain yuk langsung cobain sekarang juga!\"",
+  "hybrid_early_alpha0.5": "You really make me HAPPY!!! Thank youuuu!!!",
+  "cp": {
+   "dense": 0.615,
+   "centroid": 0.504,
+   "hybrid_early_alpha0.5": 0.403
+  },
+  "gaya": {
+   "dense": 0.076,
+   "centroid": 0.958,
+   "hybrid_early_alpha0.5": 0.043
+  },
+  "ppl": {
+   "dense": 244.7,
+   "centroid": 75.5,
+   "hybrid_early_alpha0.5": 181.6
+  },
+  "rep8": {
+   "dense": 0.0,
+   "centroid": 0.63,
+   "hybrid_early_alpha0.5": 0.0
+  }
+ }
+}

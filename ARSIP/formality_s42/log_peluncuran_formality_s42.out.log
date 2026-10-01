@@ -1,0 +1,2399 @@
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | DENSE
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+min . mo tanya , kalo driver performa bintang ngaruhnya gimana ya ? apa berpengaruh ke pendapatan orderan juga ?
+------------------------------
+TRANSFERRED (formal):
+min , mau nanya , kalau performa driver bintangnya berpengaruh ke pendapatan orderan juga ya?
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+kok malah tambah lemot jaringan saya
+------------------------------
+TRANSFERRED (formal):
+“kok malah makin lambat jaringanku.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+menu pembaharuan password itu kaya gini , kenapa sih susah amat ambil dana yang ada di akun sendiri ke rekening sendiri
+------------------------------
+TRANSFERRED (formal):
+“menu ganti password itu susah banget, kok kenapa sih susah banget ambil dana yang ada di akun ke rekening sendiri sih?”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+gua ga pernah begini soalnya wkwkwk
+------------------------------
+TRANSFERRED (formal):
+parah ya? hahaha.
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+besok " pas udh ketemu tanya , kemarin kamu isiin gopay sapa aja
+------------------------------
+TRANSFERRED (formal):
+“besok aku mau tanya, kemarin aku isi gopay sama siapa aja?”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | CENTROID
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+sini sini . tapi jauh dr tempatmu dek .
+------------------------------
+TRANSFERRED (formal):
+“tolong, sini sebentar ya, tapi kamu lumayan jauh dari sini.”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+owhh haha typo bikin salah paham
+------------------------------
+TRANSFERRED (formal):
+“Aduh, maaf salah ketik, jadi kebalik-balik.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+min tolong dong kenapaa paket xxxnumberxxx xxxnumberxxx gb yang xxxnumberxxx xxxnumberxxx k nya kok hilaang
+------------------------------
+TRANSFERRED (formal):
+“Hai, tolong dong, kenapa paket xxxnumberxxx gb yang xxxnumberxxx k nya hilang?”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+klo paketan cod gagal dikirim , gimana kelanjutannya ? pembeli susah dihubungi
+------------------------------
+TRANSFERRED (formal):
+“Kok, paket COD-nya gagal kirim, bagaimana kelanjutannya? Pembelinya susah dihubungi, nih.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+min , kok pulsa saya selalu tersedot terus ya ? padahal data selalu saya matiin ?
+------------------------------
+TRANSFERRED (formal):
+“Halo, kok pulsa saya terus berkurang? Padahal data udah matiin terus.”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | BM25
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+tolong di perluas lagi ya min jangkauan jaringannya . aku tunggu kabar baiknya min .
+------------------------------
+TRANSFERRED (formal):
+“Mohon diperluas lagi ya min jangkauan jaringannya. aku tunggu kabar baiknya min.”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+mohon dibantu saya sdh lakukan pembayaran tagihan xxxdatexxx bulanan tapi knpa no hp masih belum bisa aktiv no hp matrik xxxnumberxxx
+------------------------------
+TRANSFERRED (formal):
+admin, tagihan xxxdatexxx belum bisa diaktivasi no hp matrik xxxnumberxxx. tolong bantu.
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+dapat xxxnumberxxx gb cuman rp xxxnumberxxx dari
+------------------------------
+TRANSFERRED (formal):
+lumayan sekali dapat xxxnumberxxx gb cuma bayar rp xxxnumberxxx.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+min , tolong di menu favorite , agar barang bisa di filter seperti pada menu pencarian barang lainnya , bisa disortir harga , jasa pengiriman dll
+------------------------------
+TRANSFERRED (formal):
+min , bisa tolong di tambahkan ke daftar favorit , supaya barangnya bisa difilter kayak di pencarian barang lain , bisa diurutin harga , jasa kirim , gitu 👍
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+kurang adil ya kayanya di tokped aja penjual bisa ngasih reputasi ke akun pembeli 🤭
+------------------------------
+TRANSFERRED (formal):
+"kayaknya kurang adil ya nih, di Tokped penjual bisa kasih reputasi ke akun pembeli 🤭"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.1
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+minn kuota ini berlaku sampai kapan ya ? trims
+------------------------------
+TRANSFERRED (formal):
+“Halo, admin. Mau tanya, masa berlaku kuota ini sampai kapan ya? Makasih.”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+apakah paketan bhyplastic saya akan di lanjut otomatis apabila telah isi pulsa
+------------------------------
+TRANSFERRED (formal):
+“Halo admin, mau tanya nih soal paket saya. Kalau isi pulsa, apakah paket Bhyplasticnya akan otomatis terus aktif?”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+itu seler kurang aja . iklan palsu dan aku sudah tertipu .
+------------------------------
+TRANSFERRED (formal):
+“saya kecewa banget, selernya kurang oke. banyak iklan yang menyesatkan, dan akhirnya saya jadi rugi.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+sinyal xxxnumberxxx g full tapi ga bisa dipake , daerah jogja ini kenapa udh hampir seminggu
+------------------------------
+TRANSFERRED (formal):
+“Sinyal saya xxxnumberxxx full tapi nggak bisa dipakai, di daerah Jogja ini kenapa udah hampir seminggu?”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+orderan g sampe , duit ilang . bener2 de driver xxxuserxxx kecewa makin banyak aja org jahat y
+------------------------------
+TRANSFERRED (formal):
+“orderan blom dateng, duit udah abis. bener2 lama banget driver, +xxxnumberxxx , kayaknya makin banyak aja orang jahat ya.”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.3
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+tolong di perluas lagi ya min jangkauan jaringannya . aku tunggu kabar baiknya min .
+------------------------------
+TRANSFERRED (formal):
+admin, tolong tingkatkan lagi ya jangkauan jaringannya. saya tunggu kabar baiknya, admin.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+berkat dana xxxuserxxx dong , beli pulsa total xxxnumberxxx bayarnya cukup xxxnumberxxx . pulsa xxxnumberxxx langsung aku pake buat beli paket data tsel xxxnumberxxx gb .
+------------------------------
+TRANSFERRED (formal):
+"thanks banyak dong xxxuserxxx , buat bayar pulsa total xxxnumberxxx cuma xxxnumberxxx . pulsa xxxnumberxxx langsung aku pake buat beli paket data tsel xxxnumberxxx gb."
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+tolong cek dm dari saya . thankyou
+------------------------------
+TRANSFERRED (formal):
+admin, tolong cek dm ya. terima kasih.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+mana jawaban dari dm pict bukti yg sudah saya kirim ?
+------------------------------
+TRANSFERRED (formal):
+admin, tolong info dong, bukti yang sudah saya kirim kemarin, mana jawabannya?
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+kak kenapa ga bisa bales sms ke xxxnumberxxx ?
+------------------------------
+TRANSFERRED (formal):
+“Halo, kok nggak bisa balas SMS ke nomor ini ya? xxxnumberxxx”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.5
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+saya juga curiga karena uang yg diambil dalam jumlah yg sama besar , saya sangaat kecewa , mohon kejelasannya
+------------------------------
+TRANSFERRED (formal):
+“Saya juga merasa sangat tidak percaya dengan hal ini. Mohon dijelaskan, karena uang yang diambil jumlahnya sama besar.”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+chat aja ul , pilih di menu pusat bantuan
+------------------------------
+TRANSFERRED (formal):
+“chat aja ke Ul, pilih di menu pusat bantuan.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+iyah sudah tolong cek dm saya min
+------------------------------
+TRANSFERRED (formal):
+sudah saya dm, tolong cek.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+jaringn internet xxxnumberxxx g saya error , hanya bisa h + itupun lemot sekali .
+------------------------------
+TRANSFERRED (formal):
+“internet xxxnumberxxx g saya error, lama banget + itupun lemot. tolong bantu.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+miinn paketan aku gabisa mulu mau sampe kapan ini mau ngerjain tugas jadi gabisaa
+------------------------------
+TRANSFERRED (formal):
+admin, kok paketku nggak bisa ya? Mau sampe kapan ini dipengerjain jadi nggak bisa kerjain tugas.
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.7
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+dari tadi mention terus gak dibalas . tolong dong dibalas . dm saya juga tolong dibalas
+------------------------------
+TRANSFERRED (formal):
+admin, tolong balas dm saya ya. terima kasih.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+jaringan lagi jelek kah ? dah xxxnumberxxx hari lemot
+------------------------------
+TRANSFERRED (formal):
+xxxuserxxx, koneksi ini masih lemot xxxnumberxxx hari.
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+baik , di tunggu progress nya ya . terimakasih
+------------------------------
+TRANSFERRED (formal):
+ditunggu progressnya ya. terima kasih.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+milenial bang , sibuk di kantor . banyak online shop juga , ada ojol juga . gak ada manfaatnya dong nih online shop sama ojol
+------------------------------
+TRANSFERRED (formal):
+admin , kantor rame banget ya sekarang ? banyak tok online juga , ojol juga . males deh sama semua itu , hahaha .
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+halo xxxuserxxx temen saya transfer via gopay kok blm masuk ya
+------------------------------
+TRANSFERRED (formal):
+halo xxxuserxxx , teman saya transfer gopay, tolong dicek ya.
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.9
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+minn kuota ini berlaku sampai kapan ya ? trims
+------------------------------
+TRANSFERRED (formal):
+Kak, kuota ini sampai kapan ya? Makasih banyak.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+ketika ema nyuru beli belanjaan ke warung
+------------------------------
+TRANSFERRED (formal):
+“eh, tadi nenek nyuruh beli belanjaan ke warung.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+apakah tanpa buku tabungan bisa , untuk upgrade nya , sama mau setor tunai soalnya pecahan xxxnumberxxx ribu , trimakasih
+------------------------------
+TRANSFERRED (formal):
+“Bisa upgrade tanpa buku tabungan ya? Sama, mau setor tunai pecahan xxxnumberxxx ribu, trims.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+iye di kasih kopi , kopi sudah mendarah daging
+------------------------------
+TRANSFERRED (formal):
+"iye, udah dikasih kopi, kopi udah mendarah daging."
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+hay min saya suda pesen barang sudah transfer juga tp kenapa habis banyar tulisannya pemesanan tidak sah ya ?
+------------------------------
+TRANSFERRED (formal):
+“Halo, saya sudah pesan barang dan juga sudah transfer pembayaran, tapi kok tulisannya pemesanan tidak sah ya?”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | RANDOM
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+baik kak dewa , silakan cek dm kembali
+------------------------------
+TRANSFERRED (formal):
+"Halo kak dewa, mohon cek DM kembali ya."
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+terima kasih sudah followup , saya sudah sering chat tidak ada balasan
+------------------------------
+TRANSFERRED (formal):
+tolong balas , udah chat mulu gak ada balasan
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+itu kelamaan gak diantar . gak diupdate jg udah datang . disimpan dlm gudang jne hingga dimakan tikus xxxnumberxxx bungkus . gmn tuh ?
+------------------------------
+TRANSFERRED (formal):
+“Wah, lama banget nggak diantar. Udah nggak diupdate juga soal barangnya. Disimpan di gudang JNE, malah dimakan tikus tuh bungkusnya. Gimana ini?”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+udah dua hari stuck gitu dari tanggal xxxnumberxxx gak dianterin padahal udah di kota saya ini kurirnya kenapa ya tolong follow up jp xxxphonexxx
+------------------------------
+TRANSFERRED (formal):
+udah dua hari stuck dari tanggal xxxnumberxxx gak dianterin kurirnya, kenapa ya tolong follow up jp xxxphonexxx
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+dicoba nugget nya sosisnya , sapatau mau endorse
+------------------------------
+TRANSFERRED (formal):
+nugget sosisnya dicoba, kayaknya buat endorse deh.
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | ZERO_SHOT
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+sudah bisa min , saya coba di atm lokasi lain . trimakasih
+------------------------------
+TRANSFERRED (formal):
+Baik, saya siap. Mohon berikan "Contoh Referensi" yang akan digunakan untuk transfer gaya. Setelah Anda memberikan contoh, saya akan menulis ulang "Teks Sumber" sesuai dengan instruksi yang Anda berikan.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+frustasi dgn atm mandiri , hampir tiap hari bermasalah di seputar tang sel , knp bank lain spt b * * jarang sekali masalah , segera berbenah , menyebalkan
+------------------------------
+TRANSFERRED (formal):
+Contoh Referensi:
+"Saya merasa sangat tidak puas dengan pengalaman saya menggunakan ATM mandiri. Hampir setiap hari saya menghadapi kendala terkait saldo yang tidak sesuai. Perbandingan dengan bank-bank lain, khususnya bank-bank yang lebih tradisional, menunjukkan bahwa masalah serupa jarang terjadi. Saya berencana untuk segera mencari solusi dan memperbaiki situasi ini, karena hal ini sangat mengganggu."
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+sudah saya dm infonya . mohon dicek . terima kasih .
+------------------------------
+TRANSFERRED (formal):
+Dengan hormat, saya telah mengirimkan informasi tersebut melalui pesan langsung. Mohon dapat diperiksa. Atas perhatian dan kerjasamanya, saya ucapkan terima kasih.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+coba juga di jam tengah malam , biasanya jam² im3 lancar
+------------------------------
+TRANSFERRED (formal):
+“Usahakan untuk mencoba pada pukul 12 malam, seringkali pada jam-jam tersebut layanan im3 berjalan optimal.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+ni toko online tp ga mau ngerespon chat nya ? kalo emang ga mau dagang ga usah dagang mendingan .
+------------------------------
+TRANSFERRED (formal):
+Contoh Referensi:
+"Dengan segala hormat, kami mohon maaf atas keterlambatan respon kami. Kami menghargai waktu dan perhatian Anda. Apabila kami belum dapat memberikan jawaban yang memuaskan, kami menyarankan untuk mempertimbangkan kembali niat Anda."
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | DENSE
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+bener banget promonya kerasa bgt lah , top grab !
+------------------------------
+TRANSFERRED (formal):
+top banget promo grabnya , beneran ngefek!
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+lupa saya resinya , tolong cek by nama saya aja
+------------------------------
+TRANSFERRED (formal):
+"lupa resinya , tolong cek by nama aku aja"
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+kalo saya setuju dan kemudian saya menolak tidak bisa di setujui ya ? jadi gimana solusinya buat saya ?
+------------------------------
+TRANSFERRED (formal):
+iya , kalau setuju bisa , tapi kalau nggak bisa disetujui , nggak bisa ya ? gimana caranya buat saya ?
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+ini chattingan sama triva , cepet banget responnya jadi gak lama nunggu kaya chat dari dia
+------------------------------
+TRANSFERRED (formal):
+“halo, triva responnya cepat banget, nggak lama nunggu kayak chat dari dia.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+slamat malam admin . saya masang paket malam dan paket nya aktif pas saya menghidup kan data knpa pulsa saya hilang ?
+------------------------------
+TRANSFERRED (formal):
+“admin, selamat malam. saya baru pasang paket malam, dan paketnya aktif pas dinyalain. kok pulsa saya hilang ya?”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | CENTROID
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+cek saha ma , so tau kamu mah
+------------------------------
+TRANSFERRED (formal):
+Ma, cek saha ya? Aku mau tau kamu mah.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+tolong dong udah xxxnumberxxx xxxnumberxxx x kayagini . kenapa ya ?
+------------------------------
+TRANSFERRED (formal):
+udah xxxnumberxxx hari , kayak gini . kenapa ya?
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+ketika ema nyuru beli belanjaan ke warung
+------------------------------
+TRANSFERRED (formal):
+“udah kak, pas ema telpon mau bli belanjaan di warung.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+nah bener nih dipesen itu grabfoodnya dan jangan lupa apapun makanannya minumannya teh botol sosro ( endorse dong xxxuserxxx )
+------------------------------
+TRANSFERRED (formal):
+admin, grabfoodnya udah dipesan, tapi kok belum dateng ya? jangan lupa minuman teh botol sosro ( endorse dong xxxuserxxx )
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+min resi xxxnumberxxx posisi udh dmna ?
+------------------------------
+TRANSFERRED (formal):
+admin, di mana posisi resi saya xxxnumberxxx?
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | BM25
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+min saya mau hapus akun gojek cust , gmn cranya ? soal nya kna bajak orang
+------------------------------
+TRANSFERRED (formal):
+admin , akun cust kena bajak orang , gmna caranya bunuh akunnya ?
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+gimana mau terbantu . dm aja ngga slow respon . sudah xxxnumberxxx hari dm saya tidak direspon
+------------------------------
+TRANSFERRED (formal):
+sudah dm saya ngga slow respon , sudah xxxnumberxxx hari dm saya tidak direspon.
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+dicoba nugget nya sosisnya , sapatau mau endorse
+------------------------------
+TRANSFERRED (formal):
+“Dicoba nugget sosisnya, kayaknya bisa buat endorse, nih.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+ini member seventeen baru ya xxxuserxxx ? wkwk
+------------------------------
+TRANSFERRED (formal):
+wkwk, member baru Seventeen ya, xxxuserxxx?
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+pastinya masih dong ditunggu nih kejutannya selalu on pokoknya patengin timeline nya
+------------------------------
+TRANSFERRED (formal):
+"pastinya nih, ditunggu banget kejutan terus on pokoknya patengin timeline-nya!"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.1
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+oke , sudah saya kirim via dm
+------------------------------
+TRANSFERRED (formal):
+udah saya kirim via dm juga nih.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+bukan saya mba , saya pengguna setia telkomsel . coba mba cek tweet temen saya
+------------------------------
+TRANSFERRED (formal):
+admin , coba cek tweet temenku , aku pengguna telkomsel setia
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+jaringn internet xxxnumberxxx g saya error , hanya bisa h + itupun lemot sekali .
+------------------------------
+TRANSFERRED (formal):
+admin, jaringan xxxnumberxxx g saya error, cuma bisa h+ itu pun lemot sekali.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+tolong di perluas lagi ya min jangkauan jaringannya . aku tunggu kabar baiknya min .
+------------------------------
+TRANSFERRED (formal):
+admin, jangkauan jaringannya mohon diperluas ya. aku tunggu kabar baiknya min.
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+kenapa ya internet jadi lemot ? padahal udah di pengaturan terus pilih jaringan manual tapi tetap saja lemot
+------------------------------
+TRANSFERRED (formal):
+“admin, kok internetnya lama banget sih? udah diatur manual, pilih jaringan manual, tetep aja lemot.”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.3
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+selamat pagi min xxxuserxxx , tolong trouble ticket id ttb000003452245 di follow up . terima kasih
+------------------------------
+TRANSFERRED (formal):
+admin, tolong follow up trouble ticket ttb000003452245 - terima kasih.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+iya jadi kurang tingkat kepercayaan nya , gak kebayang flexi cash nya
+------------------------------
+TRANSFERRED (formal):
+“ini kok makin susah ya , kayaknya kepercayaan udah gak setingkat lagi soal flexi cash.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+maaf saya kok gk bisa dm ya ? no saya xxxnumberxxx mau daftar paket freedom yg xxxnumberxxx xxxnumberxxx k dapat xxxnumberxxx giga kak
+------------------------------
+TRANSFERRED (formal):
+admin , kok gk bisa dm ya? no saya xxxnumberxxx mau daftar paket freedom yg xxxnumberxxx xxxnumberxxx , dapet xxxnumberxxx giga kak
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+kalo chips ny rusak emang masih bisa di isi saldo ? masih bisa ke detect pas cek sisa saldo ?
+------------------------------
+TRANSFERRED (formal):
+"chipnya rusak, bisa diisi saldo nggak sih? masih bisa detect pas cek sisa saldo?"
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+min jne trucking dr medan ke pinang ranti berat sekitar xxxnumberxxx - xxxnumberxxx kilo brp y min ? sya cek kok malah tambah mahal min ?
+------------------------------
+TRANSFERRED (formal):
+min jne trucking dr medan ke pinang ranti berat sekitar xxxnumberxxx - xxxnumberxxx kilo brp y min? sya cek kok malah tambah mahal min?
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.5
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+udah aku dm lho kak dari tadi pagi , fyi aja
+------------------------------
+TRANSFERRED (formal):
+halo admin , udah aku dm lho kak dari tadi pagi , fyi aja.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+jaringan xxxuserxxx tertutup kabut gak bisa konek
+------------------------------
+TRANSFERRED (formal):
+“xxxuserxxx, jaringan kok kayaknya gak bisa konek ya?”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+min . saya coba buat transfer ke bank lain pakai m - banking pagi ini gagal terus ya ? tp buat transfer ke virtual account lancar . ada solusikah ?
+------------------------------
+TRANSFERRED (formal):
+“min , pagi ini aku coba transfer ke bank lain lewat m-banking terus gagal ya? tapi buat transfer ke virtual account lancar. ada solusinya nggak?”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+yg dihina pun ulama , otak nya ngak ada isi ya gitu bng
+------------------------------
+TRANSFERRED (formal):
+“parah ya admin, hina ulama juga? otaknya kosong gitu.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+besok " pas udh ketemu tanya , kemarin kamu isiin gopay sapa aja
+------------------------------
+TRANSFERRED (formal):
+“besok aku mau tanya, kemarin aku isi gopay sama siapa aja?”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.7
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+mana nih dana reply email dan dm nya ?
+------------------------------
+TRANSFERRED (formal):
+“di mana dana reply email dan dm nya?”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+pakdok ga usah ikutan , traktir saya ngopi aja deh .
+------------------------------
+TRANSFERRED (formal):
+pak, bogo hahaha . aku mau ngopi aja , traktir kamu . hehe .
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+gak gitu min disini pada demo2 gakjls kasian para driver yang uangnya di gopay kaya saya min
+------------------------------
+TRANSFERRED (formal):
+admin, kenapa saldo gopay saya gak jels, kasian para driver yang uangnya di gopay kayak saya, min?
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+ada di nomor xxxnumberxxx yuk kawan ikutan : xxxuserxxx xxxuserxxx xxxuserxxx done follow sosial media xxxuserxxx semoga beruntung
+------------------------------
+TRANSFERRED (formal):
+“Di nomor xxxnumberxxx, yuk ikutan, admin! Semoga beruntung dengan xxxuserxxx dan xxxuserxxx.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+ke asyikan ya kaya operator punya bapak kamu sendiri wkwkwkwk
+------------------------------
+TRANSFERRED (formal):
+wah gila juga ya , operator punya bapak sendiri kayak gitu hahaha .
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.9
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+selamat pagi min xxxuserxxx , tolong trouble ticket id ttb000003452245 di follow up . terima kasih
+------------------------------
+TRANSFERRED (formal):
+halo xxxuserxxx , tolong follow up trouble ticket ttb000003452245 . terima kasih!
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+bagaimana cara menghapus akun gojek ? trims
+------------------------------
+TRANSFERRED (formal):
+admin , mau tanya , gimana cara hapus akun gojek ya? makasih.
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+yeayy shopee terbaik , bisa pake dua voucher dalam sekali checkoutt yuhuu ~
+------------------------------
+TRANSFERRED (formal):
+“Wah shopee bagus banget , bisa pakai dua voucher dalam satu belanja , seru banget ~”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+apakah tanpa buku tabungan bisa , untuk upgrade nya , sama mau setor tunai soalnya pecahan xxxnumberxxx ribu , trimakasih
+------------------------------
+TRANSFERRED (formal):
+“Bisa upgrade tanpa buku tabungan ya, admin? Terus, mau setor tunai pecahan xxxnumberxxx ribu nih. Makasih.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+min , ini ordran saya kenap ga sampe2 yaa ? resinya gabisa cek juga lagi . gimana nihh . dibantu cek dong
+------------------------------
+TRANSFERRED (formal):
+min, ini orderan gue kenapa belum sampai ya? resinya juga gak bisa dicek lagi. gimana nih, dibantu cek dong.
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | RANDOM
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+kalo chips ny rusak emang masih bisa di isi saldo ? masih bisa ke detect pas cek sisa saldo ?
+------------------------------
+TRANSFERRED (formal):
+chipnya rusak tuh , masih bisa diisi saldo gak ya? pas cek sisa saldo masih bisa detek gitu?
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+masih error , saya beralih aja ke kartu yang lain
+------------------------------
+TRANSFERRED (formal):
+"error parah , gpp deh ganti kartu aja"
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+jaringn internet xxxnumberxxx g saya error , hanya bisa h + itupun lemot sekali .
+------------------------------
+TRANSFERRED (formal):
+admin, jaringan internet xxxnumberxxx saya error, cuma bisa + , tapi lemot banget.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+halo selamat malam . saya mau tanya kalo program kkb bisa dipergunakan untuk mobil bekas atau tidak ? terima kasih .
+------------------------------
+TRANSFERRED (formal):
+halo selamat malam , mau nanya nih , program kkb buat mobil bekas gak ya ? makasih .
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+itu kelamaan gak diantar . gak diupdate jg udah datang . disimpan dlm gudang jne hingga dimakan tikus xxxnumberxxx bungkus . gmn tuh ?
+------------------------------
+TRANSFERRED (formal):
+“Wah, lama banget nggak dianter, udah nggak diupdate juga soal datengnya. Disimpan di gudang JNE sampe dimakan tikus nomor kita ini. Gimana tuh?”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | DENSE
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+jaringan bermasalah ga ada ? kemarin baru ngisi , sore ini sudah lemot parah , blm fup ya ! sinyal perbaiki daerah neglasari , tangerang .
+------------------------------
+TRANSFERRED (formal):
+“jaringan lagi susah ya? kemarin baru isi pulsa, sore ini udah lemot banget, belum fup juga nih! sinyal perbaiki di daerah neglasari, tangerang.”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+kalau lokasi bank terdekat dimana ya ?
+------------------------------
+TRANSFERRED (formal):
+“lokasi kantor cabang terdekat di mana ya?”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+halo , mohon dibantu dipercepat dan info perkiraan barang tiba ke alamat penerima : jp xxxphonexxx tujuan ntb . saya pengirim . trimakasih bantuannya !
+------------------------------
+TRANSFERRED (formal):
+halo admin , tolong info perkiraan barang tiba ke ntb dengan resi jp xxxphonexxx . saya pengirim , trims bantuannya!
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+min tolong dong kenapaa paket xxxnumberxxx xxxnumberxxx gb yang xxxnumberxxx xxxnumberxxx k nya kok hilaang
+------------------------------
+TRANSFERRED (formal):
+“Min, tolong dong kenapa paket xxxnumberxxx xxxnumberxxx gb yang xxxnumberxxx xxxnumberxxx k nya kok hilang.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+kencan bahagia versi gue itu yang gak pake ribet , sederhana , saling ngerti , gak harus nuntut dan paling penting dia seneng ketika ketemu gue
+------------------------------
+TRANSFERRED (formal):
+“kencan asik buat gue tuh yang gampang, santai, paham gitulah, gak usah maksa, yang paling penting dia happy pas ketemu aku.”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | CENTROID
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+halo apa ini emg lagi gangguan top up via m banking ? kok saldo saya ga nambah ya ?
+------------------------------
+TRANSFERRED (formal):
+“Assalamualaikum, admin. kok saldo saya nggak naik ya, waktu top up lewat mbanking?”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+min ini kenapa lagi min udah dari tadi pagi ini sy gak bisa dm situ btw
+------------------------------
+TRANSFERRED (formal):
+“permisi admin, kenapa nih lagi? udah dari tadi pagi aku gak bisa DM.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+iya , paham . yg saya protes kan kenapa smsnya bilang bakal diantar hari ini ? kalo
+------------------------------
+TRANSFERRED (formal):
+“iya, betul. soal sms yang bilang bakal diantar hari ini, itu yang saya protes.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+mksdnya gimana min ? buka dimana itu ?
+------------------------------
+TRANSFERRED (formal):
+“Min, maksudnya gimana ya? di mana ya tempatnya buka?”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+tfr ke rek rdn dari jum ' at siang sampe sekarang belum masuk juga help
+------------------------------
+TRANSFERRED (formal):
+"Halo admin, saya mau tanya tfr ke RDN dari jam Jumat siang sampai sekarang belum masuk ya?"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | BM25
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+min resi xxxnumberxxx posisi udh dmna ?
+------------------------------
+TRANSFERRED (formal):
+admin . resi xxxnumberxxx posisi sekarang di mana?
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+tolong cek dm , saya kirim screenshot history topup tapi gak masuk yah saldonya
+------------------------------
+TRANSFERRED (formal):
+admin, tolong cek dm ya. screenshot history topup gak masuk.
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+aku udah jelaskan panjang lebar di dmnya doi
+------------------------------
+TRANSFERRED (formal):
+“aku udah jelasin panjang bgt di dmnya dia.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+minn kuota ini berlaku sampai kapan ya ? trims
+------------------------------
+TRANSFERRED (formal):
+“Kuota ini sampai kapan ya, min? makasih.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+hallo kak , untuk kendala pada nomor prabayar telkomsel - nya dapat langsung menghubungi rekan kami di xxxuserxxx . terima kasih - mina
+------------------------------
+TRANSFERRED (formal):
+halo kak , untuk masalah nomor prabayar telkomsel , bisa hubungi rekan kami di xxxuserxxx . terima kasih - mina
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.1
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+lagi pada beli motor gan masih inden xxxnumberxxx taun
+------------------------------
+TRANSFERRED (formal):
+udah lama banget nunggu motor gan, masih inden xxxnumberxxx tahun
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+yg dihina pun ulama , otak nya ngak ada isi ya gitu bng
+------------------------------
+TRANSFERRED (formal):
+“udah xxxphonexxx , kok bisa ulama dihinain, otak kosong gitu dah.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+gojek sepersepuluh hidupku , makasih gojek telah membawaku keluar dari zona nyaman
+------------------------------
+TRANSFERRED (formal):
+sore admin . ini ada keluhan nomor saya , gojek sudah membantu banyak hal dalam hidupku , terima kasih gojek .
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+tuh min xxxuserxxx perlu dicontoh nih anak baik yang bekelnya selalu habis !
+------------------------------
+TRANSFERRED (formal):
+“min, ini contoh nih buat anak baik yang belanjanya selalu habis!”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+hi min , mau tanya ini paketku statusnya sedang di kiri cuma anehnya pas di resi namanya penerima gak sesuai dg yg aku tulis .
+------------------------------
+TRANSFERRED (formal):
+“halo , mau nanya nih soal paketku. statusnya masih di proses, tapi kok pas resinya nama penerima beda sama yg aku tulis ya?”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.3
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+min , kalo sy punya xxxnumberxxx akun ovo karena ada xxxnumberxxx no smartphone , bisa nggak cek saldo ovo cukup di xxxnumberxxx smartphone aja .
+------------------------------
+TRANSFERRED (formal):
+admin, tolong cek saldo ovo saya ya, karena ada nomor smartphone xxxnumberxxx. Cukup di smartphone ini aja nih.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+ini min . biasanya combo terbaik untukmu ada yg xxxnumberxxx xxxnumberxxx gb xxxnumberxxx xxxnumberxxx rb dan xxxnumberxxx xxxnumberxxx gb xxxnumberxxx xxxnumberxxx rb . ini dia hilang gk ad lg 🤔
+------------------------------
+TRANSFERRED (formal):
+min, combo terbaik buat aku biasanya ada yang xxxnumberxxx gb xxxnumberxxx rb dan xxxnumberxxx gb xxxnumberxxx rb, kok hilang ya? 🤔
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+ini speed nya segini doang di jaringan full xxxnumberxxx g wahai provider terbesar di indonesia ? mohon penjelasan logisnya
+------------------------------
+TRANSFERRED (formal):
+“kok gini amat speednya di jaringan ini ya, xxxnumberxxx ini penyedia internet nomor wahid di indonesia? tolong jelasin dong.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+menu pembaharuan password itu kaya gini , kenapa sih susah amat ambil dana yang ada di akun sendiri ke rekening sendiri
+------------------------------
+TRANSFERRED (formal):
+“menu ganti password begini , kenapa sih ribet banget ambil duit dari saldo sendiri ke rekening sendiri?”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+hallo kak , untuk kendala pada nomor prabayar telkomsel - nya dapat langsung menghubungi rekan kami di xxxuserxxx . terima kasih - mina
+------------------------------
+TRANSFERRED (formal):
+selamat malam kak , untuk masalah nomor prabayar telkomsel - nya bisa langsung hubungi rekan kami di xxxuserxxx . terima kasih - mina
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.5
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+tuh min xxxuserxxx perlu dicontoh nih anak baik yang bekelnya selalu habis !
+------------------------------
+TRANSFERRED (formal):
+“itu min xxxuserxxx butuh contoh nih, kayak anak baik yang belajarnya selalu abis!”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+min tolong cek riwayat pulsa transfer yg masuk ke nomor xxxnumberxxx pada tanggal xxxnumberxxx agustus xxxnumberxxx
+------------------------------
+TRANSFERRED (formal):
+“min, tolong cek saldo pulsa saya xxxnumberxxx tanggal xxxnumberxxx agustus xxxnumberxxx.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+beli token listrik min , udah mau abis soalnya
+------------------------------
+TRANSFERRED (formal):
+admin, tolong beli token listrik dong, udah mau habis nih.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+mas , mbak , seventeen mau upload teaser nanti malem jam xxxnumberxxx , tolong aplikasinya jangan error mulu saya mau beli paket . makasih . jangan lupa stan seventeen .
+------------------------------
+TRANSFERRED (formal):
+“hai , kenapa aplikasi nya masih error ya? seventeen mau beli paket , tolong jangan error dong. makasih.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+bener banget promonya kerasa bgt lah , top grab !
+------------------------------
+TRANSFERRED (formal):
+kecewa banget sama promo grab , top grabnya gak kerasa
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.7
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+min kok saya nggak bisa daftar paket ya ?
+------------------------------
+TRANSFERRED (formal):
+“min, kenapa nih saya nggak bisa daftar paket ya?”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+pesta kuota apa ya min ?
+------------------------------
+TRANSFERRED (formal):
+Kak, pesta kuota gimana ya?
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+iye di kasih kopi , kopi sudah mendarah daging
+------------------------------
+TRANSFERRED (formal):
+dm aku dikasih kopi , kopi udah mendarah daging
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+dari tadi susah nggak dapat driver , kenapa sih ? nyusahin ya nggak ada respon pula ditanya .
+------------------------------
+TRANSFERRED (formal):
+“dari tadi susah banget nggak ada driver, kok gini sih? bikin kesel, nggak ada respon juga kalau ditanya.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+halo xxxuserxxx temen saya transfer via gopay kok blm masuk ya
+------------------------------
+TRANSFERRED (formal):
+halo xxxuserxxx , temen saya transfer gopay belum masuk ya tolong dicek dong.
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.9
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+same power mau pesen go - clean kok ga ada ya ?
+------------------------------
+TRANSFERRED (formal):
+“kok, kenapa go clean gak ada pas mau pesen?”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+tanggal berapa ini , mas xxxuserxxx pakai kartu apa , kartu halo juga ?
+------------------------------
+TRANSFERRED (formal):
+halo xxxuserxxx , tanggal berapa ini pakai kartu apa , kartu halo juga?
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+halo , ini saya login gabisa2 dari tadi , kodenya ga ke send2 di nomor saya . soalnya mau ganti nomor tolong dong
+------------------------------
+TRANSFERRED (formal):
+“halo , aku lagi login gak bisa nih dari tadi , kodenya gak ke kirim2 di nomor aku . soalnya mau ganti nomor tolong dong”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+min . mo tanya , kalo driver performa bintang ngaruhnya gimana ya ? apa berpengaruh ke pendapatan orderan juga ?
+------------------------------
+TRANSFERRED (formal):
+admin , mau tanya , kalau performa driver bintangnya berpengaruh ke pendapatan orderan juga nggak ya?
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+hay min saya suda pesen barang sudah transfer juga tp kenapa habis banyar tulisannya pemesanan tidak sah ya ?
+------------------------------
+TRANSFERRED (formal):
+“Halo, saya sudah pesan barang dan juga sudah transfer pembayaran, tapi kok tulisannya pemesanan tidak sah ya?”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | RANDOM
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+halo xxxuserxxx temen saya transfer via gopay kok blm masuk ya
+------------------------------
+TRANSFERRED (formal):
+“Halo, kok dana dari transfer Gopay teman belum masuk ya?”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+bandwidth xxxnumberxxx xxxnumberxxx xxxnumberxxx kbps buat youtubean menggunakan indosat buffering terus tidak ?
+------------------------------
+TRANSFERRED (formal):
+"bandwidth xxxnumberxxx xxxnumberxxx xxxnumberxxx kbps buat nonton youtube pakai indosat, sering nge-buffer, ya?"
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+halo jenius , untuk pengiriman kartu ke domisili biasanya dibutuhkan waktu brp lama ya ? ty
+------------------------------
+TRANSFERRED (formal):
+“eh pinter , lama pengiriman kartu ke rumah berapa lama tuh ya? makasih.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+halo admin , saya mau melaporkan sebuah toko . jadi penjualnya itu bersikap tidak sopan ke saya ( selaku pembeli ) dan saya merasa tersinggung dengan perkataan penjualnya .
+------------------------------
+TRANSFERRED (formal):
+“halo admin, ada tuh toko, penjualnya kasar banget ke gue (pelanggan) , kesel tau nggak sih sama omongan dia.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+jangan berikan kode ini kepada siapapun
+------------------------------
+TRANSFERRED (formal):
+jangan kasih kode ini ke siapa-siapa
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | ZERO_SHOT
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+halo jenius , untuk pengiriman kartu ke domisili biasanya dibutuhkan waktu brp lama ya ? ty
+------------------------------
+TRANSFERRED (formal):
+Dengan hormat Bapak/Ibu, mohon informasinya mengenai perkiraan waktu yang dibutuhkan untuk pengiriman kartu ke alamat tujuan. Terima kasih atas bantuannya.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+lagi pada beli motor gan masih inden xxxnumberxxx taun
+------------------------------
+TRANSFERRED (formal):
+“Masih nunggu motor, kira-kira sekitar tiga tahun lagi nih.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+kalo saya setuju dan kemudian saya menolak tidak bisa di setujui ya ? jadi gimana solusinya buat saya ?
+------------------------------
+TRANSFERRED (formal):
+Contoh Referensi:
+"Dengan mempertimbangkan hal tersebut, saya mengajukan pertanyaan mengenai kemungkinan adanya inkonsistensi dalam proses pengambilan keputusan. Mohon sampaikan penjelasan mendetail mengenai mekanisme yang berlaku dan langkah-langkah yang dapat diambil untuk mengatasi situasi ini."
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+min tolong dong kenapaa paket xxxnumberxxx xxxnumberxxx gb yang xxxnumberxxx xxxnumberxxx k nya kok hilaang
+------------------------------
+TRANSFERRED (formal):
+Maaf, bisa tolong jelaskan mengapa paket nomor xxxnumberxxx dengan kapasitas xxxnumberxxx GB mengalami masalah dan tidak berfungsi dengan baik?
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+same power mau pesen go - clean kok ga ada ya ?
+------------------------------
+TRANSFERRED (formal):
+"Ada masalah dengan layanan, kok? Tidak bisa dipesan fitur 'power up'?"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | DENSE
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+halo xl , saya mau lapor untuk tujuan pemblokiran nomor handphone yang dipakai untuk menipu , bagaimana caranya ? surat polisi sudah siap
+------------------------------
+TRANSFERRED (formal):
+“Halo XL, mau laporan buat pemblokiran nomor HP yang dipakai buat nipu, gimana caranya? Surat polisi udah siap.”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+maaf memang lg gangguan ya ? mulai td gak bisa cek & beli kuota .
+------------------------------
+TRANSFERRED (formal):
+“Maaf, kok nggak bisa cek & beli kuota ya? Sejak tadi udah coba, tapi masih gagal.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+iyah sudah tolong cek dm saya min
+------------------------------
+TRANSFERRED (formal):
+sudah aku dm ya min, tolong responnya.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+driver online yg ngocol pasti kesel terus nyinyir liat beginian . ngoceh bla . bla bukannya istighfar sambil bilang gw juga mau kaya gini ahh
+------------------------------
+TRANSFERRED (formal):
+driver online tuh pasti kesel terus ngomel liat kayak gini. ngoceh aja bla bla bukannya istighfar sambil bilang pengen kaya gitu juga ahh.
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+kok tau ! kamu mata - matai aku ya !
+------------------------------
+TRANSFERRED (formal):
+apaan sih , ngintip gue segala !?
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | CENTROID
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+lupa saya resinya , tolong cek by nama saya aja
+------------------------------
+TRANSFERRED (formal):
+"admin, lupa resinya, tolong cek by nama saya aja."
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+fitur asuransi link aja ada di nomor xxxnumberxxx . kuy ramaikan .
+------------------------------
+TRANSFERRED (formal):
+admin, link asuransi ada di nomor xxxnumberxxx, dong.
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+berkat dana xxxuserxxx dong , beli pulsa total xxxnumberxxx bayarnya cukup xxxnumberxxx . pulsa xxxnumberxxx langsung aku pake buat beli paket data tsel xxxnumberxxx gb .
+------------------------------
+TRANSFERRED (formal):
+dong dana xxxuserxxx, udah beli pulsa total xxxnumberxxx bayarnya cukup xxxnumberxxx. pulsa xxxnumberxxx langsung aku pake buat beli paket data tsel xxxnumberxxx gb.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+coba juga di jam tengah malam , biasanya jam² im3 lancar
+------------------------------
+TRANSFERRED (formal):
+admin, coba pas jam tengah malam, biasanya Im3 lancar ya?
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+apakah paketan bhyplastic saya akan di lanjut otomatis apabila telah isi pulsa
+------------------------------
+TRANSFERRED (formal):
+“Paket Bhyplastic saya, kalau isi pulsa, lanjut otomatis nggak ya?”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | BM25
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+halo . sistem lazada sedang error kah ? saya tidak bisa checkout dan bayar . sudah dicoba via app , browser hp & pc , sudah restart hp juga
+------------------------------
+TRANSFERRED (formal):
+halo admin . checkout gak bisa , udah coba app , browser hp & pc , restart hp juga gak ada apa-apa nih .
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+pakdok ga usah ikutan , traktir saya ngopi aja deh .
+------------------------------
+TRANSFERRED (formal):
+"admin , boleh dong , kalau gak usah pakdok . ngopi bareng aja , ya?"
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+sinyal xxxnumberxxx g full tapi ga bisa dipake , daerah jogja ini kenapa udh hampir seminggu
+------------------------------
+TRANSFERRED (formal):
+admin, sinyal xxxnumberxxx g full tapi gak bisa dipake, daerah jogja ini udah hampir seminggu.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+yah . lupa . dulu waktu aktivasi di ceklis apa enggak .
+------------------------------
+TRANSFERRED (formal):
+“eh, lupa. dulu pas aktivasi di ceklis nggak?”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+gojek sepersepuluh hidupku , makasih gojek telah membawaku keluar dari zona nyaman
+------------------------------
+TRANSFERRED (formal):
+makasih gojek , udah nemenin aku sepanjang hidup , seru banget .
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.1
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+gimana nih , j & t udah xxxnumberxxx hari paket saya gak ada perkembangan !
+------------------------------
+TRANSFERRED (formal):
+admin, sudah xxxnumberxxx hari paket saya, j & t, gak ada perkembangan!
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+jaringn internet xxxnumberxxx g saya error , hanya bisa h + itupun lemot sekali .
+------------------------------
+TRANSFERRED (formal):
+admin, jaringan xxxnumberxxx g saya error, cuma bisa h + itupun lemot sekali.
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+yah . lupa . dulu waktu aktivasi di ceklis apa enggak .
+------------------------------
+TRANSFERRED (formal):
+“eh, kok bisa lupa? waktu aktivasi di ceklis dulu, nggak?”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+malam admin xxxuserxxx saya baru isi pulsa xxxnumberxxx xxxnumberxxx k , tiba2 pulsa ilang entah kenapa . padahal belum saya apa2in . sebel saya
+------------------------------
+TRANSFERRED (formal):
+selamat malam admin xxxuserxxx. malam ini pulsa saya xxxnumberxxx xxxnumberxxx tiba-tiba ilang entah kenapa. padahal belum saya lakukan apa2. sebel.
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+sudah mulai goyah sm indosat wkaka
+------------------------------
+TRANSFERRED (formal):
+udah kok nih Indosat, kayaknya mau ambek. wkaka
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.3
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+aamiin . semoga juga sinyal internet indosat nggak ilang - iangan terus ya . aku belum berniat ganti provider soalnya .
+------------------------------
+TRANSFERRED (formal):
+aamiin ya kak . aku belum mau ganti provider soalnya . semoga sinyal indosatnya tetap lancar .
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+min ni pas mau bayar kok gak bisa ya ? tulisannya web temporary down . di back juga gak bisa . musti restart hape .
+------------------------------
+TRANSFERRED (formal):
+“kok gak bisa min pas mau bayar sih? tulisannya webnya sementara down. di back juga gak bisa. harus restart HP.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+sudah bisa min , saya coba di atm lokasi lain . trimakasih
+------------------------------
+TRANSFERRED (formal):
+udah , di atm lokasi lain bisa kok , makasih min.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+lupa saya resinya , tolong cek by nama saya aja
+------------------------------
+TRANSFERRED (formal):
+“permisi admin, saya lupa resi saya. tolong dicek berdasarkan nama saya saja ya.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+min , kalo sy punya xxxnumberxxx akun ovo karena ada xxxnumberxxx no smartphone , bisa nggak cek saldo ovo cukup di xxxnumberxxx smartphone aja .
+------------------------------
+TRANSFERRED (formal):
+min, kalau saldo ovo saya di xxxnumberxxx smartphone aja, bisa dicek nggak? karena punya akun ovo xxxnumberxxx karena ada nomor smartphone xxxnumberxxx.
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.5
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+pembelian paket internet malam kok ga bisa ya min ?
+------------------------------
+TRANSFERRED (formal):
+“kok beli paket internet malem nggak bisa ya min?”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+pakdok ga usah ikutan , traktir saya ngopi aja deh .
+------------------------------
+TRANSFERRED (formal):
+admin , traktir kopi aja dong pakdok , hehe .
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+ini sudah terkirim tp pesanan belum selesai d sistem karna saya menggunakan kurir berbeda
+------------------------------
+TRANSFERRED (formal):
+“paketnya udah terkirim, tapi pesenannya belum selesai di sistem karena saya pakai kurir beda.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+kontak aja ke adminnya xxxuserxxx oom , mungkin bisa dibantu
+------------------------------
+TRANSFERRED (formal):
+admin , mohon bantu cek dm dari xxxuserxxx ya .
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+bener banget promonya kerasa bgt lah , top grab !
+------------------------------
+TRANSFERRED (formal):
+"oke bgt promonya kerasa , top grab banget!"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.7
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+hay min saya suda pesen barang sudah transfer juga tp kenapa habis banyar tulisannya pemesanan tidak sah ya ?
+------------------------------
+TRANSFERRED (formal):
+“min, saya sudah pesan barang dan transfer juga kok tulisannya pemesanan tidak sah ya?”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+cek dm min disana ada nomer nomer kartu yg baru dibeli dan tidak bisa dipake internet . monggo solusinya
+------------------------------
+TRANSFERRED (formal):
+admin, ada masalah dengan nomor kartu baru dibeli, gak bisa internet. cek dm ya, mohon bantuannya.
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+yg dihina pun ulama , otak nya ngak ada isi ya gitu bng
+------------------------------
+TRANSFERRED (formal):
+apaan sih , ulama aja dihinain , otaknya kosong gitu aja dah.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+iya , paham . yg saya protes kan kenapa smsnya bilang bakal diantar hari ini ? kalo
+------------------------------
+TRANSFERRED (formal):
+admin , kenapa sms saya bilang bakal diantar hari ini ? kalo nggak ada kabar
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+pesta kuota apa ya min ?
+------------------------------
+TRANSFERRED (formal):
+Kak, paket kuota apa ya?
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.9
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+orderan g sampe , duit ilang . bener2 de driver xxxuserxxx kecewa makin banyak aja org jahat y
+------------------------------
+TRANSFERRED (formal):
+admin , orderan gak dateng , duit ilang . beneran deh driver xxxuserxxx kesel banget , makin banyak aja orang jahat .
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+fitur asuransi link aja ada di nomor xxxnumberxxx . kuy ramaikan .
+------------------------------
+TRANSFERRED (formal):
+ikon fitur asuransi linkaja di nomor xxxnumberxxx . kuy ramaikan .
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+frustasi dgn atm mandiri , hampir tiap hari bermasalah di seputar tang sel , knp bank lain spt b * * jarang sekali masalah , segera berbenah , menyebalkan
+------------------------------
+TRANSFERRED (formal):
+“bang, atm mandiri lagi bikin kesel banget, tiap hari macet di transfer sel. kok bank lain nggak gini sih? buruan diperbaiki, bikin kesel banget!”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+xxxnumberxxx hari ini jaringan xxxnumberxxx g ngadat , xxxnumberxxx g pun ngos - ngosan . sekedar buka web saja luaamaa . tolong dong di tindak lanjuti
+------------------------------
+TRANSFERRED (formal):
+lumayan lama hari ini jaringan xxxnumberxxx g down , rasanya juga stuck . mau buka website saja lama sekali . tolong di tindak lanjuti ya.
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+apakah paketan bhyplastic saya akan di lanjut otomatis apabila telah isi pulsa
+------------------------------
+TRANSFERRED (formal):
+Kak, paket bhyplastic saya kalau pulsa habis, otomatis lanjut nggak ya?
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | RANDOM
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+kenapa ya internet jadi lemot ? padahal udah di pengaturan terus pilih jaringan manual tapi tetap saja lemot
+------------------------------
+TRANSFERRED (formal):
+admin , kenapa ya inetnya lemot sih ? udah di manual pilih sendiri tetep aja lemot .
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+halo selamat malam mau konfirmasi bisa gak kita melakukan pembatalan pesanan tanpa power merchantnya harus dicabut . karena ini kebetulan saya ( konsumen ) yang mau membatalkan
+------------------------------
+TRANSFERRED (formal):
+“Hai, mau nanya nih, bisa gak batalin pesanan tanpa izin merchantnya dicabut? Ini kebetulan gue (pelanggan) yang mau batal.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+sy penumpang terpilih daerah semarang ? hehehe
+------------------------------
+TRANSFERRED (formal):
+apa ya, penumpang semarang?
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+ini sudah terkirim tp pesanan belum selesai d sistem karna saya menggunakan kurir berbeda
+------------------------------
+TRANSFERRED (formal):
+“ini udah terkirim, tapi pesennya belum kelar di sistem soalnya pakai kurir beda.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+ini speed nya segini doang di jaringan full xxxnumberxxx g wahai provider terbesar di indonesia ? mohon penjelasan logisnya
+------------------------------
+TRANSFERRED (formal):
+admin , speednya kok cuma gini di jaringan full yaaaa provider gedean di indo ? mohon penjelasan logis dong .
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | DENSE
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+ini sudah terkirim tp pesanan belum selesai d sistem karna saya menggunakan kurir berbeda
+------------------------------
+TRANSFERRED (formal):
+“barang udah terkirim, tapi pesanan belum selesai di sistem karena pakai kurir lain.”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+halo xxxuserxxx temen saya transfer via gopay kok blm masuk ya
+------------------------------
+TRANSFERRED (formal):
+halo xxxuserxxx , teman saya transfer gopay belum masuk ya
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+min ni pas mau bayar kok gak bisa ya ? tulisannya web temporary down . di back juga gak bisa . musti restart hape .
+------------------------------
+TRANSFERRED (formal):
+“min, kok pas mau bayar nggak bisa ya? tulisannya web temporary down. di back juga nggak bisa. mesti restart hape.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+saldo grab dan ovo kan udah nyatu sekarang .
+------------------------------
+TRANSFERRED (formal):
+“Saldo Grab sama Ovo kan udah gabung sekarang tuh.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+kak kenapa ga bisa bales sms ke xxxnumberxxx ?
+------------------------------
+TRANSFERRED (formal):
+“admin, kok gak dibales smsnya ya ke xxxnumberxxx?”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | CENTROID
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+min koneksi internet indosat disetiap malam akhir2 ini jeleknya kelewatan , mohon untuk segera tindaklanjuti permasalahan ini krn sangat merugikan kami sbg pengguna .
+------------------------------
+TRANSFERRED (formal):
+“admin, koneksi internet Indosat akhir-akhir ini sering bermasalah, terutama malam hari. Mohon segera ditindaklanjuti karena ini sangat merugikan kami sebagai pengguna.”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+tolong min dikasih bonus buat masnya
+------------------------------
+TRANSFERRED (formal):
+“Mas, tolong kasih bonus buat saya ya?”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+hi min , mau tanya ini paketku statusnya sedang di kiri cuma anehnya pas di resi namanya penerima gak sesuai dg yg aku tulis .
+------------------------------
+TRANSFERRED (formal):
+Halo , mau menanyakan paket saya . statusnya masih di proses dan anehnya , di resi nama penerima tidak sesuai dengan yang saya tulis .
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+lagi eror bukan ? kok mau cari barang ga bisa mulu
+------------------------------
+TRANSFERRED (formal):
+“kok lagi error ya? mau cek barang kok nggak bisa sih?”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+dapat xxxnumberxxx gb cuman rp xxxnumberxxx dari
+------------------------------
+TRANSFERRED (formal):
+"sudah xxxnumberxxx hari, baru dapat xxxnumberxxx gb dan rp xxxnumberxxx dari"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | BM25
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+coba juga di jam tengah malam , biasanya jam² im3 lancar
+------------------------------
+TRANSFERRED (formal):
+“udah, coba di jam tengah malem, biasanya Im3 lancar.”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+akun grabnya buat ngorder kimcil po , makanya ditangguhkan
+------------------------------
+TRANSFERRED (formal):
+“akun grabnya buat order kimcil, jadi di-suspend gitu.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+min ini kenapa lagi min udah dari tadi pagi ini sy gak bisa dm situ btw
+------------------------------
+TRANSFERRED (formal):
+“min, ini kenapa lagi min? udah dari tadi pagi sy gak bisa dm situ btw.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+jaringan bermasalah ga ada ? kemarin baru ngisi , sore ini sudah lemot parah , blm fup ya ! sinyal perbaiki daerah neglasari , tangerang .
+------------------------------
+TRANSFERRED (formal):
+“Halo, jaringan lagi bermasalah nggak sih? Kemarin baru isi pulsa, sore ini udah lemot banget, belum FUP juga ya? Sinyal perbaiki di daerah Neglasari, Tangerang.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+tolong min dikasih bonus buat masnya
+------------------------------
+TRANSFERRED (formal):
+“tolong min, kasih bonus buat masnya.”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.1
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+ke asyikan ya kaya operator punya bapak kamu sendiri wkwkwkwk
+------------------------------
+TRANSFERRED (formal):
+"wah, kayaknya operator bapakmu tuh punya banyak anak wkwkwk"
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+kok malah tambah lemot jaringan saya
+------------------------------
+TRANSFERRED (formal):
+“Kenapa jaringan saya malah jadi lambat ya, admin?”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+berkat dana xxxuserxxx dong , beli pulsa total xxxnumberxxx bayarnya cukup xxxnumberxxx . pulsa xxxnumberxxx langsung aku pake buat beli paket data tsel xxxnumberxxx gb .
+------------------------------
+TRANSFERRED (formal):
+“thanks banyak admin . sudah transfer xxxuserxxx buat beli pulsa xxxnumberxxx , cukup xxxnumberxxx . pulsa xxxnumberxxx langsung aku pake buat beli paket data tsel xxxnumberxxx gb.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+min m - banking saya keblokir gara gara lupa password , boleh dibantu cara aktivasi kembali m - banking saya ?
+------------------------------
+TRANSFERRED (formal):
+dear indosat, m-banking saya keblokir karena lupa password, tolong bantu aktifkan kembali ya?
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+kak kenapa ga bisa bales sms ke xxxnumberxxx ?
+------------------------------
+TRANSFERRED (formal):
+“permisi admin, kok SMS ke nomor ini nggak dibales ya?”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.3
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+kalo chips ny rusak emang masih bisa di isi saldo ? masih bisa ke detect pas cek sisa saldo ?
+------------------------------
+TRANSFERRED (formal):
+“chipnya rusak, bisa diisi saldo nggak sih? masih keliatan pas cek sisa saldo?"
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+min ini knp yahh saya topup ovo dr alfamart kata mbanya udh kekirim dan udh ada bukti transaksinya , knp saldo saya blm bertambah ?
+------------------------------
+TRANSFERRED (formal):
+“min, kok ovo saya topup dari alfamart kenapa ya? kemarin emaknya bilang udah dikirim dan ada bukti transknya, kenapa saldo saya belum bertambah?”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+sy penumpang terpilih daerah semarang ? hehehe
+------------------------------
+TRANSFERRED (formal):
+“Saya penumpang dari Semarang, nih. hehehe”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+cc xxxuserxxx kayak ginian dulu udah digiles sama xxxuserxxx . kemkominfo xxxuserxxx sekarang mana berani .
+------------------------------
+TRANSFERRED (formal):
+"kok cc kayak gini ya xxxuserxxx , udah diurus sama xxxuserxxx . Kominfo mana berani sekarang xxxuserxxx"
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+itu kelamaan gak diantar . gak diupdate jg udah datang . disimpan dlm gudang jne hingga dimakan tikus xxxnumberxxx bungkus . gmn tuh ?
+------------------------------
+TRANSFERRED (formal):
+admin, lama banget dianternya. gak diupdate juga udah datang. udah simpan di gudang jne sampe dimakan tikus xxxnumberxxx bungkus. gimana tuh?
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.5
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+sudah mulai goyah sm indosat wkaka
+------------------------------
+TRANSFERRED (formal):
+"sangat kesel banget sama indosat, parah banget."
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+oh iya masukan dari saya kalau bisa untuk perusahaan kurir di beri rating juga di apps . jadi bisa kelihatan performa perusahaan kurirnya .
+------------------------------
+TRANSFERRED (formal):
+min , tolong di rate dong ya perusahaan kurirnya . biar kelihatan performanya .
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+halo selamat malam mau konfirmasi bisa gak kita melakukan pembatalan pesanan tanpa power merchantnya harus dicabut . karena ini kebetulan saya ( konsumen ) yang mau membatalkan
+------------------------------
+TRANSFERRED (formal):
+selamat malam, mau tanya bisa gak batalin pesanan tanpa izin merchantnya dicabut? karena ini kebetulan saya yang mau batal.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+halo kak , tolong di cek jp xxxphonexxx saya belum menerima barangnya .
+------------------------------
+TRANSFERRED (formal):
+halo admin , tolong cek paket saya dengan resi jp xxxphonexxx , saya belum menerima barangnya.
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+selamat siang . mau tanya , saya kok sulit untuk menerima dan melakukan panggilan setelah penggantian kartu . mohon bantuannya . terima kasih
+------------------------------
+TRANSFERRED (formal):
+selamat siang . kok susah nih buat telepon sama masuk pulsan setelah ganti kartu . tolong bantu dong . makasih .
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.7
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+sy tunggu responnya disini , segera ! sblm dpt jwban sy retweet simultan biar inget !
+------------------------------
+TRANSFERRED (formal):
+admin, tolong balas di sini segera! biar aku inget retweetnya.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+enak ae . iku subscription ku yo . bayar bulanan . masalahnya yg gaada nasi . gimana cara makannya we . kalo sayur asem yg ada gpp ikhlas -_-
+------------------------------
+TRANSFERRED (formal):
+aku bingung . aku subscribe tapi gak ada nasi . mau makan apaan ya . udah , sayur asem aja deh .
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+fitur asuransi link aja ada di nomor xxxnumberxxx . kuy ramaikan .
+------------------------------
+TRANSFERRED (formal):
+ikon fitur asuransi linkaja di nomor xxxnumberxxx . kuy ramaikan .
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+mohon respon dm dari saya . terimakasih .
+------------------------------
+TRANSFERRED (formal):
+admin, sudah dm aku ya. tolong responnya.
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+kalo saya setuju dan kemudian saya menolak tidak bisa di setujui ya ? jadi gimana solusinya buat saya ?
+------------------------------
+TRANSFERRED (formal):
+"iya, kalau saya setuju, tapi kayaknya gak bisa disetujui ya? gimana caranya buat saya?"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.9
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+ini speed nya segini doang di jaringan full xxxnumberxxx g wahai provider terbesar di indonesia ? mohon penjelasan logisnya
+------------------------------
+TRANSFERRED (formal):
+“ini speednya segini aja di jaringan full xxxnumberxxx g, wah, provider terbesarnya?”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+sudah saya dm infonya . mohon dicek . terima kasih .
+------------------------------
+TRANSFERRED (formal):
+admin, tolong cek dm infonya. terima kasih.
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+minn kuota ini berlaku sampai kapan ya ? trims
+------------------------------
+TRANSFERRED (formal):
+Kak, kuota ini sampai kapan ya? Makasih banyak.
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+maksudnya sales counter / agen yg online bagaimana kak ?
+------------------------------
+TRANSFERRED (formal):
+"cara dapetin sales counter/agen online dong kak?"
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+sudah saya dm min , tolong respon
+------------------------------
+TRANSFERRED (formal):
+sudah admin , tolong balas.
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | RANDOM
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+tfr ke rek rdn dari jum ' at siang sampe sekarang belum masuk juga help
+------------------------------
+TRANSFERRED (formal):
+“Tfr ke rekening RDN dari jam siang jumat sampai sekarang belum masuk juga, tolong bantu ya.”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+sudah saya dm min , tolong respon
+------------------------------
+TRANSFERRED (formal):
+udah gue DM min, tolong bales dong.
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+ini speed nya segini doang di jaringan full xxxnumberxxx g wahai provider terbesar di indonesia ? mohon penjelasan logisnya
+------------------------------
+TRANSFERRED (formal):
+“ini kecepatan segini saja di jaringan penuh xxxnumberxxx, wahai provider terbesar di indonesia? mohon penjelasan yang logis.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+ini min . biasanya combo terbaik untukmu ada yg xxxnumberxxx xxxnumberxxx gb xxxnumberxxx xxxnumberxxx rb dan xxxnumberxxx xxxnumberxxx gb xxxnumberxxx xxxnumberxxx rb . ini dia hilang gk ad lg 🤔
+------------------------------
+TRANSFERRED (formal):
+“Min, kenapa ya combo terbaiknya hilang? Ada yang xxxnumberxxx xxxnumberxxx gb xxxnumberxxx xxxnumberxxx rb dan xxxnumberxxx xxxnumberxxx gb xxxnumberxxx xxxnumberxxx rb. Gk ada lagi nih 🤔”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+min tolong dm sy di folow up
+------------------------------
+TRANSFERRED (formal):
+“Min, tolong DM aku buat follow up, ya?”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | ZERO_SHOT
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+dicoba nugget nya sosisnya , sapatau mau endorse
+------------------------------
+TRANSFERRED (formal):
+Contoh Referensi:
+"Dengan antusias, saya merekomendasikan hidangan unggulan restoran ini. Kelezatan dan presentasinya sungguh memanjakan lidah."
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+kalo mau request insta cash , telepon ke halo bca yak ? ada requirement kah ?
+------------------------------
+TRANSFERRED (formal):
+“Apabila Bapak/Ibu membutuhkan layanan Insta Cash, silakan menghubungi Halo BCA. Adakah persyaratan khusus yang perlu dipenuhi?”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+mau tanya udh beli paket kok ga masuk2 gimana nii ?
+------------------------------
+TRANSFERRED (formal):
+Mohon informasikan, apakah paket yang telah dibeli belum terpasang dengan benar?
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+berarti kalo ga di on / off kan dulu airplane mode nya tetep pake kuota reguler gitu ?
+------------------------------
+TRANSFERRED (formal):
+Contoh Referensi:
+"Saya ingin bertanya, jika sebuah perangkat tidak diaktifkan atau dinonaktifkan dalam mode pesawat, apakah tetap menggunakan kuota reguler?"
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+eh ada yg punya setori , misi ya mbaa
+------------------------------
+TRANSFERRED (formal):
+"Apakah ada yang dapat menyampaikan sebuah narasi atau tugas, ya, Bu?"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | DENSE
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+tolong dong udah xxxnumberxxx xxxnumberxxx x kayagini . kenapa ya ?
+------------------------------
+TRANSFERRED (formal):
+xxxnumberxxx , kenapa ya? x kayagini.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+kurang adil ya kayanya di tokped aja penjual bisa ngasih reputasi ke akun pembeli 🤭
+------------------------------
+TRANSFERRED (formal):
+aneh , tokped kayaknya nggak adil . penjual bisa ngasih reputasi ke pembeli 🤭
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+yeayy shopee terbaik , bisa pake dua voucher dalam sekali checkoutt yuhuu ~
+------------------------------
+TRANSFERRED (formal):
+"Wah Shopee hebat, bisa pakai dua voucer dalam satu checkout hohoho ~"
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+iya , paham . yg saya protes kan kenapa smsnya bilang bakal diantar hari ini ? kalo
+------------------------------
+TRANSFERRED (formal):
+iya , kok ya? smsnya bilang bakal diantar hari ini , kalo belom dateng malah di batalin?
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+cobain aja pake xxxuserxxx di mbd wan
+------------------------------
+TRANSFERRED (formal):
+halo xxxuserxxx , coba aja pake itu di mbd wan.
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | CENTROID
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+cobain aja pake xxxuserxxx di mbd wan
+------------------------------
+TRANSFERRED (formal):
+admin, cobain aja pake xxxuserxxx di mbd wan
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+sudah . masih tetep ngga bisa dari tadi
+------------------------------
+TRANSFERRED (formal):
+admin , sudah dari tadi ngga bisa ya?
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+min transaksi xxxnumberxxx belum dipick up kurir terus sudah xxxnumberxxx hari . bisa bantu percepat ?
+------------------------------
+TRANSFERRED (formal):
+admin, transaksi xxxnumberxxx belum di-pick up kurir udah xxxnumberxxx hari. bisa bantu percepat?
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+min tolong dm sy di folow up
+------------------------------
+TRANSFERRED (formal):
+dear admin, mohon follow up soal akun saya ya?
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+min , hari ini kok loadingnya super slow ya buka apapun sloow banget
+------------------------------
+TRANSFERRED (formal):
+“admin, kenapa sih loadingnya lama banget pas buka apaan aja? super slow banget.”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | BM25
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+hi , mohon maaf atas ketidaknyamananya . kamu bisa message nomor dan pertanyaan terkait melalui twitter xxxuserxxx agar dapat dibantu ditindaklanjuti . semoga cukup membantu , terima kasih
+------------------------------
+TRANSFERRED (formal):
+halo , kak . kalau ada pertanyaan mengenai pemesanan di shopee , bisa langsung ke twitter @xxxuserxxx ya , agar nanti dapat dibantu lebih lanjut . semoga cukup membantu , terima kasih.
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+halo xxxuserxxx temen saya transfer via gopay kok blm masuk ya
+------------------------------
+TRANSFERRED (formal):
+halo xxxuserxxx temen saya isi gopay kok belum masuk ya
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+sudah mulai goyah sm indosat wkaka
+------------------------------
+TRANSFERRED (formal):
+admin, indosatnya kayaknya mau ambruk ya? wkaka
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+daftarin paket yellow lemot bgt sampe xxxnumberxxx kali daftarin . biasanya bisa . tapi ini kedaftar double . gemana sih ah .
+------------------------------
+TRANSFERRED (formal):
+“udah , daftarin paket yellow lama banget sampe xxxnumberxxx kali daftarin . biasanya bisa , tapi ini daftarnya double . gimana sih , aduh .”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+ke asyikan ya kaya operator punya bapak kamu sendiri wkwkwkwk
+------------------------------
+TRANSFERRED (formal):
+"weh, ngapain sih minta operator Bapak sendiri?"
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.1
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+sinyal xxxnumberxxx g full tapi ga bisa dipake , daerah jogja ini kenapa udh hampir seminggu
+------------------------------
+TRANSFERRED (formal):
+admin, sinyal g full di jogja udah hampir seminggu, kenapa ya?
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+wooy gak ada tanggepan apa nih !
+------------------------------
+TRANSFERRED (formal):
+“ada apa nih, gak ada respon?”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+tuh min xxxuserxxx perlu dicontoh nih anak baik yang bekelnya selalu habis !
+------------------------------
+TRANSFERRED (formal):
+“min, kok paket saya selalu habis ya? udah banyak banget buat sekolah.”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+mohon respon dm dari saya . terimakasih .
+------------------------------
+TRANSFERRED (formal):
+admin, mohon balas DM saya. terima kasih.
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+min ini knp yahh saya topup ovo dr alfamart kata mbanya udh kekirim dan udh ada bukti transaksinya , knp saldo saya blm bertambah ?
+------------------------------
+TRANSFERRED (formal):
+“admin, kenapa saldo ovo saya belum bertambah setelah top up di alfamart? kok mbaknya bilang udah dikirim dan ada bukti transaksinya sih?”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.3
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+driver online yg ngocol pasti kesel terus nyinyir liat beginian . ngoceh bla . bla bukannya istighfar sambil bilang gw juga mau kaya gini ahh
+------------------------------
+TRANSFERRED (formal):
+“driver online yg ngocol pasti kesel terus nyinyir liat begini. ngoceh bla, bla bukannya istighfar sambil bilang gw juga mau kaya gini ahh.”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+apakah tanpa buku tabungan bisa , untuk upgrade nya , sama mau setor tunai soalnya pecahan xxxnumberxxx ribu , trimakasih
+------------------------------
+TRANSFERRED (formal):
+“Bisa upgrade tanpa buku tabungan ya, admin? Terus, mau setor tunai nih, pecahan xxxnumberxxx ribu. Makasih.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+kalau lokasi bank terdekat dimana ya ?
+------------------------------
+TRANSFERRED (formal):
+admin, lokasi kantor cabang bank terdekat di mana ya?
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+min pembelian token pln apa ada kendala , ini blm masuk udah xxxnumberxxx jam lebih ?
+------------------------------
+TRANSFERRED (formal):
+admin , sudah xxxnumberxxx jam lebih , pembelian token pln ini belum juga masuk . tolong dicek ya . terimakasih .
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+kota malang min , biasanya cepet dapet driver . hari ini yg parah .
+------------------------------
+TRANSFERRED (formal):
+admin , kota malang min , kenapa lama banget nggak dapat driver ? udah xxxnumberxxx hari kayak gini .
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.5
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+hallo bisa balas twitt saya dan dm ?
+------------------------------
+TRANSFERRED (formal):
+halo , sudah dm ya ?
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+lagi pada beli motor gan masih inden xxxnumberxxx taun
+------------------------------
+TRANSFERRED (formal):
+"saya mau tanya, kenapa paket motor saya yang inden xxxnumberxxx tahun belum jadi?"
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+min . saya coba buat transfer ke bank lain pakai m - banking pagi ini gagal terus ya ? tp buat transfer ke virtual account lancar . ada solusikah ?
+------------------------------
+TRANSFERRED (formal):
+“eh, kok pagi ini transfer ke bank lain lewat m-banking selalu gagal ya? tapi transfer ke virtual account lancar. ada solusinya nggak nih?”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+gua ga pernah begini soalnya wkwkwk
+------------------------------
+TRANSFERRED (formal):
+gua juga nggak pernah gini soalnya wkwkwk
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+min m - banking saya keblokir gara gara lupa password , boleh dibantu cara aktivasi kembali m - banking saya ?
+------------------------------
+TRANSFERRED (formal):
+admin, m-bankingku keblokir gara-gara lupa password, tolong bantu aktifin m-bankingku ya?
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.7
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+sy sudah menyelesaikan mission jugglenaut pas masih ada xxxnumberxxx + rewards left nya smoe skrg blm dikirim rewardsnya
+------------------------------
+TRANSFERRED (formal):
+“sy udah selesain mission jugglenaut pas masih ada xxxnumberxxx + rewards left nya smoe skrg blm dikirim rewardsnya” menjadi “admin, kenapa rewardsnya belum dikirim setelah saya selesaikan mission jugglenaut?”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+sm20 . xxxnumberxxx sukses . sn / ref : xxxnumberxxx . saldo xxxnumberxxx , xxxnumberxxx - xxxnumberxxx = xxxnumberxxx , xxxnumberxxx xxxuserxxx / xxxnumberxxx xxxtimexxx bantu cek bos , blm masuk menerut customer
+------------------------------
+TRANSFERRED (formal):
+“Halo, selamat siang. SN/Ref: xxxnumberxxx. Saldo saya xxxnumberxxx, xxxnumberxxx - xxxnumberxxx = xxxnumberxxx, xxxuserxxx / xxxnumberxxx xxxtimexxx. Bantu cek, Bos, blm masuk menurut customer.”
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+untuk grapari jogja diman ya min
+------------------------------
+TRANSFERRED (formal):
+admin , grapari jogja diman ya min?
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+bingung sama xxxuserxxx sinyal ga pernah stabil , sebanyak apapun isi kuota kayanya ga ngaruh . udh ubah xxxnumberxxx g pun ttp aja .
+------------------------------
+TRANSFERRED (formal):
+“ane bingung nih, sinyalnya nggak stabil, padahal udah isi kuota sebanyak apapun kayaknya nggak ngaruh. udah ganti xxxnumberxxx g juga tetep aja.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+yang terhormat indosat ini kenapa cek paketan isi voucher pakatan tidak bisa . tolong jawab . jangan jawab cuma hai hai hai kak terus
+------------------------------
+TRANSFERRED (formal):
+“Kak, kok paket voucher isi gak bisa di cek ya? Tolong jawab dong, jangan cuma bilang ‘hai kak’ terus.”
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | HYBRID_EARLY | ALPHA: 0.9
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+tanggal berapa ini , mas xxxuserxxx pakai kartu apa , kartu halo juga ?
+------------------------------
+TRANSFERRED (formal):
+halo xxxuserxxx , tanggal berapa nih , pakai kartu apa , kartu halo juga?
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+lama sekali ini ! barang belum sampai ! resi : xxxnumberxxx
+------------------------------
+TRANSFERRED (formal):
+"kak, resi xxxnumberxxx ini lama banget, barangnya kok belum sampai ya?"
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+gojek sepersepuluh hidupku , makasih gojek telah membawaku keluar dari zona nyaman
+------------------------------
+TRANSFERRED (formal):
+“gojek udah jadi bagian dari hidupku , makasih gojek udah bawa aku keluar dari rutinitas”
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+saya juga curiga karena uang yg diambil dalam jumlah yg sama besar , saya sangaat kecewa , mohon kejelasannya
+------------------------------
+TRANSFERRED (formal):
+“Saya sangat kecewa dengan hal ini. Mohon dijelaskan, saya curiga ada kesalahan dengan uang yang diambil dalam jumlah yang sama besar.”
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+receiver tidak di rumah saat paket tiba , sprinter tsb ga ada konfirmasi ke receiver sama sekali . ga ada telepon . padahal sopnya begitu kan ? ( xxxnumberxxx )
+------------------------------
+TRANSFERRED (formal):
+admin , paketnya gak sampai di rumah , sprinter gak telepon juga , padahal kan seharusnya begitu ( xxxnumberxxx )
+
+############################################################
+
+
+############################################################
+# DEBUG SAMPLES: TARGET FORMAL | RANDOM
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (informal):
+min , kok pulsa saya selalu tersedot terus ya ? padahal data selalu saya matiin ?
+------------------------------
+TRANSFERRED (formal):
+“min , kok duitku suka abis aja gitu sih ? padahal data udah matiin.”
+
+Sample 2/5
+ORIGINAL TEXT (informal):
+sudah bisa min , saya coba di atm lokasi lain . trimakasih
+------------------------------
+TRANSFERRED (formal):
+udah, min. coba di atm lokasi lain. makasih.
+
+Sample 3/5
+ORIGINAL TEXT (informal):
+min resi xxxnumberxxx posisi udh dmna ?
+------------------------------
+TRANSFERRED (formal):
+belum ada konfirmasi lagikah , admin ?
+
+Sample 4/5
+ORIGINAL TEXT (informal):
+min tolong dong kenapaa paket xxxnumberxxx xxxnumberxxx gb yang xxxnumberxxx xxxnumberxxx k nya kok hilaang
+------------------------------
+TRANSFERRED (formal):
+admin, paket nomor xxxnumberxxx xxxnumberxxx gb yang xxxnumberxxx xxxnumberxxx k nya kok hilang ya? mohon infonya. terima kasih.
+
+Sample 5/5
+ORIGINAL TEXT (informal):
+min , tolong di menu favorite , agar barang bisa di filter seperti pada menu pencarian barang lainnya , bisa disortir harga , jasa pengiriman dll
+------------------------------
+TRANSFERRED (formal):
+“min , tolong di favorite dong , biar barangnya bisa difilter kayak di menu pencarian barang gitu , bisa disortir harga , jasa pengiriman lah gitu.”
+
+############################################################
+

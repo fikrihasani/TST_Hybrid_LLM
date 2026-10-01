@@ -1,0 +1,114 @@
+{
+  "criterion": "harmonic",
+  "min_accuracy": null,
+  "accuracy_column": "style_accuracy",
+  "content_column": "content_preservation_LaBSE",
+  "source_dir": "D:\\FILEMAHASISWA\\Fikri Hasani Folder\\JCCE-First Revision\\fewshot_formality\\evaluation_result_alphadev\\google_gemma-3-4b-it",
+  "n_files": 10,
+  "picks": {
+    "formal": {
+      "alpha": 0.1,
+      "accuracy": 0.136,
+      "content_preservation": 0.69427,
+      "harmonic": 0.22745
+    },
+    "informal": {
+      "alpha": 0.7,
+      "accuracy": 0.968,
+      "content_preservation": 0.78369,
+      "harmonic": 0.86615
+    }
+  },
+  "sweep": [
+    {
+      "file": "evaluated_v2_STIF_formal_fewshot_hybrid_early_alpha0.1_5_seed42_results.csv",
+      "style_target": "formal",
+      "alpha": 0.1,
+      "n": 250,
+      "accuracy": 0.136,
+      "content_preservation": 0.69427,
+      "harmonic": 0.22745
+    },
+    {
+      "file": "evaluated_v2_STIF_formal_fewshot_hybrid_early_alpha0.3_5_seed42_results.csv",
+      "style_target": "formal",
+      "alpha": 0.3,
+      "n": 250,
+      "accuracy": 0.116,
+      "content_preservation": 0.72953,
+      "harmonic": 0.20017
+    },
+    {
+      "file": "evaluated_v2_STIF_formal_fewshot_hybrid_early_alpha0.5_5_seed42_results.csv",
+      "style_target": "formal",
+      "alpha": 0.5,
+      "n": 250,
+      "accuracy": 0.12,
+      "content_preservation": 0.74094,
+      "harmonic": 0.20655
+    },
+    {
+      "file": "evaluated_v2_STIF_formal_fewshot_hybrid_early_alpha0.7_5_seed42_results.csv",
+      "style_target": "formal",
+      "alpha": 0.7,
+      "n": 250,
+      "accuracy": 0.128,
+      "content_preservation": 0.74233,
+      "harmonic": 0.21835
+    },
+    {
+      "file": "evaluated_v2_STIF_formal_fewshot_hybrid_early_alpha0.9_5_seed42_results.csv",
+      "style_target": "formal",
+      "alpha": 0.9,
+      "n": 250,
+      "accuracy": 0.108,
+      "content_preservation": 0.7598,
+      "harmonic": 0.18912
+    },
+    {
+      "file": "evaluated_v2_STIF_informal_fewshot_hybrid_early_alpha0.1_5_seed42_results.csv",
+      "style_target": "informal",
+      "alpha": 0.1,
+      "n": 250,
+      "accuracy": 0.968,
+      "content_preservation": 0.77595,
+      "harmonic": 0.8614
+    },
+    {
+      "file": "evaluated_v2_STIF_informal_fewshot_hybrid_early_alpha0.3_5_seed42_results.csv",
+      "style_target": "informal",
+      "alpha": 0.3,
+      "n": 250,
+      "accuracy": 0.98,
+      "content_preservation": 0.77451,
+      "harmonic": 0.86522
+    },
+    {
+      "file": "evaluated_v2_STIF_informal_fewshot_hybrid_early_alpha0.5_5_seed42_results.csv",
+      "style_target": "informal",
+      "alpha": 0.5,
+      "n": 250,
+      "accuracy": 0.948,
+      "content_preservation": 0.79047,
+      "harmonic": 0.8621
+    },
+    {
+      "file": "evaluated_v2_STIF_informal_fewshot_hybrid_early_alpha0.7_5_seed42_results.csv",
+      "style_target": "informal",
+      "alpha": 0.7,
+      "n": 250,
+      "accuracy": 0.968,
+      "content_preservation": 0.78369,
+      "harmonic": 0.86615
+    },
+    {
+      "file": "evaluated_v2_STIF_informal_fewshot_hybrid_early_alpha0.9_5_seed42_results.csv",
+      "style_target": "informal",
+      "alpha": 0.9,
+      "n": 250,
+      "accuracy": 0.96,
+      "content_preservation": 0.77535,
+      "harmonic": 0.85785
+    }
+  ]
+}

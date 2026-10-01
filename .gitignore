@@ -1,0 +1,27 @@
+# Checkpoint model hasil fine-tuning classifier.
+# Empat berkas safetensors, masing-masing sekitar 475 MB (total sekitar 1,9 GB), tidak diikutkan.
+# Lihat README bagian "Checkpoint model" untuk perannya masing-masing dan cara membangunnya ulang.
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Lingkungan virtual
+.venv/
+venv/
+env/
+
+# Editor dan sistem operasi
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store

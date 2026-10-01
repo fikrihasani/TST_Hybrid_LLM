@@ -1,0 +1,77 @@
+model_id,original_style,style_target,retrieval_method,alpha,original_message,paraphrased_message,is_human_eval,sample_index,sample_seed,run_seed,retrieved_exemplars,retrieval_fallback,n_exemplars,prompt_chars,output_tokens,eos_reached,output_chars
+google/gemma-3-4b-it,sophistication,competence,zero_shot,N/A,Pamerskincare kesayangan kalian sekarang!!,"Contoh Referensi:
+""Penawaran Spesial Terbatas! Jangan lewatkan kesempatan emas ini!""
+""Diskon Gila-Gilaan Hanya untuk Anda!""
+""Produk Terlaris! Stok Terbatas, Segera Order!""
+""Raih Kulit Impianmu Sekarang!""
+""Hadiah Menanti Kamu!""",True,3617,4200003,42,[],False,0,750,73,False,226
+google/gemma-3-4b-it,sincerity,competence,zero_shot,N/A,Mohon maaf atas ketidaknyamanannya. Dapatkah kamu sampaikan kendala yang kamu alami melalui DM ? agar kami dapat menindaklanjuti laporan kamu. Terima kasih,"Contoh Referensi:
+""Dengan hormat, kami mohon maaf jika telah menimbulkan gangguan. Apabila berkenan, mohon beritahu kami detail permasalahan yang Anda hadapi melalui pesan langsung, agar kami dapat segera membantu menyelesaikan hal ini. Atas perhatian dan kerjasamanya, kami ucapkan terima kasih.""
+
+Teks Hasil:
+“Mohon maaf atas segala ketidaknyamanan yang mungkin timbul. Jika memungkinkan, dapatkah Anda menyampaikan rincian kendala yang Anda rasakan melalui DM, agar kami dapat segera menindaklanjuti laporan Anda? Kami sangat menghargai bantuan dan kerja sama Anda.”",True,1871,4200010,42,[],False,0,863,129,False,569
+google/gemma-3-4b-it,excitement,competence,zero_shot,N/A,Oke ga ngepost makanan. Bisa!,(Tidak ada teks sumber yang diberikan. Harap berikan teks sumber yang ingin Anda ubah.),True,2448,4200031,42,[],False,0,737,22,False,87
+google/gemma-3-4b-it,sincerity,competence,zero_shot,N/A,Waah thank youu dear! Masukan kamu akan kami sampaikan dengan tim terkait ya!,"Terima kasih banyak, saudari! Pemberitahuan Anda akan segera kami sampaikan kepada tim yang berwenang.",True,2370,4200032,42,[],False,0,785,25,False,102
+google/gemma-3-4b-it,ruggedness,competence,zero_shot,N/A,Reply pake emoji yang paling kamu banget yuk Eigerian!,"Gue saranin, bales pake emoji kesukaan kamu, Eigerian! 🔥",True,5069,4200105,42,[],False,0,762,19,False,56
+google/gemma-3-4b-it,sincerity,competence,zero_shot,N/A,kamu tim cushion diset pake powder atau engga beauties? apa pertimbangannya?,"Contoh Referensi:
+""Gimana nih, bro? Laptop baru, setupnya udah pas belum? Hardwarenya udah di-optimize buat gaming belum? Atau masih mentok?""",True,2135,4200169,42,[],False,0,784,40,False,141
+google/gemma-3-4b-it,sincerity,competence,zero_shot,N/A,Beauties ada rencana apa nih di weekend ini? Buat yang belum ada rencana yuk siap-siap untuk ke Young On Top National Conference hari Sabtu 23 Juli 2022 ini! Wardah punya 20 tiket gratis untuk kamu Simak cara dapetinnya di tweet setelah ini ya,"Berikut adalah contoh referensi yang akan digunakan untuk memandu gaya penulisan ulang:
+
+**Contoh Referensi:**
+
+""Para pejuang, mari kita susun strategi untuk akhir pekan ini! Bagi yang masih mencari agenda, persiapkan diri untuk Konferensi Nasional Perawatan Kecantikan Wardah pada tanggal 23 Juli 2022 mendatang! Kami menyediakan 20 kupon tiket eksklusif untuk Anda.  Informasi lengkap mengenai cara memperoleh kupon tersebut dapat ditemukan di unggahan selanjutnya.""",True,2383,4200194,42,[],False,0,951,106,False,468
+google/gemma-3-4b-it,sophistication,competence,zero_shot,N/A,The 2023 2024 pairs of the Arts Initiative have been revealed. Five young talents will each have a unique mentorship with acclaimed artists El Anatsui Anne Lacaton Jia Zhang-Ke Dianne Reeves and . More on,"Contoh Referensi:
+""Pengumuman Penting: Program Bakat Muda 2024 Telah Diumumkan! Sepuluh individu paling menjanjikan akan mendapatkan kesempatan berharga untuk berkolaborasi dengan seniman-seniman ternama, di antaranya, Mr. Joko Darmawan, Ibu Siti Aminah, dan Bapak Budi Santoso. Detail lebih lanjut dapat dilihat di situs web resmi.""",True,4978,4200199,42,[],False,0,912,88,False,333
+google/gemma-3-4b-it,excitement,competence,zero_shot,N/A,Aduh kalau kenangan pahit mah ngga usah dinikmati terus-terusan ya beb!. Nanti pait sendiri :(,"Aduh, jangan terus memikirkan hal-hal yang menyakitkan, ya sayang. Nanti malah terasa pahit sendiri saja.",True,3180,4200208,42,[],False,0,802,29,False,105
+google/gemma-3-4b-it,excitement,competence,zero_shot,N/A,x Luxcrime Masih dalam rangka kali ini menghadirkan kolaborasi bersama salah satu brand skin care dan cosmetic yang udah terkenal banget loh yaitu Luxcrime! Dapatkan apketnya sekarang juga dan jangan sampai kehabisan ya,"Contoh Referensi:
+""Perkenalkan, inovasi terbaru dari [Nama Brand]! Kami sangat antusias untuk mempersembahkan [Nama Produk] yang akan merevolusi rutinitas perawatan Anda. Jangan lewatkan kesempatan langka ini untuk menjadi yang pertama mencoba produk unggulan kami. Tersedia sekarang juga!""",True,2759,4200212,42,[],False,0,927,66,False,290
+google/gemma-3-4b-it,sophistication,competence,zero_shot,N/A,Tidak selalu pada saat event Kak namun kami tidak dapat memastikan karena sudah menjadi kebijakan dari tim terkait kami. Kamu dapat melakukan pengecekan secara berkala pada link yang kami berikan sebelumnya.,"Tentu, berikan saya ""Teks Sumber"" dan ""Contoh Referensi"" agar saya dapat melakukan tugas tersebut. Saya akan menulis ulang ""Teks Sumber"" dengan gaya yang sesuai dengan ""Contoh Referensi"".",True,3657,4200215,42,[],False,0,915,47,False,187
+google/gemma-3-4b-it,sophistication,competence,zero_shot,N/A,Vespa GTS Super Tech 300 is equipped with new 300 HPE (High Performance Engine) with more than 23 HP (Horse Power) the most powerful engine and responsive ever mounted on a Vespa making Vespa GTS Super Tech 300 the most powerful Vespa.,"Contoh Referensi:
+""Koleksi Jam Tangan Klasik: Chronos Elegance adalah perwujudan keanggunan dan presisi. Dibuat dengan cermat menggunakan material premium dan teknologi mutakhir, Chronos Elegance menawarkan lebih dari sekadar tampilan waktu; ia adalah pernyataan gaya dan pencapaian. Setiap jam tangan adalah bukti dedikasi terhadap keindahan dan inovasi, dirancang untuk menemani Anda dalam setiap momen penting.""",True,3947,4200238,42,[],False,0,943,96,False,414
+google/gemma-3-4b-it,sophistication,competence,zero_shot,N/A,Kalau ngumpul sama teman-teman Vespa biasanya dimana sih? (IG ),"Contoh Referensi:
+“Di mana tempat yang paling seru buat kumpul bareng komunitas motor gede? (Twitter)”
+“Rekomendasi tempat nongkrong asik buat penggemar Harley, dong! (Facebook)”
+“Ada spot nongkrong favorit buat komunitas motor klasik? Share dong! (Reddit)”
+“Tempat nongkrong nyaman buat komunitas motor, ada rekomendasi? (TikTok)”
+
+Teks Hasil:
+“Di mana tempat yang paling asik buat ketemuan sama sesama pengendara motor? (Twitter)”",True,4041,4200244,42,[],False,0,771,115,False,432
+google/gemma-3-4b-it,excitement,competence,zero_shot,N/A,PERPADUAN OUTFIT SEPATU SEJIWA ALA KAK Kira-kira siapa nih yang udah dapet Sepatu Sejiwa edisi terbatas ini? Yuk padukan Sepatu Sejiwamu dengan outfit versimu dan jangan lupa tag dan ya !,"Contoh Referensi:
+""Hai, para penggemar! Siapa yang sudah memiliki koleksi Sepatu Sejiwa yang langka ini? Mari berkreasi dengan outfit favoritmu, padukan Sepatu Sejiwamu, dan jangan lupa untuk membagikan momen serumu dengan tagar kami!""",True,2683,4200277,42,[],False,0,895,66,False,235
+google/gemma-3-4b-it,sophistication,competence,zero_shot,N/A,Pantau terus akun yaa,"Contoh Referensi:
+""Ingat, jangan lupa untuk selalu memverifikasi saldo Anda secara berkala.""
+""Pastikan Anda memantau perkembangan keuangan Anda secara rutin.""
+""Selalu waspada terhadap setiap transaksi yang masuk dan keluar.""
+""Jangan biarkan kesempatan berharga berlalu begitu saja.""
+""Perhatikan setiap detail penting dalam laporan keuangan Anda.""
+
+Hasil Teks Target:
+""Perhatikan terus perkembangan saldo Anda.""",True,3945,4200294,42,[],False,0,729,93,False,410
+google/gemma-3-4b-it,ruggedness,competence,zero_shot,N/A,: Penyedap penampilanmu malam ini Uno Black telah hadir kembali di monggo diorder!,"Contoh Referensi:
+""Selamat datang kembali, para penggemar! Produk unggulan kami, 'Kilau Alami', kini hadir kembali dengan kualitas yang lebih memukau. Jangan lewatkan kesempatan emas ini!""",True,5944,4200299,42,[],False,0,790,46,False,188
+google/gemma-3-4b-it,excitement,competence,zero_shot,N/A,Hai Kak mohon maaf sebelumnya. Bisa diinformasikan nomor telepon dan e-mail yang terdaftar pada aplikasi Gojek. Terima kasih -IC,"Berikut adalah contoh referensi:
+
+""Dengan hormat, permohonan maaf sebesar-besarnya. Mohon dapat dilayangkan nomor telepon dan alamat email yang tercatat pada akun registrasi Gojek. Atas perhatian dan kerjasamanya, kami ucapkan terima kasih.""",True,2915,4200356,42,[],False,0,836,58,False,241
+google/gemma-3-4b-it,sophistication,competence,zero_shot,N/A,Textures perfection the Fall/Winter 2019 beading sequins and embellish works were all done by the meticulous hands of our in-house artisans,"Contoh Referensi:
+""Dengan dedikasi dan keahlian, para pengrajin kami dengan cermat menata setiap detail, memastikan setiap karya memancarkan keanggunan dan keindahan yang tak tertandingi.""",True,4766,4200391,42,[],False,0,847,50,False,188
+google/gemma-3-4b-it,sincerity,competence,zero_shot,N/A,Seneng banget deh pastinya Hari ini udah pesen belum ?,"Contoh Referensi:
+""Wah, akhirnya bisa juga ya? Sudah lama sekali menantikannya!""",True,1974,4200394,42,[],False,0,762,23,False,80
+google/gemma-3-4b-it,ruggedness,competence,zero_shot,N/A,Rindu ga nih Eigerian?,"Tentu, berikan saya ""Teks Sumber"" dan ""Contoh Referensi"" agar saya dapat melakukan tugas transfer gaya teks tersebut. Saya siap menunggu!",True,5132,4200426,42,[],False,0,730,34,False,137
+google/gemma-3-4b-it,sincerity,competence,zero_shot,N/A,1Joyful Top Notes Chocolate Vanilla Peach Harumnya yang manis tetapi menyegarkan cocok untuk kamu yang aktif seharian,"Berikut adalah contoh referensi yang akan digunakan untuk gaya:
+
+“Kremasi Apel Madu Permen Mentega Rasa yang memikat dan lembut, sempurna untuk menemani waktu santai Anda.”",True,2376,4200438,42,[],False,0,825,42,False,172
+google/gemma-3-4b-it,sophistication,competence,zero_shot,N/A,Romantically audacious in the color of love,"Contoh Referensi:
+""A velvet twilight, steeped in the scent of rain and remembrance.""
+""The moon, a silver shard in the bruised expanse of night.""
+""Echoes of laughter, carried on the breath of a forgotten summer.""
+""A solitary star, weeping diamonds onto a shadowed shore.""
+""Crimson petals, yielding to the touch of a silent plea.""",True,4756,4200450,42,[],False,0,751,81,False,328
+google/gemma-3-4b-it,sincerity,competence,zero_shot,N/A,bantu lulusan muda spt Varsha di Dubai utk dapatkan pelatihan & peluang kerja:,"Contoh Referensi:
+""Mari berdayakan para sarjana muda seperti Anya di Jakarta untuk meraih program pengembangan dan prospek karir yang menjanjikan!""",True,6177,4200463,42,[],False,0,786,35,False,147
+google/gemma-3-4b-it,ruggedness,competence,zero_shot,N/A,470K Bro.,"Contoh Referensi:
+""Satu juta. Itu semua yang kita butuhkan.""",True,5881,4200482,42,[],False,0,717,20,False,60
+google/gemma-3-4b-it,sophistication,competence,zero_shot,N/A,Hi Bestie jam nya menyesuaikan dengan jam operasional mall yaa. Jika ada pertanyaan lebih lanjut silakan menghubungi kami via DM (nm),"Contoh Referensi:
+""Kepada Bapak/Ibu pelanggan yang terhormat, dengan senang hati kami informasikan bahwa layanan kami beroperasi sesuai dengan jadwal operasional pusat perbelanjaan. Apabila terdapat pertanyaan atau kebutuhan informasi lebih lanjut, jangan ragu untuk menghubungi kami melalui pesan langsung.""
+
+Teks Hasil:
+""Halo pelanggan sekalian, jam operasional kami menyesuaikan dengan jam buka pusat perbelanjaan. Jika ada pertanyaan, silakan hubungi kami melalui DM.""",True,3570,4200484,42,[],False,0,841,101,False,472

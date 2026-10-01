@@ -1,0 +1,416 @@
+2026-09-25 21:42:46,547 - INFO - No device provided, using cuda:0
+2026-09-25 21:42:46,856 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:42:46,864 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/modules.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:47,140 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:42:47,147 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:47,150 - INFO - Loading SentenceTransformer model from LazarusNLP/simcse-indobert-base.
+2026-09-25 21:42:47,430 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:42:47,438 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:47,709 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:42:47,717 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/README.md "HTTP/1.1 200 OK"
+2026-09-25 21:42:47,983 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:42:47,991 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/modules.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:48,258 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:42:48,266 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:48,535 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:42:48,810 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:42:48,817 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config.json "HTTP/1.1 200 OK"
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 11346.44it/s]
+2026-09-25 21:42:49,214 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:42:49,497 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:42:49,751 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:42:50,018 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-09-25 21:42:50,281 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:42:50,290 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:50,584 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:42:50,593 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:50,852 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:42:50,862 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/config.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:51,138 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:42:51,145 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:51,420 - INFO - HTTP Request: GET https://huggingface.co/api/models/LazarusNLP/simcse-indobert-base/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-25 21:42:51,693 - INFO - HTTP Request: GET https://huggingface.co/api/models/LazarusNLP/simcse-indobert-base/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-25 21:42:51,992 - INFO - HTTP Request: HEAD https://huggingface.co/LazarusNLP/simcse-indobert-base/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-25 21:42:52,000 - INFO - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/LazarusNLP/simcse-indobert-base/8bfc4599e5a1d040a8f764980482c2207b3f932d/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:52,267 - INFO - HTTP Request: GET https://huggingface.co/api/models/LazarusNLP/simcse-indobert-base "HTTP/1.1 200 OK"
+2026-09-25 21:42:52,546 - INFO - Loading Hugging Face model: google/gemma-3-4b-it
+2026-09-25 21:42:52,809 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:53,086 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:53,382 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-3-4b-it/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-09-25 21:42:53,657 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-3-4b-it/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-09-25 21:42:54,741 - INFO - HTTP Request: GET https://huggingface.co/api/models/google/gemma-3-4b-it "HTTP/1.1 200 OK"
+2026-09-25 21:42:55,013 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/config.json "HTTP/1.1 200 OK"
+W0925 21:42:55.211000 17712 site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights:   0%|          | 0/883 [00:00<?, ?it/s]Loading weights:   0%|          | 1/883 [00:00<04:54,  2.99it/s]C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:213: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Loading weights:   2%|▏         | 17/883 [00:00<00:17, 49.20it/s]Loading weights:   5%|▍         | 43/883 [00:00<00:07, 108.30it/s]Loading weights:   8%|▊         | 69/883 [00:00<00:05, 148.16it/s]Loading weights:  11%|█         | 95/883 [00:00<00:04, 176.23it/s]Loading weights:  14%|█▎        | 121/883 [00:00<00:03, 195.44it/s]Loading weights:  17%|█▋        | 147/883 [00:00<00:03, 209.73it/s]Loading weights:  20%|█▉        | 173/883 [00:01<00:03, 218.12it/s]Loading weights:  23%|██▎       | 199/883 [00:01<00:03, 226.00it/s]Loading weights:  25%|██▌       | 225/883 [00:01<00:02, 230.92it/s]Loading weights:  28%|██▊       | 251/883 [00:01<00:02, 234.86it/s]Loading weights:  31%|███▏      | 277/883 [00:01<00:02, 237.39it/s]Loading weights:  34%|███▍      | 303/883 [00:01<00:02, 234.66it/s]Loading weights:  37%|███▋      | 329/883 [00:01<00:02, 232.40it/s]Loading weights:  40%|████      | 355/883 [00:01<00:02, 230.34it/s]Loading weights:  43%|████▎     | 381/883 [00:01<00:02, 228.88it/s]Loading weights:  46%|████▌     | 407/883 [00:02<00:02, 229.82it/s]Loading weights:  49%|████▉     | 432/883 [00:02<00:01, 234.90it/s]Loading weights:  59%|█████▉    | 519/883 [00:02<00:00, 410.79it/s]Loading weights:  73%|███████▎  | 647/883 [00:02<00:00, 654.14it/s]Loading weights:  88%|████████▊ | 775/883 [00:02<00:00, 834.06it/s]Loading weights: 100%|██████████| 883/883 [00:02<00:00, 342.30it/s]
+2026-09-25 21:42:59,690 - INFO - HTTP Request: HEAD https://huggingface.co/google/gemma-3-4b-it/resolve/main/generation_config.json "HTTP/1.1 200 OK"
+2026-09-25 21:42:59,830 - INFO - Berhasil memuat dataset yang sudah dipecah dari klasifikasi.
+2026-09-25 21:42:59,830 - INFO - Style Pool / Retrieval Index (30%): 18617 kalimat.
+2026-09-25 21:42:59,830 - INFO - Test Set (10%): 6205 kalimat.
+2026-09-25 21:43:02,875 - INFO - Mengeksekusi 5 data menuju target competence.
+Target: competence | dense | seed=42:   0%|                                   | 0/5 [00:00<?, ?it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 148.81it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: competence | dense | seed=42:  20%|█████▍                     | 1/5 [00:01<00:06,  1.51s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 146.26it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: competence | dense | seed=42:  40%|██████████▊                | 2/5 [00:03<00:05,  1.93s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 169.79it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: competence | dense | seed=42:  60%|████████████████▏          | 3/5 [00:07<00:05,  2.58s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 168.47it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: competence | dense | seed=42:  80%|█████████████████████▌     | 4/5 [00:08<00:02,  2.04s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 156.88it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: competence | dense | seed=42: 100%|███████████████████████████| 5/5 [00:09<00:00,  1.61s/it]Target: competence | dense | seed=42: 100%|███████████████████████████| 5/5 [00:09<00:00,  1.83s/it]
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | DENSE
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (excitement):
+Tidur pake backpack juga kali ya dia
+------------------------------
+TRANSFERRED (competence):
+"Gue heran, bisa aja dia tidur pakai tas."
+
+Sample 2/5
+ORIGINAL TEXT (excitement):
+Ditunggu yaa kakk
+------------------------------
+TRANSFERRED (competence):
+Siap kak meluncur ke DM ya
+
+Sample 3/5
+ORIGINAL TEXT (sophistication):
+Pamerskincare kesayangan kalian sekarang!!
+------------------------------
+TRANSFERRED (competence):
+Yuk! Cek pamerskincare kesayangan kalian!
+
+Sample 4/5
+ORIGINAL TEXT (sophistication):
+Feel the premium experience in beautiful Bali with the exciting feeling of the advanced mobility from Piaggio () the timeless lifestyle icon of Vespa () the intense racing performance of Aprilia ()
+------------------------------
+TRANSFERRED (competence):
+Rasakan pengalaman premium di Bali yang indah dengan sensasi mobilitas canggih dari Piaggio – ikon gaya hidup abadi Vespa – dan performa balap Aprilia yang intens.
+
+Sample 5/5
+ORIGINAL TEXT (sincerity):
+Tersedia juga melalui Drive Thru McDelivery GrabFood GoFood dan ShopeeFood.
+------------------------------
+TRANSFERRED (competence):
+"Tersedia juga, lho, melalui McDelivery Drive Thru GrabFood GoFood dan ShopeeFood!"
+
+############################################################
+
+Target: competence | centroid | seed=42:   0%|                                | 0/5 [00:00<?, ?it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 169.23it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: competence | centroid | seed=42:  20%|████▊                   | 1/5 [00:03<00:15,  3.78s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 165.18it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: competence | centroid | seed=42:  40%|█████████▌              | 2/5 [00:06<00:09,  3.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 154.86it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: competence | centroid | seed=42:  60%|██████████████▍         | 3/5 [00:12<00:09,  4.55s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 170.69it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: competence | centroid | seed=42:  80%|███████████████████▏    | 4/5 [00:16<00:04,  4.43s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 181.74it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: competence | centroid | seed=42: 100%|████████████████████████| 5/5 [00:20<00:00,  4.20s/it]Target: competence | centroid | seed=42: 100%|████████████████████████| 5/5 [00:20<00:00,  4.14s/it]
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | CENTROID
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (excitement):
+Ditunggu yaa kakk
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI, mohon maaf atas kendala yang Anda alami. Terkait hal ini, kami sudah merespons pesan melalui DM. Silakan lakukan pengecekan ya. Tks~Helma
+
+Sample 2/5
+ORIGINAL TEXT (excitement):
+Tidur pake backpack juga kali ya dia
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI, mohon maaf atas kendala yang dialami. Terkait hal tersebut, kami sudah merespons pesan melalui DM ya. Silakan melakukan pengecekan. Tks~Amel
+
+Sample 3/5
+ORIGINAL TEXT (sophistication):
+Feel the premium experience in beautiful Bali with the exciting feeling of the advanced mobility from Piaggio () the timeless lifestyle icon of Vespa () the intense racing performance of Aprilia ()
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI, mohon maaf atas kendala yang Anda alami. Terkait masalah setor tunai yang Anda sampaikan melalui DM, kami sudah merespons ya. Silakan lakukan pengecekan. Informasi lainnya seputar BRI dapat hubungi Sabrina WhatsApp 0812 1214 017. Tks~Helma
+
+Sample 4/5
+ORIGINAL TEXT (sophistication):
+Pamerskincare kesayangan kalian sekarang!!
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat Pamerskincare, mohon maaf atas kendala yang dialami. Terkait pesan yang disampaikan melalui DM, kami sudah merespons ya. Silakan melakukan pengecekan. Tks~ [Nama Agent]
+
+Sample 5/5
+ORIGINAL TEXT (sincerity):
+Tersedia juga melalui Drive Thru McDelivery GrabFood GoFood dan ShopeeFood.
+------------------------------
+TRANSFERRED (competence):
+Hai Sobat BRI. Untuk itu, informasi mengenai Drive Thru McDelivery GrabFood GoFood dan ShopeeFood tersedia juga, ya.
+
+############################################################
+
+Target: competence | zero_shot | seed=42:   0%|                               | 0/5 [00:00<?, ?it/s]C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: competence | zero_shot | seed=42:  20%|████▌                  | 1/5 [00:04<00:19,  4.87s/it]Target: competence | zero_shot | seed=42:  40%|█████████▏             | 2/5 [00:08<00:11,  3.96s/it]Target: competence | zero_shot | seed=42:  60%|█████████████▊         | 3/5 [00:14<00:09,  4.97s/it]Target: competence | zero_shot | seed=42:  80%|██████████████████▍    | 4/5 [00:20<00:05,  5.45s/it]Target: competence | zero_shot | seed=42: 100%|███████████████████████| 5/5 [00:22<00:00,  4.12s/it]Target: competence | zero_shot | seed=42: 100%|███████████████████████| 5/5 [00:22<00:00,  4.46s/it]
+2026-09-25 21:43:57,353 - INFO - Mengeksekusi 5 data menuju target excitement.
+
+############################################################
+# DEBUG SAMPLES: TARGET COMPETENCE | ZERO_SHOT
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (sincerity):
+Tersedia juga melalui Drive Thru McDelivery GrabFood GoFood dan ShopeeFood.
+------------------------------
+TRANSFERRED (competence):
+Tentu, berikan saya "Contoh Referensi" yang akan Anda gunakan untuk memodifikasi gaya bahasa "Teks Sumber". Saya akan menunggu teks tersebut untuk melanjutkan tugas ini.
+
+Sample 2/5
+ORIGINAL TEXT (sophistication):
+Pamerskincare kesayangan kalian sekarang!!
+------------------------------
+TRANSFERRED (competence):
+Contoh Referensi:
+"Penawaran Spesial Terbatas! Jangan lewatkan kesempatan emas ini!"
+"Diskon Gila-Gilaan Hanya untuk Anda!"
+"Produk Terlaris! Stok Terbatas, Segera Order!"
+"Raih Kulit Impianmu Sekarang!"
+"Hadiah Menanti Kamu!"
+
+Sample 3/5
+ORIGINAL TEXT (sophistication):
+Feel the premium experience in beautiful Bali with the exciting feeling of the advanced mobility from Piaggio () the timeless lifestyle icon of Vespa () the intense racing performance of Aprilia ()
+------------------------------
+TRANSFERRED (competence):
+Contoh Referensi:
+"Merangkul keanggunan Paris, nikmati kehalusan aroma kopi yang memikat, dan rasakan keajaiban perjalanan dengan Citroën – simbol klasik kebebasan, Citroën – inovasi otomotif yang tak tertandingi, dan pengalaman berkendara yang memacu adrenalin dengan Peugeot."
+
+Sample 4/5
+ORIGINAL TEXT (excitement):
+Ditunggu yaa kakk
+------------------------------
+TRANSFERRED (competence):
+(Tidak ada contoh referensi diberikan. Karena itu, saya tidak dapat melakukan tugas ini.)
+
+Sample 5/5
+ORIGINAL TEXT (excitement):
+Tidur pake backpack juga kali ya dia
+------------------------------
+TRANSFERRED (competence):
+Contoh Referensi:
+"Ya, memang begitu rupanya."
+"Benar sekali, keadaan seperti itu."
+"Sungguh, demikianlah kenyataannya."
+"Tidak bisa dipungkiri, hal itu terjadi."
+"Memang demikianlah adanya."
+
+############################################################
+
+Target: excitement | dense | seed=42:   0%|                                   | 0/5 [00:00<?, ?it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 141.79it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: excitement | dense | seed=42:  20%|█████▍                     | 1/5 [00:05<00:22,  5.75s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 177.66it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: excitement | dense | seed=42:  40%|██████████▊                | 2/5 [00:10<00:15,  5.06s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 181.70it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: excitement | dense | seed=42:  60%|████████████████▏          | 3/5 [00:13<00:08,  4.18s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 173.26it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: excitement | dense | seed=42:  80%|█████████████████████▌     | 4/5 [00:16<00:03,  3.76s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 169.87it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: excitement | dense | seed=42: 100%|███████████████████████████| 5/5 [00:23<00:00,  4.86s/it]Target: excitement | dense | seed=42: 100%|███████████████████████████| 5/5 [00:23<00:00,  4.68s/it]
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | DENSE
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (competence):
+saatnya nih! Jelang Ramadan Digimin punya hadiah saldo LinkAja senilai total Rp500.000 untuk 5 orang pemenang loh! Caranya: 1. Ikuti akun resmi di Instagram Facebook X Threads dan TikTok 2. Tulis hal yang paling kamu
+------------------------------
+TRANSFERRED (excitement):
+"Waktunyaaaa! Jelang Ramadan, Digimin punya hadiah saldo LinkAja senilai Rp500.000 buat 5 orang! Caranya: 1. Follow semua akun resmi (Instagram, Facebook, X, Threads, TikTok) 2. Tulis caption paling seru!"
+
+Sample 2/5
+ORIGINAL TEXT (sincerity):
+Mari baris & merapat! Promo Merdeka bisa kamu pakai buat dapat 1 Ayam Krispy McD + 1 Ayam Spicy McD + 2 Nasi + 2 Fruit Tea Lemon hanya Rp40.909 Gunakan kode McDMerdeka buat nikmati diskonnya! Download & registrasi di Aplikasi McDonald s
+------------------------------
+TRANSFERRED (excitement):
+“Wih, Merdeka udah di depan mata! Kuy buruan ke McD, ada promo gilaaaa! 1 Ayam Krispy McD + 1 Ayam Spicy McD + 2 Nasi + 2 Fruit Tea Lemon cuma Rp40.909! Pakai kode McDMerdeka biar diskonnya langsung nampol! Download aplikasi McD sekarang juga!”
+
+Sample 3/5
+ORIGINAL TEXT (sincerity):
+Dry tired-looking skin? Not anymore! Just one layer of this moisturizer is all it takes to transform your skin from dry spell to glow-up girlie!
+------------------------------
+TRANSFERRED (excitement):
+“Skin feeling dull and lifeless? It’s a breeze! Just a single swipe of this moisturizer and *bam*, you'll be a radiant, glowing beauty!”
+
+Sample 4/5
+ORIGINAL TEXT (sincerity):
+Udah mulai bebersih rumah menyambut lebaran belom Beauties? Udah disuruh ngapain aja sama ortu di rumah?
+------------------------------
+TRANSFERRED (excitement):
+“Udah mulai nyapu rumah buat nampung lebaran blom, Beauty? Udah disuruh ngelakuin apa aja sama orang tua di rumah?”
+
+Sample 5/5
+ORIGINAL TEXT (competence):
+Kami turut prihatin atas kejadian yang dialami. Untuk mempercepat proses tindak lanjut atas laporan indikasi penipuan yang disampaikan silakan melakukan pembuatan laporan ke SeaBank atas sumber rekening yang digunakan bertransaksi. Kemudian diproses oleh SeaBank ke BRI serta
+------------------------------
+TRANSFERRED (excitement):
+Hai Kak, kami turut prihatin atas kejadian yang sedang berlangsung. Mohon berkenan untuk membuat laporan resmi ke SeaBank terkait sumber rekening yang digunakan dalam transaksi. Setelah itu, SeaBank akan memprosesnya ke BRI, ya. Terima kasih^DW
+
+############################################################
+
+Target: excitement | centroid | seed=42:   0%|                                | 0/5 [00:00<?, ?it/s]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 130.53it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: excitement | centroid | seed=42:  20%|████▊                   | 1/5 [00:06<00:24,  6.05s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 161.62it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: excitement | centroid | seed=42:  40%|█████████▌              | 2/5 [00:10<00:15,  5.31s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 174.60it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: excitement | centroid | seed=42:  60%|██████████████▍         | 3/5 [00:14<00:08,  4.34s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 176.68it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: excitement | centroid | seed=42:  80%|███████████████████▏    | 4/5 [00:17<00:03,  3.82s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s][ABatches: 100%|██████████| 1/1 [00:00<00:00, 174.12it/s]
+C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: excitement | centroid | seed=42: 100%|████████████████████████| 5/5 [00:23<00:00,  4.67s/it]Target: excitement | centroid | seed=42: 100%|████████████████████████| 5/5 [00:23<00:00,  4.64s/it]
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | CENTROID
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (sincerity):
+Mari baris & merapat! Promo Merdeka bisa kamu pakai buat dapat 1 Ayam Krispy McD + 1 Ayam Spicy McD + 2 Nasi + 2 Fruit Tea Lemon hanya Rp40.909 Gunakan kode McDMerdeka buat nikmati diskonnya! Download & registrasi di Aplikasi McDonald s
+------------------------------
+TRANSFERRED (excitement):
+“Wih, guys! Jangan ketinggalan promo Merdeka McD-nya nih! Ayam Krispy + Spicy McD + 2 Nasi + 2 Fruit Tea Lemon cuma Rp40.909! Pakai kode McDMerdeka biar diskonnya langsung nampol! Buruan download Aplikasi McDonald’s sekarang juga!”
+
+Sample 2/5
+ORIGINAL TEXT (competence):
+saatnya nih! Jelang Ramadan Digimin punya hadiah saldo LinkAja senilai total Rp500.000 untuk 5 orang pemenang loh! Caranya: 1. Ikuti akun resmi di Instagram Facebook X Threads dan TikTok 2. Tulis hal yang paling kamu
+------------------------------
+TRANSFERRED (excitement):
+"Wih, kesempatan emas nih! Digimin mau ngasih hadiah saldo LinkAja total Rp500.000 buat 5 orang! Caranya: 1. Follow semua akun resmi Digimin di IG, FB, X, Threads, sama TikTok! 2. Tulis apa aja yang kamu pengen!"
+
+Sample 3/5
+ORIGINAL TEXT (sincerity):
+Udah mulai bebersih rumah menyambut lebaran belom Beauties? Udah disuruh ngapain aja sama ortu di rumah?
+------------------------------
+TRANSFERRED (excitement):
+“Udah mulai rapikan rumah buat nampung lebaran belum nih, Beauties? Udah disuruh ngelakuin apa aja sama orang tua di rumah?”
+
+Sample 4/5
+ORIGINAL TEXT (sincerity):
+Dry tired-looking skin? Not anymore! Just one layer of this moisturizer is all it takes to transform your skin from dry spell to glow-up girlie!
+------------------------------
+TRANSFERRED (excitement):
+"Kulit kering-kering? Nggak usah khawatir lagi! Cuma satu lembar moisturizer ini doang, kulitmu langsung berubah jadi glowing girls!"
+
+Sample 5/5
+ORIGINAL TEXT (competence):
+Kami turut prihatin atas kejadian yang dialami. Untuk mempercepat proses tindak lanjut atas laporan indikasi penipuan yang disampaikan silakan melakukan pembuatan laporan ke SeaBank atas sumber rekening yang digunakan bertransaksi. Kemudian diproses oleh SeaBank ke BRI serta
+------------------------------
+TRANSFERRED (excitement):
+"Aduh, kasian banget denger kejadiannya Kak! Coba kasih tau nomor rek BCA & email terdaftar di SeaBank buat bantu cek, ya? Terus laporin ke SeaBank juga ke BRI biar cepet kelar, trims ya!"
+
+############################################################
+
+Target: excitement | zero_shot | seed=42:   0%|                               | 0/5 [00:00<?, ?it/s]C:\Ana3\envs\fikri_hasani\Lib\site-packages\bitsandbytes\backends\cuda\ops.py:468: FutureWarning: _check_is_size will be removed in a future PyTorch release along with guard_size_oblivious.     Use _check(i >= 0) instead.
+  torch._check_is_size(blocksize)
+Target: excitement | zero_shot | seed=42:  20%|████▌                  | 1/5 [00:07<00:30,  7.51s/it]Target: excitement | zero_shot | seed=42:  40%|█████████▏             | 2/5 [00:14<00:21,  7.25s/it]Target: excitement | zero_shot | seed=42:  60%|█████████████▊         | 3/5 [00:21<00:13,  6.95s/it]Target: excitement | zero_shot | seed=42:  80%|██████████████████▍    | 4/5 [00:24<00:05,  5.62s/it]Target: excitement | zero_shot | seed=42: 100%|███████████████████████| 5/5 [00:30<00:00,  5.70s/it]Target: excitement | zero_shot | seed=42: 100%|███████████████████████| 5/5 [00:30<00:00,  6.12s/it]
+2026-09-25 21:45:15,156 - INFO - ALL FEW-SHOT EXPERIMENTS COMPLETED.
+
+############################################################
+# DEBUG SAMPLES: TARGET EXCITEMENT | ZERO_SHOT
+############################################################
+
+Sample 1/5
+ORIGINAL TEXT (competence):
+Kami turut prihatin atas kejadian yang dialami. Untuk mempercepat proses tindak lanjut atas laporan indikasi penipuan yang disampaikan silakan melakukan pembuatan laporan ke SeaBank atas sumber rekening yang digunakan bertransaksi. Kemudian diproses oleh SeaBank ke BRI serta
+------------------------------
+TRANSFERRED (excitement):
+Berikut adalah teks yang telah diubah sesuai dengan instruksi:
+
+"Dengan berat hati kami menerima informasi terkait permasalahan yang dihadapi. Demi kelancaran investigasi atas dugaan praktik penipuan yang dilaporkan, kami sarankan untuk segera mengajukan laporan resmi kepada SeaBank, dengan mencantumkan sumber rekening yang tertera pada transaksi. Proses selanjutnya akan ditangani oleh SeaBank dan BRI secara bersama."
+
+Sample 2/5
+ORIGINAL TEXT (sincerity):
+Dry tired-looking skin? Not anymore! Just one layer of this moisturizer is all it takes to transform your skin from dry spell to glow-up girlie!
+------------------------------
+TRANSFERRED (excitement):
+Contoh Referensi:
+"Apakah Anda merasa lelah dan kulit Anda tampak kusam? Jangan khawatir! Dengan serum mewah ini, Anda akan segera mendapatkan kulit yang bercahaya dan tampak muda."
+
+Sample 3/5
+ORIGINAL TEXT (sincerity):
+Udah mulai bebersih rumah menyambut lebaran belom Beauties? Udah disuruh ngapain aja sama ortu di rumah?
+------------------------------
+TRANSFERRED (excitement):
+Teks Referensi:
+"Persiapan akhir menjelang Idulfitri telah dimulai. Apakah Anda sudah mulai merapikan rumah? Apakah Ibu dan Bapak sudah memberikan tugas-tugas tertentu?"
+
+Hasil Teks Target:
+"Sudah mulai merapikan rumah menyambut Hari Raya Aidilfitri belum? Sudah disuruh mengerjakan apa saja oleh orang tua di rumah?"
+
+Sample 4/5
+ORIGINAL TEXT (sincerity):
+Mari baris & merapat! Promo Merdeka bisa kamu pakai buat dapat 1 Ayam Krispy McD + 1 Ayam Spicy McD + 2 Nasi + 2 Fruit Tea Lemon hanya Rp40.909 Gunakan kode McDMerdeka buat nikmati diskonnya! Download & registrasi di Aplikasi McDonald s
+------------------------------
+TRANSFERRED (excitement):
+**Contoh Referensi:**
+
+"Jangan lewatkan kesempatan emas! Dapatkan penawaran istimewa dengan beli 1, gratis 1 untuk berbagai produk pilihan kami. Tersedia diskon khusus untuk pelanggan setia. Segera kunjungi toko terdekat atau pesan melalui aplikasi kami untuk pengalaman bersantap yang tak terlupakan."
+
+Sample 5/5
+ORIGINAL TEXT (competence):
+saatnya nih! Jelang Ramadan Digimin punya hadiah saldo LinkAja senilai total Rp500.000 untuk 5 orang pemenang loh! Caranya: 1. Ikuti akun resmi di Instagram Facebook X Threads dan TikTok 2. Tulis hal yang paling kamu
+------------------------------
+TRANSFERRED (excitement):
+Contoh Referensi:
+"Jangan lewatkan kesempatan emas! Kami kembali menghadirkan program undian berhadiah menarik sepeserpun untuk 5 orang beruntung. Syarat kemenangannya pun sangat mudah: 1. Segarkan pengikut Anda di Instagram, Facebook, X, Threads, dan TikTok. 2. Ungkapkan sebuah ungkapan yang paling berkesan dalam kolom komentar."
+
+############################################################
+

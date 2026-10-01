@@ -1,0 +1,16 @@
+{
+  "temperature": 0.9804823398590088,
+  "val_file": "D:\\FILEMAHASISWA\\Fikri Hasani Folder\\JCCE-First Revision\\fewshot_formality\\data\\formality_splits_v2\\val_set.csv",
+  "n_val": 500,
+  "accuracy": 0.944,
+  "nll_before": 0.15781572461128235,
+  "nll_after": 0.15776337683200836,
+  "ece_before": 0.013103874087333673,
+  "ece_after": 0.01317876636981965,
+  "mean_confidence_before": 0.9433976411819458,
+  "mean_confidence_after": 0.9451152086257935,
+  "label2id": {
+    "formal": 0,
+    "informal": 1
+  }
+}
