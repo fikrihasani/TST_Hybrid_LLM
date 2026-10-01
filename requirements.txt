@@ -1,6 +1,6 @@
-# Persyaratan dependensi untuk JCCE-First Revision.
-# Versi di bawah adalah batas minimum. Setelah terpasang, catat versi yang benar-benar
-# terpakai di RUN_LOG.md, karena versi pustaka masuk ke bagian setup komputasi manuscript.
+# Persyaratan dependensi untuk repositori ini.
+# Versi di bawah adalah batas minimum. Versi yang benar-benar dipakai pada eksperimen yang dilaporkan
+# tercatat pada README.md bagian Environment.
 #
 # Pasang dengan:  pip install -r requirements.txt
 # Untuk GPU CUDA, pasang torch sesuai versi CUDA mesin lebih dulu dari

@@ -1,213 +1,166 @@
-# JCCE-First Revision
+# Hybrid Semantic and Stylistic Embedding Retrieval Strategies for Indonesian Text Style Transfer
 
-Bundel kerja untuk menjalankan ulang seluruh eksperimen few-shot text style transfer pada
-manuscript JCCE-10619 setelah reviewer meminta major revision.
+Code, data splits, and results for the manuscript *Hybrid Semantic and Stylistic Embedding Retrieval
+Strategies for Indonesian Text Style Transfer using a Large Language Model* (Journal of Computational and
+Cognitive Engineering). This repository lets a reader inspect every number reported in the paper and rebuild it
+from the locked data splits.
 
-Disusun agar dapat diserahkan langsung kepada agen LLM yang akan menjalankan eksperimen di
-remote PC.
+## Layout
 
----
-
-## Cara memulai
-
-1. Jalankan `pip install -r requirements.txt`, lalu `python scripts/preflight.py` dan pastikan tidak
-   ada kegagalan. Pemeriksaan ini mencakup versi pustaka, GPU, `HF_TOKEN`, kelengkapan berkas, dan
-   kebocoran split.
-2. Baca `PROTOKOL_RERUN.md` dari atas sampai bawah sebelum menjalankan perintah lain.
-3. Perbarui `RUN_LOG.md` setiap kali satu langkah selesai.
-4. Jalankan langkah 1 sampai 11 sesuai urutan pada protokol.
-5. Tulis `LAPORAN_AKHIR.md` dengan format pada bagian 16 protokol.
-
-### Membuka di Zed
-
-Folder ini sudah memuat berkas instruksi proyek, sehingga agen membaca aturannya tanpa perlu
-diberi tahu.
-
-| Berkas | Dibaca oleh |
+| Path | Contents |
 |---|---|
-| `.rules` | Agen Zed. Ini berkas prioritas pertama pada urutan yang dipakai Zed |
-| `AGENTS.md` | Agen eksternal, CLI, dan agen Zed pada pemuatan berikutnya bila `.rules` tidak ada |
-| `PROTOKOL_RERUN.md` | Rujukan utama, disebut oleh kedua berkas di atas sebagai tindakan pertama |
+| `fewshot_formality/` | few-shot pipeline for the formality corpus: generation script, retrieval utilities, prompt template, configuration, and the corpus splits |
+| `fewshot_aaker/` | the same pipeline for the brand personality corpus |
+| `classifier_formality/` | training script and splits for the two-class formality style classifier |
+| `classifier_brand/` | training script and splits for the five-class brand personality classifier |
+| `scripts/` | shared tools: split construction and verification, calibration, alpha selection, evaluation, significance tests, metric reporting, human-evaluation export |
+| `results/` | every computed result: per-sample outputs, test tables, raw generations, human-evaluation sample, calibration files. See `results/README.md` |
+| `docs/` | split protocol and leakage checks for both corpora |
+| `requirements.txt` | dependencies, with minimum versions |
 
-Menurut dokumentasi Zed, berkas instruksi proyek dipilih dari yang pertama cocok pada urutan
-`.rules`, lalu `.github/copilot-instructions.md`, lalu `AGENTS.md`. Karena `.rules` sudah ada, agen
-Zed memakainya. `AGENTS.md` isinya identik dan disediakan sebagai cadangan bila agen dijalankan di
-luar Zed atau sebagai CLI, karena agen semacam itu biasanya membaca berkas instruksinya sendiri.
+## Environment
 
-Langkah praktisnya: buka folder ini di Zed, buka Agent Panel, lalu minta agen membaca
-`PROTOKOL_RERUN.md` dan mengikuti instruksi proyek. Bila panel agen tidak memuat aturan secara
-otomatis, sebut berkasnya secara eksplisit dengan sintaks `@` pada panel, misalnya `@PROTOKOL_RERUN.md`
-dan `@.rules`.
+- Python 3.14 with CUDA 12.6. The reported experiments ran with torch 2.11.0+cu126, transformers 5.8.0,
+  sentence-transformers 5.4.1, accelerate 1.13.0, bitsandbytes 0.49.2, numpy 2.4.4, pandas 3.0.2,
+  scikit-learn 1.8.0, and scipy 1.17.1.
+- **One GPU with at least 12 GB of VRAM.** The generation model (`google/gemma-3-4b-it`) and the perplexity
+  model (`Sahabat-AI/gemma2-9b-cpt-sahabatai-v1-instruct`) are both loaded in 4-bit nf4. The reported runs used
+  a single NVIDIA RTX 4070 Ti with 12 GB; a smaller card will not fit the pipeline.
+- Install with `pip install -r requirements.txt`, and install the CUDA build of torch for your machine from
+  https://pytorch.org/get-started/locally/ if the default one does not match your driver.
+- The gated models need a Hugging Face token. Export it once and the scripts pick it up:
+  `export HF_TOKEN=hf_...` (PowerShell: `$env:HF_TOKEN="hf_..."`). No token is stored in any file in this
+  repository.
+- Check the environment before the first long run: `python scripts/preflight.py`
 
----
+## Data and locked splits
 
-## Isi folder
+Both corpora are public, and this repository ships the exact splits used in the paper.
 
-| Item | Isi |
-|---|---|
-| `PROTOKOL_RERUN.md` | Instruksi kerja lengkap: 11 langkah, perintah, patch kode, gerbang pemeriksaan, kriteria penerimaan |
-| `.rules` dan `AGENTS.md` | Aturan proyek yang dibaca agen secara otomatis, berisi larangan dan tindakan pertama |
-| `requirements.txt` | Dependensi dengan batas versi minimum |
-| `RUN_LOG_TEMPLATE.md` | Template catatan kerja, salinan yang siap dipakai ada di `RUN_LOG.md` |
-| `scripts/` | Sebelas script yang dijalankan, semuanya CLI |
-| `DOKUMEN_PENDUKUNG/` | Protokol split, audit klaim, spesifikasi, pemetaan butir reviewer, dan bukti temuan |
-| `classifier_formality/` | Script pelatihan classifier gaya korpus STIF beserta data dan split |
-| `classifier_brand/` | Script pelatihan classifier gaya korpus Aaker beserta data dan split |
-| `fewshot_formality/` | Pipeline generasi dan evaluasi korpus STIF |
-| `fewshot_aaker/` | Pipeline generasi dan evaluasi korpus Aaker |
-
-Nama folder sudah diberi nama baru agar mudah dirujuk. Padanan dengan nama aslinya:
-
-| Nama di bundel ini | Nama asli di `C:\Devs\Code\Python` |
-|---|---|
-| `classifier_formality` | `formality_cls - Copy` |
-| `classifier_brand` | `brand_personality_classification - Copy` |
-| `fewshot_formality` | `TST_fewshot_formality_hf_ref` |
-| `fewshot_aaker` | `TST_fewshot_aaker - Copy` |
-
----
-
-## Script di `scripts/`
-
-Seluruhnya dapat dipanggil dengan `--help`. Dikelompokkan menurut perannya.
-
-**Kesiapan dan gerbang penerimaan**
-
-| Script | Fungsi | Status uji |
+| Corpus | Source | Splits |
 |---|---|---|
-| `preflight.py` | Memeriksa lingkungan, paket, GPU, token, kelengkapan berkas, dan kebocoran split dalam satu perintah. Keluar kode 1 bila ada kegagalan | sudah diuji, melaporkan 42 dari 47 pemeriksaan lulus pada mesin tanpa GPU |
-| `check_smoke_output.py` | Gerbang untuk langkah 3: memeriksa kolom baru terisi, tidak ada fallback, eksemplar centroid identik, dan `sample_index` seragam antar metode | sudah diuji, benar menolak hasil lama yang belum dipatch |
+| Formality (STIF-Indonesia) | `fewshot_formality/data/stif_formal.txt`, `stif_informal.txt` | `fewshot_formality/data/formality_splits_v2/` |
+| Brand personality (ID-Aaker) | `fewshot_aaker/data/Combined Aaker Brand Personality - Cleaned *.csv` | `fewshot_aaker/data/brand_splits_v2/` |
 
-**Pembuat dan pemeriksa split**
+Each split directory holds `train_set.csv`, `val_set.csv`, `test_set.csv`, `retrieval_pool.csv`, and a
+`split_manifest.json` recording sizes and hashes. The brand personality split also provides `alpha_dev.csv`, the
+development set reserved for choosing the hybrid weight. The construction rules, the conversation-level
+grouping that prevents leakage, and the deduplication are documented in `docs/PROTOKOL_SPLIT_JCCE-10619.md`
+(written in Indonesian).
 
-| Script | Fungsi | Status uji |
-|---|---|---|
-| `make_splits_formality.py` | Split korpus STIF pada pasangan paralel sehingga penguncian berlaku | sudah diuji pada data asli |
-| `make_splits_brand.py` | Deduplikasi teks lalu split berstrata dan bergrup per percakapan | sudah diuji pada data asli |
-| `verify_splits.py` | Memeriksa kebocoran antar split, dapat dipakai sebagai gerbang | sudah diuji pada data asli |
+## Reproducing the results
 
-**Evaluator dan statistik**
+Run the shared scripts from the repository root. The two pipeline modules resolve their configuration and their
+`data/` directory relative to their own folder, so run those from inside the module folder.
 
-| Script | Fungsi | Status uji |
-|---|---|---|
-| `evaluate_results.py` | Evaluator baru: encoder independen, kalibrasi, diagnostik degenerasi, laju replikasi | belum diuji, memerlukan GPU dan model |
-| `report_metrics.py` | Statistik ringkas: median, trimmed mean, proporsi degenerate | sudah diuji pada hasil lama |
-| `bootstrap_significance.py` | Interval keyakinan bootstrap dan uji berpasangan antar metode | sudah diuji pada hasil lama |
-| `replication_metric.py` | Laju replikasi templat, dari kolom eksemplar atau rekonstruksi cache | sudah diuji pada hasil lama |
+**1. Rebuild and verify the splits**
 
-**Pemilihan alpha dan kalibrasi**
+```bash
+python scripts/make_splits_formality.py --check     # dry run, prints the sizes
+python scripts/make_splits_formality.py
+python scripts/make_splits_brand.py --check
+python scripts/make_splits_brand.py --alpha-dev
+python scripts/verify_splits.py --dir fewshot_aaker/data/brand_splits_v2 \
+    --style-col personality --group-col conversation_id_str --gate
+```
 
-| Script | Fungsi | Status uji |
-|---|---|---|
-| `select_alpha_dev.py` | Memilih alpha pada development set dengan kriteria yang ditetapkan lebih dulu | sudah diuji pada hasil lama |
-| `calibrate_classifier.py` | Temperature scaling pada validation set | belum diuji, memerlukan GPU dan model |
+`--gate` exits non-zero if any test item shares a conversation or an author with the training pool.
 
-Script yang belum diuji sudah lulus pemeriksaan sintaks. Keduanya memerlukan model yang tidak
-tersedia saat bundel ini disusun, sehingga pengujiannya dilakukan pada remote PC. Jalankan
-keduanya dengan `--limit` lebih dulu bila ingin memeriksa jalurnya sebelum proses penuh.
+**2. Train and calibrate the style classifiers**
 
----
+```bash
+cd classifier_formality && python main.py && cd ..
+cd classifier_brand     && python main.py && cd ..
 
-## Berkas bobot model tidak disertakan
+python scripts/calibrate_classifier.py \
+    --classifier classifier_formality/model_results_dir/formality_model_roberta \
+    --val classifier_formality/data/formality_splits_v2/val_set.csv \
+    --style-col formality --text-col text
+```
 
-Folder bundel ini sengaja tidak memuat `model.safetensors`, `optimizer.pt`, dan checkpoint
-pelatihan, karena ukurannya mencapai beberapa GB. Konsekuensinya classifier gaya **harus dilatih
-ulang**, dan itu memang bagian dari protokol karena split berubah. Yang disertakan untuk setiap
-classifier hanya `config.json`, tokenizer, dan laporan klasifikasi lama sebagai pembanding.
+Training writes the checkpoint and a test-set classification report; calibration fits temperature scaling on
+the validation split and writes `calibration.json` beside the checkpoint. The paper reads style strength on
+that calibrated scale.
 
----
+**3. Choose the hybrid semantic weight on the development set**
 
-## Split lama dan split baru
+```bash
+python scripts/select_alpha_dev.py \
+    --dir results/per_sample/brand_personality \
+    --accuracy-col style_accuracy --content-col content_preservation_LaBSE \
+    --out fewshot_aaker/alpha_star.json
+```
 
-Keduanya ada di bundel ini dan tidak saling menimpa:
+**4. Generate the transferred texts**
 
-| Folder | Isi | Sikap |
-|---|---|---|
-| `data/*_splits/` | Split yang dipakai eksperimen lama | Jangan diubah. Referensi pembanding |
-| `data/*_splits_v2/` | Split baru, sudah dibuat dan terverifikasi | Dipakai seluruh eksperimen baru |
+```bash
+cd fewshot_formality && python fewshot_formality.py && cd ..
+cd fewshot_aaker     && python main.py            && cd ..
+```
 
-Split baru sudah lulus pemeriksaan kebocoran saat bundel ini disusun:
-korpus Aaker turun dari 75.756 menjadi 62.052 baris setelah deduplikasi 18,1%, dan setelah split
-tidak ada lagi teks identik maupun percakapan bersama antar split. Korpus STIF mempertahankan
-ukuran yang sama (2.498 / 500 / 1.500 / 500) dengan setiap pasangan paralel utuh dalam satu split.
+Both modules read their `fewshot_config.json`: the model id, the retrieval methods, the exemplar counts `k`,
+the seeds, and the 25-item human-evaluation sample. Generation writes one CSV per configuration into
+`<module>/model_results_dir/google_gemma-3-4b-it/`.
 
-Setiap folder split baru memuat `split_manifest.json` yang mencatat seed, ukuran, hash berkas
-sumber, dan versi pustaka.
+**5. Evaluate every configuration**
 
----
+```bash
+python scripts/evaluate_results.py \
+    --results      fewshot_formality/model_results_dir/google_gemma-3-4b-it \
+    --classifier   fewshot_formality/style_classifier \
+    --out          fewshot_formality/evaluation_result_v2/google_gemma-3-4b-it \
+    --encoder      LaBSE=sentence-transformers/LaBSE \
+    --legacy-encoder LazarusNLP/simcse-indobert-base \
+    --calibration  fewshot_formality/style_classifier/calibration.json
+```
 
-## Angka pembanding dari eksperimen lama
+This step produces the per-sample files: calibrated style strength and style accuracy from the classifier,
+content preservation from LaBSE, perplexity from the fluency model, the eight-gram replication rate against the
+retrieved exemplars, and the degenerate-output flag. The files in `results/per_sample/` are the output of this
+step.
 
-Angka ini dipakai untuk memeriksa apakah hasil baru masuk akal. Semuanya dihitung ulang oleh
-script di bundel ini pada hasil lama, dan juga tersedia di
-`DOKUMEN_PENDUKUNG/Alur_Perbaikan_dan_Bukti_Temuan.xlsx` pada sheet `Bukti Temuan`.
+**6. Significance tests, tables, and summaries**
 
-| Temuan pada eksperimen lama | Nilai |
-|---|---|
-| Teks test korpus Aaker yang identik dengan retrieval pool | 629 |
-| Teks train classifier yang identik dengan retrieval pool | 1.715 |
-| Akun yang muncul di train sekaligus test | 24 dari 24 |
-| Baris test dari percakapan yang juga ada di train | 33,5% |
-| Duplikat di dalam retrieval index korpus Aaker | 21,3% (excitement), 13,7% (competence) |
-| Pengulangan satu teks dalam satu index | 414 kali |
-| Output metode centroid yang menyalin eksemplar, korpus Aaker | 76,6% |
-| Output metode dense yang menyalin eksemplar, korpus Aaker | 0,4% |
-| Pasangan paralel STIF yang berada di split yang sama | 35,7% (ekspektasi tanpa penguncian 36,0%) |
-| Sampel uji yang pasangan targetnya ada di retrieval pool, STIF | 77 dari 246 dan 66 dari 244 |
-| Output degenerate, PPL di atas 1000 | 0,61% korpus STIF, 5,51% korpus Aaker |
+```bash
+python scripts/bootstrap_significance.py --dir results/per_sample/formality --metric style_accuracy \
+    --out results/tables/formality/TABEL_uji_formality_style_accuracy.csv
+python scripts/ppl_per_target.py --dir results/per_sample/formality
+python scripts/replication_metric.py --dir results/per_sample/formality --from-column
+python scripts/report_metrics.py --dir results/per_sample/formality --csv hasil_ringkas.csv
+```
 
----
+`bootstrap_significance.py` runs the paired bootstrap confidence intervals together with the Wilcoxon and
+sign-flip tests reported in the paper; run it once per metric (`style_accuracy`,
+`style_strength_calibrated`, `content_preservation_LaBSE`, `replication_rate_8`) and once per corpus.
 
-## Hal yang perlu diketahui sebelum menilai hasil baru
+**7. Export the human-evaluation sample**
 
-Empat hal berikut menjelaskan mengapa hasil baru akan berbeda dari yang lama, dan semuanya perlu
-dilaporkan apa adanya.
+```bash
+python scripts/export_human_eval.py
+```
 
-1. **Penguncian pasangan mengubah keanggotaan split STIF**, bukan ukurannya. Sebagian kalimat uji
-   bergeser, sehingga angka per konfigurasi akan berubah walau model dan prompt tidak berubah.
-2. **Deduplikasi mengubah arah centroid korpus Aaker.** Setelah 13.704 baris duplikat dibuang,
-   centroid tidak lagi tertarik ke satu templat boilerplate. Laju replikasi templat diharapkan
-   turun, dan bila tidak turun, itu temuan yang perlu dilaporkan.
-3. **Encoder content preservation berubah.** Kolom lama tetap dihitung agar besarnya perbedaan
-   dapat dilihat. Jangan menyajikan kolom lama sebagai hasil utama.
-4. **Classifier gaya dilatih ulang** pada split baru, sehingga skor gaya tidak dapat dibandingkan
-   langsung dengan angka pada manuscript versi lama.
+This writes the rating files: 25 shared sample indices per target, across every configuration, with the three
+dimensions to be rated (style, content, fluency).
 
----
+## Results
 
-## Berkas pendukung di `DOKUMEN_PENDUKUNG/`
+`results/` collects the artifacts the manuscript reports, organized so that each number can be traced to the
+configuration that produced it: per-sample outputs for all 29 configurations, the summary and significance
+tables, the raw generations, the human-evaluation sample, the error-analysis sample, and the calibration files.
+`results/README.md` lists each folder and documents the column names.
 
-| Berkas | Isi |
-|---|---|
-| `PROTOKOL_SPLIT_JCCE-10619.md` | Protokol split kedua korpus, hasil verifikasi reproduksi, dan temuan penguncian pasangan |
-| `KLAIM_VS_IMPLEMENTASI_PREPROCESSING.md` | Perbandingan klaim manuscript dengan implementasi, plus draf pengganti sub-bab tersebut |
-| `SPESIFIKASI_RERUN.md` | Spesifikasi lengkap perubahan kode, urutan eksekusi, dan anggaran waktu |
-| `PERUBAHAN_NASKAH.md` | Daftar perubahan manuscript per bagian, dipetakan ke butir reviewer |
-| `RENCANA_PERBAIKAN_JCCE-10619.md` | Rencana perbaikan bertahap beserta temuan yang mendasarinya |
-| `Pemetaan_Butir_Reviewer.xlsx` | 38 butir komentar reviewer dengan kategori, effort, dan tindakan yang diperlukan |
-| `Alur_Perbaikan_dan_Bukti_Temuan.xlsx` | Rencana kerja, peringatan urutan, bukti temuan, statistik dataset, protokol split, dan daftar perubahan |
+## What is not included
 
----
+The four fine-tuned classifier checkpoints (`model.safetensors`, about 475 MB each, roughly 1.9 GB in total)
+are not committed because of their size. The training scripts, the locked splits, and the tokenizer and
+configuration files they need are all here, so the checkpoints can be rebuilt with step 2 above. Everything
+else needed to inspect and to reproduce the reported results is included.
 
-## Isi repositori dan berkas bobot yang tidak disertakan
+## Notes for reproduction
 
-Repositori ini memuat bahan yang dipakai untuk menjawab revisi manuscript JCCE-10619: data dan split
-kedua korpus, skrip pelatihan dan evaluasi, hasil evaluasi per sampel, tabel uji statistik, berkas
-sampel penilaian manusia, serta catatan pelaksanaan (`PROTOKOL_RERUN.md`, `RUNBOOK_OPERASIONAL.md`,
-`RUN_LOG.md`, `LAPORAN_AKHIR.md`).
-
-Empat berkas bobot classifier hasil fine-tuning (`model.safetensors`, masing-masing sekitar 475 MB,
-total sekitar 1,9 GB) tidak disertakan karena ukurannya, begitu pula `training_args.bin` di dalam
-folder yang sama:
-
-| Berkas | Peran |
-|---|---|
-| `classifier_formality/model_results_dir/formality_model_roberta/model.safetensors` | classifier formality dua kelas |
-| `classifier_brand/model_results_dir/brand_model_roberta/model.safetensors` | classifier brand personality lima kelas |
-| `fewshot_formality/style_classifier/model.safetensors` | salinan yang dipakai tahap few-shot korpus formality |
-| `fewshot_aaker/style_classifier/model.safetensors` | salinan yang dipakai tahap few-shot korpus brand personality |
-
-Berkas konfigurasi dan tokenizer di folder yang sama tetap disertakan. Untuk membangun ulang
-checkpoint, latih classifier dengan `classifier_formality/main.py` dan `classifier_brand/main.py`
-mengikuti langkah pada `PROTOKOL_RERUN.md`; data dan split yang dibutuhkan sudah ada di repositori.
-
+- Every configuration is identified by its retrieval method, the exemplar count `k`, and, for the hybrid
+  method, the semantic weight `alpha`: for example `STIF_formal_fewshot_hybrid_early_alpha0.5_10_seed42`.
+- The generation seed is 42. It fixes the partition, the exemplar sampling, and the human-evaluation sample,
+  while sampling at temperature 0.7 still varies the generated text itself.
+- Content preservation is reported with LaBSE only. The `content_preservation` column without a suffix in the
+  per-sample files is the earlier encoder, kept for comparison, and it is not a reported result.

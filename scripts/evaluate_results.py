@@ -38,7 +38,6 @@ Pemakaian
         --classifier ../fewshot_aaker/style_classifier \
         --out ../fewshot_aaker/evaluation_result_v2/google_gemma-3-4b-it \
         --encoder LaBSE=sentence-transformers/LaBSE \
-        --encoder mE5=intfloat/multilingual-e5-base \
         --legacy-encoder LazarusNLP/simcse-indobert-base \
         --calibration ../fewshot_aaker/style_classifier/calibration.json
 

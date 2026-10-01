@@ -31,7 +31,6 @@ METRICS = [
     "style_strength_calibrated",
     "content_preservation",
     "content_preservation_LaBSE",
-    "content_preservation_mE5",
     "replication_rate_8",
 ]
 

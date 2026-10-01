@@ -1,3 +1,0 @@
-mode symlink dimatikan, are_symlinks_supported() = False
-Fetching 13 files:   0%|          | 0/13 [00:00<?, ?it/s]Fetching 13 files:  23%|##3       | 3/13 [00:00<00:00, 10.05it/s]Fetching 13 files:  77%|#######6  | 10/13 [00:02<00:00,  4.28it/s]Fetching 13 files: 100%|##########| 13/13 [00:02<00:00,  5.87it/s]
-selesai C:\Users\coe\.cache\huggingface\hub\models--intfloat--multilingual-e5-base\snapshots\d128750597153bb5987e10b1c3493a34e5a4502a
