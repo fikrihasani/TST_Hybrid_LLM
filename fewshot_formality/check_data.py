@@ -1,6 +1,5 @@
 import pandas as pd
 
-# load csv
 df =pd.read_csv("data/combined_stif.csv")
 
 print(df.columns)

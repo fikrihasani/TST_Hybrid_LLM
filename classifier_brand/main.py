@@ -21,13 +21,9 @@ from transformers import (
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 set_seed(42)
 
-# ----------------------------------------------------------------------
-# 1. Konfigurasi Tunggal Model & Direktori
-# ----------------------------------------------------------------------
 MODEL_ID = "flax-community/indonesian-roberta-base"
 DATA_PATH = "data/Combined Aaker Brand Personality - Cleaned v0.csv"
 
-# Menggunakan model_results_dir
 OUTPUT_DIR = "./model_results_dir/brand_model_roberta"
 SPLIT_SAVE_DIR = "./data/brand_splits"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -43,18 +39,11 @@ df['label'] = df['personality'].map(label2id)
 classes = np.unique(df['label'])
 class_weights = torch.tensor(compute_class_weight('balanced', classes=classes, y=df['label'].values), dtype=torch.float32)
 
-# ----------------------------------------------------------------------
-# 2. Split Data (60% Classifier [50 Train/10 Val], 30% Retrieval, 10% Test)
-# ----------------------------------------------------------------------
-# Blok split lama dihapus sesuai PROTOKOL_RERUN.md langkah 4: split tidak dihitung ulang dan tidak
-# ditulis ulang. Pelatihan membaca berkas split v2 yang sudah terverifikasi.
 SPLIT_DIR = "data/brand_splits_v2"
 train_df = pd.read_csv(f"{SPLIT_DIR}/train_set.csv")
 val_df = pd.read_csv(f"{SPLIT_DIR}/val_set.csv")
 test_df = pd.read_csv(f"{SPLIT_DIR}/test_set.csv")
 
-# Berkas split v2 memuat kolom 'personality', sedangkan Dataset di bawah menuntut kolom 'label'.
-# Pemetaan memakai label2id yang sama dengan yang dibangun di atas dari korpus gabungan.
 for _frame in (train_df, val_df, test_df):
     _frame['label'] = _frame['personality'].map(label2id)
 
@@ -65,9 +54,6 @@ train_dataset = Dataset.from_pandas(train_df[['cleaned_text', 'label']])
 val_dataset = Dataset.from_pandas(val_df[['cleaned_text', 'label']])
 test_dataset = Dataset.from_pandas(test_df[['cleaned_text', 'label']])
 
-# ----------------------------------------------------------------------
-# 3. Custom Trainer untuk Class Weights
-# ----------------------------------------------------------------------
 class WeightedTrainer(Trainer):
     def __init__(self, class_weights=None, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -84,9 +70,6 @@ def compute_metrics(eval_pred: EvalPrediction):
     preds = np.argmax(eval_pred.predictions[0] if isinstance(eval_pred.predictions, tuple) else eval_pred.predictions, axis=-1)
     return {"macro_f1": f1_score(eval_pred.label_ids, preds, average="macro")}
 
-# ----------------------------------------------------------------------
-# 4. Tokenisasi & Inisialisasi Model
-# ----------------------------------------------------------------------
 tokenizer = AutoTokenizer.from_pretrained(MODEL_ID)
 if tokenizer.pad_token is None: tokenizer.pad_token = tokenizer.eos_token
 
@@ -125,9 +108,6 @@ trainer = WeightedTrainer(
     class_weights=class_weights
 )
 
-# ----------------------------------------------------------------------
-# 5. Pelatihan & Prediksi Test Set
-# ----------------------------------------------------------------------
 print("Memulai pelatihan Brand Personality...")
 trainer.train()
 

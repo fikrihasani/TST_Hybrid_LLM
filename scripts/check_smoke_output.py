@@ -1,20 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-check_smoke_output.py
-=====================
-Gerbang penerimaan untuk Langkah 3 pada PROTOKOL_RERUN.md. Memeriksa berkas
-hasil generasi sebelum eksperimen panjang dijalankan.
-
-Tujuannya menangkap kesalahan patch lebih awal. Kesalahan yang paling mahal
-adalah patch yang lolos sintaks tetapi tidak mencatat eksemplar atau seed, karena
-akibatnya baru terlihat setelah belasan jam generasi.
-
-Pemakaian
----------
-    python check_smoke_output.py --dir <folder hasil> --num-examples 5
-    python check_smoke_output.py --file <satu results.csv>
-"""
 import argparse
 import glob
 import json
@@ -31,7 +16,6 @@ REQUIRED_COLUMNS = [
 ]
 EXPECTED_META = ["model_id", "original_style", "style_target", "retrieval_method",
                  "alpha", "original_message", "paraphrased_message", "is_human_eval"]
-
 
 def check_file(path, num_examples, results):
     name = os.path.basename(path)
@@ -96,9 +80,7 @@ def check_file(path, num_examples, results):
         f"{int((df['output_chars'] == 0).sum())} baris kosong")
     rec("seed per sampel terisi", df["sample_seed"].notna().all(), "")
 
-
 def check_sample_index_consistency(files, results):
-    """Seluruh metode harus memakai himpunan sampel uji yang sama."""
     by_target = defaultdict(list)
     for f in files:
         df = pd.read_csv(f, usecols=lambda c: c in ("style_target", "retrieval_method",
@@ -117,7 +99,6 @@ def check_sample_index_consistency(files, results):
             "keterangan": (f"{len(items)} berkas, {len(sets[0])} sampel" if same else
                            "ADA PERBEDAAN, perbandingan berpasangan menjadi tidak sah"),
         })
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -166,7 +147,6 @@ def main():
             json.dump(results, f, indent=2)
         print(f"Hasil disimpan: {args.json}")
     sys.exit(1 if bad else 0)
-
 
 if __name__ == "__main__":
     main()

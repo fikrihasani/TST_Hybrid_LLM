@@ -14,7 +14,6 @@ from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from transformers import logging as hf_logging
 
-# Import modul utilitas retrieval
 from retrieval_utils import (
     retrieve_bm25,
     retrieve_centroid,
@@ -32,19 +31,18 @@ from sentence_transformers import SentenceTransformer
 
 hf_logging.set_verbosity_error()
 
-# --- 0. DEFAULT CONFIG & PROMPTS GENERATOR ---
 DEFAULT_CONFIG = {
     "model_id": "google/gemma-3-4b-it",
     "hf_token": os.environ.get("HF_TOKEN", ""),
     "sentence_model": "LazarusNLP/simcse-indobert-base",
-    "split_dir": "data/formality_splits", # MENGARAH KE DIREKTORI HASIL SPLIT CLASSIFIER
+    "split_dir": "data/formality_splits",
     "message_col": "text", 
     "style_col": "formality", 
     "rag_personality_col": "formality",
     "rag_text_col": "text",
     "target_personality": ['formal', 'informal'],
     "context_messages": 0,
-    "num_samples": "all",  # Menggunakan seluruh 10% test set
+    "num_samples": "all",
     "human_eval_samples": 40, 
     "global_anchor_seed": 42,
     "retrieval_methods": ["dense", "centroid", "bm25", "hybrid_early"],
@@ -59,7 +57,7 @@ DEFAULT_CONFIG = {
     "output_dirs": {
         "logs": "outputs/fewshot_logs",
         "cache": "outputs/cache",
-        "results": "model_results_dir", # DISAMAKAN DENGAN KONVENSI
+        "results": "model_results_dir",
         "samples_file": "outputs/fixed_samples_stif.csv"
     }
 }
@@ -93,7 +91,6 @@ def ensure_setup():
         with open("prompts/fewshot_generation_prompt.txt", "w", encoding="utf-8") as f:
             f.write(FEWSHOT_GENERATION_PROMPT_TEMPLATE)
 
-# --- 1. SETUP: CONFIGURATION AND LOGGING ---
 def validate_and_prepare_personalities(config):
     target_personality = config.get('target_personality')
     if isinstance(target_personality, str): return [target_personality]
@@ -130,7 +127,6 @@ def load_prompt_template(filename):
     with open(os.path.join("prompts", filename), "r", encoding="utf-8") as f:
         return f.read()
 
-# --- 2. OPTIMIZED MODEL INITIALIZATION ---
 def initialize_models(config):
     try:
         sentence_model = SentenceTransformer(config["sentence_model"])
@@ -165,7 +161,6 @@ def initialize_models(config):
 
     return hf_model, tokenizer, sentence_model
 
-# --- 3. HELPER AND DATA PREPARATION FUNCTIONS ---
 def clean_text(text):
     text = str(text)
     text = re.sub(r"https?://\S+", "", text)
@@ -228,10 +223,8 @@ def print_debug_samples_from_df(results_df, num_samples=5):
         print(f"TRANSFERRED ({personality}):\n{row['paraphrased_message']}")
     print("\n" + "#" * 60 + "\n")
 
-# --- 4. CORE EXPERIMENT LOGIC ---
 def get_style_examples(rag_data, sentence_model, num_examples, anchor_message,
                        method="dense", alpha=0.5, seed=None):
-    """Mengembalikan (examples, used_fallback). Kosong berarti zero-shot."""
     if method == "zero_shot":
         return [], False
     if not rag_data:
@@ -265,7 +258,6 @@ def format_few_shot_examples(style_examples):
     return "".join([f'[Contoh Referensi {i}]:\n"{str(ex).strip()}"\n\n' for i, ex in enumerate(style_examples, 1)])
 
 def robust_chat_completion(hf_model, tokenizer, messages, options, seed=None):
-    """Mengembalikan (teks, n_token_baru, eos_tercapai)."""
     try:
         prompt = tokenizer.apply_chat_template(
             messages,
@@ -282,8 +274,6 @@ def robust_chat_completion(hf_model, tokenizer, messages, options, seed=None):
             pad_token_id=tokenizer.eos_token_id,
         )
         if seed is not None:
-            # transformers 5.x tidak menerima kwarg 'generator' pada generate();
-            # penyemaian dilakukan pada RNG torch sebelum generate dipanggil
             torch.manual_seed(int(seed))
 
         outputs = hf_model.generate(**inputs, **gen_kwargs)
@@ -325,7 +315,6 @@ def generate_paraphrases_sequential(
                     original_message=orig_msg
                 )
             else:
-                # cabang zero-shot: hilangkan blok contoh referensi
                 user_prompt = gen_template.replace(
                     "### CONTOH REFERENSI\n{style_examples_str}\n\n", "").format(
                     style_examples_str="", original_message=orig_msg
@@ -356,11 +345,9 @@ def generate_paraphrases_sequential(
 
     return rec
 
-# --- 5. MAIN EXECUTION SCRIPT ---
 def main():
     ensure_setup()
     config = load_config()
-    # Jalankan hanya satu seed ulangan, mis. `python fewshot_formality.py --only-seed 43`
     if len(sys.argv) > 2 and sys.argv[1] == "--only-seed":
         config["run_seeds"] = [int(sys.argv[2])]
     setup_logging(config)
@@ -373,7 +360,6 @@ def main():
     if hf_model is None or tokenizer is None or sentence_model is None:
         return
 
-    # PEMBACAAN DATA ABSOLUT UNTUK MENCEGAH DATA LEAKAGE
     try:
         split_dir = config.get("split_dir", "data/formality_splits")
         
@@ -383,7 +369,6 @@ def main():
         df_pool = pd.read_csv(pool_path)
         df_test = pd.read_csv(test_path)
         
-        # Bersihkan NaN jika ada sisa
         df_pool = df_pool.dropna(subset=[config["message_col"], config["style_col"]]).reset_index(drop=True)
         df_test = df_test.dropna(subset=[config["message_col"], config["style_col"]]).reset_index(drop=True)
         
@@ -411,7 +396,6 @@ def main():
         if not valid_sample_indices:
             continue
             
-        # LOGIKA PEMILIHAN SAMPLE: ALL ATAU SEBAGIAN
         if str(config.get("num_samples")).lower() == "all":
             test_indices = valid_sample_indices
             logging.info(f"Mengeksekusi seluruh Test Set: {len(test_indices)} data menuju target {personality}.")
@@ -420,16 +404,14 @@ def main():
             test_indices = valid_sample_indices[:max_samples]
             logging.info(f"Mengeksekusi {max_samples} data menuju target {personality}.")
 
-        # LOGIKA PEMILIHAN 40 SAMPEL UNTUK HUMAN EVALUATION
         num_human = min(int(config.get("human_eval_samples", 40)), len(test_indices))
-        random.seed(config.get("global_anchor_seed", 42)) # Seed agar reproducibility terjaga
+        random.seed(config.get("global_anchor_seed", 42))
         human_eval_indices = set(random.sample(test_indices, num_human))
 
         for run_seed in config.get("run_seeds", [42]):
             for num_examples in config.get("num_examples_range", [5, 10]):
                 for method in config.get("retrieval_methods", []):
 
-                    # Mode zero-shot tidak memakai eksemplar, jadi cukup dijalankan sekali
                     if method == "zero_shot" and num_examples != min(config.get("num_examples_range", [5])):
                         continue
 
@@ -475,10 +457,8 @@ def main():
                         if config.get("show_debug_samples", True):
                             print_debug_samples_from_df(results_df, config.get("debug_samples", 5))
 
-                        # Simpan full data untuk Automatic Evaluation
                         results_df.to_csv(output_csv, index=False, encoding="utf-8")
 
-                        # Simpan subset khusus untuk Human Evaluation
                         human_output_csv = output_csv.replace("_results.csv", "_HUMAN_EVAL.csv")
                         results_df[results_df["is_human_eval"] == True].to_csv(human_output_csv, index=False, encoding="utf-8")
 

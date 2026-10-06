@@ -1,19 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""export_human_eval.py
-=====================
-Langkah 10 protokol: ekspor sampel untuk evaluasi manusia.
-
-Tidak menjalankan penilaian apa pun; hanya mengekspor berkas sampel. Ambil 25 sampel dengan
-sample_index terkecil dari empat metode utama (dense, centroid, bm25, hybrid_early), untuk satu
-target per korpus. Himpunan sample_index dipatok dari berkas pertama yang lolos penyaring, lalu
-dipakai sama untuk seluruh berkas berikutnya, supaya penilaian dapat dibandingkan lintas metode.
-
-Keluaran: EVAL_MANUSIA_formality.csv dan EVAL_MANUSIA_aaker.csv di akar bundel.
-
-Pemakaian:
-    python export_human_eval.py
-"""
 from __future__ import annotations
 
 import glob
@@ -23,7 +9,6 @@ import pandas as pd
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 METODE_UTAMA = ("dense", "centroid", "bm25", "hybrid_early")
-
 
 def ekspor(repo_tag: str, target: str) -> str | None:
     src = glob.glob(
@@ -57,12 +42,10 @@ def ekspor(repo_tag: str, target: str) -> str | None:
           f"{df['method_file'].nunique()} berkas metode")
     return p
 
-
 def main() -> int:
     for repo_tag, target in [("formality", "informal"), ("aaker", "competence")]:
         ekspor(repo_tag, target)
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

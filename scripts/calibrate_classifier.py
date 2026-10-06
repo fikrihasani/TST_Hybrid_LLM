@@ -1,33 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-calibrate_classifier.py
-=======================
-Temperature scaling untuk classifier gaya, memakai validation set yang sudah
-bertanda label.
-
-Mengapa perlu
--------------
-Style strength pada naskah memiliki median 0,99997 sampai 0,99999 untuk metode
-centroid dan 0,00002 sampai 0,00008 untuk metode dense. Nilai seteragam itu
-menunjukkan classifier beroperasi pada keyakinan ekstrem, sehingga probabilitas
-mentah tidak dapat diperlakukan sebagai ukuran kekuatan gaya yang bertingkat.
-Reviewer 2 (butir 10) dan Reviewer 3 (weakness 3) meminta kalibrasi.
-
-Cara kerja
-----------
-Satu parameter `T` dicari agar meminimalkan negative log-likelihood pada
-validation set. Probabilitas terkalibrasi adalah softmax(logits / T). Nilai T
-disimpan sebagai `calibration.json` di folder style_classifier agar dipakai
-oleh evaluate_results.py.
-
-Pemakaian
----------
-    python calibrate_classifier.py \
-        --classifier ../fewshot_aaker/style_classifier \
-        --val ../fewshot_aaker/data/brand_splits_v2/val_set.csv \
-        --style-col personality --text-col cleaned_text
-"""
 import argparse
 import json
 import os
@@ -42,9 +14,7 @@ try:
 except ImportError:
     sys.exit("transformers belum terpasang: pip install transformers")
 
-
 def expected_calibration_error(probs, correct, n_bins=15):
-    """ECE untuk klasifikasi biner benar atau salah per sampel."""
     conf = probs.max(axis=1) if probs.ndim > 1 else probs
     pred_correct = correct.astype(float)
     bins = np.linspace(0.0, 1.0, n_bins + 1)
@@ -55,7 +25,6 @@ def expected_calibration_error(probs, correct, n_bins=15):
             continue
         ece += (m.sum() / len(conf)) * abs(pred_correct[m].mean() - conf[m].mean())
     return float(ece)
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -92,7 +61,6 @@ def main():
     y = torch.tensor(labels, dtype=torch.long)
     print(f"validation set: {len(texts)} baris")
 
-    # 1. kondisi sebelum kalibrasi
     with torch.no_grad():
         raw_probs = torch.nn.functional.softmax(logits, dim=-1).numpy()
     raw_pred = raw_probs.argmax(axis=1)
@@ -100,7 +68,6 @@ def main():
     nll_before = float(torch.nn.functional.cross_entropy(logits, y).item())
     ece_before = expected_calibration_error(raw_probs, raw_pred == labels)
 
-    # 2. cari T dengan optimasi log-space, fallback grid search
     logT = torch.zeros(1, requires_grad=True)
     opt = torch.optim.LBFGS([logT], lr=0.1, max_iter=200)
 
@@ -132,7 +99,6 @@ def main():
     print(f"  keyakinan rata-rata sebelum: {raw_probs.max(axis=1).mean():.4f}")
     print(f"  keyakinan rata-rata sesudah: {cal_probs.max(axis=1).mean():.4f}")
 
-    # distribusi keyakinan kelas target, untuk dilaporkan di naskah
     tgt_idx = labels
     tgt_before = raw_probs[np.arange(len(labels)), tgt_idx]
     tgt_after = cal_probs[np.arange(len(labels)), tgt_idx]
@@ -160,7 +126,6 @@ def main():
     print(f"\nDisimpan: {out}")
     print("Laporkan akurasi, NLL, ECE, dan sebaran probabilitas kelas target sebelum dan "
           "sesudah kalibrasi di naskah.")
-
 
 if __name__ == "__main__":
     main()

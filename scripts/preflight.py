@@ -1,20 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-preflight.py
-============
-Pemeriksaan kesiapan sebelum menjalankan PROTOKOL_RERUN.md. Satu perintah,
-keluaran ringkas, kode keluar 1 bila ada yang gagal.
-
-Memeriksa lingkungan (versi Python, paket, GPU, token Hugging Face), kelengkapan
-berkas penting, dan kebocoran split. Tidak memerlukan GPU untuk berjalan, tetapi
-melaporkan keadaan GPU bila ada.
-
-Pemakaian
----------
-    python preflight.py
-    python preflight.py --json preflight.json
-"""
 import argparse
 import glob
 import importlib
@@ -66,7 +51,6 @@ REQUIRED_FILES = [
     "fewshot_aaker/retrieval_utils.py",
     "fewshot_aaker/prompts/fewshot_generation_prompt.txt",
 ]
-# berkas konfigurasi punya nama berbeda di kedua repo
 CONFIG_CANDIDATES = ["fewshot_config.json"]
 SPLIT_CHECKS = [
     ("Aaker, split lama (diharapkan GAGAL)", "fewshot_aaker/data/brand_splits", 0, False),
@@ -77,10 +61,8 @@ SPLIT_CHECKS = [
 
 results = []
 
-
 def record(category, item, ok, detail=""):
     results.append({"kategori": category, "item": item, "lulus": bool(ok), "keterangan": detail})
-
 
 def version_tuple(s):
     out = []
@@ -88,7 +70,6 @@ def version_tuple(s):
         num = "".join(c for c in part if c.isdigit())
         out.append(int(num) if num else 0)
     return tuple(out)
-
 
 def check_env():
     ok = sys.version_info[:2] >= MIN_PY
@@ -101,7 +82,6 @@ def check_env():
             m = importlib.import_module(mod)
             v = getattr(m, "__version__", None)
             if v is None:
-                # sebagian paket, misalnya rank_bm25, tidak menyediakan __version__
                 try:
                     v = importlib.metadata.version(pipname or mod)
                 except importlib.metadata.PackageNotFoundError:
@@ -122,7 +102,7 @@ def check_env():
                    f"tidak ada, uji permutasi tanda akan dipakai. pip install {pipname}")
 
     try:
-        from sklearn.model_selection import StratifiedGroupKFold  # noqa: F401
+        from sklearn.model_selection import StratifiedGroupKFold
         record("paket", "StratifiedGroupKFold tersedia", True)
     except Exception as e:
         record("paket", "StratifiedGroupKFold tersedia", False, str(e))
@@ -143,7 +123,6 @@ def check_env():
     record("token", "variabel lingkungan HF_TOKEN", bool(tok),
            "terpasang" if tok else "BELUM terpasang, unduhan model akan gagal dengan 401")
 
-
 def check_files():
     for rel in REQUIRED_FILES:
         p = BUNDLE / rel
@@ -157,7 +136,6 @@ def check_files():
         p = BUNDLE / rel
         record("berkas", rel, p.exists(),
                "" if p.exists() else "TIDAK DITEMUKAN (bobot model memang tidak disertakan)")
-
 
 def check_splits():
     import pandas as pd
@@ -210,7 +188,6 @@ def check_splits():
         except Exception as e:
             record("split", label, False, f"gagal dibaca: {e}")
 
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--json", default=None, help="simpan hasil ke berkas JSON")
@@ -254,7 +231,6 @@ def main():
             json.dumps({"bundle": str(BUNDLE), "checks": results}, indent=2), encoding="utf-8")
         print(f"\nHasil disimpan: {args.json}")
     sys.exit(1 if failures else 0)
-
 
 if __name__ == "__main__":
     main()

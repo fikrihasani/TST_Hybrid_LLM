@@ -1,31 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-launch_detached.py
-==================
-Peluncur proses terlepas untuk tugas panjang (generasi 4 sampai 15 jam).
-
-Latar belakang: pola `Start-Process -RedirectStandardOutput/-RedirectStandardError` pada PowerShell
-di mesin ini gagal tanpa jejak, yaitu proses mati seketika sedangkan kedua berkas log tetap 0 byte
-dan tidak ada berkas hasil yang ditulis. Peluncur ini menggantikannya dan langsung memverifikasi
-bahwa prosesnya benar-benar hidup dan menulis.
-
-Yang dilakukan:
-  1. menjalankan perintah dengan stdout dan stderr ke DUA berkas terpisah,
-  2. melepaskan proses dari sesi ini sehingga tetap hidup ketika agen atau terminal ditutup,
-  3. mencatat manifest JSON berisi PID, perintah, waktu mulai, dan SHA-256 berkas config,
-  4. menunggu beberapa detik lalu memeriksa prosesnya masih hidup dan lognya sudah bertambah,
-  5. keluar dengan kode bukan nol bila verifikasi gagal.
-
-Pemakaian
----------
-    python scripts/launch_detached.py --nama aaker_step6 --cwd ../fewshot_aaker -- python main.py
-
-    # memeriksa proses yang diluncurkan
-    python scripts/launch_detached.py --status --nama aaker_step6
-
-Manifest disimpan di LOGS/detached_<nama>.json, log di LOGS/<nama>.out.log dan LOGS/<nama>.err.log.
-"""
 import argparse
 import hashlib
 import json
@@ -40,16 +14,11 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOGDIR = os.path.join(ROOT, "LOGS")
 IS_WIN = platform.system() == "Windows"
 
-# Variabel lingkungan yang wajib ada pada proses anak. Tanpa ketiganya, peluncuran panjang dapat
-# mati di tengah: keluarannya memuat emoji sehingga stdout dengan codec cp1252 gagal, atau unduhan
-# model gagal karena mesin ini tidak mengizinkan symlink cache. Nilai yang sudah ada di lingkungan
-# pemanggil tidak ditimpa.
 ENV_WAJIB = {
     "PYTHONIOENCODING": "utf-8",
     "PYTHONUTF8": "1",
     "HF_HUB_DISABLE_SYMLINKS": "1",
 }
-
 
 def sha256_of(path):
     try:
@@ -61,9 +30,7 @@ def sha256_of(path):
     except Exception:
         return None
 
-
 def pid_alive(pid):
-    """Benar bila proses masih hidup. Aman untuk dipanggil berulang."""
     if IS_WIN:
         try:
             out = subprocess.run(["tasklist", "/FI", f"PID eq {pid}", "/NH"],
@@ -77,14 +44,12 @@ def pid_alive(pid):
     except OSError:
         return False
 
-
 def read_manifest(nama):
     path = os.path.join(LOGDIR, f"detached_{nama}.json")
     if not os.path.exists(path):
         return None
     with open(path, encoding="utf-8") as f:
         return json.load(f)
-
 
 def status(nama):
     man = read_manifest(nama)
@@ -109,7 +74,6 @@ def status(nama):
         print("\nProses tidak hidup. Baca bagian akhir berkas stderr di atas untuk sebabnya.")
         return 1
     return 0
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -146,7 +110,7 @@ def main():
     log_out = os.path.join(LOGDIR, f"{args.nama}.out.log")
     log_err = os.path.join(LOGDIR, f"{args.nama}.err.log")
     for p in (log_out, log_err):
-        open(p, "w", encoding="utf-8").close()   # kosongkan supaya penambahan baru terbaca jelas
+        open(p, "w", encoding="utf-8").close()
 
     cfg = os.path.join(cwd, "fewshot_config.json")
     env = dict(os.environ)
@@ -222,7 +186,6 @@ def main():
               "tetapi bila tetap kosong setelah 10 menit, jalankan --status lalu periksa stderr.")
     print(f"Periksa kapan saja dengan: python scripts/launch_detached.py --status --nama {args.nama}")
     return 0
-
 
 if __name__ == "__main__":
     sys.exit(main())

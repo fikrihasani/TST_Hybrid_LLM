@@ -1,49 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-evaluate_results.py
-===================
-Pipeline evaluasi versi baru untuk hasil generasi few-shot.
-
-Menggantikan eval.py lama dengan empat perbaikan yang diminta reviewer:
-
-1. Content preservation dihitung dengan encoder yang BERBEDA dari encoder
-   retrieval (R2-08). Encoder lama memakai LazarusNLP/simcse-indobert-base,
-   yaitu model yang sama dengan encoder retrieval, sehingga metode dense
-   diuntungkan secara konstruksi. Kolom lama tetap dihitung agar besarnya
-   perbedaan dapat dilihat pembaca.
-2. Style strength dilaporkan bersama probabilitas terkalibrasi dan akurasi
-   biner (R2-10, R3-W3).
-3. Fluency dilaporkan sebagai PPL per sampel; median, trimmed mean, dan
-   proporsi degenerate dihitung oleh report_metrics.py (R2-21, R3-W5).
-4. Laju replikasi templat dihitung dari kolom retrieved_exemplars (R2-03, R2-09).
-
-Keluaran
---------
-Untuk setiap berkas `<nama>_results.csv` di folder hasil, ditulis
-`evaluated_v2_<nama>_results.csv` ke folder keluaran, dengan kolom:
-    content_preservation            encoder lama (pembanding)
-    content_preservation_<tag>      satu kolom per encoder independen
-    style_strength                  probabilitas mentah kelas target
-    style_strength_calibrated       probabilitas setelah temperature scaling
-    style_accuracy                  benar atau tidaknya kelas target diprediksi
-    fluency_ppl                     perplexity per sampel
-    replication_rate_8              overlap n-gram dengan eksemplar terambil
-    output_tokens, eos_reached      diagnostik degenerasi
-
-Pemakaian
----------
-    python evaluate_results.py \
-        --results ../fewshot_aaker/model_results_dir/google_gemma-3-4b-it \
-        --classifier ../fewshot_aaker/style_classifier \
-        --out ../fewshot_aaker/evaluation_result_v2/google_gemma-3-4b-it \
-        --encoder LaBSE=sentence-transformers/LaBSE \
-        --legacy-encoder LazarusNLP/simcse-indobert-base \
-        --calibration ../fewshot_aaker/style_classifier/calibration.json
-
-Catatan: script ini memerlukan GPU atau CPU dengan RAM memadai. Model dimuat
-satu per satu lalu dilepas untuk menghemat memori.
-"""
 import argparse
 import gc
 import json
@@ -62,17 +18,9 @@ except ImportError:
     AutoModelForSequenceClassification = AutoTokenizer = None
     TRANSFORMERS_TERSEDIA = False
 
-
 def butuh_transformers():
-    """Dipanggil di tempat yang benar-benar memerlukan transformers.
-
-    Pemeriksaan dijadikan malas, bukan saat impor modul, supaya jalur yang tidak memerlukan model
-    tetap dapat dijalankan dan diuji, misalnya pemeriksaan argumen dan mode --only-fluency pada
-    mesin tanpa transformers.
-    """
     if not TRANSFORMERS_TERSEDIA:
         sys.exit("transformers belum terpasang: pip install transformers")
-
 
 try:
     from sentence_transformers import SentenceTransformer
@@ -81,15 +29,12 @@ except ImportError:
 
 NGRAM = 8
 
-
 def clean_tag(s):
     return re.sub(r"[^A-Za-z0-9]+", "_", s).strip("_")
-
 
 def ngrams(text, n=NGRAM):
     w = re.findall(r"\w+", str(text).lower())
     return set(tuple(w[i:i + n]) for i in range(max(0, len(w) - n + 1)))
-
 
 class StyleClassifier:
     def __init__(self, model_dir, temperature=None):
@@ -122,9 +67,7 @@ class StyleClassifier:
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
 
-
 class Fluency:
-    """Perplexity dari model bahasa kausal, sama seperti eval.py lama."""
 
     def __init__(self, model_id="Sahabat-AI/gemma2-9b-cpt-sahabatai-v1-instruct"):
         from transformers import AutoModelForCausalLM, BitsAndBytesConfig
@@ -153,7 +96,6 @@ class Fluency:
         if torch.cuda.is_available():
             torch.cuda.empty_cache()
 
-
 def content_similarity(model, a, b):
     ea = model.encode(a, convert_to_tensor=True, show_progress_bar=False,
                       batch_size=64, normalize_embeddings=True)
@@ -161,23 +103,14 @@ def content_similarity(model, a, b):
                       batch_size=64, normalize_embeddings=True)
     return (ea * eb).sum(dim=1).cpu().numpy().tolist()
 
-
 def sudah_ada_fluency(path):
-    """Benar bila berkas evaluasi sudah memuat kolom fluency_ppl yang terisi seluruhnya."""
     try:
         kolom = pd.read_csv(path, usecols=["fluency_ppl"])
     except Exception:
         return False
     return bool(len(kolom)) and bool(kolom["fluency_ppl"].notna().all())
 
-
 def hanya_fluency(args):
-    """Menambahkan kolom fluency pada berkas evaluasi yang sudah ada.
-
-    Dipisahkan dari alur utama supaya puncak pemakaian memori hanya berasal dari model fluency,
-    bukan model fluency bersama classifier dan encoder sekaligus. Dipakai bila evaluasi penuh
-    kehabisan memori pada kartu grafis kecil.
-    """
     import glob
 
     files = sorted(glob.glob(os.path.join(args.out, "evaluated_*.csv")))
@@ -219,7 +152,6 @@ def hanya_fluency(args):
     print(f"selesai: kolom fluency_ppl, output_tokens, eos_reached, dan ppl_degenerate ditulis ke "
           f"{len(belum)} berkas di {args.out}")
     return 0
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -324,8 +256,6 @@ def main():
                 print(f"  {out_name}: median PPL {med:.2f}, degenerate "
                       f"{int(np.nansum([p > 1000 for p in ppl if np.isfinite(p)]))}/{len(ppl)}")
         else:
-            # Fluency dilewati: salin PPL dari hasil evaluasi lama bila tersedia dan panjangnya sama.
-            # Gunakan --legacy-eval-dir agar jalurnya eksplisit, bukan ditebak.
             if args.legacy_eval_dir:
                 src = os.path.join(args.legacy_eval_dir, "evaluated_" + os.path.basename(f))
                 if os.path.exists(src):
@@ -364,7 +294,6 @@ def main():
     if flu is not None:
         flu.release()
     print("\nSelesai. Lanjutkan dengan report_metrics.py pada folder keluaran ini.")
-
 
 if __name__ == "__main__":
     main()

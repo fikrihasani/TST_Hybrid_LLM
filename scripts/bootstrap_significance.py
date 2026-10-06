@@ -1,34 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-bootstrap_significance.py
-=========================
-Uji signifikansi berpasangan antar metode retrieval pada sampel uji yang sama,
-beserta interval keyakinan bootstrap.
-
-Mengapa berpasangan
--------------------
-Seluruh metode dijalankan pada indeks sampel uji yang identik, sehingga
-perbandingannya berpasangan. Uji berpasangan lebih peka daripada uji bebas,
-dan reviewer meminta perbedaan beberapa perseratus tidak lagi ditafsirkan
-sebagai bermakna tanpa pengujian.
-
-Prosedur
---------
-1. Setiap berkas dibaca dan diberi kunci sampel. Kunci diambil dari
-   (original_style, original_message) bila unik; bila tidak, dipakai posisi
-   baris sebagai kunci dengan peringatan.
-2. Hanya sampel yang muncul di kedua metode yang dibandingkan (irisan).
-3. Untuk setiap pasangan metode, dihitung selisih rata-rata berpasangan,
-   interval keyakinan bootstrap persentil, dan uji Wilcoxon signed-rank
-   (memakai scipy bila tersedia, bila tidak memakai uji permutasi tanda).
-
-Pemakaian
----------
-    python bootstrap_significance.py --dir <folder evaluated> --metric style_accuracy
-    python bootstrap_significance.py --dir <folder> --metric content_preservation \
-        --baseline dense --out hasil_uji.csv
-"""
 import argparse
 import glob
 import os
@@ -42,15 +13,12 @@ import pandas as pd
 META = ["style_target", "retrieval_method", "alpha"]
 PAIR_COLS = ["original_style", "original_message"]
 
-
 def normalize(s):
     return " ".join(str(s).lower().split())
-
 
 def load(path):
     df = pd.read_csv(path)
     df = df[~df["paraphrased_message"].astype(str).str.contains("ERROR")].copy()
-    # kalau hasil rerun menyertakan sample_index, pakai itu sebagai kunci yang eksplisit
     if "sample_index" in df.columns:
         df["_key"] = df["sample_index"].astype(str)
         return df, None
@@ -62,17 +30,9 @@ def load(path):
     df["_key"] = np.arange(len(df)).astype(str)
     return df, True
 
-
 def k_dari_nama(path):
-    """Jumlah contoh (k) dari nama berkas.
-
-    Berkas hasil tidak memuat kolom k, sedangkan nama berkasnya selalu memuat k sebelum penanda seed.
-    Tanpa ini, dua konfigurasi yang hanya berbeda pada k mendapat label yang sama sehingga salah
-    satunya tertimpa tanpa peringatan, dan analisis kepekaan k menjadi tidak mungkin.
-    """
     m = re.search(r"_(\d+)_seed\d+_", os.path.basename(path or ""))
     return m.group(1) if m else None
-
 
 def label_of(df, path=None):
     m = str(df["retrieval_method"].iloc[0])
@@ -81,11 +41,8 @@ def label_of(df, path=None):
     k = k_dari_nama(path) if path else None
     return f"{t}|{m}" + (f"|a{a}" if a not in ("N/A", "nan") else "") + (f"|k{k}" if k else "")
 
-
 def target_of(label):
-    """Target gaya dari sebuah label. Dipakai menyaring pasangan lintas target."""
     return label.split("|")[0]
-
 
 def paired_bootstrap(diff, n_boot=10000, seed=42, alpha=0.05):
     diff = np.asarray(diff, dtype=float)
@@ -98,9 +55,7 @@ def paired_bootstrap(diff, n_boot=10000, seed=42, alpha=0.05):
     lo, hi = np.percentile(means, [100 * alpha / 2, 100 * (1 - alpha / 2)])
     return float(diff.mean()), float(lo), float(hi)
 
-
 def sign_flip_test(diff, n_perm=10000, seed=42):
-    """Uji permutasi tanda, pengganti Wilcoxon bila scipy tidak tersedia."""
     diff = np.asarray(diff, dtype=float)
     diff = diff[np.isfinite(diff)]
     n = len(diff)
@@ -111,7 +66,6 @@ def sign_flip_test(diff, n_perm=10000, seed=42):
     signs = rng.choice([-1.0, 1.0], size=(n_perm, n))
     perm = np.abs((signs * diff).mean(axis=1))
     return float((perm >= obs).mean())
-
 
 def wilcoxon(diff):
     try:
@@ -127,16 +81,9 @@ def wilcoxon(diff):
     except Exception:
         return None
 
-
 SEED_RE = re.compile(r"_seed(\d+)_")
 
-
 def saring_seed(files, only_seed):
-    """Batasi berkas ke satu seed saja.
-
-    Nama berkas hasil memuat penanda _seed<N>_ sehingga seed dapat dipisahkan dari nama. Tanpa
-    penyaring ini, statistik mencampur beberapa seed tanpa peringatan.
-    """
     seeds = set()
     for f in files:
         seeds.update(SEED_RE.findall(os.path.basename(f)))
@@ -151,7 +98,6 @@ def saring_seed(files, only_seed):
               f"({', '.join(sorted(seeds))}), sehingga statistik di bawah mencampur seed. "
               f"Pakai --only-seed <N> untuk memilih satu seed.")
     return files
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -196,7 +142,6 @@ def main():
         print(f"catatan: pada {len(warns)} berkas kunci teks tidak unik, sehingga dipakai posisi "
               f"baris sebagai kunci. Ini sah bila seluruh metode dijalankan pada urutan sampel "
               f"yang sama. Periksa kolom sample_index pada hasil rerun untuk memastikannya.")
-        # pastikan urutan sampel memang seragam per target
         by_target = {}
         for f in files:
             df = pd.read_csv(f)
@@ -261,7 +206,6 @@ def main():
     if args.out:
         out.to_csv(args.out, index=False)
         print(f"Hasil disimpan: {args.out}")
-
 
 if __name__ == "__main__":
     main()

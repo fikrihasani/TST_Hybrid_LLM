@@ -1,27 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-status.py
-=========
-Menampilkan keadaan pekerjaan tanpa mengganggu proses yang sedang berjalan.
-Jalankan dari terminal terpisah, bukan lewat panel agen, supaya tidak menghentikan
-giliran agen yang sedang memantau.
-
-Yang ditampilkan
-----------------
-1. Keadaan `fewshot_config.json` kedua repo: split yang dipakai, daftar metode,
-   rentang k, alpha, dan seed. Berguna untuk memastikan konfigurasi tidak tertinggal
-   dalam keadaan uji atau keadaan alphadev.
-2. Berkas log terbaru per repo: nama, ukuran, waktu perubahan terakhir, dan 10 baris
-   terakhir. Ukuran yang bertambah antar pemanggilan berarti pekerjaan masih berjalan.
-3. Proses Python yang sedang hidup beserta PID, waktu mulai, dan waktu CPU.
-4. Jumlah berkas hasil per repo.
-
-Pemakaian
----------
-    python status.py
-    python status.py --watch 60      # tampilkan ulang setiap 60 detik
-"""
 import argparse
 import glob
 import json
@@ -40,14 +18,12 @@ REPOS = [("formality", BUNDLE / "fewshot_formality"),
 KEYS = ["split_dir", "retrieval_methods", "num_examples_range", "hybrid_alphas",
         "run_seeds", "num_samples", "skip_existing"]
 
-
 def human_size(n):
     for unit in ["B", "KB", "MB", "GB"]:
         if n < 1024:
             return f"{n:.0f} {unit}"
         n /= 1024
     return f"{n:.1f} TB"
-
 
 def show_configs():
     print("\nKONFIGURASI")
@@ -84,9 +60,7 @@ def show_configs():
         for w in warn:
             print(f"    ! {w}")
 
-
 def find_logs(repo):
-    """Cari berkas log di mana pun di dalam repo, termasuk lokasi tak terduga."""
     found = []
     for pat in ("*.log", "*.err"):
         found += glob.glob(str(repo / pat))
@@ -97,22 +71,13 @@ def find_logs(repo):
             pass
     return sorted(set(found), key=os.path.getmtime)
 
-
 def render_log(path, ringkas=False):
-    """Tampilkan satu berkas log: ukuran, waktu tulis terakhir, dan beberapa baris terakhir.
-
-    Untuk berkas stderr peluncur terlepas, baris terakhir berisi bilah kemajuan tqdm dengan hitungan
-    sampel, sehingga baris itu sekaligus menjadi penunjuk kemajuan per sampel.
-    """
     st = os.stat(path)
     age = (datetime.now() - datetime.fromtimestamp(st.st_mtime)).total_seconds()
     print(f"\n  {path}")
     print(f"    ukuran {human_size(st.st_size)} | "
           f"terakhir ditulis {age:.0f} detik lalu "
           f"({datetime.fromtimestamp(st.st_mtime):%Y-%m-%d %H:%M:%S})")
-    # Log internal pipeline ditulis satu baris per blok target, bukan per konfigurasi.
-    # Pada korpus Aaker satu blok target berarti lima nilai alpha kali 500 sampel, yaitu
-    # sekitar 3,7 jam. Basis waktu untuk log internal karena itu jauh lebih longgar.
     internal = "fewshot_experiment_" in os.path.basename(path)
     if internal:
         if age > 150 * 60:
@@ -130,14 +95,11 @@ def render_log(path, ringkas=False):
     except Exception as e:
         print(f"    gagal membaca: {e}")
 
-
 def show_logs(running):
     print("\nLOG TERBARU")
     print("-" * 78)
     any_log = False
 
-    # Log peluncur terlepas ditulis di LOGS/ pada akar bundel, bukan di dalam repo. Berkas stderr di
-    # situ memuat bilah kemajuan tqdm, yaitu satu-satunya sumber kemajuan per sampel.
     pl = sorted(glob.glob(str(BUNDLE / "LOGS" / "*.log")), key=os.path.getmtime)
     if pl:
         any_log = True
@@ -166,9 +128,7 @@ def show_logs(running):
             render_log(path)
     return any_log
 
-
 def list_processes():
-    """Daftar proses Python lain, tanpa proses sementara milik status.py sendiri."""
     print("\nPROSES PYTHON")
     print("-" * 78)
     system = platform.system()
@@ -212,7 +172,6 @@ def list_processes():
         return 0
 
     def sementara(r):
-        # Proses pembungkus status.py sendiri: baru dibuat dan CPU-nya mendekati nol.
         return r["umur"] < 120 and r["cpu"] < 1.0
 
     sementara_rows = [r for r in rows if r["pid"] == me or sementara(r)]
@@ -233,9 +192,7 @@ def list_processes():
               "baru, pastikan tidak ada yang sedang memakai GPU.")
     return len(nyata)
 
-
 def configured_results_dir(repo):
-    """Direktori hasil dibaca dari config, karena bisa berbeda antara run alphadev dan run utama."""
     p = repo / "fewshot_config.json"
     if p.exists():
         try:
@@ -245,7 +202,6 @@ def configured_results_dir(repo):
         except Exception:
             pass
     return repo / "model_results_dir"
-
 
 def show_outputs():
     print("\nBERKAS HASIL")
@@ -273,7 +229,6 @@ def show_outputs():
                 age = (datetime.now() - datetime.fromtimestamp(os.path.getmtime(f))).total_seconds()
                 print(f"  {'':12s} {os.path.basename(f)[:62]:64s} {age/60:8.1f} menit lalu")
 
-
 def once():
     print(f"\nKeadaan pekerjaan JCCE-First Revision  |  {datetime.now():%Y-%m-%d %H:%M:%S}")
     print(f"Folder: {BUNDLE}")
@@ -286,7 +241,6 @@ def once():
     print("Bila ukurannya diam padahal seharusnya jalan, periksa PID pada daftar proses di atas.")
     print("Jalankan script ini dari terminal biasa, bukan lewat panel agen, agar giliran agen")
     print("yang sedang memantau tidak terhenti.")
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -303,7 +257,6 @@ def main():
             time.sleep(args.watch)
     except KeyboardInterrupt:
         print("\nberhenti")
-
 
 if __name__ == "__main__":
     main()

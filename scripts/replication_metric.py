@@ -1,37 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-replication_metric.py
-=====================
-Menghitung laju replikasi templat: seberapa besar output generasi menyalin
-eksemplar yang benar-benar diambil untuk sampel tersebut.
-
-Mengapa metrik ini ada
-----------------------
-Reviewer 2 (butir 3 dan 9) menduga skor gaya tinggi pada metode centroid
-berasal dari penyalinan eksemplar, bukan dari transfer gaya. Dugaan itu benar
-pada korpus brand personality: pool memuat satu teks Telkom yang terulang 414
-kali, sehingga centroid tertarik ke boilerplate itu, dan LLM menyalinnya.
-Angka dari hasil lama: 76,6% output metode centroid memuat 8-gram eksemplar,
-dibandingkan 0,4% pada metode dense.
-
-Dua sumber eksemplar
---------------------
-1. `--from-column` (hasil rerun): kolom `retrieved_exemplars` pada berkas
-   evaluated_*.csv, berisi daftar JSON eksemplar per sampel. Ini yang benar
-   karena memakai eksemplar yang benar-benar diambil.
-2. `--from-cache` (hasil lama): mencocokkan ulang eksemplar teratas dari cache
-   embedding pool. Hanya sah untuk metode centroid dan hybrid, karena keduanya
-   memakai centroid yang tidak bergantung query. Untuk metode dense dan bm25,
-   eksemplar tidak dapat direkonstruksi dari cache, sehingga dilaporkan sebagai
-   tidak tersedia.
-
-Pemakaian
----------
-    python replication_metric.py --dir <folder evaluated> --from-column
-    python replication_metric.py --dir ../fewshot_aaker/evaluation_result/google_gemma-3-4b-it \
-        --from-cache --cache ../fewshot_aaker/outputs/cache --k 5 --out replikasi_lama.csv
-"""
 import argparse
 import glob
 import json
@@ -45,11 +13,9 @@ import pandas as pd
 
 META = ["style_target", "retrieval_method", "alpha"]
 
-
 def ngrams(text, n):
     words = re.findall(r"\w+", str(text).lower())
     return set(tuple(words[i:i + n]) for i in range(max(0, len(words) - n + 1)))
-
 
 def overlap_ratio(output, exemplars, n):
     og = ngrams(output, n)
@@ -62,9 +28,7 @@ def overlap_ratio(output, exemplars, n):
         return 0.0
     return len(og & eg) / len(og)
 
-
 def exemplars_from_column(df):
-    """Kembalikan daftar eksemplar per baris dari kolom retrieved_exemplars."""
     out = []
     for v in df["retrieved_exemplars"]:
         try:
@@ -75,7 +39,6 @@ def exemplars_from_column(df):
         except Exception:
             out.append([])
     return out
-
 
 def centroid_exemplars(cache_dir, tag, k):
     emb_path = os.path.join(cache_dir, f"embeddings_{tag}_pool.npy")
@@ -91,16 +54,9 @@ def centroid_exemplars(cache_dir, tag, k):
     top = np.argsort(sims)[-k:][::-1]
     return [texts[i] for i in top]
 
-
 SEED_RE = re.compile(r"_seed(\d+)_")
 
-
 def saring_seed(files, only_seed):
-    """Batasi berkas ke satu seed saja.
-
-    Nama berkas hasil memuat penanda _seed<N>_ sehingga seed dapat dipisahkan dari nama. Tanpa
-    penyaring ini, statistik mencampur beberapa seed tanpa peringatan.
-    """
     seeds = set()
     for f in files:
         seeds.update(SEED_RE.findall(os.path.basename(f)))
@@ -115,7 +71,6 @@ def saring_seed(files, only_seed):
               f"({', '.join(sorted(seeds))}), sehingga statistik di bawah mencampur seed. "
               f"Pakai --only-seed <N> untuk memilih satu seed.")
     return files
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -199,7 +154,6 @@ def main():
     if args.out:
         out.to_csv(args.out, index=False)
         print(f"\nDisimpan: {args.out}")
-
 
 if __name__ == "__main__":
     main()

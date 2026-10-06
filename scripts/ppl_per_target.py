@@ -1,10 +1,3 @@
-"""Ringkasan PPL per target (Langkah 9).
-
-Membaca berkas evaluated_v2_* dari evaluation_result_v2 dan menghitung
-statistik fluency_ppl per style_target dan per (target, retrieval_method).
-Tidak menulis apa pun ke evaluation_result_v2.
-"""
-
 from __future__ import annotations
 
 import argparse
@@ -15,13 +8,11 @@ import sys
 import numpy as np
 import pandas as pd
 
-
 def trimmed_mean(values: np.ndarray, trim: float = 0.10) -> float:
     values = np.sort(values)
     k = int(np.floor(len(values) * trim))
     core = values[k : len(values) - k] if len(values) - k > k else values
     return float(np.mean(core))
-
 
 def main() -> int:
     ap = argparse.ArgumentParser()
@@ -98,16 +89,14 @@ def main() -> int:
             out_rows.append(row)
             print(row)
 
-    # Simpan
     out_path = args.out
     try:
         pd.DataFrame(out_rows).to_csv(out_path, index=False)
         print()
         print(f"Ditulis: {out_path}")
-    except Exception as exc:  # pragma: no cover
+    except Exception as exc:
         print(f"Gagal menulis {out_path}: {exc}", file=sys.stderr)
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())

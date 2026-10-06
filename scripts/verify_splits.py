@@ -1,28 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-verify_splits.py
-================
-Memeriksa kebocoran pada satu atau beberapa folder split, dan membandingkannya
-dengan split lama pada repo ini.
-
-Yang diperiksa
---------------
-1. Ukuran dan komposisi kelas tiap split.
-2. Teks identik antar split, diperiksa PER KELAS karena indeks retrieval
-   dibangun per kelas target.
-3. Percakapan bersama antar split, bila kolom grup tersedia.
-4. Akun unik, untuk menunjukkan apakah pengelompokan level akun mungkin.
-
-Pemakaian
----------
-    # bandingkan split lama dan split baru
-    python verify_splits.py --dir data/brand_splits --dir data/brand_splits_v2 \
-        --style-col personality --group-col conversation_id_str
-
-    # dipakai sebagai gerbang: keluar dengan kode 1 bila split terakhir masih bocor
-    python verify_splits.py --dir data/brand_splits_v2 --gate
-"""
 import argparse
 import glob
 import os
@@ -32,10 +9,8 @@ import pandas as pd
 
 SPLITS = ["train_set", "val_set", "retrieval_pool", "test_set"]
 
-
 def normalize(s):
     return " ".join(str(s).lower().split())
-
 
 def load_dir(d, text_col):
     out = {}
@@ -54,7 +29,6 @@ def load_dir(d, text_col):
             if text_col in df.columns:
                 out[name] = df
     return out
-
 
 def report(label, splits, text_col, style_col, group_col, account_col):
     total = sum(len(v) for v in splits.values())
@@ -123,7 +97,6 @@ def report(label, splits, text_col, style_col, group_col, account_col):
         metrics["akun_unik"] = len(allu)
     return metrics
 
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dir", action="append", required=True, help="folder split, boleh diulang")
@@ -177,7 +150,6 @@ def main():
                   f"dalam toleransi {args.tolerance}. Angka ini harus dilaporkan apa adanya.")
         else:
             print("\nGERBANG LOLOS: tidak ada teks identik maupun percakapan bersama antar split.")
-
 
 if __name__ == "__main__":
     main()

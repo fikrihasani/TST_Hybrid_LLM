@@ -8,9 +8,6 @@ from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModelForSequenceClassification, BitsAndBytesConfig
 from sentence_transformers import SentenceTransformer, util
 
-# ==========================================
-# 1. FLUENCY EVALUATOR (LLaMA-3 8B 4-bit)
-# ==========================================
 class FluencyEvaluator:
     def __init__(self, model_id="Sahabat-AI/gemma2-9b-cpt-sahabatai-v1-instruct"):
         print(f"Loading Fluency evaluation model: {model_id}")
@@ -44,9 +41,6 @@ class FluencyEvaluator:
             
         return math.exp(neg_log_likelihood.item())
 
-# ==========================================
-# 2. CONTENT PRESERVATION EVALUATOR (SimCSE)
-# ==========================================
 class ContentPreservationEvaluator:
     def __init__(self, model_id="LazarusNLP/simcse-indobert-base"):
         print(f"Loading Content Preservation model: {model_id}")
@@ -61,9 +55,6 @@ class ContentPreservationEvaluator:
         pairwise_scores = torch.diagonal(cosine_scores).cpu().numpy().tolist()
         return pairwise_scores
 
-# ==========================================
-# 3. STYLE STRENGTH EVALUATOR (Custom RoBERTa)
-# ==========================================
 class StyleStrengthEvaluator:
     def __init__(self, model_dir="style_classifier"):
         print(f"Loading Style Classifier model from: {model_dir}")
@@ -114,7 +105,6 @@ class StyleStrengthEvaluator:
                     batch_preds[valid_idx] = pred_str
                     batch_correct[valid_idx] = 1 if pred_str == target_str else 0
                     
-                    # Mengambil probabilitas berdasarkan TARGET, bukan prediksi model
                     if target_str in self.label2id:
                         actual_target_id = self.label2id[target_str]
                         batch_probs[valid_idx] = probs_np[j][actual_target_id]
@@ -127,37 +117,25 @@ class StyleStrengthEvaluator:
             
         return predicted_labels, target_probs, is_correct
 
-# ==========================================
-# 4. AGGRESSIVE VRAM CLEANER
-# ==========================================
 def aggressive_vram_cleaner():
-    """Memaksa PyTorch untuk melepas memori yang di-cache ke OS."""
     gc.collect()
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
         torch.cuda.ipc_collect()
     print(f"[VRAM Cleaner] Sisa VRAM teralokasi: {torch.cuda.memory_allocated() / 1024**2:.2f} MB\n")
 
-# ==========================================
-# MAIN EXECUTION (PHASE-BASED)
-# ==========================================
 def process_results_sequential(input_dir, base_output_dir, classifier_model_dir):
     model_folder = os.path.basename(os.path.normpath(input_dir))
     output_dir = os.path.join(base_output_dir, model_folder)
     os.makedirs(output_dir, exist_ok=True)
 
-    # Dapatkan semua file hasil yang valid
     files = [f for f in os.listdir(input_dir) if f.endswith(".csv") and not f.endswith("_HUMAN_EVAL.csv")]
     if not files:
         print("Tidak ada file untuk dievaluasi.")
         return
 
-    # Inisialisasi dictionary untuk menyimpan hasil per file
     evaluation_results = {file: {} for file in files}
 
-    # ====================================================
-    # FASE 1: CONTENT PRESERVATION (SimCSE)
-    # ====================================================
     print("\n" + "="*50)
     print("FASE 1: CONTENT PRESERVATION EVALUATION")
     print("="*50)
@@ -172,16 +150,11 @@ def process_results_sequential(input_dir, base_output_dir, classifier_model_dir)
         sim_scores = content_evaluator.calculate_similarity_batch(orig_msgs, para_msgs)
         evaluation_results[file]["content_preservation"] = sim_scores
         
-        # Simpan metadata struktur
         evaluation_results[file]["df_base"] = df
 
-    # Hapus model dan bersihkan VRAM
     del content_evaluator
     aggressive_vram_cleaner()
 
-    # ====================================================
-    # FASE 2: STYLE STRENGTH (XLM-RoBERTa)
-    # ====================================================
     print("="*50)
     print("FASE 2: STYLE STRENGTH EVALUATION")
     print("="*50)
@@ -197,13 +170,9 @@ def process_results_sequential(input_dir, base_output_dir, classifier_model_dir)
         evaluation_results[file]["style_accuracy"] = style_acc
         evaluation_results[file]["style_strength"] = style_probs
 
-    # Hapus model dan bersihkan VRAM
     del style_evaluator
     aggressive_vram_cleaner()
 
-    # ====================================================
-    # FASE 3: FLUENCY (LLaMA-3 8B)
-    # ====================================================
     print("="*50)
     print("FASE 3: FLUENCY PPL EVALUATION")
     print("="*50)
@@ -224,13 +193,9 @@ def process_results_sequential(input_dir, base_output_dir, classifier_model_dir)
                 
         evaluation_results[file]["fluency_ppl"] = ppl_scores
 
-    # Hapus model dan bersihkan VRAM
     del fluency_evaluator
     aggressive_vram_cleaner()
 
-    # ====================================================
-    # FASE 4: AGREGASI & PENYIMPANAN
-    # ====================================================
     print("="*50)
     print("FASE 4: SAVING & AGGREGATION")
     print("="*50)
@@ -246,16 +211,13 @@ def process_results_sequential(input_dir, base_output_dir, classifier_model_dir)
         df["style_strength"] = evaluation_results[file]["style_strength"]
         df["fluency_ppl"] = evaluation_results[file]["fluency_ppl"]
         
-        # Simpan file detail
         output_path = os.path.join(output_dir, f"evaluated_{file}")
         df.to_csv(output_path, index=False)
         
-        # Tarik Metadata
         target_style_val = df["style_target"].iloc[0] if "style_target" in df.columns else "N/A"
         retrieval_method_val = df["retrieval_method"].iloc[0] if "retrieval_method" in df.columns else "N/A"
         alpha_val = df["alpha"].iloc[0] if "alpha" in df.columns else "N/A"
 
-        # Kalkulasi Agregat
         avg_acc = df["style_accuracy"].mean()
         avg_sim = df["content_preservation"].mean()
         avg_str = df["style_strength"].mean()
@@ -266,11 +228,9 @@ def process_results_sequential(input_dir, base_output_dir, classifier_model_dir)
         median_str = df["style_strength"].median()
         median_ppl = df["fluency_ppl"].median()
 
-        # Kalkulasi G-Score (berbasis PPL Median agar outlier tidak merusak skor)
         safe_ppl = max(median_ppl, 1.0) if not pd.isna(median_ppl) else float('nan')
         g_score = (avg_str * avg_sim * (1.0 / safe_ppl)) ** (1.0 / 3.0) if not pd.isna(safe_ppl) else float('nan')
 
-        # Simpan metrik
         base_metric = {
             "file_name": file, "style_target": target_style_val,
             "retrieval_method": retrieval_method_val, "alpha": alpha_val, "g_score": g_score
@@ -279,7 +239,6 @@ def process_results_sequential(input_dir, base_output_dir, classifier_model_dir)
         summary_avg_data.append({**base_metric, "avg_content_preservation": avg_sim, "avg_style_accuracy": avg_acc, "avg_style_strength": avg_str, "avg_fluency_ppl": avg_ppl})
         summary_median_data.append({**base_metric, "median_content_preservation": median_sim, "median_style_accuracy": median_acc, "median_style_strength": median_str, "median_fluency_ppl": median_ppl})
 
-    # Simpan file rekapitulasi
     if summary_avg_data and summary_median_data:
         pd.DataFrame(summary_avg_data).to_csv(os.path.join(output_dir, "summary_average_metrics.csv"), index=False)
         pd.DataFrame(summary_median_data).to_csv(os.path.join(output_dir, "summary_median_metrics.csv"), index=False)

@@ -1,42 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-make_splits_brand.py
-====================
-Membuat split korpus brand personality (Aaker) dengan DEDUPLIKASI TEKS dan
-PENGELOMPOKAN PERCAKAPAN.
-
-Mengapa script ini ada
-----------------------
-Split yang dipakai eksperimen hanya distratifikasi lima persona, tanpa
-deduplikasi dan tanpa pengelompokan. Akibatnya, pada split lama:
-  - 629 teks test identik dengan retrieval pool
-  - 1.715 teks train identik dengan retrieval pool
-  - 33,5% baris test berasal dari percakapan yang juga ada di train
-  - 18,1% baris pool adalah duplikat, satu teks terulang 414 kali
-Duplikat itu menarik centroid ke satu templat boilerplate, yang kemudian
-disalin oleh LLM dan diberi skor gaya ~0,9999 oleh classifier.
-
-Cara kerja
-----------
-1. Deduplikasi berdasarkan teks ternormalisasi (huruf kecil, spasi dirapikan).
-2. `StratifiedGroupKFold` dengan `groups=conversation_id_str`, sehingga
-   stratifikasi lima persona dan keutuhan percakapan terjaga sekaligus.
-3. Fold dipetakan: test=[0], pool=[1,2,3], val classifier=[4], train=[5..9],
-   dan opsional alpha_dev=[5] dengan train=[6..9] bila diminta.
-
-Catatan penting
----------------
-Gabungan akun TIDAK mungkin dilakukan: seluruh korpus berasal dari 24 akun
-brand, sehingga menahan akun akan menghapus gaya brand tertentu dari indeks
-retrieval. Pengelompokan yang digunakan adalah level percakapan.
-
-Pemakaian
----------
-    python make_splits_brand.py --check
-    python make_splits_brand.py                    # tanpa alpha-dev
-    python make_splits_brand.py --alpha-dev        # sisihkan 5% untuk pemilihan alpha
-"""
 import argparse
 import hashlib
 import json
@@ -57,7 +20,6 @@ SEED = 42
 TEXT, STYLE, GROUP = "cleaned_text", "personality", "conversation_id_str"
 SRC_NAME = "Combined Aaker Brand Personality - Cleaned v0.csv"
 
-
 def sha256(path):
     h = hashlib.sha256()
     with open(path, "rb") as f:
@@ -68,10 +30,8 @@ def sha256(path):
             h.update(chunk)
     return h.hexdigest()
 
-
 def normalize(s):
     return " ".join(str(s).lower().split())
-
 
 def build(src_path, alpha_dev=False, seed=SEED):
     df = pd.read_csv(src_path).dropna(subset=[TEXT, STYLE]).copy()
@@ -100,7 +60,6 @@ def build(src_path, alpha_dev=False, seed=SEED):
            for name, f in mapping.items()}
     return out, {"n_raw": n_raw, "n_dedup": n_dedup}
 
-
 def verify(out):
     problems = []
     total = sum(len(v) for v in out.values())
@@ -119,7 +78,6 @@ def verify(out):
                 rows = int(out[b][GROUP].isin(ga).sum())
                 problems.append(f"{len(gshared)} percakapan bersama antara {a} dan {b} "
                                 f"({rows} baris {b})")
-    # distribusi kelas harus mirip antar split
     base = out["train_set"][STYLE].value_counts(normalize=True)
     for name, sub in out.items():
         d = sub[STYLE].value_counts(normalize=True)
@@ -128,7 +86,6 @@ def verify(out):
                 problems.append(f"{name} kelas {cls} proporsinya {d.get(cls, 0):.3f}, "
                                 f"train {base[cls]:.3f}")
     return problems, total
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -198,7 +155,6 @@ def main():
     for t in targets:
         (t / "split_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     print("  manifest ditulis: split_manifest.json")
-
 
 if __name__ == "__main__":
     main()

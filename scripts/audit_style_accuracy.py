@@ -1,14 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-Bandingkan akurasi gaya per target antara hasil run LAMA dan hasil sapuan alpha-dev BARU.
-
-Tujuan: menentukan apakah akurasi gaya target formal yang rendah pada sapuan alpha-dev
-(0,108 sampai 0,136) merupakan regresi yang diperkenalkan patch revisi, atau memang sifat
-yang sudah ada pada run lama. Tugas ini klasifikasi biner, sehingga tebakan acak bernilai 0,5.
-
-Read-only. Tidak menulis apa pun.
-"""
 import glob
 import os
 import sys
@@ -20,7 +11,6 @@ REPOS = [
     ("formality", os.path.join(BUNDLE, "fewshot_formality")),
     ("aaker", os.path.join(BUNDLE, "fewshot_aaker")),
 ]
-
 
 def ringkas(paths, label):
     if not paths:
@@ -45,7 +35,6 @@ def ringkas(paths, label):
     g = df.groupby("style_target")["style_accuracy"]
     out = g.agg(["count", "mean", "min", "max"]).round(4)
     print(out.to_string())
-    # sebaran prediksi, untuk melihat apakah model menghasilkan satu gaya saja
     if "style_predicted" in df.columns:
         print("    sebaran style_predicted per target:")
         for tgt, sub in df.groupby("style_target"):
@@ -53,7 +42,6 @@ def ringkas(paths, label):
             items = ", ".join(f"{k}={v}" for k, v in vc.items())
             print(f"      target {tgt}: {items}")
     return df
-
 
 print("=" * 78)
 print("AKURASI GAYA PER TARGET: RUN LAMA vs SAPUAN ALPHA-DEV BARU")

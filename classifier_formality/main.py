@@ -1,8 +1,3 @@
-"""
-Text Classifier: Formality Classification (Bahasa Indonesia)
-Model: flax-community/indonesian-roberta-base
-"""
-
 import pandas as pd
 import torch
 from torch.utils.data import Dataset
@@ -21,15 +16,11 @@ import os
 
 set_seed(42)
 
-# ----------------------------------------------------------------------
-# 1. Konfigurasi
-# ----------------------------------------------------------------------
 MODEL_NAME = "flax-community/indonesian-roberta-base"
 MAX_LENGTH = 128
 BATCH_SIZE = 16
 EPOCHS = 10
 LEARNING_RATE = 2e-5
-# Menggunakan model_results_dir sesuai arsitektur terbaru
 OUTPUT_DIR = "./model_results_dir/formality_model_roberta"
 DATA_PATH = "data/combined_stif.csv"
 SPLIT_SAVE_DIR = "./data/formality_splits"
@@ -37,17 +28,12 @@ SPLIT_SAVE_DIR = "./data/formality_splits"
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Menggunakan perangkat: {device}")
 
-# ----------------------------------------------------------------------
-# 2. Baca, Split, dan Ekspor Data (60-30-10 tersesuaikan)
-# ----------------------------------------------------------------------
 df = pd.read_csv(DATA_PATH)
 unique_labels = sorted(df['formality'].unique())
 label2id = {label: i for i, label in enumerate(unique_labels)}
 id2label = {i: label for label, i in label2id.items()}
 df['label_id'] = df['formality'].map(label2id)
 
-# Blok split lama dihapus sesuai PROTOKOL_RERUN.md langkah 4: split tidak dihitung ulang dan tidak
-# ditulis ulang. Pelatihan membaca berkas split v2 yang sudah terverifikasi.
 SPLIT_DIR = "data/formality_splits_v2"
 train_df = pd.read_csv(f"{SPLIT_DIR}/train_set.csv")
 val_df = pd.read_csv(f"{SPLIT_DIR}/val_set.csv")
@@ -55,14 +41,10 @@ test_df = pd.read_csv(f"{SPLIT_DIR}/test_set.csv")
 
 print(f"Distribusi Split v2 - Train: {len(train_df)}, Val: {len(val_df)}, Test: {len(test_df)}")
 
-# Siapkan list text dan label untuk dataset PyTorch
 train_texts, train_labels = train_df['text'].tolist(), train_df['label_id'].tolist()
 val_texts, val_labels = val_df['text'].tolist(), val_df['label_id'].tolist()
 test_texts, test_labels = test_df['text'].tolist(), test_df['label_id'].tolist()
 
-# ----------------------------------------------------------------------
-# 3. Tokenisasi & Dataset PyTorch
-# ----------------------------------------------------------------------
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
 def tokenize_function(texts):
@@ -85,9 +67,6 @@ train_dataset = TextDataset(train_encodings, train_labels)
 val_dataset = TextDataset(val_encodings, val_labels)
 test_dataset = TextDataset(test_encodings, test_labels)
 
-# ----------------------------------------------------------------------
-# 4. Inisialisasi Model & Training
-# ----------------------------------------------------------------------
 model = AutoModelForSequenceClassification.from_pretrained(
     MODEL_NAME, num_labels=len(label2id), id2label=id2label, label2id=label2id
 )
@@ -127,9 +106,6 @@ trainer = Trainer(
 print("Mulai pelatihan Formality...")
 trainer.train()
 
-# ----------------------------------------------------------------------
-# 5. Evaluasi & Simpan Hasil
-# ----------------------------------------------------------------------
 test_preds = trainer.predict(test_dataset)
 y_test_pred = test_preds.predictions.argmax(-1)
 test_report_str = classification_report(test_labels, y_test_pred, target_names=list(label2id.keys()), zero_division=0, digits=4)

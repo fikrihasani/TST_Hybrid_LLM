@@ -1,35 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-make_splits_formality.py
-========================
-Membuat split korpus STIF (formality) dengan PENGUNCIAN PASANGAN PARALEL.
-
-Mengapa script ini ada
-----------------------
-Naskah JCCE-10619 menyatakan bahwa pasangan paralel dikunci dengan `pair_id`
-sebelum splitting. Pemeriksaan atas split yang dipakai eksperimen menunjukkan
-penguncian itu tidak pernah diterapkan: hanya 35,7% pasangan berada di split
-yang sama, sedangkan ekspektasi tanpa penguncian adalah 36,0%.
-
-Cara kerja
-----------
-Berkas `stif_formal.txt` dan `stif_informal.txt` sejajar baris demi baris,
-sehingga `pair_id` = nomor baris. Split dilakukan pada daftar `pair_id`, bukan
-pada baris, sehingga kedua anggota pasangan selalu berada di split yang sama.
-Akibatnya keseimbangan formal dan informal terjaga dengan sendirinya.
-
-Perbedaan dari split lama
--------------------------
-Ukuran hasilnya sama persis dengan split lama (50/10/30/10), yang berbeda hanya
-keanggotaan tiap split. Kolom `pair_id` kini ikut diekspor agar klaim penguncian
-dapat diverifikasi pembaca.
-
-Pemakaian
----------
-    python make_splits_formality.py --check          # uji tanpa menulis
-    python make_splits_formality.py                  # tulis split + manifest
-"""
 import argparse
 import hashlib
 import json
@@ -48,7 +18,6 @@ BUNDLE = Path(__file__).resolve().parent.parent
 SEED = 42
 RATIOS = {"test": 0.10, "pool_of_rest": 1 / 3, "val_of_classifier": 1 / 6}
 
-
 def sha256(path, limit=None):
     h = hashlib.sha256()
     with open(path, "rb") as f:
@@ -59,10 +28,8 @@ def sha256(path, limit=None):
             h.update(chunk)
     return h.hexdigest()
 
-
 def read_lines(path):
     return [x.strip() for x in open(path, encoding="utf-8").read().splitlines() if x.strip()]
-
 
 def build(src_dir, seed=SEED):
     formal = read_lines(src_dir / "stif_formal.txt")
@@ -91,19 +58,13 @@ def build(src_dir, seed=SEED):
         out[name] = sub
     return out, df
 
-
 def verify(out, df):
-    """Pemeriksaan yang harus lolos sebelum hasil dipakai.
-
-    Mengembalikan (problems, notes, metrics).
-    """
     problems, notes = [], []
     metrics = {}
     total = sum(len(v) for v in out.values())
     if total != len(df):
         problems.append(f"jumlah baris berubah: {total} vs {len(df)}")
 
-    # 1. setiap pasangan harus utuh dalam satu split
     pair_to_split = {}
     for name, sub in out.items():
         for pid in sub["pair_id"]:
@@ -112,15 +73,11 @@ def verify(out, df):
                 break
             pair_to_split[pid] = name
 
-    # 2. setiap split harus berimbang formal dan informal
     for name, sub in out.items():
         vc = sub["formality"].value_counts().to_dict()
         if vc.get("formal", 0) != vc.get("informal", 0):
             problems.append(f"{name} tidak berimbang: {vc}")
 
-    # 3. duplikat diperiksa PER KELAS, karena indeks retrieval dibangun per kelas.
-    #    Berkas sumber sendiri sudah memuat baris ganda (2 baris di tiap blok), sehingga
-    #    sisa duplikat kecil dilaporkan sebagai angka, bukan diperlakukan sebagai kegagalan.
     per_class_dup = {}
     for cls in ["formal", "informal"]:
         sets = {name: set(sub[sub.formality == cls]["text"]) for name, sub in out.items()}
@@ -135,8 +92,6 @@ def verify(out, df):
             problems.append(f"{tot_pairs} teks identik kelas {cls} melintas split, melebihi batas wajar")
     metrics["duplikat_lintas_split_per_kelas"] = per_class_dup
 
-    # 4. teks yang bentuk formal dan informalnya kebetulan identik: sifat korpus paralel
-    #    yang diratakan, tidak masuk ke indeks yang sama, hanya dilaporkan.
     fa_all = set(df[df.formality == "formal"]["text"])
     inf_all = set(df[df.formality == "informal"]["text"])
     metrics["teks_identik_antar_blok"] = len(fa_all & inf_all)
@@ -145,14 +100,12 @@ def verify(out, df):
                      f"informal; ini sifat korpus paralel yang diratakan dan tidak memengaruhi "
                      f"indeks per kelas")
 
-    # 5. rasio
     expected = {"train_set": 0.50, "val_set": 0.10, "retrieval_pool": 0.30, "test_set": 0.10}
     for name, sub in out.items():
         share = len(sub) / total
         if abs(share - expected[name]) > 0.005:
             problems.append(f"{name} rasionya {share:.3f}, diharapkan {expected[name]:.2f}")
     return problems, notes, metrics
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -221,7 +174,6 @@ def main():
     for t in targets:
         (t / "split_manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     print("  manifest ditulis: split_manifest.json")
-
 
 if __name__ == "__main__":
     main()

@@ -1,37 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-report_metrics.py
-=================
-Menghitung statistik ringkas dari berkas evaluasi per sampel
-(`evaluated_*.csv`) dan menulis tabel siap pakai untuk manuskrip.
-
-Mengapa bukan mean saja
------------------------
-Pelaporan mean saja membuat kolom fluency tidak terbaca: pada korpus Aaker
-sebagian output memiliki PPL sekitar 6,9 x 10^10, sehingga mean satu
-konfigurasi mencapai 276.051.597 sedangkan mediannya 75,55. Script ini
-melaporkan median, trimmed mean, dan proporsi output degenerate berdampingan.
-
-Kolom yang dikenali
--------------------
-Berkas hasil evaluasi memuat kolom berikut (nama lama dan nama baru):
-    style_strength              probabilitas kelas target (mentah)
-    style_strength_calibrated   probabilitas setelah temperature scaling (baru)
-    style_accuracy              benar atau tidaknya prediksi kelas target
-    content_preservation        cosine similarity encoder lama
-    content_preservation_<tag>   encoder independen tambahan (baru)
-    fluency_ppl                 perplexity per sampel
-    replication_rate_8          overlap n-gram dengan eksemplar (baru)
-
-Nama kolom yang tidak ada akan dilewati dengan pesan, sehingga script ini juga
-dapat dipakai untuk membedah hasil lama sebelum rerun.
-
-Pemakaian
----------
-    python report_metrics.py --dir ../fewshot_formality/evaluation_result/google_gemma-3-4b-it
-    python report_metrics.py --dir <folder> --csv out.csv --degenerate-threshold 1000
-"""
 import argparse
 import glob
 import os
@@ -45,7 +13,6 @@ import pandas as pd
 META = ["style_target", "retrieval_method", "alpha"]
 DEGENERATE_DEFAULT = 1000.0
 
-
 def trimmed_mean(x, proportion=0.10):
     x = np.asarray([v for v in x if np.isfinite(v)], dtype=float)
     if x.size == 0:
@@ -56,7 +23,6 @@ def trimmed_mean(x, proportion=0.10):
     if k == 0:
         return float(x.mean())
     return float(np.sort(x)[k:-k].mean())
-
 
 def summarise_series(x, threshold=None):
     x = pd.to_numeric(x, errors="coerce")
@@ -79,7 +45,6 @@ def summarise_series(x, threshold=None):
         out["n_degenerate"] = n_bad
         out["pct_degenerate"] = round(100 * n_bad / len(finite), 3)
     return out
-
 
 def evaluate_file(path, threshold):
     df = pd.read_csv(path)
@@ -111,16 +76,9 @@ def evaluate_file(path, threshold):
         row["n_retrieval_fallback"] = int(df["retrieval_fallback"].astype(bool).sum())
     return row
 
-
 SEED_RE = re.compile(r"_seed(\d+)_")
 
-
 def saring_seed(files, only_seed):
-    """Batasi berkas ke satu seed saja.
-
-    Nama berkas hasil memuat penanda _seed<N>_ sehingga seed dapat dipisahkan dari nama. Tanpa
-    penyaring ini, statistik mencampur beberapa seed tanpa peringatan.
-    """
     seeds = set()
     for f in files:
         seeds.update(SEED_RE.findall(os.path.basename(f)))
@@ -135,7 +93,6 @@ def saring_seed(files, only_seed):
               f"({', '.join(sorted(seeds))}), sehingga statistik di bawah mencampur seed. "
               f"Pakai --only-seed <N> untuk memilih satu seed.")
     return files
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -193,7 +150,6 @@ def main():
     if args.out:
         df.to_csv(args.out, index=False)
         print(f"\nTabel lengkap disimpan: {args.out}")
-
 
 if __name__ == "__main__":
     main()

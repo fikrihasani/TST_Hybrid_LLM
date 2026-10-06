@@ -1,41 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-select_alpha_dev.py
-===================
-Memilih nilai alpha untuk hybrid early fusion pada DEVELOPMENT SET, bukan pada
-test set.
-
-Mengapa
--------
-Sebelumnya kelima nilai alpha dijalankan pada test set yang sama, lalu yang
-"optimal" dipilih dari hasil test set itu. Reviewer 1 meminta pemilihan alpha
-berbasis development set. Script ini adalah pemilih, bukan penghasil: ia membaca
-hasil evaluasi pada alpha_dev lalu menerapkan kriteria yang sudah ditetapkan.
-
-Kriteria
---------
-Kriteria harus ditetapkan lebih dulu dan ditulis di naskah. Kriteria bawaan
-adalah rata-rata harmonik antara akurasi gaya biner dan content preservation:
-
-    H = 2 * acc * cp / (acc + cp)
-
-Alasan pemilihan: paper ini tentang trade-off antara gaya dan konten, sehingga
-kriteria yang menghukum ketimpangan lebih sesuai daripada rata-rata aritmetik
-yang membolehkan satu sisi menutupi sisi lain. Rata-rata harmonik juga dipakai
-untuk menegaskan bahwa keduanya diperlukan, bukan salah satu saja.
-
-Pemakaian
----------
-    python select_alpha_dev.py --dir <folder evaluated alpha_dev> \
-        --accuracy-col style_accuracy --content-col content_preservation \
-        --out alpha_star.json
-
-Dengan kriteria lain:
-    python select_alpha_dev.py --dir <folder> --criterion content \
-        --min-accuracy 0.5 --out alpha_star.json
-    # maksimalkan content preservation dengan syarat akurasi gaya minimal 0.5
-"""
 import argparse
 import glob
 import json
@@ -47,12 +11,10 @@ import pandas as pd
 
 META = ["style_target", "retrieval_method", "alpha"]
 
-
 def harmonic(acc, cp):
     if not np.isfinite(acc) or not np.isfinite(cp) or (acc + cp) <= 0:
         return float("nan")
     return 2 * acc * cp / (acc + cp)
-
 
 def main():
     ap = argparse.ArgumentParser()
@@ -134,7 +96,6 @@ def main():
         json.dump(payload, f, indent=2)
     print(f"\nDisimpan: {out}")
     print("Laporkan kurva sapuan lengkap di naskah, bukan hanya alpha terpilih.")
-
 
 if __name__ == "__main__":
     main()

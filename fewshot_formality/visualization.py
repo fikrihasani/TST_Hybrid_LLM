@@ -7,14 +7,12 @@ import seaborn as sns
 def parse_data(csv_path):
     df = pd.read_csv(csv_path)
     
-    # 1. Ekstrak jumlah shot dari nama file (misal: _5_results -> 5)
     def get_shots(filename):
         match = re.search(r'_(\d+)_results\.csv', filename)
         return int(match.group(1)) if match else 0
     
     df['num_shots'] = df['file_name'].apply(get_shots)
     
-    # 2. Buat label metode yang lebih rapi untuk sumbu X
     def format_method(row):
         method = str(row['retrieval_method'])
         if method == 'hybrid_early':
@@ -31,16 +29,13 @@ def plot_and_save(df, metric_col, title, ylabel, output_dir, filename, is_lower_
     plt.figure(figsize=(14, 7))
     sns.set_theme(style="whitegrid")
     
-    # Urutan logis untuk sumbu X
     order = [
         'Random', 'Bm25', 'Centroid', 'Dense',
         'Hybrid (α=0.1)', 'Hybrid (α=0.3)', 'Hybrid (α=0.5)', 
         'Hybrid (α=0.7)', 'Hybrid (α=0.9)'
     ]
-    # Filter order yang hanya ada di dataframe (mencegah error jika metode tidak lengkap)
     order = [m for m in order if m in df['method_label'].unique()]
     
-    # Mengecek jumlah unique shots untuk mengatur palet warna yang aman
     unique_shots = df['num_shots'].nunique()
     
     ax = sns.barplot(
@@ -57,10 +52,8 @@ def plot_and_save(df, metric_col, title, ylabel, output_dir, filename, is_lower_
     plt.ylabel(ylabel, fontsize=12, fontweight='bold')
     plt.xticks(rotation=45, ha='right')
     
-    # Sesuaikan legenda
     plt.legend(title='Few-Shot Count', bbox_to_anchor=(1.05, 1), loc='upper left')
     
-    # Jika metriknya Fluency PPL (Lower is Better), beri anotasi khusus
     if is_lower_better:
         plt.title(f"{title}\n(Lower is Better)", fontsize=14, pad=10)
     
@@ -80,9 +73,6 @@ def generate_visualizations(csv_file, mode="average", target_shots=None):
     print(f"\n[{mode.upper()}] Membaca data dari: {csv_file}")
     df = parse_data(csv_file)
     
-    # ---------------------------------------------------------
-    # FILTER DINAMIS BERDASARKAN JUMLAH SHOT
-    # ---------------------------------------------------------
     if target_shots is not None:
         if isinstance(target_shots, int):
             target_shots = [target_shots]
@@ -93,11 +83,9 @@ def generate_visualizations(csv_file, mode="average", target_shots=None):
                 return
             print(f"Memfilter visualisasi untuk {target_shots}-shot saja.")
     
-    # Pisahkan data berdasarkan target
     df_formal = df[df['style_target'] == 'formal'].copy()
     df_informal = df[df['style_target'] == 'informal'].copy()
     
-    # Setup prefix nama kolom dan direktori berdasarkan mode
     prefix = "avg_" if mode == "average" else "median_"
     title_prefix = "Average" if mode == "average" else "Median"
     
@@ -128,7 +116,6 @@ def generate_visualizations(csv_file, mode="average", target_shots=None):
     formal_out_dir = os.path.join("visualizations", mode, "formal")
     informal_out_dir = os.path.join("visualizations", mode, "informal")
     
-    # Eksekusi untuk folder Formal
     print(f"--- Generating FORMAL Visualizations ({mode}) ---")
     for m in metrics:
         if m["col"] in df_formal.columns:
@@ -141,7 +128,6 @@ def generate_visualizations(csv_file, mode="average", target_shots=None):
                 m["is_lower_better"]
             )
             
-    # Eksekusi untuk folder Informal
     print(f"--- Generating INFORMAL Visualizations ({mode}) ---")
     for m in metrics:
         if m["col"] in df_informal.columns:
@@ -161,14 +147,8 @@ if __name__ == "__main__":
     AVG_CSV_PATH = os.path.join(EVAL_DIR, MODEL_DIR, "summary_average_metrics.csv")
     MEDIAN_CSV_PATH = os.path.join(EVAL_DIR, MODEL_DIR, "summary_median_metrics.csv")
     
-    # KONFIGURASI FILTER SHOT:
-    # Isi dengan int tunggal: TARGET_SHOTS = 5
-    # Isi dengan list: TARGET_SHOTS = [5, 10]
-    # Biarkan None untuk memproses semua shot yang ada di CSV: TARGET_SHOTS = None
     TARGET_SHOTS = 5 
     
-    # Generate untuk Average
     generate_visualizations(AVG_CSV_PATH, mode="average", target_shots=TARGET_SHOTS)
     
-    # Generate untuk Median
     generate_visualizations(MEDIAN_CSV_PATH, mode="median", target_shots=TARGET_SHOTS)
