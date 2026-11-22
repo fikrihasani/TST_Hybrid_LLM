@@ -1,27 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-prompt_utils.py
-===============
-Perender prompt v2 untuk JCCE-10619 putaran 2. Pustaka standar saja, tanpa torch atau transformers,
-sehingga dapat diuji tanpa GPU.
+Target-aware prompt rendering utilities for Indonesian text style transfer.
+Uses standard library modules only so template parity can be verified without GPU dependencies.
 
-Peran
------
-Templat kanonis memuat empat placeholder: {target_label}, {target_definition},
-{style_examples_str}, dan {original_message}. Fungsi render_prompt mengganti keempatnya.
+Canonical templates contain four placeholders:
+    {target_label}, {target_definition}, {style_examples_str}, {original_message}
 
-Aturan yang dijaga
-------------------
-1. Blok GAYA TARGET selalu ada, pada semua kondisi, termasuk zero-shot.
-2. Kondisi zero-shot hanya mengosongkan isi blok CONTOH REFERENSI. Header blok tetap ada,
-   sehingga satu-satunya perbedaan antar kondisi terletak pada isi blok itu.
-3. Definisi target simetris: satu klausa, tiga sifat, tanpa petunjuk leksikal.
-
-Pemakaian di kode generasi
---------------------------
-    from prompt_utils import TARGETS, render_prompt
-    user_prompt = render_prompt(gen_template, examples_str, orig_msg, TARGETS[personality.lower()])
+Design invariants:
+1. The TARGET STYLE (GAYA TARGET) block is included in every condition, including zero-shot.
+2. Zero-shot differs from retrieval solely by leaving the REFERENCE EXAMPLES body empty.
+3. Target definitions use a uniform one-clause format with three descriptors.
 """
 from __future__ import annotations
 
@@ -29,8 +18,6 @@ import hashlib
 import os
 
 DEFAULT_PROMPT_FILE = "generation_prompt_v2_id.txt"
-# Varian prompt dibaca dari lingkungan, karena harness memilih L1 atau L2 dan menyetel variabel ini
-# saat menjalankan generasi. Nilai bawaan L1 hanya untuk pemakaian di luar harness.
 PROMPT_VERSION = os.environ.get("JCCE_PROMPT_VERSION", "v2-L1")
 
 TARGETS = {
@@ -52,12 +39,16 @@ TARGETS = {
     },
 }
 
-REQUIRED_PLACEHOLDERS = ("{target_label}", "{target_definition}",
-                         "{style_examples_str}", "{original_message}")
+REQUIRED_PLACEHOLDERS = (
+    "{target_label}",
+    "{target_definition}",
+    "{style_examples_str}",
+    "{original_message}",
+)
 
 
 def prompt_file_path(root=".", filename=None):
-    """Jalur berkas templat di dalam folder kerja korpus."""
+    """Return path to a prompt template file inside the corpus directory."""
     return os.path.join(root, "prompts", filename or DEFAULT_PROMPT_FILE)
 
 
@@ -71,23 +62,23 @@ def sha256_template(template):
 
 
 def check_template(template):
-    """Memeriksa kelengkapan templat. Mengembalikan daftar masalah; kosong berarti lolos."""
-    masalah = []
+    """Validate template placeholders and required target block header."""
+    issues = []
     for ph in REQUIRED_PLACEHOLDERS:
         n = template.count(ph)
         if n != 1:
-            masalah.append(f"placeholder {ph} muncul {n} kali, seharusnya 1")
+            issues.append(f"placeholder {ph} appears {n} times (expected 1)")
     if "### GAYA TARGET" not in template and "### TARGET STYLE" not in template:
-        masalah.append("header blok target tidak ditemukan")
+        issues.append("missing target style header ('### GAYA TARGET' or '### TARGET STYLE')")
     if "{target_label}" not in template:
-        masalah.append("templat tidak memuat {target_label}")
-    return masalah
+        issues.append("template missing {target_label}")
+    return issues
 
 
 def render_prompt(template, examples_str, original_message, target):
-    """Merender prompt untuk satu contoh. `target` adalah salah satu isi TARGETS."""
+    """Render a prompt for one source item using a target entry from TARGETS."""
     if "label" not in target or "definition" not in target:
-        raise ValueError("target harus memuat label dan definition")
+        raise ValueError("target dict must include 'label' and 'definition'")
     if examples_str is None:
         examples_str = ""
     return template.format(
@@ -99,19 +90,15 @@ def render_prompt(template, examples_str, original_message, target):
 
 
 def slice_example_block(rendered):
-    """Mengembalikan (sebelum, isi, sesudah) untuk blok CONTOH REFERENSI pada prompt terender.
-
-    Dipakai oleh pemeriksa paritas untuk membuktikan bahwa perbedaan antar kondisi hanya
-    berada di dalam isi blok ini.
-    """
-    penanda = ("### CONTOH REFERENSI", "### REFERENCE EXAMPLES")
-    header = next((p for p in penanda if p in rendered), None)
+    """Split a rendered prompt into (before, example_body, after) around the reference block."""
+    markers = ("### CONTOH REFERENSI", "### REFERENCE EXAMPLES")
+    header = next((p for p in markers if p in rendered), None)
     if header is None:
         return rendered, "", ""
-    awal = rendered.index(header) + len(header)
-    sisa = rendered[awal:]
-    akhir_rel = sisa.find("\n### ")
-    if akhir_rel == -1:
-        return rendered[:awal], rendered[awal:], ""
-    akhir = awal + akhir_rel
-    return rendered[:awal], rendered[awal:akhir], rendered[akhir:]
+    start = rendered.index(header) + len(header)
+    rest = rendered[start:]
+    end_rel = rest.find("\n### ")
+    if end_rel == -1:
+        return rendered[:start], rendered[start:], ""
+    end = start + end_rel
+    return rendered[:start], rendered[start:end], rendered[end:]

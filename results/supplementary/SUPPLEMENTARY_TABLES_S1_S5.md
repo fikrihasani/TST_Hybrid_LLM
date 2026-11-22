@@ -53,7 +53,7 @@ Each corpus evaluates 10 configurations per target (`k = 5` for retrieval condit
 
 - Operational target-aware Indonesian template (`generation_prompt_v2_id.txt`) SHA-256: `d26ba80565271060d1651bfb6f7d8a9624b44e35dc2e2d8ec5c41ed9b83e1d60`
 - English translation (`generation_prompt_v2_en.txt`) SHA-256: `82275a71b7bf0e3f4b5959f1cbefab6987595d9f5f9c63878df0489f29f9f1df`
-- Automated parity verification (`python scripts/check_prompt_parity.py`): `OK 4 target, 16 render, 0 temuan` — zero-shot differs from retrieval solely in the empty body of `### CONTOH REFERENSI` / `### REFERENCE EXAMPLES`.
+- Automated parity verification (`python scripts/check_prompt_parity.py`): `OK: 4 targets, 16 renders, 0 issues` (zero-shot differs from retrieval solely in the empty body of `### CONTOH REFERENSI` / `### REFERENCE EXAMPLES`).
 
 ### Unlabeled-Target Prompt Ablation Template (`fewshot_generation_prompt.txt`, Prompt v1)
 ```text
@@ -100,7 +100,7 @@ Terapkan gaya target ini secara konsisten pada seluruh keluaran.
 ### HASIL TEKS TARGET:
 ```
 
-### Operational Target-Aware Prompt — English Translation (`generation_prompt_v2_en.txt`)
+### Operational Target-Aware Prompt: English Translation (`generation_prompt_v2_en.txt`)
 ```text
 ### TEXT STYLE TRANSFER TASK
 Rewrite the "Source Text" below so that it fully adopts the patterns, tone, vocabulary, and structure of the TARGET STYLE defined below.

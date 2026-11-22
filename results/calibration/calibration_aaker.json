@@ -1,6 +1,6 @@
 {
   "temperature": 2.6779370307922363,
-  "val_file": "D:\\FILEMAHASISWA\\Fikri Hasani Folder\\JCCE-First Revision\\fewshot_aaker\\data\\brand_splits_v2\\val_set.csv",
+  "val_file": "fewshot_aaker/data/brand_splits_v2/val_set.csv",
   "n_val": 6205,
   "accuracy": 0.9168412570507655,
   "nll_before": 0.6086972951889038,

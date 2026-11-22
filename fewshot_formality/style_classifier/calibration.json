@@ -1,6 +1,6 @@
 {
   "temperature": 0.9804823398590088,
-  "val_file": "D:\\FILEMAHASISWA\\Fikri Hasani Folder\\JCCE-First Revision\\fewshot_formality\\data\\formality_splits_v2\\val_set.csv",
+  "val_file": "fewshot_formality/data/formality_splits_v2/val_set.csv",
   "n_val": 500,
   "accuracy": 0.944,
   "nll_before": 0.15781572461128235,

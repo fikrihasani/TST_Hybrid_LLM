@@ -1,6 +1,6 @@
 # Hybrid Semantic and Stylistic Embedding Retrieval Strategies for Indonesian Text Style Transfer
 
-Code, operational prompt templates, locked data splits, per-sample evaluation outputs, significance tables, and Supplementary Tables S1–S5 for the manuscript *Hybrid Semantic and Stylistic Embedding Retrieval Strategies for Indonesian Text Style Transfer using a Large Language Model* (Journal of Computational and Cognitive Engineering, JCCE-10619).
+Code, operational prompt templates, locked data splits, per-sample evaluation outputs, Holm-adjusted paired significance tables, and online diagnostic tables for the manuscript *Hybrid Semantic and Stylistic Embedding Retrieval Strategies for Indonesian Text Style Transfer using a Large Language Model* (Journal of Computational and Cognitive Engineering, JCCE-10619).
 
 ## Layout
 
@@ -11,7 +11,7 @@ Code, operational prompt templates, locked data splits, per-sample evaluation ou
 | `classifier_formality/` | Training script and splits for the two-class IndoBERT/RoBERTa formality style classifier |
 | `classifier_brand/` | Training script and splits for the five-class brand personality style classifier |
 | `scripts/` | Shared tools: split construction and leakage checks, classifier calibration, development-set alpha selection, prompt parity check (`check_prompt_parity.py`), evaluation (`evaluate_results.py`), paired significance testing (`bootstrap_significance.py`), Holm multiplicity adjustment (`holm_correction.py`), metric reporting, and human-evaluation export |
-| `results/` | All primary manuscript results (Tables 4–11, Supplementary Tables S1–S5, 40 per-sample CSVs, raw generations, 90-pair Holm significance tables, dev-set alpha sweep, pilot runs, calibration, error-analysis metadata) plus the archived unlabeled-target prompt ablation (`results/ablation_unlabeled_prompt/`). See `results/README.md` |
+| `results/` | All primary manuscript results (Tables 4-11, online diagnostic tables S1-S5, 40 per-sample CSVs, raw generations, 90-pair Holm significance tables, dev-set alpha sweep, pilot runs, calibration, error-analysis metadata) plus the archived unlabeled-target prompt ablation (`results/ablation_unlabeled_prompt/`). See `results/README.md` |
 | `requirements.txt` | Python dependencies with minimum versions |
 
 ## Environment
@@ -52,10 +52,10 @@ Full tables and exact per-sample outputs are in `results/tables/manuscript/` and
 
 | Corpus / Target | Zero-shot (Acc / CP) | Best Single-Paradigm Style (Acc / CP) | Highlighted Retrieval Trade-off (Acc / CP) |
 |---|---|---|---|
-| Formality — `formal` (`n = 250`) | 0.872 / 0.630 | Dense: 0.868 / 0.643 (Random-k: 0.900 / 0.621) | BM25+ adds +0.023 CP (`p_holm = 0.043`); Centroid drops Acc to 0.724 (`p_holm < 0.001`) |
-| Formality — `informal` (`n = 250`) | 0.988 / 0.728 | BM25+ / Centroid / Hybrids: 1.000 (all ns vs Zero-shot) | BM25+ reaches highest CP at 0.749 (+0.021 vs Zero-shot, `p_holm = 0.007`) |
-| Brand — `Competence` (`n = 500`) | 0.180 / 0.631 | Centroid: 0.852 / 0.496 | Hybrid `alpha = 0.3` (dev-selected): 0.838 / 0.535 (`p_holm < 0.001` vs Zero-shot) |
-| Brand — `Excitement` (`n = 500`) | 0.054 / 0.698 | Centroid: 0.190 / 0.676 | Hybrid `alpha = 0.1`–`0.3`: 0.204–0.186 Acc (near 0.200 five-class chance), 0.683–0.704 CP |
+| Formality: `formal` (`n = 250`) | 0.872 / 0.630 | Dense: 0.868 / 0.643 (Random-k: 0.900 / 0.621) | BM25+ adds +0.023 CP (`p_holm = 0.043`); Centroid drops Acc to 0.724 (`p_holm < 0.001`) |
+| Formality: `informal` (`n = 250`) | 0.988 / 0.728 | BM25+ / Centroid / Hybrids: 1.000 (all ns vs Zero-shot) | BM25+ reaches highest CP at 0.749 (+0.021 vs Zero-shot, `p_holm = 0.007`) |
+| Brand: `Competence` (`n = 500`) | 0.180 / 0.631 | Centroid: 0.852 / 0.496 | Hybrid `alpha = 0.3` (dev-selected): 0.838 / 0.535 (`p_holm < 0.001` vs Zero-shot) |
+| Brand: `Excitement` (`n = 500`) | 0.054 / 0.698 | Centroid: 0.190 / 0.676 | Hybrid `alpha = 0.1`-`0.3`: 0.204-0.186 Acc (near 0.200 five-class chance), 0.683-0.704 CP |
 
 ## Reproducing the Results
 

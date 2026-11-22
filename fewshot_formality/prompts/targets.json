@@ -1,6 +1,5 @@
 {
   "template_version": "v2-L1",
-  "catatan": "Definisi target dipakai apa adanya oleh fewshot_formality.py dan fewshot_aaker/main.py. Jangan menambah petunjuk leksikal per target; lihat PROTOKOL_PERBAIKAN_R2.md bagian 3.5.",
   "targets": {
     "formal": {
       "label": "Formal",
@@ -18,5 +17,6 @@
       "label": "Excitement",
       "definition": "persona merek yang bersemangat, ceria, dan menggugah"
     }
-  }
+  },
+  "note": "Target labels and one-clause definitions used across all retrieval and zero-shot conditions."
 }

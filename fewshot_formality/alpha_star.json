@@ -3,7 +3,7 @@
   "min_accuracy": null,
   "accuracy_column": "style_accuracy",
   "content_column": "content_preservation_LaBSE",
-  "source_dir": "C:\\Devs\\Code\\Python\\JCCE-First Revision-From Remote\\results\\alpha_dev\\formality",
+  "source_dir": "results/alpha_dev/formality",
   "n_files": 10,
   "picks": {
     "formal": {

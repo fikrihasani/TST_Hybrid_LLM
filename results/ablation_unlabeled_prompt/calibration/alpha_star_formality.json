@@ -3,7 +3,7 @@
   "min_accuracy": null,
   "accuracy_column": "style_accuracy",
   "content_column": "content_preservation_LaBSE",
-  "source_dir": "D:\\FILEMAHASISWA\\Fikri Hasani Folder\\JCCE-First Revision\\fewshot_formality\\evaluation_result_alphadev\\google_gemma-3-4b-it",
+  "source_dir": "fewshot_formality/evaluation_result_alphadev/google_gemma-3-4b-it",
   "n_files": 10,
   "picks": {
     "formal": {

@@ -1,164 +1,156 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-cek_paritas_prompt.py
-=====================
-Memeriksa bahwa templat prompt v2 memenuhi aturan simetri pada
-PROTOKOL_PERBAIKAN_R2.md bagian 3.5 dan menghasilkan perbedaan antar kondisi hanya pada
-blok "CONTOH REFERENSI".
+check_prompt_parity.py
+======================
+Verifies that target-aware prompt templates maintain strict symmetry across retrieval
+and zero-shot conditions, differing only inside the reference-examples block.
 
-Empat pemeriksaan:
-  1. {target_label} dan {target_definition} muncul pada setiap render.
-  2. Tidak ada placeholder yang tersisa setelah penggantian.
-  3. Render dengan isi contoh dan render tanpa isi contoh identik setelah isi contoh dihapus.
-  4. Bagian templat di luar blok target dan blok contoh identik pada keempat target.
+Checks performed:
+  1. Both {target_label} and {target_definition} appear inside the target-style block.
+  2. No unexpanded placeholders remain after rendering.
+  3. Retrieval and zero-shot renders are byte-identical once the exemplar body is stripped.
+  4. Template framing outside the target and example blocks is identical across all targets.
 
-Pemakaian:
-    python cek_paritas_prompt.py --template ../04_Rerun_v2/prompts/generation_prompt_v2_id.txt \
-        --targets ../04_Rerun_v2/prompts/targets.json
+Usage:
+    python scripts/check_prompt_parity.py \
+        --template fewshot_formality/prompts/generation_prompt_v2_id.txt \
+                   fewshot_formality/prompts/generation_prompt_v2_en.txt \
+        --targets  fewshot_formality/prompts/targets.json
 
-Keluaran yang diharapkan pada templat yang benar:
-    OK 4 target, 8 render, 0 temuan
-
-Kode keluar 0 bila nol temuan, 1 bila ada temuan.
+Exit code 0 when no issues are found; 1 otherwise.
 """
 import argparse
+import hashlib
 import json
 import os
 import re
 import sys
 
-SENTINEL = "<<<ISI_EKSEMPLAR>>>"
-SOURCE = "Kalimat sumber untuk pemeriksaan."
+SENTINEL = "<<<EXEMPLAR_BODY>>>"
+SOURCE = "Sample source sentence for parity verification."
 LABEL_TOKEN = "<TARGET>"
 
 
-def render(template, label, definition, isi_contoh):
+def render(template, label, definition, examples_body):
     out = template.replace("{target_label}", label)
     out = out.replace("{target_definition}", definition)
     out = out.replace("{original_message}", SOURCE)
-    out = out.replace("{style_examples_str}", isi_contoh)
+    out = out.replace("{style_examples_str}", examples_body)
     return out
 
 
-def tanpa_isi(teks):
-    return teks.replace(SENTINEL, "")
+def strip_examples(text):
+    return text.replace(SENTINEL, "")
 
 
-def normal_target(teks, label, definition):
-    return teks.replace(label, LABEL_TOKEN).replace(definition, LABEL_TOKEN)
+def normalize_target(text, label, definition):
+    return text.replace(label, LABEL_TOKEN).replace(definition, LABEL_TOKEN)
 
 
-def blok_target(template):
-    """Mengembalikan teks blok target, yaitu isi setelah header sampai header berikutnya."""
+def extract_target_block(template):
+    """Return (header, body) for the target-style section."""
     header = None
-    for kandidat in ("### GAYA TARGET", "### TARGET STYLE"):
-        if kandidat in template:
-            header = kandidat
+    for candidate in ("### GAYA TARGET", "### TARGET STYLE"):
+        if candidate in template:
+            header = candidate
             break
     if header is None:
         return None
     lines = template.splitlines()
-    mulai = next(i for i, ln in enumerate(lines) if ln.strip() == header)
-    isi = []
-    for ln in lines[mulai + 1:]:
+    start = next(i for i, ln in enumerate(lines) if ln.strip() == header)
+    body = []
+    for ln in lines[start + 1:]:
         if ln.strip().startswith("###"):
             break
-        isi.append(ln)
-    return header, "\n".join(isi)
+        body.append(ln)
+    return header, "\n".join(body)
 
 
 def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--template", required=True, nargs="+", help="satu atau beberapa berkas templat")
-    ap.add_argument("--targets", required=True, help="berkas JSON berisi peta target")
-    ap.add_argument("--keluaran", default=None)
+    ap = argparse.ArgumentParser(description="Verify symmetry of target-aware prompt templates.")
+    ap.add_argument("--template", required=True, nargs="+", help="One or more prompt template files")
+    ap.add_argument("--targets", required=True, help="JSON file containing target labels and definitions")
+    ap.add_argument("--out", "--keluaran", dest="out", default=None, help="Optional Markdown report path")
     args = ap.parse_args()
 
-    data = json.load(open(args.targets, encoding="utf-8"))
+    with open(args.targets, encoding="utf-8") as f:
+        data = json.load(f)
     targets = data["targets"] if "targets" in data else data
-    temuan = []
-    laporan = []
-    w = laporan.append
+    issues = []
+    report = []
+    w = report.append
 
     for path in args.template:
-        nama = os.path.basename(path)
-        template = open(path, encoding="utf-8").read()
-        w(f"\n## Templat `{nama}`\n")
-        w(f"- sha256: `{__import__('hashlib').sha256(template.encode('utf-8')).hexdigest()}`")
-        w(f"- panjang: {len(template)} karakter")
+        name = os.path.basename(path)
+        with open(path, encoding="utf-8") as f:
+            template = f.read()
+        sha = hashlib.sha256(template.encode("utf-8")).hexdigest()
+        w(f"\n## Template `{name}`\n")
+        w(f"- sha256: `{sha}`")
+        w(f"- length: {len(template)} chars")
 
-        blok = blok_target(template)
-        if blok is None:
-            temuan.append(f"{nama}: header blok target tidak ditemukan (harus '### GAYA TARGET' atau '### TARGET STYLE')")
-            w("- header blok target: TIDAK DITEMUKAN")
+        block = extract_target_block(template)
+        if block is None:
+            issues.append(f"{name}: missing target block header ('### GAYA TARGET' or '### TARGET STYLE')")
+            w("- target block header: NOT FOUND")
         else:
-            header, isi_blok = blok
-            w(f"- header blok target: `{header}`")
-            w(f"- isi blok target: {isi_blok.strip()!r}")
+            header, block_body = block
+            w(f"- target block header: `{header}`")
+            w(f"- target block body: {block_body.strip()!r}")
 
-        dasar = None
-        for nama_target, isi in targets.items():
-            label, definisi = isi["label"], isi["definition"]
-            r_contoh = render(template, label, definisi, SENTINEL)
-            r_kosong = render(template, label, definisi, "")
+        baseline = None
+        for target_name, entry in targets.items():
+            label, definition = entry["label"], entry["definition"]
+            r_fewshot = render(template, label, definition, SENTINEL)
+            r_zeroshot = render(template, label, definition, "")
 
-            # 1. label dan definisi hadir di dalam blok target pada teks yang sudah dirender
-            if blok is not None:
-                blok_r = blok_target(r_contoh)
-                isi_r = blok_r[1] if blok_r else ""
-                if label not in isi_r:
-                    temuan.append(f"{nama}/{nama_target}: label tidak berada di dalam blok target")
-                if definisi not in isi_r:
-                    temuan.append(f"{nama}/{nama_target}: definisi tidak berada di dalam blok target")
-                if r_contoh.count(definisi) != 1:
-                    temuan.append(f"{nama}/{nama_target}: definisi muncul {r_contoh.count(definisi)} kali, seharusnya 1")
+            if block is not None:
+                block_r = extract_target_block(r_fewshot)
+                body_r = block_r[1] if block_r else ""
+                if label not in body_r:
+                    issues.append(f"{name}/{target_name}: target label missing from target block")
+                if definition not in body_r:
+                    issues.append(f"{name}/{target_name}: target definition missing from target block")
+                if r_fewshot.count(definition) != 1:
+                    issues.append(f"{name}/{target_name}: target definition appears {r_fewshot.count(definition)} times (expected 1)")
 
-            # 2. tidak ada placeholder tersisa
-            sisa = re.findall(r"\{[a-z_]+\}", r_contoh)
-            if sisa:
-                temuan.append(f"{nama}/{nama_target}: placeholder tersisa {sorted(set(sisa))}")
+            leftover = re.findall(r"\{[a-z_]+\}", r_fewshot)
+            if leftover:
+                issues.append(f"{name}/{target_name}: unexpanded placeholders {sorted(set(leftover))}")
 
-            # 3. paritas kondisi
-            if tanpa_isi(r_contoh) != r_kosong:
-                temuan.append(f"{nama}/{nama_target}: render dengan dan tanpa contoh berbeda di luar blok contoh")
+            if strip_examples(r_fewshot) != r_zeroshot:
+                issues.append(f"{name}/{target_name}: few-shot and zero-shot renders differ outside reference block")
 
-            # 4. bagian di luar blok target dan contoh sama antar target
-            norm = normal_target(tanpa_isi(r_contoh), label, definisi)
-            if dasar is None:
-                dasar = norm
-            elif norm != dasar:
-                temuan.append(f"{nama}/{nama_target}: templat berbeda dari target pertama di luar blok target")
+            norm = normalize_target(strip_examples(r_fewshot), label, definition)
+            if baseline is None:
+                baseline = norm
+            elif norm != baseline:
+                issues.append(f"{name}/{target_name}: template framing differs across targets")
 
-            w(f"- {nama_target:11s} label={label!r} panjang_render={len(r_contoh)}")
+            w(f"- {target_name:11s} label={label!r} rendered_chars={len(r_fewshot)}")
 
-        # ringkasan per templat
-        n_render = 2 * len(targets)
-        w(f"- render diperiksa: {n_render}")
+        w(f"- renders checked: {2 * len(targets)}")
 
-    header = [
-        "# Hasil pemeriksaan paritas prompt v2",
+    header_lines = [
+        "# Prompt Parity Verification Report",
         "",
-        f"Berkas target: `{os.path.basename(args.targets)}`",
-        f"Jumlah templat: {len(args.template)}",
+        f"Targets file: `{os.path.basename(args.targets)}`",
+        f"Templates checked: {len(args.template)}",
     ]
-    ekor = [
-        "",
-        "## Temuan",
-        "",
-    ]
-    if temuan:
-        ekor += [f"{i}. {t}" for i, t in enumerate(temuan, 1)]
-        ekor += ["", f"GAGAL: {len(temuan)} temuan"]
+    footer_lines = ["", "## Findings", ""]
+    if issues:
+        footer_lines += [f"{i}. {t}" for i, t in enumerate(issues, 1)]
+        footer_lines += ["", f"FAILED: {len(issues)} issues"]
     else:
-        ekor += [f"OK {len(targets)} target, {2 * len(targets) * len(args.template)} render, 0 temuan"]
+        footer_lines += [f"OK: {len(targets)} targets, {2 * len(targets) * len(args.template)} renders, 0 issues"]
 
-    teks = "\n".join(header + laporan + ekor) + "\n"
-    if args.keluaran:
-        with open(args.keluaran, "w", encoding="utf-8") as f:
-            f.write(teks)
-    print(teks)
-    sys.exit(1 if temuan else 0)
+    output = "\n".join(header_lines + report + footer_lines) + "\n"
+    if args.out:
+        with open(args.out, "w", encoding="utf-8") as f:
+            f.write(output)
+    print(output)
+    sys.exit(1 if issues else 0)
 
 
 if __name__ == "__main__":
