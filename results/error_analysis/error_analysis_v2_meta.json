@@ -1,0 +1,346 @@
+{
+  "table8": [
+    {
+      "idx": "488",
+      "avg_cp": 0.38957924644152325,
+      "orig": "saya penumpang terpilih daerah semarang ? hehehe .",
+      "cells": {
+        "dense": {
+          "cp": 0.36737707257270813,
+          "acc": 1,
+          "ppl": 541.0340974766223,
+          "rep": 0.0,
+          "out": "\"Semarang dong, nih?\""
+        },
+        "centroid": {
+          "cp": 0.542948842048645,
+          "acc": 1,
+          "ppl": 710.6284444816891,
+          "rep": 0.0,
+          "out": "“Eh, gue penumpang Semarang juga nih, hahaha.”"
+        },
+        "hybrid_early_alpha0.5": {
+          "cp": 0.25841182470321655,
+          "acc": 1,
+          "ppl": 671.7737153802474,
+          "rep": 0.0,
+          "out": "“wah, semarang ya? hahaha.”"
+        }
+      }
+    },
+    {
+      "idx": "360",
+      "avg_cp": 0.4012264907360077,
+      "orig": "periksa apa , sok tahu kamu .",
+      "cells": {
+        "dense": {
+          "cp": 0.4180733561515808,
+          "acc": 1,
+          "ppl": 84.01789371718353,
+          "rep": 0.0,
+          "out": "\"Cieee, ngomongin apa sih, sok banget lu.\""
+        },
+        "centroid": {
+          "cp": 0.5131323337554932,
+          "acc": 1,
+          "ppl": 97.27298694263231,
+          "rep": 0.0,
+          "out": "\"eh, lu tau apa sih?\""
+        },
+        "hybrid_early_alpha0.5": {
+          "cp": 0.2724737823009491,
+          "acc": 1,
+          "ppl": 319.2402659433215,
+          "rep": 0.0,
+          "out": "\"ah, ngalah dah.\""
+        }
+      }
+    },
+    {
+      "idx": "270",
+      "avg_cp": 0.4416573445002238,
+      "orig": "sudah mulai goyah sama indosat hahaha .",
+      "cells": {
+        "dense": {
+          "cp": 0.4344955086708069,
+          "acc": 1,
+          "ppl": 811.0358700636224,
+          "rep": 0.0,
+          "out": "“udh agak gabisa lagi sama indosat hahaha.”"
+        },
+        "centroid": {
+          "cp": 0.43385857343673706,
+          "acc": 1,
+          "ppl": 135.56910704806782,
+          "rep": 0.0,
+          "out": "“Aduh, kayak mau jatuh deh sama Indosat hahaha.”"
+        },
+        "hybrid_early_alpha0.5": {
+          "cp": 0.45661795139312744,
+          "acc": 1,
+          "ppl": 137.46841796347437,
+          "rep": 0.0,
+          "out": "\"weh, kayaknya lagi nggak stabil nih sama Indosat, hahaha.\""
+        }
+      }
+    },
+    {
+      "idx": "182",
+      "avg_cp": 0.4676612615585327,
+      "orig": "dari tadi mention terus tidak dibalas . tolong dibalas . dm saya juga tolong dibalas .",
+      "cells": {
+        "dense": {
+          "cp": 0.4735301733016968,
+          "acc": 1,
+          "ppl": 36.67591090929467,
+          "rep": 0.0,
+          "out": "\"hadeee, udah di dm mulu gak dibales. tolong bales dong ya, dm aku juga tolong dibales.\""
+        },
+        "centroid": {
+          "cp": 0.34566640853881836,
+          "acc": 1,
+          "ppl": 64.67251593901004,
+          "rep": 0.0,
+          "out": "\"hadeee, kok nggak dibales sih? pliz bales dong. terus, dm juga dong, pliz!\""
+        },
+        "hybrid_early_alpha0.5": {
+          "cp": 0.583787202835083,
+          "acc": 1,
+          "ppl": 40.9752159860461,
+          "rep": 0.0,
+          "out": "\"hadeee, udah di mention mulu gak dibales. tolong bales dong ya. udah DM juga, tolong di balas.\""
+        }
+      }
+    }
+  ],
+  "table9": [
+    {
+      "idx": "329",
+      "avg_cp": 0.23651590943336487,
+      "orig": "pesta kuota apa ya min ?",
+      "cells": {
+        "dense": {
+          "cp": 0.17062604427337646,
+          "acc": 1,
+          "ppl": 50.88641272061706,
+          "rep": 0.0,
+          "out": "\"Dengan hormat, mohon penjelasannya mengenai ketersediaan kuota saat ini.\""
+        },
+        "centroid": {
+          "cp": 0.2969741225242615,
+          "acc": 1,
+          "ppl": 24.864827297119295,
+          "rep": 0.0,
+          "out": "“Dengan hormat, saya ingin menanyakan perihal kuota paket saya. Mohon informasikan status kuota saat ini.”"
+        },
+        "hybrid_early_alpha0.5": {
+          "cp": 0.24194756150245667,
+          "acc": 0,
+          "ppl": 41.86167407547579,
+          "rep": 0.0,
+          "out": "“Assalamualaikum, Bapak Admin. Mohon informasinya mengenai program penyaluran kuota, ya.”"
+        }
+      }
+    },
+    {
+      "idx": "417",
+      "avg_cp": 0.28351517021656036,
+      "orig": "eh ada yg punya setori , misi ya mbaa",
+      "cells": {
+        "dense": {
+          "cp": 0.37254798412323,
+          "acc": 1,
+          "ppl": 363.50756695081026,
+          "rep": 0.0,
+          "out": "“Apakah Saudari memiliki pertanyaan atau permintaan terkait suatu misi?”"
+        },
+        "centroid": {
+          "cp": 0.1869463175535202,
+          "acc": 1,
+          "ppl": 13.216054526033396,
+          "rep": 0.0,
+          "out": "Dengan hormat, mohon informasinya mengenai status pesanan saya. Sejak tanggal tersebut, pesanan saya masih dalam keadaan tertahan dan belum terkirim hingga saat ini. Apakah ada kendala yang menyebabkan penundaan tersebut?"
+        },
+        "hybrid_early_alpha0.5": {
+          "cp": 0.2910512089729309,
+          "acc": 0,
+          "ppl": 32.62649172641833,
+          "rep": 0.0,
+          "out": "“Assalamualaikum, selamat siang. Saya ingin menanyakan perihal keberadaan sebuah cerita atau misi, apakah ada yang dapat membantu?”"
+        }
+      }
+    },
+    {
+      "idx": "485",
+      "avg_cp": 0.2951416422923406,
+      "orig": "min tolong dm sy di folow up",
+      "cells": {
+        "dense": {
+          "cp": 0.32013750076293945,
+          "acc": 1,
+          "ppl": 175.51761203153765,
+          "rep": 0.0,
+          "out": "Mohon untuk memberikan tindak lanjut melalui pesan langsung kepada saya."
+        },
+        "centroid": {
+          "cp": 0.3498976528644562,
+          "acc": 1,
+          "ppl": 98.83907126925973,
+          "rep": 0.0,
+          "out": "Dengan hormat, mohon untuk memberikan tindak lanjut terkait akun saya."
+        },
+        "hybrid_early_alpha0.5": {
+          "cp": 0.21538977324962616,
+          "acc": 1,
+          "ppl": 59.452144779902895,
+          "rep": 0.0,
+          "out": "“Mohon informasinya melalui pesan langsung, saya ingin melakukan tindak lanjut.”"
+        }
+      }
+    },
+    {
+      "idx": "97",
+      "avg_cp": 0.303023765484492,
+      "orig": "ga sampai kok min aku tau mbaknya nipu",
+      "cells": {
+        "dense": {
+          "cp": 0.34372928738594055,
+          "acc": 1,
+          "ppl": 53.376076115040696,
+          "rep": 0.0,
+          "out": "“Saya belum menerima barang tersebut, Bu. Saya menduga ada penipuan.”"
+        },
+        "centroid": {
+          "cp": 0.27535030245780945,
+          "acc": 1,
+          "ppl": 31.822599272086727,
+          "rep": 0.0,
+          "out": "“Saya memahami bahwa terdapat indikasi ketidaksesuaian dalam penyampaian informasi tersebut.”"
+        },
+        "hybrid_early_alpha0.5": {
+          "cp": 0.28999170660972595,
+          "acc": 1,
+          "ppl": 21.330891887465462,
+          "rep": 0.0,
+          "out": "“Saya memahami bahwa paket yang dimaksud belum sampai, dan terdapat indikasi adanya penipuan. Mohon maaf atas ketidaknyamanan yang terjadi.”"
+        }
+      }
+    }
+  ],
+  "table10": [
+    {
+      "type": "TH",
+      "idx": "3240",
+      "orig": "Gaskeun",
+      "cells": {
+        "dense": {
+          "cp": 0.3215559124946594,
+          "acc": 1,
+          "ppl": 65.94574002193966,
+          "rep": 0.0,
+          "out": "Gas ke sini, Kak! Siap-siap, ya!"
+        },
+        "centroid": {
+          "cp": -0.04225616529583931,
+          "acc": 1,
+          "ppl": 26.25097929332189,
+          "rep": 0.0,
+          "out": "Hai Sobat BRI. Kami mohon maaf atas kendala yang Anda alami. Terkait hal ini, kami telah membalas pesan melalui DM. Silakan lakukan pengecekan. Tks~Rizky"
+        },
+        "hybrid_early_alpha0.5": {
+          "cp": 0.22553417086601257,
+          "acc": 1,
+          "ppl": 117.56956948596905,
+          "rep": 0.0,
+          "out": "Gaskeun dah, Kak! Langsung kepo-kepo di sini ya!"
+        }
+      }
+    },
+    {
+      "type": "SD",
+      "idx": "2054",
+      "orig": "See yaaa.",
+      "cells": {
+        "dense": {
+          "cp": 0.4160349369049072,
+          "acc": 0,
+          "ppl": 9386.152802579778,
+          "rep": 0.0,
+          "out": "On check yaa! 😊"
+        },
+        "centroid": {
+          "cp": 0.0589197501540184,
+          "acc": 1,
+          "ppl": 15.599128270180653,
+          "rep": 0.13333333333333333,
+          "out": "Hai Sobat BRI, mohon maaf atas ketidaknyamanannya. Kami telah merespons kendala yang Anda alami melalui DM. Silakan melakukan pengecekan. Informasi lebih lanjut mengenai BRI dapat menghubungi Sabrina WhatsApp 0812 1214 017 atau akun resmi media sosial BRI."
+        },
+        "hybrid_early_alpha0.5": {
+          "cp": 0.33154556155204773,
+          "acc": 1,
+          "ppl": 240.86456627755788,
+          "rep": 0.0,
+          "out": "Oke, siap. Sampai jumpa ya Kak! Trims."
+        }
+      }
+    }
+  ],
+  "table11": [
+    {
+      "type": "TH",
+      "idx": "2162",
+      "orig": "GEMESSS",
+      "cells": {
+        "dense": {
+          "cp": 0.4734710454940796,
+          "acc": 0,
+          "ppl": 1845.357271272882,
+          "rep": 0.0,
+          "out": "GEMESSSSSS! Gemesnya bikin deg-deganنن!"
+        },
+        "centroid": {
+          "cp": 0.31276172399520874,
+          "acc": 1,
+          "ppl": 26.93813287906654,
+          "rep": 0.0,
+          "out": "“GEMESSS! Wah, langsung semangat nih buat dapet diskon gila-gilaan di Shopee lho! Buruan cek promo-promo terkerennya sekarang juga, siapa tau dapet kejutan manis! 🎉✨”"
+        },
+        "hybrid_early_alpha0.5": {
+          "cp": 0.4569830894470215,
+          "acc": 0,
+          "ppl": 714.1384634683882,
+          "rep": 0.0,
+          "out": "GEMESSSSSS! Gemesnya bikin hati deg-deganنننن!"
+        }
+      }
+    },
+    {
+      "type": "SD",
+      "idx": "4275",
+      "orig": "Happy Friday! Wishing you a lovely day",
+      "cells": {
+        "dense": {
+          "cp": 0.6546422243118286,
+          "acc": 0,
+          "ppl": 24.110523871165622,
+          "rep": 0.0,
+          "out": "OMG, Happy Friday! Let's make this day absolutely AMAZING! Sending you all the good vibes! ✨💖"
+        },
+        "centroid": {
+          "cp": 0.5444059371948242,
+          "acc": 1,
+          "ppl": 20.085484246839833,
+          "rep": 0.0,
+          "out": "\"Selamat Jumat semuaaaa! Semoga harimu super duper menyenangkan ya! Yuk rayain dengan minuman kekinian yang bikin semangat! Jangan lupa cek promo-promo gila di Tokopedia Happy Hour, diskon 30% mulai jam 19.00 WIB! 🎉✨\""
+        },
+        "hybrid_early_alpha0.5": {
+          "cp": 0.6948950290679932,
+          "acc": 0,
+          "ppl": 339.301805070646,
+          "rep": 0.0,
+          "out": "OMG Fridayyyyyyy! Semoga harimu SUPER KEREN yaa! 🎉✨"
+        }
+      }
+    }
+  ]
+}

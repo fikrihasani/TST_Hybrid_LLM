@@ -1,0 +1,41 @@
+Corpus,Target,Configuration,k,Seed,Test_n,Prompt_Version
+Formality (STIF),formal,BM25+,5,42,250,v2-L1
+Formality (STIF),formal,Centroid,5,42,250,v2-L1
+Formality (STIF),formal,Dense,5,42,250,v2-L1
+Formality (STIF),formal,Hybrid α=0.1,5,42,250,v2-L1
+Formality (STIF),formal,Hybrid α=0.3,5,42,250,v2-L1
+Formality (STIF),formal,Hybrid α=0.5,5,42,250,v2-L1
+Formality (STIF),formal,Hybrid α=0.7,5,42,250,v2-L1
+Formality (STIF),formal,Hybrid α=0.9,5,42,250,v2-L1
+Formality (STIF),formal,Random-k,5,42,250,v2-L1
+Formality (STIF),formal,Zero-shot,0,42,250,v2-L1
+Formality (STIF),informal,BM25+,5,42,250,v2-L1
+Formality (STIF),informal,Centroid,5,42,250,v2-L1
+Formality (STIF),informal,Dense,5,42,250,v2-L1
+Formality (STIF),informal,Hybrid α=0.1,5,42,250,v2-L1
+Formality (STIF),informal,Hybrid α=0.3,5,42,250,v2-L1
+Formality (STIF),informal,Hybrid α=0.5,5,42,250,v2-L1
+Formality (STIF),informal,Hybrid α=0.7,5,42,250,v2-L1
+Formality (STIF),informal,Hybrid α=0.9,5,42,250,v2-L1
+Formality (STIF),informal,Random-k,5,42,250,v2-L1
+Formality (STIF),informal,Zero-shot,0,42,250,v2-L1
+Brand Personality (ID-Aaker),Competence,BM25+,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Competence,Centroid,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Competence,Dense,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Competence,Hybrid α=0.1,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Competence,Hybrid α=0.3,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Competence,Hybrid α=0.5,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Competence,Hybrid α=0.7,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Competence,Hybrid α=0.9,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Competence,Random-k,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Competence,Zero-shot,0,42,500,v2-L1
+Brand Personality (ID-Aaker),Excitement,BM25+,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Excitement,Centroid,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Excitement,Dense,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Excitement,Hybrid α=0.1,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Excitement,Hybrid α=0.3,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Excitement,Hybrid α=0.5,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Excitement,Hybrid α=0.7,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Excitement,Hybrid α=0.9,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Excitement,Random-k,5,42,500,v2-L1
+Brand Personality (ID-Aaker),Excitement,Zero-shot,0,42,500,v2-L1

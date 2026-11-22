@@ -1,0 +1,9 @@
+Family,Pairs,CI95_Excludes_Zero,Triple_Concordance_Uncorrected,Triple_Concordance_Holm,Dropped_After_Holm
+aaker_content_preservation_LaBSE,90,73,72,62,10
+aaker_replication_rate_8,90,37,35,30,5
+aaker_style_accuracy,90,67,66,51,15
+aaker_style_strength_calibrated,90,68,65,53,12
+formality_content_preservation_LaBSE,90,56,50,31,19
+formality_replication_rate_8,90,0,0,0,0
+formality_style_accuracy,90,20,18,7,11
+formality_style_strength_calibrated,90,55,48,28,20

@@ -1,0 +1,67 @@
+model_id,original_style,style_target,retrieval_method,alpha,original_message,paraphrased_message,is_human_eval,sample_index,sample_seed,run_seed,retrieved_exemplars,retrieval_fallback,n_exemplars,prompt_chars,output_tokens,eos_reached,output_chars
+google/gemma-3-4b-it,sincerity,excitement,zero_shot,N/A,Udah mulai bebersih rumah menyambut lebaran belom Beauties? Udah disuruh ngapain aja sama ortu di rumah?,"Teks Referensi:
+""Persiapan akhir menjelang Idulfitri telah dimulai. Apakah Anda sudah mulai merapikan rumah? Apakah Ibu dan Bapak sudah memberikan tugas-tugas tertentu?""
+
+Hasil Teks Target:
+""Sudah mulai merapikan rumah menyambut Hari Raya Aidilfitri belum? Sudah disuruh mengerjakan apa saja oleh orang tua di rumah?""",True,2253,4200002,42,[],False,0,812,77,False,317
+google/gemma-3-4b-it,ruggedness,excitement,zero_shot,N/A,untuk promo 17 An kita ada Flashdeal di online kalo ditoko promo 35% untuk produk2 tertentu Bro :),"Berikut adalah contoh referensi:
+""Selamat datang di penawaran istimewa kami! Nikmati diskon fantastis hingga 35% untuk pilihan produk terpilih kami. Jangan lewatkan kesempatan emas ini – kunjungi toko kami atau platform online kami untuk detail lengkap dan penawaran terbatas waktu!""",True,5950,4200025,42,[],False,0,806,64,False,283
+google/gemma-3-4b-it,competence,excitement,zero_shot,N/A,dan melalui fitur Pusat Bantuan pada myBCA mobile untuk dibantu pengecekan lebih lanjut. Tks ^Yena,"“Silakan manfaatkan fitur Help Center di aplikasi myBCA untuk mendapatkan bantuan tambahan. Terima kasih, Yena.”",True,1575,4200054,42,[],False,0,806,27,False,112
+google/gemma-3-4b-it,sophistication,excitement,zero_shot,N/A,Plan Ahead. Purchase your pre-buy voucher now and enjoy your stay anytime between 1 Jun - 30 Dec 2020. Each nightly voucher at IDR 2 000 000 nett including breakfast for two. For more informations and reservations please call +6221 2277 1888 or us through WhatsApp,"(Silakan berikan ""Contoh Referensi"" di sini. Saya memerlukan teks referensi untuk dapat menulis ulang ""Teks Sumber"" sesuai dengan gaya yang diinginkan.)",True,4236,4200062,42,[],False,0,972,37,False,152
+google/gemma-3-4b-it,sincerity,excitement,zero_shot,N/A,Not too much not too little just the perfect amount for that glow-up! swipe to find your perfect skincare portions!,"Contoh Referensi:
+""Satu set lengkap untuk transformasi kulit yang memukau! Dapatkan keseimbangan ideal, wujudkan kilau sempurna.""",True,2005,4200075,42,[],False,0,823,33,False,129
+google/gemma-3-4b-it,sincerity,excitement,zero_shot,N/A,Selain itu yang gak kalah seru mainkan juga digital gamenya dengan cara scan QR pada box mainan Happy Meal Sonic the Hedgehog atau scan QR-nya lewat kotak display mainan Happy Meal di restoran Mekdi.,"Contoh Referensi:
+""Untuk pengalaman yang lebih meriah, jangan lewatkan kesempatan untuk menikmati game digital eksklusif! Cukup scan kode QR yang tertera pada kemasan mainan Happy Meal Sonic atau melalui kotak display mainan Happy Meal yang tersedia di seluruh gerai McDonald’s.""",True,1728,4200090,42,[],False,0,907,62,False,279
+google/gemma-3-4b-it,competence,excitement,zero_shot,N/A,Selamat sore dan mohon maaf Kak. Berikut langkah-langkah transfer tiket melalui aplikasi Access by KAI: 1. Pada halaman utama Access by KAI pilih menu Tiket Saya . 2. Pilih tiket/kode booking yang akan di transfer. 3. Setelah muncul detail tiket dari kode booking tersebut pilih,"Berikut adalah panduan singkat untuk melakukan transfer tiket melalui aplikasi Access by KAI: Pertama, navigasikan ke bagian ""Tiket Saya"" pada tampilan utama aplikasi. Kemudian, seleksi tiket atau masukkan kode pemesanan yang ingin Anda transfer. Terakhir, klik pada detail tiket yang bersangkutan.",True,744,4200112,42,[],False,0,986,61,False,298
+google/gemma-3-4b-it,competence,excitement,zero_shot,N/A,Hai Sobat BRI tidak perlu khawatir. Pesan yang dikirimkan melalui DM akan segera kami respons. Mohon kesediaannya menunggu. Informasi lainnya dapat hubungi Contact BRI 1500017 Sabrina WhatsApp 0812 1214 017 atau akun resmi media sosial BRI yang terverifikasi. Tks~Dena,"Berikut adalah contoh referensi yang akan digunakan:
+
+""Halo pelanggan setia, janganlah cemas! Setiap pertanyaan atau keluhan yang Anda sampaikan melalui saluran pesan instan akan kami tangani secepatnya. Kami mengharapkan kesabaran dan pengertian Anda. Untuk informasi lebih lanjut, silakan hubungi layanan pelanggan kami di 1500017 atau melalui WhatsApp 0812 1214 017. Jangan lupa pantau akun resmi kami di media sosial untuk update terbaru. Terima kasih atas kepercayaan Anda.""",True,94,4200127,42,[],False,0,976,114,False,479
+google/gemma-3-4b-it,competence,excitement,zero_shot,N/A,Selamat malam Kak. Tersedia tarif khusus pada perjalanan rute Surabaya Gubeng-Mojokerto dengan KA Bima Argo Semeru Wijayakusuma Logawa sebesar 95 ribu (Eksekutif) & 70 ribu (Ekonomi). Pemesanan tiket dengan tarif khusus bisa dilakukan mulai 2 jam sebelum keberangkatan melalui,"Contoh Referensi:
+""Halo Bapak/Ibu. Nikmati penawaran istimewa untuk perjalanan dari Stasiun Surabaya Pasar ke Stasiun Malang, dengan Kereta Api Semarang Sumobumi yang menawarkan harga mulai dari Rp 120.000 (Eksekutif) dan Rp 85.000 (Ekonomi). Pemesanan tiket dengan harga spesial dapat dilakukan maksimal 3 jam sebelum keberangkatan, segera hubungi kami.""",True,794,4200217,42,[],False,0,984,99,False,355
+google/gemma-3-4b-it,sincerity,excitement,zero_shot,N/A,GIVEAWAY TIME Buat yang belum nyobain moisturizing cream emina Mina mau bagi2 gratis ahh!~ Caranya: 1. Follow twitter 2. RT & tweet ini 3. REPLY dengan alesan kamu pengen coba moisturizing cream emina Periode: 8-12 Agustus 2023 Good luck bestie!,"**CONTOH REFERENSI:**
+
+""Raih kesempatan memenangkan hadiah eksklusif! 🎁 Kami akan memilih beberapa pemenang secara acak dari mereka yang memenuhi syarat. Berikut cara berpartisipasi: 1. Ikuti akun Instagram kami. 2. Posting foto atau video kreatif yang menunjukkan bagaimana Anda menikmati produk kami. 3. Gunakan hashtag #NamaBrandHadiah dan tag kami. Periode: 1-31 Juli 2023. Semoga beruntung!""",True,2046,4200237,42,[],False,0,953,106,False,396
+google/gemma-3-4b-it,competence,excitement,zero_shot,N/A,Mohon maaf atas kesalahan sapa nama sebelumnya ya Bapak/Ibu Pelanggan. :) Tks^Clara,"(Silakan berikan ""Contoh Referensi"" yang ingin digunakan sebagai acuan. Saya membutuhkan teks referensi untuk dapat menulis ulang teks sumber sesuai dengan instruksi Anda.)",True,1555,4200265,42,[],False,0,791,37,False,172
+google/gemma-3-4b-it,ruggedness,excitement,zero_shot,N/A,Tomorrow! Gear sale up to 30% only at Royal Enfield Gear Store PIM 2 Jakarta . . .,"Berikut adalah contoh referensi yang akan digunakan untuk memandu gaya penulisan ulang:
+
+**Contoh Referensi:**
+
+""Jangan lewatkan! Penawaran spesial untuk koleksi aksesoris motor Anda. Diskon hingga 50% hanya di Toko Aksesoris Motor Jaya, Jalan Merdeka No. 10 Jakarta Pusat. Stok terbatas, segera kunjungi!""",True,5997,4200285,42,[],False,0,790,80,False,306
+google/gemma-3-4b-it,sophistication,excitement,zero_shot,N/A,Udah restock makeup skincare atau parfum buat Lebaran nanti gak nih? Kalau belum... Mimins mau SPILL promo yang BEST DEAL banget!~,"Contoh Referensi:
+""Jangan sampai ketinggalan, ladies! Koleksi terbaru parfum dan produk perawatan kulit premium kami sudah hadir kembali, siap menemani momen Lebaran Anda. Dapatkan penawaran spesial dan harga terbaik sebelum kehabisan!""
+
+Teks Hasil:
+""Udah restock makeup skincare atau parfum buat Lebaran nanti gak nih? Kalau belum… Mimi mau BLUR promo yang PALING MURAH banget!~""",True,3575,4200335,42,[],False,0,838,92,False,380
+google/gemma-3-4b-it,competence,excitement,zero_shot,N/A,Hai Sobat BRI. Mohon maaf atas kendala BRImo yang dialami. Guna tindak lanjut kami sudah mengirimkan pesan melalui DM. Silakan lakukan pengecekan ya. Tks~Hanif,"Contoh Referensi:
+""Kepada Yth. Pelanggan setia,
+
+Dengan berat hati kami sampaikan bahwa terdapat kendala teknis yang sedang kami selesaikan. Tim kami telah melakukan tindakan perbaikan dan akan segera mengirimkan pemberitahuan resmi melalui saluran komunikasi yang tertera. Mohon bersabar dan pantau terus perkembangan terbaru. Atas perhatian dan pengertian Anda, kami ucapkan terima kasih.""",True,361,4200352,42,[],False,0,867,86,False,391
+google/gemma-3-4b-it,sincerity,excitement,zero_shot,N/A,kalo cuma bisa bawa 1 produk skincare ke pulau tak berpenghuni kamu bakal bawa apa? minty jelas sunscreen sih ya,"Jika terpaksa memilih satu item perawatan kulit untuk dibawa ke sebuah pulau terpencil, saya akan memilih tabir surya. Tentu saja.",True,2145,4200356,42,[],False,0,820,30,False,130
+google/gemma-3-4b-it,competence,excitement,zero_shot,N/A,melalui DM resmi Twitter yang bercentang emas agar dapat kami bantu cek. Tks ^Dares,"“Melalui pesan langsung resmi Twitter yang berlogo centang biru, kami siap membantu verifikasi. Terima kasih atas dukungan!”",True,1331,4200384,42,[],False,0,791,27,False,124
+google/gemma-3-4b-it,sophistication,excitement,zero_shot,N/A,Dapper up with us as we turn Nautilus Bar back to the Roaring 20 s and swing the night away with live Jazz music.,"Contoh Referensi:
+“Bergabunglah bersama kami dalam perayaan yang tak terlupakan saat kami menghidupkan kembali suasana glamor tahun 1920-an di Ballroom Majestic. Biarkan musik Gershwin yang memukau dan tarian yang memikat membawa Anda kembali ke era keemasan.”
+
+Teks Hasil:
+“Bersukacitalah bersama kami saat kami menghidupkan kembali suasana keemasan tahun 1920-an di The Velvet Lounge, dan biarkan musik-musik yang memikat membawa Anda menari hingga larut malam.”",True,4256,4200394,42,[],False,0,821,124,False,464
+google/gemma-3-4b-it,sincerity,excitement,zero_shot,N/A,Yuk ajak bestie dan keluarga ke Mekdi terdekat sekarang atau pesan di McDelivery GrabFood GoFood dan ShopeeFood. Promo berlaku juga untuk pembelian PaNas atau PaMer Ayam McD Krispy ya.,"Jangan lewatkan kesempatan emas! Undang sahabat terdekat dan keluarga untuk menikmati hidangan lezat di McD terdekat. Atau, pesan melalui McDelivery di GrabFood, GoFood, atau ShopeeFood. Penawaran spesial juga berlaku untuk pembelian Paket PaNas atau Paket PaMer Ayam McD Krispy.",True,1634,4200398,42,[],False,0,892,63,False,279
+google/gemma-3-4b-it,sophistication,excitement,zero_shot,N/A,Mau dapat exclusive offer? Kunjungi link ini ya,"Tentu, berikan saya ""Teks Sumber"" dan ""Contoh Referensi"" agar saya dapat memodifikasi gaya bahasanya. Saya siap untuk menyelesaikan tugas ini.",True,3999,4200411,42,[],False,0,755,37,False,142
+google/gemma-3-4b-it,competence,excitement,zero_shot,N/A,Hai Sobat BRI. Mohon maaf atas kendala transaksi yang dialami. Mohon dipastikan apakah transaksi yang dilakukan mengurangi saldo rekening? Tks~Luis,"Contoh Referensi:
+""Kepada Yth. Pelanggan setia,
+
+Dengan hormat, kami mohon maaf atas ketidaknyamanan yang mungkin Anda alami terkait dengan transaksi yang Anda lakukan. Kami mengimbau Anda untuk segera mengecek saldo rekening Anda. Atas perhatian dan kerjasamanya, kami ucapkan terima kasih.""
+
+Hasil Teks Target:
+""Halo Pelanggan XYZ. Kami mohon maaf atas kendala yang mungkin Anda temui dalam transaksi. Mohon konfirmasikan apakah transaksi tersebut berdampak pada saldo rekening Anda. Terima kasih atas pengertiannya.""",True,363,4200434,42,[],False,0,855,121,False,519
+google/gemma-3-4b-it,sophistication,excitement,zero_shot,N/A,Rekan Jurnalis dari sedang kompetisi melepas ban,"Contoh Referensi:
+""Sang Pemimpin Kota, dengan langkah mantap, mengumumkan kebijakan baru yang akan mengubah lanskap sosial kota.""
+""Para Ahli Astronom, dengan teleskop canggih, mendeteksi sinyal aneh dari galaksi yang jauh.""
+""Para Seniman Terkenal, dengan kuas berani, menciptakan karya-karya yang memukau dan menggugah.""
+
+Hasil Teks Target:
+""Sang Penulis, dengan pena lincah, merangkum esensi sebuah kisah yang tak terlupakan.""",True,4106,4200440,42,[],False,0,756,117,False,427
+google/gemma-3-4b-it,ruggedness,excitement,zero_shot,N/A,Consina Spyder Seal & Drybag: melalui,"Teks Sumber: ""Consina Spyder Seal & Drybag: melalui""",True,5664,4200453,42,[],False,0,745,18,False,52
+google/gemma-3-4b-it,sophistication,excitement,zero_shot,N/A,Nah sambil ngisi siang ini.. Yuk pajang hasil foto Vespa terbaikmu di,"Contoh Referensi:
+""Dengan senang hati, mari kita pamerkan momen-momen indah perjalananmu bersama Vespa tercinta! Jangan ragu untuk membagikan keindahan setiap sudut dan setiap cerita.""",True,4228,4200457,42,[],False,0,777,45,False,184
+google/gemma-3-4b-it,ruggedness,excitement,zero_shot,N/A,Warna baru desain favorit ini bakal bikin penampilan lebih segar. Dapatkan Ventura Copper di,"Contoh Referensi:
+""Koleksi terbaru kami menghadirkan sentuhan inovasi yang tak tertandingi. Temukan Elegance Emerald, sebuah pernyataan gaya yang memikat hati.""",True,5874,4200469,42,[],False,0,800,41,False,160
+google/gemma-3-4b-it,sincerity,excitement,zero_shot,N/A,Sementara itu sekitar 6.700 paket sembako juga telah diberikan untuk mengurangi beban kebutuhan hidup para pekerja di sektor informal pemulung pengemudi angkutan umum dan pekerja harian lainnya,"(Silakan berikan ""Contoh Referensi"" di sini. Saya membutuhkan contoh referensi untuk dapat menulis ulang teks sumber sesuai instruksi Anda.)",True,6130,4200490,42,[],False,0,901,32,False,140

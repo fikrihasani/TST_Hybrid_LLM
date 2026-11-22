@@ -1,0 +1,20 @@
+### TEXT STYLE TRANSFER TASK
+Rewrite the "Source Text" below so that it fully adopts the patterns, tone, vocabulary, and structure of the TARGET STYLE defined below.
+
+### TARGET STYLE
+{target_label}: {target_definition}
+Apply this target style consistently across the whole output.
+
+### REFERENCE EXAMPLES
+{style_examples_str}
+
+### SOURCE TEXT TO BE MODIFIED
+"{original_message}"
+
+### Operational Instructions:
+- Extract the essence of the information from the "Source Text".
+- Reshape the text structurally and stylistically so that it matches the characteristics, diction, and grammar of the TARGET STYLE.
+- Output only the rewritten text.
+- Do not add explanations, openings, closings, or notes of any kind.
+
+### RESULTING TARGET TEXT:

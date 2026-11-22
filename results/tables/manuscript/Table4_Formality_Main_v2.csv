@@ -1,0 +1,21 @@
+Style Target,Method,Content Preservation (LaBSE),Style Accuracy,Style Strength
+formal,BM25+,0.654,0.856,0.658
+formal,Centroid,0.566,0.724,0.597
+formal,Dense,0.643,0.868,0.653
+formal,Hybrid α=0.1,0.583,0.796,0.621
+formal,Hybrid α=0.3,0.611,0.824,0.628
+formal,Hybrid α=0.5,0.633,0.816,0.638
+formal,Hybrid α=0.7,0.639,0.848,0.648
+formal,Hybrid α=0.9,0.647,0.852,0.646
+formal,Random-k,0.621,0.900,0.666
+formal,Zero-shot,0.630,0.872,0.677
+informal,BM25+,0.749,1.000,0.970
+informal,Centroid,0.723,1.000,0.958
+informal,Dense,0.745,0.996,0.973
+informal,Hybrid α=0.1,0.720,1.000,0.963
+informal,Hybrid α=0.3,0.728,1.000,0.968
+informal,Hybrid α=0.5,0.737,1.000,0.970
+informal,Hybrid α=0.7,0.742,1.000,0.973
+informal,Hybrid α=0.9,0.740,1.000,0.975
+informal,Random-k,0.734,1.000,0.979
+informal,Zero-shot,0.728,0.988,0.935

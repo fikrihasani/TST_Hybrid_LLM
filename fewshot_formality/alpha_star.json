@@ -3,20 +3,20 @@
   "min_accuracy": null,
   "accuracy_column": "style_accuracy",
   "content_column": "content_preservation_LaBSE",
-  "source_dir": "D:\\FILEMAHASISWA\\Fikri Hasani Folder\\JCCE-First Revision\\fewshot_formality\\evaluation_result_alphadev\\google_gemma-3-4b-it",
+  "source_dir": "C:\\Devs\\Code\\Python\\JCCE-First Revision-From Remote\\results\\alpha_dev\\formality",
   "n_files": 10,
   "picks": {
     "formal": {
-      "alpha": 0.1,
-      "accuracy": 0.136,
-      "content_preservation": 0.69427,
-      "harmonic": 0.22745
+      "alpha": 0.9,
+      "accuracy": 0.832,
+      "content_preservation": 0.64717,
+      "harmonic": 0.72804
     },
     "informal": {
-      "alpha": 0.7,
-      "accuracy": 0.968,
-      "content_preservation": 0.78369,
-      "harmonic": 0.86615
+      "alpha": 0.9,
+      "accuracy": 1.0,
+      "content_preservation": 0.74589,
+      "harmonic": 0.85445
     }
   },
   "sweep": [
@@ -25,90 +25,90 @@
       "style_target": "formal",
       "alpha": 0.1,
       "n": 250,
-      "accuracy": 0.136,
-      "content_preservation": 0.69427,
-      "harmonic": 0.22745
+      "accuracy": 0.756,
+      "content_preservation": 0.58064,
+      "harmonic": 0.65681
     },
     {
       "file": "evaluated_v2_STIF_formal_fewshot_hybrid_early_alpha0.3_5_seed42_results.csv",
       "style_target": "formal",
       "alpha": 0.3,
       "n": 250,
-      "accuracy": 0.116,
-      "content_preservation": 0.72953,
-      "harmonic": 0.20017
+      "accuracy": 0.836,
+      "content_preservation": 0.6136,
+      "harmonic": 0.70774
     },
     {
       "file": "evaluated_v2_STIF_formal_fewshot_hybrid_early_alpha0.5_5_seed42_results.csv",
       "style_target": "formal",
       "alpha": 0.5,
       "n": 250,
-      "accuracy": 0.12,
-      "content_preservation": 0.74094,
-      "harmonic": 0.20655
+      "accuracy": 0.82,
+      "content_preservation": 0.62235,
+      "harmonic": 0.70763
     },
     {
       "file": "evaluated_v2_STIF_formal_fewshot_hybrid_early_alpha0.7_5_seed42_results.csv",
       "style_target": "formal",
       "alpha": 0.7,
       "n": 250,
-      "accuracy": 0.128,
-      "content_preservation": 0.74233,
-      "harmonic": 0.21835
+      "accuracy": 0.832,
+      "content_preservation": 0.64165,
+      "harmonic": 0.72453
     },
     {
       "file": "evaluated_v2_STIF_formal_fewshot_hybrid_early_alpha0.9_5_seed42_results.csv",
       "style_target": "formal",
       "alpha": 0.9,
       "n": 250,
-      "accuracy": 0.108,
-      "content_preservation": 0.7598,
-      "harmonic": 0.18912
+      "accuracy": 0.832,
+      "content_preservation": 0.64717,
+      "harmonic": 0.72804
     },
     {
       "file": "evaluated_v2_STIF_informal_fewshot_hybrid_early_alpha0.1_5_seed42_results.csv",
       "style_target": "informal",
       "alpha": 0.1,
       "n": 250,
-      "accuracy": 0.968,
-      "content_preservation": 0.77595,
-      "harmonic": 0.8614
+      "accuracy": 1.0,
+      "content_preservation": 0.71715,
+      "harmonic": 0.83528
     },
     {
       "file": "evaluated_v2_STIF_informal_fewshot_hybrid_early_alpha0.3_5_seed42_results.csv",
       "style_target": "informal",
       "alpha": 0.3,
       "n": 250,
-      "accuracy": 0.98,
-      "content_preservation": 0.77451,
-      "harmonic": 0.86522
+      "accuracy": 1.0,
+      "content_preservation": 0.73273,
+      "harmonic": 0.84575
     },
     {
       "file": "evaluated_v2_STIF_informal_fewshot_hybrid_early_alpha0.5_5_seed42_results.csv",
       "style_target": "informal",
       "alpha": 0.5,
       "n": 250,
-      "accuracy": 0.948,
-      "content_preservation": 0.79047,
-      "harmonic": 0.8621
+      "accuracy": 0.996,
+      "content_preservation": 0.73782,
+      "harmonic": 0.84769
     },
     {
       "file": "evaluated_v2_STIF_informal_fewshot_hybrid_early_alpha0.7_5_seed42_results.csv",
       "style_target": "informal",
       "alpha": 0.7,
       "n": 250,
-      "accuracy": 0.968,
-      "content_preservation": 0.78369,
-      "harmonic": 0.86615
+      "accuracy": 0.996,
+      "content_preservation": 0.74671,
+      "harmonic": 0.85353
     },
     {
       "file": "evaluated_v2_STIF_informal_fewshot_hybrid_early_alpha0.9_5_seed42_results.csv",
       "style_target": "informal",
       "alpha": 0.9,
       "n": 250,
-      "accuracy": 0.96,
-      "content_preservation": 0.77535,
-      "harmonic": 0.85785
+      "accuracy": 1.0,
+      "content_preservation": 0.74589,
+      "harmonic": 0.85445
     }
   ]
 }

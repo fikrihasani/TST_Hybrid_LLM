@@ -1,0 +1,5 @@
+sample_index,Original Text,Dense,Centroid,Hybrid alpha=0.5
+488,saya penumpang terpilih daerah semarang ? hehehe .,"""Semarang dong, nih?""","“Eh, gue penumpang Semarang juga nih, hahaha.”","“wah, semarang ya? hahaha.”"
+360,"periksa apa , sok tahu kamu .","""Cieee, ngomongin apa sih, sok banget lu.""","""eh, lu tau apa sih?""","""ah, ngalah dah."""
+270,sudah mulai goyah sama indosat hahaha .,“udh agak gabisa lagi sama indosat hahaha.”,"“Aduh, kayak mau jatuh deh sama Indosat hahaha.”","""weh, kayaknya lagi nggak stabil nih sama Indosat, hahaha."""
+182,dari tadi mention terus tidak dibalas . tolong dibalas . dm saya juga tolong dibalas .,"""hadeee, udah di dm mulu gak dibales. tolong bales dong ya, dm aku juga tolong dibales.""","""hadeee, kok nggak dibales sih? pliz bales dong. terus, dm juga dong, pliz!""","""hadeee, udah di mention mulu gak dibales. tolong bales dong ya. udah DM juga, tolong di balas."""

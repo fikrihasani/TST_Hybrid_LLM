@@ -25,3 +25,8 @@ env/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Local archives and environment secrets
+bundle_*.zip
+.env
+.env.*

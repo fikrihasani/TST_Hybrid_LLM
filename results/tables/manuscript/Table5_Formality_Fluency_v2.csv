@@ -1,0 +1,21 @@
+Style Target,Method,Median PPL,Trimmed 10% PPL,Degenerate (%)
+formal,BM25+,51.37,67.13,0.80%
+formal,Centroid,30.38,36.26,0.40%
+formal,Dense,51.63,66.22,1.60%
+formal,Hybrid α=0.1,34.51,43.05,1.20%
+formal,Hybrid α=0.3,44.54,49.58,1.20%
+formal,Hybrid α=0.5,48.51,60.77,1.20%
+formal,Hybrid α=0.7,45.57,60.33,2.00%
+formal,Hybrid α=0.9,49.38,61.41,1.60%
+formal,Random-k,44.39,58.56,0.40%
+formal,Zero-shot,51.93,71.98,2.00%
+informal,BM25+,113.81,139.70,1.60%
+informal,Centroid,96.70,112.07,0.80%
+informal,Dense,114.60,141.28,2.80%
+informal,Hybrid α=0.1,86.65,106.36,0.80%
+informal,Hybrid α=0.3,101.57,124.69,2.40%
+informal,Hybrid α=0.5,100.25,126.84,1.20%
+informal,Hybrid α=0.7,121.07,138.29,2.80%
+informal,Hybrid α=0.9,117.06,145.49,3.20%
+informal,Random-k,110.07,138.70,4.00%
+informal,Zero-shot,77.17,94.96,0.80%

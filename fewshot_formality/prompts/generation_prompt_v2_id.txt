@@ -1,0 +1,20 @@
+### TUGAS TRANSFER GAYA TEKS
+Tulis ulang "Teks Sumber" di bawah ini sehingga sepenuhnya mengadopsi pola, nada, leksikal, dan struktur dari GAYA TARGET yang ditetapkan.
+
+### GAYA TARGET
+{target_label}: {target_definition}
+Terapkan gaya target ini secara konsisten pada seluruh keluaran.
+
+### CONTOH REFERENSI
+{style_examples_str}
+
+### TEKS SUMBER UNTUK DIUBAH
+"{original_message}"
+
+### Instruksi Operasional:
+- Ekstrak intisari informasi dari "Teks Sumber".
+- Bentuk ulang teks secara struktural dan stilistika agar selaras dengan karakteristik, diksi, dan tata bahasa pada GAYA TARGET.
+- Hanya keluarkan teks hasil penulisan ulang.
+- Jangan tambahkan penjelasan, pembuka, penutup, atau catatan apapun.
+
+### HASIL TEKS TARGET:

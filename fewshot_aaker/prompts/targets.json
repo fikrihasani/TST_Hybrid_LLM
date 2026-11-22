@@ -1,0 +1,22 @@
+{
+  "template_version": "v2-L1",
+  "catatan": "Definisi target dipakai apa adanya oleh fewshot_formality.py dan fewshot_aaker/main.py. Jangan menambah petunjuk leksikal per target; lihat PROTOKOL_PERBAIKAN_R2.md bagian 3.5.",
+  "targets": {
+    "formal": {
+      "label": "Formal",
+      "definition": "ragam bahasa Indonesia resmi dan baku"
+    },
+    "informal": {
+      "label": "Informal",
+      "definition": "ragam bahasa Indonesia percakapan sehari-hari yang santai"
+    },
+    "competence": {
+      "label": "Competence",
+      "definition": "persona merek yang kompeten, kredibel, dan meyakinkan"
+    },
+    "excitement": {
+      "label": "Excitement",
+      "definition": "persona merek yang bersemangat, ceria, dan menggugah"
+    }
+  }
+}

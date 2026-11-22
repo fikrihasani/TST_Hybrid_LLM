@@ -1,0 +1,21 @@
+Style Target,Method,Median PPL,Trimmed 10% PPL,Degenerate (%)
+Competence,BM25+,33.33,42.77,1.00%
+Competence,Centroid,31.10,34.97,0.40%
+Competence,Dense,41.74,63.93,3.60%
+Competence,Hybrid α=0.1,29.06,32.75,0.00%
+Competence,Hybrid α=0.3,34.03,41.73,0.40%
+Competence,Hybrid α=0.5,39.39,50.84,2.20%
+Competence,Hybrid α=0.7,38.48,59.86,3.60%
+Competence,Hybrid α=0.9,44.24,63.06,3.40%
+Competence,Random-k,25.86,30.95,0.60%
+Competence,Zero-shot,33.63,48.26,1.60%
+Excitement,BM25+,42.34,52.36,0.00%
+Excitement,Centroid,37.18,40.48,0.00%
+Excitement,Dense,38.32,50.35,2.20%
+Excitement,Hybrid α=0.1,38.17,42.04,0.00%
+Excitement,Hybrid α=0.3,40.39,48.04,2.00%
+Excitement,Hybrid α=0.5,40.33,51.04,1.60%
+Excitement,Hybrid α=0.7,42.07,50.48,2.60%
+Excitement,Hybrid α=0.9,39.33,50.38,2.60%
+Excitement,Random-k,46.58,52.93,0.80%
+Excitement,Zero-shot,32.65,39.58,1.20%

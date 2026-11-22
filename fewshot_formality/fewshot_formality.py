@@ -29,6 +29,14 @@ except ImportError:
 
 from sentence_transformers import SentenceTransformer
 
+from prompt_utils import TARGETS, render_prompt, PROMPT_VERSION, sha256_template, load_template
+
+PROMPT_FILE = os.environ.get("JCCE_PROMPT_FILE", "generation_prompt_v2_id.txt")
+try:
+    PROMPT_SHA = sha256_template(load_template(".", PROMPT_FILE))
+except OSError:
+    PROMPT_SHA = ""
+
 hf_logging.set_verbosity_error()
 
 DEFAULT_CONFIG = {
@@ -46,7 +54,7 @@ DEFAULT_CONFIG = {
     "human_eval_samples": 40, 
     "global_anchor_seed": 42,
     "retrieval_methods": ["dense", "centroid", "bm25", "hybrid_early"],
-    "num_examples_range": [5, 10],
+    "num_examples_range": [5],
     "hybrid_alphas": [0.1, 0.3, 0.5, 0.7, 0.9], 
     "max_new_tokens": 1500,
     "temperature": 0.7,
@@ -291,7 +299,7 @@ def robust_chat_completion(hf_model, tokenizer, messages, options, seed=None):
 def generate_paraphrases_sequential(
     config, hf_model, tokenizer, sample_indices, df_test, rag_data, sentence_model, personality, method, num_examples, alpha=None, run_seed=None
 ):
-    gen_template = load_prompt_template("fewshot_generation_prompt.txt")
+    gen_template = load_prompt_template(PROMPT_FILE)
     rec = {"paraphrased": [], "exemplars": [], "fallback": [], "prompt_len": [],
            "n_new_tokens": [], "eos": [], "sample_index": [], "sample_seed": []}
 
@@ -309,16 +317,9 @@ def generate_paraphrases_sequential(
                 alpha if alpha is not None else 0.5, seed=sample_seed
             )
 
-            if examples:
-                user_prompt = gen_template.format(
-                    style_examples_str=format_few_shot_examples(examples),
-                    original_message=orig_msg
-                )
-            else:
-                user_prompt = gen_template.replace(
-                    "### CONTOH REFERENSI\n{style_examples_str}\n\n", "").format(
-                    style_examples_str="", original_message=orig_msg
-                )
+            examples_str = format_few_shot_examples(examples) if examples else ""
+            user_prompt = render_prompt(gen_template, examples_str, orig_msg,
+                                        TARGETS[personality.lower()])
 
             messages = [
                 {"role": "system", "content": "Anda adalah asisten linguistik ahli yang memodifikasi gaya bahasa teks (formality transfer)."},
@@ -409,7 +410,7 @@ def main():
         human_eval_indices = set(random.sample(test_indices, num_human))
 
         for run_seed in config.get("run_seeds", [42]):
-            for num_examples in config.get("num_examples_range", [5, 10]):
+            for num_examples in config.get("num_examples_range", [5]):
                 for method in config.get("retrieval_methods", []):
 
                     if method == "zero_shot" and num_examples != min(config.get("num_examples_range", [5])):
@@ -452,6 +453,10 @@ def main():
                             "output_tokens": run_rec["n_new_tokens"],
                             "eos_reached": run_rec["eos"],
                             "output_chars": [len(t) for t in run_rec["paraphrased"]],
+                            "template_version": [PROMPT_VERSION] * len(test_indices),
+                            "prompt_sha256": [PROMPT_SHA] * len(test_indices),
+                            "target_label": [TARGETS[personality.lower()]["label"]] * len(test_indices),
+                            "target_definition": [TARGETS[personality.lower()]["definition"]] * len(test_indices),
                         })
 
                         if config.get("show_debug_samples", True):

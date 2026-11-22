@@ -28,8 +28,7 @@
         "zero_shot"
     ],
     "num_examples_range": [
-        5,
-        10
+        5
     ],
     "hybrid_alphas": [
         0.1,

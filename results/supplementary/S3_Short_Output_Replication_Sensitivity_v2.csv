@@ -1,0 +1,41 @@
+Corpus,Target,Method,n,Output_lt8_word_tokens_n,Output_lt8_word_tokens_pct,Output_lt8_bpe_tokens_pct,Rep8_All,Rep8_ge8_word_tokens,Delta_Rep8_word_tokens,Copy_Any_pct,Copy_Full_pct
+STIF,formal,BM25+,250,18,7.20,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,formal,Centroid,250,5,2.00,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,formal,Dense,250,13,5.20,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,formal,Hybrid α=0.1,250,9,3.60,0.40,0.000,0.000,+0.000,0.0,0.0
+STIF,formal,Hybrid α=0.3,250,13,5.20,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,formal,Hybrid α=0.5,250,10,4.00,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,formal,Hybrid α=0.7,250,12,4.80,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,formal,Hybrid α=0.9,250,14,5.60,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,formal,Random-k,250,9,3.60,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,formal,Zero-shot,250,8,3.20,0.40,0.000,0.000,+0.000,0.0,0.0
+STIF,informal,BM25+,250,33,13.20,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,informal,Centroid,250,30,12.00,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,informal,Dense,250,32,12.80,0.40,0.000,0.000,+0.000,0.0,0.0
+STIF,informal,Hybrid α=0.1,250,29,11.60,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,informal,Hybrid α=0.3,250,32,12.80,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,informal,Hybrid α=0.5,250,28,11.20,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,informal,Hybrid α=0.7,250,33,13.20,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,informal,Hybrid α=0.9,250,32,12.80,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,informal,Random-k,250,36,14.40,0.00,0.000,0.000,+0.000,0.0,0.0
+STIF,informal,Zero-shot,250,36,14.40,0.00,0.000,0.000,+0.000,0.0,0.0
+AAKER,competence,BM25+,500,41,8.20,0.40,0.012,0.013,+0.001,5.8,0.0
+AAKER,competence,Centroid,500,0,0.00,0.00,0.023,0.023,+0.000,21.2,0.0
+AAKER,competence,Dense,500,91,18.20,4.60,0.000,0.000,+0.000,0.4,0.0
+AAKER,competence,Hybrid α=0.1,500,0,0.00,0.00,0.071,0.071,+0.000,35.0,0.2
+AAKER,competence,Hybrid α=0.3,500,2,0.40,0.20,0.060,0.061,+0.000,27.8,0.2
+AAKER,competence,Hybrid α=0.5,500,57,11.40,2.40,0.013,0.015,+0.002,6.6,0.0
+AAKER,competence,Hybrid α=0.7,500,85,17.00,4.00,0.003,0.004,+0.001,2.2,0.0
+AAKER,competence,Hybrid α=0.9,500,90,18.00,3.80,0.002,0.002,+0.000,1.0,0.0
+AAKER,competence,Random-k,500,24,4.80,0.40,0.001,0.001,+0.000,0.6,0.0
+AAKER,competence,Zero-shot,500,75,15.00,4.40,0.000,0.000,+0.000,0.0,0.0
+AAKER,excitement,BM25+,500,35,7.00,0.60,0.000,0.000,+0.000,0.2,0.0
+AAKER,excitement,Centroid,500,7,1.40,0.00,0.000,0.000,+0.000,0.0,0.0
+AAKER,excitement,Dense,500,48,9.60,2.20,0.000,0.000,+0.000,0.2,0.0
+AAKER,excitement,Hybrid α=0.1,500,10,2.00,0.20,0.000,0.000,+0.000,0.2,0.0
+AAKER,excitement,Hybrid α=0.3,500,35,7.00,1.60,0.000,0.000,+0.000,0.0,0.0
+AAKER,excitement,Hybrid α=0.5,500,43,8.60,2.40,0.000,0.000,+0.000,0.0,0.0
+AAKER,excitement,Hybrid α=0.7,500,46,9.20,2.60,0.000,0.000,+0.000,0.2,0.0
+AAKER,excitement,Hybrid α=0.9,500,45,9.00,2.60,0.000,0.000,+0.000,0.0,0.0
+AAKER,excitement,Random-k,500,30,6.00,0.40,0.000,0.000,+0.000,0.0,0.0
+AAKER,excitement,Zero-shot,500,27,5.40,0.80,0.000,0.000,+0.000,0.0,0.0
